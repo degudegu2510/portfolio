@@ -24,4 +24,5 @@ dist-ssr
 *.sw?
 
 .cursor/
+.document/
 .vite/
