@@ -1,0 +1,157 @@
+/* Typography */
+@utility heading-1 {
+  font-size: var(--font-size-heading-1);
+  font-weight: var(--font-weight-bold);
+  line-height: var(--line-height-heading);
+}
+
+@utility heading-2 {
+  font-size: var(--font-size-heading-2);
+  font-weight: var(--font-weight-bold);
+  line-height: var(--line-height-heading);
+}
+
+@utility subhead-1 {
+  font-size: var(--font-size-subhead-1);
+  font-weight: var(--font-weight-bold);
+  line-height: var(--line-height-subhead);
+}
+
+@utility subhead-1-dense {
+  font-size: var(--font-size-subhead-1);
+  font-weight: var(--font-weight-bold);
+  line-height: var(--line-height-subhead-dense);
+}
+
+@utility subhead-2 {
+  font-size: var(--font-size-subhead-2);
+  font-weight: var(--font-weight-bold);
+  line-height: var(--line-height-subhead);
+}
+
+@utility subhead-2-dense {
+  font-size: var(--font-size-subhead-2);
+  font-weight: var(--font-weight-bold);
+  line-height: var(--line-height-subhead-dense);
+}
+
+@utility body-1 {
+  font-size: var(--font-size-body-1);
+  font-weight: var(--font-weight-regular);
+  line-height: var(--line-height-body);
+}
+
+@utility body-1-dense {
+  font-size: var(--font-size-body-1);
+  font-weight: var(--font-weight-regular);
+  line-height: var(--line-height-body-dense);
+}
+
+@utility body-1-bold {
+  font-size: var(--font-size-body-1);
+  font-weight: var(--font-weight-bold);
+  line-height: var(--line-height-body);
+}
+
+@utility body-1-bold-dense {
+  font-size: var(--font-size-body-1);
+  font-weight: var(--font-weight-bold);
+  line-height: var(--line-height-body-dense);
+}
+
+@utility body-2 {
+  font-size: var(--font-size-body-2);
+  font-weight: var(--font-weight-regular);
+  line-height: var(--line-height-body);
+}
+
+@utility body-2-dense {
+  font-size: var(--font-size-body-2);
+  font-weight: var(--font-weight-regular);
+  line-height: var(--line-height-body-dense);
+}
+
+@utility body-2-bold {
+  font-size: var(--font-size-body-2);
+  font-weight: var(--font-weight-bold);
+  line-height: var(--line-height-body);
+}
+
+@utility body-2-bold-dense {
+  font-size: var(--font-size-body-2);
+  font-weight: var(--font-weight-bold);
+  line-height: var(--line-height-body-dense);
+}
+
+@utility body-3 {
+  font-size: var(--font-size-body-3);
+  font-weight: var(--font-weight-regular);
+  line-height: var(--line-height-body);
+}
+
+@utility body-3-dense {
+  font-size: var(--font-size-body-3);
+  font-weight: var(--font-weight-regular);
+  line-height: var(--line-height-body-dense);
+}
+
+@utility body-3-bold {
+  font-size: var(--font-size-body-3);
+  font-weight: var(--font-weight-bold);
+  line-height: var(--line-height-body);
+}
+
+@utility body-3-bold-dense {
+  font-size: var(--font-size-body-3);
+  font-weight: var(--font-weight-bold);
+  line-height: var(--line-height-body-dense);
+}
+
+/* Elevation */
+@utility elevation-1 {
+  box-shadow: 0px 2px 8px 1px var(--elevation-color),
+    0px 1px 5px 0px var(--elevation-color-dim),
+    0px 0px 0px 1px var(--elevation-border);
+}
+
+@utility elevation-2 {
+  box-shadow: 0px 2px 12px 2px var(--elevation-color),
+    0px 1px 6px 0px var(--elevation-color-dim),
+    0px 0px 0px 1px var(--elevation-border);
+}
+
+@utility elevation-3 {
+  box-shadow: 0px 4px 16px 3px var(--elevation-color),
+    0px 1px 6px 0px var(--elevation-color-dim),
+    0px 0px 0px 1px var(--elevation-border);
+}
+
+@utility elevation-4 {
+  box-shadow: 0px 6px 20px 4px var(--elevation-color),
+    0px 2px 6px 0px var(--elevation-color-dim),
+    0px 0px 0px 1px var(--elevation-border);
+}
+
+@utility elevation-5 {
+  box-shadow: 0px 8px 24px 5px var(--elevation-color),
+    0px 2px 10px 0px var(--elevation-color-dim),
+    0px 0px 0px 1px var(--elevation-border);
+}
+
+@utility elevation-6 {
+  box-shadow: 0px 10px 30px 6px var(--elevation-color),
+    0px 3px 12px 0px var(--elevation-color-dim),
+    0px 0px 0px 1px var(--elevation-border);
+}
+
+@utility elevation-7 {
+  box-shadow: 0px 12px 36px 7px var(--elevation-color),
+    0px 3px 14px 0px var(--elevation-color-dim),
+    0px 0px 0px 1px var(--elevation-border);
+}
+
+@utility elevation-8 {
+  box-shadow: 0px 14px 40px 7px var(--elevation-color),
+    0px 3px 16px 0px var(--elevation-color-dim),
+    0px 0px 0px 1px var(--elevation-border);
+}
