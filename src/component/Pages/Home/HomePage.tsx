@@ -1,8 +1,7 @@
-import { useState } from 'react'
+import { useState } from "react"
 
-function App() {
+export const HomePage = () => {
   const [count, setCount] = useState(0)
-
   return (
     <>
       <button
@@ -14,5 +13,3 @@ function App() {
     </>
   )
 }
-
-export default App
