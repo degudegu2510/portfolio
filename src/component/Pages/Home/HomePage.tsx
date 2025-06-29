@@ -1,17 +1,9 @@
-import { useState } from "react"
-import { MaterialSymbols } from "../../Atoms/MaterialSymbols/MaterialSymbols"
+import { Header } from "../../Organisms/Header/Header"
 
 export const HomePage = () => {
-  const [count, setCount] = useState(0)
   return (
-    <>
-      <button
-        className='bg-blue p-2 hover:bg-blue-dim heading-1 text-on-container elevation-8 rounded-[8px]'
-        onClick={() => setCount((count) => count + 1)}
-      >
-        <MaterialSymbols>home</MaterialSymbols>
-        count is {count}
-      </button>
-    </>
+    <div className="h-[3000px]">
+      <Header />
+    </div>
   )
 }
