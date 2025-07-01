@@ -134,4 +134,8 @@
 
   /* scrim */
   --color-scrim: light-dark(rgb(0 0 0 / 32%), rgb(255 255 255 / 32%));
+
+  /* Brand */
+  --color-x: light-dark(var(--base-gray-120), var(--base-gray-0));
+  --color-qiita: light-dark(#55c500, var(--base-gray-0));
 }
