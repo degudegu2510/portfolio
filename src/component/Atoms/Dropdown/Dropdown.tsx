@@ -7,6 +7,7 @@ interface Props {
   closeHandler: () => void
   role?: string
   id: string
+  ariaLabel: string
 }
 
 export const Dropdown = ({
@@ -16,19 +17,20 @@ export const Dropdown = ({
   closeHandler,
   role = "listbox",
   id,
+  ariaLabel
 }: Props) => {
   const ulRef = useRef<HTMLUListElement>(null)
   const [focusIndex, setFocusIndex] = useState<number>(-1)
 
   // フォーカス可能な要素を取得
   const getFocusable = () => {
-    return ulRef.current
-      ? Array.from(
-          ulRef.current.querySelectorAll<HTMLElement>(
-            'button, [tabindex]:not([tabindex="-1"])'
-          )
-        )
-      : []
+    if (!ulRef.current) return []
+    const focusable = Array.from(
+      ulRef.current.querySelectorAll<HTMLElement>(
+        'button, [tabindex]:not([tabindex="-1"])'
+      )
+    )
+    return [ulRef.current, ...focusable]
   }
 
   // キーボード操作
@@ -94,6 +96,8 @@ export const Dropdown = ({
       className={className}
       onKeyDown={handleKeyDown}
       role={role}
+      aria-label={ariaLabel}
+      tabIndex={0}
     >
       {children}
     </ul>

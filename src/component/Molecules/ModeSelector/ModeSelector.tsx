@@ -71,18 +71,17 @@ export const ModeSelector = () => {
           className="absolute right-0 top-full mt-1 p-1 rounded-lg bg-surface elevation-1 w-[max-content] z-10"
           buttonRef={buttonRef}
           closeHandler={()=>{setIsOpen(false)}}
-          aria-label="外観設定"
+          ariaLabel="外観設定"
         >
           {MODES.map((m) => (
-            <DropdownList key={m.key} role="option">
+            <DropdownList key={m.key}>
               <button
-                className="flex items-center gap-2 w-full px-4 py-2 text-left rounded-sm hover:bg-surface-variant"
+                className="flex items-center gap-2 w-full px-4 py-2 text-left rounded-sm hover:bg-surface-variant cursor-pointer"
                 onClick={() => {
                   setMode(m.key)
                   setIsOpen(false)
                   buttonRef.current?.focus()
                 }}
-                aria-selected={mode === m.key}
                 tabIndex={0}
               >
                 <MaterialSymbols>{m.icon}</MaterialSymbols>
