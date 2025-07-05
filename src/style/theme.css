@@ -138,4 +138,9 @@
   /* Brand */
   --color-x: light-dark(var(--base-gray-120), var(--base-gray-0));
   --color-qiita: light-dark(#55c500, var(--base-gray-0));
+
+  /* breakpoint */
+  --breakpoint-desktop: 72rem;
+  --breakpoint-tablet: 48rem;
+  --breakpoint-mobile: 24rem;
 }
