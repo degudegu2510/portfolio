@@ -30,7 +30,7 @@ export const Dropdown = ({
         'button, [tabindex]:not([tabindex="-1"])'
       )
     )
-    return [ulRef.current, ...focusable]
+    return focusable
   }
 
   // キーボード操作
@@ -97,7 +97,7 @@ export const Dropdown = ({
       onKeyDown={handleKeyDown}
       role={role}
       aria-label={ariaLabel}
-      tabIndex={0}
+      tabIndex={-1}
     >
       {children}
     </ul>
