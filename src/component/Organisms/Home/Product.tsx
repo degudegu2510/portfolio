@@ -1,10 +1,10 @@
 import { useId } from "react"
 import { ProductCard } from "../../Molecules/ProductCard.tsx/ProductCard"
-import { markdownList, MarkdownListItem } from "../../../utils/markdown"
+import { ProductList, ProductListItem } from "../../../utils/markdown"
 
 export const Product = () => {
   const id = useId()
-  const productList: MarkdownListItem[] = markdownList()
+  const productList: ProductListItem[] = ProductList()
 
   return (
     <section className="mt-16 py-16">

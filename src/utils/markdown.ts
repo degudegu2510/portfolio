@@ -41,27 +41,25 @@
 //   return content;
 // };
 
-const markdownFiles = import.meta.glob('/src/contents/product/**/*.md', {
+const productFiles = import.meta.glob('/src/contents/product/**/*.md', {
   eager: true,
   as: 'raw',
 })
 
-export interface MarkdownListItem {
+export interface ProductListItem {
   title: string;
   thumbnail: string;
   slug: string;
 }
 
-export const markdownList = (): MarkdownListItem[] => {
-  const markdownList: MarkdownListItem[] = []
+export const ProductList = (): ProductListItem[] => {
+  const productList: ProductListItem[] = []
 
-  Object.entries(markdownFiles).forEach(([filePath, content]) => {
+  Object.entries(productFiles).forEach(([filePath, content]) => {
     const slug = filePath.split('/').pop()?.replace('.md', '') || ''
 
     const match = /^---\n([\s\S]*?)\n---\n([\s\S]*)/.exec(content as string)
-    if (!match) {
-      throw new Error(`Invalid frontmatter in ${slug}.md`)
-    }
+    if (!match) return null
 
     const frontMatterLines = match[1].split('\n').filter(Boolean)
     const metadata: Record<string, string> = {}
@@ -70,12 +68,12 @@ export const markdownList = (): MarkdownListItem[] => {
       metadata[key.trim()] = value.join(': ').trim()
     })
 
-    markdownList.push({
+    productList.push({
       title: metadata.title || '',
       thumbnail: metadata.thumbnail || '',
       slug: slug
     })
   })
 
-  return markdownList
+  return productList
 };
