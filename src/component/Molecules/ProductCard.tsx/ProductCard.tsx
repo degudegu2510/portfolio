@@ -2,15 +2,16 @@ import { Link } from "react-router"
 
 export interface ProductCardProps {
   title: string
-  image: string
+  thumbnail: string
+  slug: string
 }
 
-export const ProductCard = ({ title, image }: ProductCardProps) => {
+export const ProductCard = ({ title, thumbnail, slug }: ProductCardProps) => {
   return (
     <li>
-      <Link to="/">
+      <Link to={`/product/${slug}`}>
         <img
-          src={image}
+          src={thumbnail}
           alt=""
           className="rounded-lg aspect-[16/9] object-cover border border-divider box-sizing-border w-full"
           width={352}

@@ -1,7 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import { BrowserRouter, Route, Routes } from "react-router";
-import { HomePage } from './component/Pages'
+import { HomePage, ProductPage } from './component/Pages'
 import './style/index.css'
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
@@ -9,6 +9,7 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
     <BrowserRouter>
       <Routes>
         <Route index element={<HomePage />} />
+        <Route path='/product/:productId' element={<ProductPage />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>,

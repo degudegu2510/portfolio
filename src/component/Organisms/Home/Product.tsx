@@ -1,24 +1,10 @@
 import { useId } from "react"
-import { ProductCard, ProductCardProps } from "../../Molecules/ProductCard.tsx/ProductCard"
+import { ProductCard } from "../../Molecules/ProductCard.tsx/ProductCard"
+import { markdownList, MarkdownListItem } from "../../../utils/markdown"
 
 export const Product = () => {
   const id = useId()
-  const productList: ProductCardProps[] = [
-    {
-      title: "ほげ",
-      image: "./public/image-ogp.png"
-    },{
-      title: "hoge",
-      image: "./public/image-ogp.png"
-    },
-    {
-      title: "ほげ",
-      image: "./public/image-ogp.png"
-    },{
-      title: "hoge",
-      image: "./public/image-ogp.png"
-    }
-  ]
+  const productList: MarkdownListItem[] = markdownList()
 
   return (
     <section className="mt-16 py-16">
@@ -29,9 +15,10 @@ export const Product = () => {
       >
         {productList.map((product, index) => (
           <ProductCard
-            key={product.title + index}
+            key={product.slug + index}
             title={product.title}
-            image={product.image}
+            thumbnail={product.thumbnail}
+            slug={product.slug}
           />
         ))}
       </ul>
