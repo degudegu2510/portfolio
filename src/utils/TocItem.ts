@@ -22,17 +22,17 @@ export const getTocTree = (slug: string) => {
   const parseStructure = parseSetting.parse(content).children
 
   const flatToc: TocItem[] = []
-  parseStructure.forEach((node) => {
-    if (node.type === 'heading' && node.children[0] && "value" in node.children[0]) {
-      switch (node.depth) {
+  parseStructure.forEach((item) => {
+    if (item.type === 'heading' && item.children[0] && "value" in item.children[0]) {
+      switch (item.depth) {
         case 1:
-          flatToc.push({ level: 1, text: node.children[0].value, id: node.children[0].value})
+          flatToc.push({ level: 1, text: item.children[0].value, id: item.children[0].value})
           break
         case 2:
-          flatToc.push({ level: 2, text: node.children[0].value, id: node.children[0].value})
+          flatToc.push({ level: 2, text: item.children[0].value, id: item.children[0].value})
           break
         case 3:
-          flatToc.push({ level: 3, text: node.children[0].value, id: node.children[0].value})
+          flatToc.push({ level: 3, text: item.children[0].value, id: item.children[0].value})
           break
       }
     }
