@@ -1,7 +1,11 @@
+import { MarkdownHeader } from "../../Molecules/MarkdownContent/MarkdownHeader"
+
 export const ProductMainContent = () => {
   return (
-    <main className="h-[3000px]">
-      Main
+    <main>
+      <article>
+        <MarkdownHeader />
+      </article>
     </main>
   )
 }

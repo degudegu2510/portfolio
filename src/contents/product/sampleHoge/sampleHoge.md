@@ -1,6 +1,6 @@
 ---
 title: sampleHoge
-thumbnail: ./public/image-ogp.png
+thumbnail: ./../public/image-ogp.png
 ---
 
 # h1

@@ -1,6 +1,6 @@
 ---
 title: sample
-thumbnail: ./public/image-ogp.png
+thumbnail: ./../public/image-ogp.png
 ---
 
 ## h2だよ
