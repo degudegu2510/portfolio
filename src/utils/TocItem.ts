@@ -1,6 +1,7 @@
 import matter from 'gray-matter'
 import { remark } from 'remark'
 import remarkToc from 'remark-toc'
+
 export interface TocItem {
   level: 1 | 2 | 3
   text: string
