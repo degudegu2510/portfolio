@@ -10,4 +10,20 @@ export default defineConfig({
     tailwindcss(),
     mdPlugin()
   ],
+  define: {
+    global: 'globalThis',
+  },
+  resolve: {
+    alias: {
+      buffer: 'buffer',
+    },
+  },
+  optimizeDeps: {
+    include: ['buffer'],
+  },
+  build: {
+    rollupOptions: {
+      external: [],
+    },
+  },
 })

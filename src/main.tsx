@@ -4,6 +4,9 @@ import { createBrowserRouter, RouterProvider } from "react-router";
 import { HomePage, ProductPage } from './component/Pages'
 import './style/index.css'
 import { Base } from './component/Templates/Base/Base';
+import { Buffer } from 'buffer';
+
+(window as any).Buffer = Buffer;
 
 const router = createBrowserRouter([
   {
