@@ -16,8 +16,16 @@ thumbnail: ./../public/image-ogp.png
 - リスト1
 - リスト2
   - サブリスト1
+    - hoge
+  - サブリスト1
+    - hoge
 
 1. 番号付きリスト1
+   1. 番号付きリスト1
+   2. 番号付きリスト2
+      1. hoge
+      2. hoge
+   3. 番号付きリスト3
 2. 番号付きリスト2
 3. 番号付きリスト3
 
@@ -32,9 +40,30 @@ const codeBlock = "codeBlock";
 ```
 
 ```javascript
-const greet = (name) => {
-  return `Hello, ${name}!`;
-};
+const n = 123; // allocates memory for a number
+const s = "azerty"; // allocates memory for a string
+
+const o = {
+  a: 1,
+  b: null,
+}; // allocates memory for an object and contained values
+
+// (like object) allocates memory for the array and
+// contained values
+const a = [1, null, "abra"];
+
+function f(a) {
+  return a + 2;
+} // allocates a function (which is a callable object)
+
+// function expressions also allocate an object
+someElement.addEventListener(
+  "click",
+  () => {
+    someElement.style.backgroundColor = "blue";
+  },
+  false,
+);
 ```
 
 [Link](/test)
@@ -51,10 +80,9 @@ const greet = (name) => {
 | 内容1   | 内容2   |
 | 内容3   | 内容4   |
 
-Markdown:  
-  軽量なマークアップ言語  
-React:  
-  JavaScriptライブラリ
+
+Markdown:  軽量なマークアップ言語  
+React: JavaScriptライブラリ
 
 <span style="color: red;">赤い文字</span>
  

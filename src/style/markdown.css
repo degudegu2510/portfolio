@@ -1,0 +1,149 @@
+@utility markdown-body {
+  h1 {
+    @apply heading-2 mt-10 mb-2 scroll-m-20 first:mt-0;
+  }
+
+  h2 {
+    @apply subhead-1 mt-10 mb-2 scroll-m-20 first:mt-0;
+  }
+
+  h3 {
+    @apply subhead-2 mt-6 mb-2 scroll-m-20 first:mt-0;
+  }
+
+  h4 {
+    @apply body-1-bold mt-4 mb-2 first:mt-0;
+  }
+
+  h5 {
+    @apply body-2-bold mt-4 mb-2 first:mt-0;
+  }
+
+  h6 {
+    @apply body-2-bold text-medium-emphasis mt-4 mb-2 first:mt-0;
+  }
+
+  > p {
+    @apply body-1 my-4;
+  }
+
+  a {
+    @apply text-blue underline underline-offset-4 ;
+  }
+
+  ul,
+  ol {
+    @apply body-1 pl-6 list-[revert];
+  }
+
+  > ul,
+  > ol {
+    @apply my-4;
+  }
+
+  ul:has(input[type="checkbox"]) {
+    @apply pl-0 list-none;
+  }
+
+  input[type="checkbox"] {
+    @apply mr-2;
+  }
+
+  > blockquote {
+    @apply text-medium-emphasis relative my-4 p-1 pl-3;
+  }
+
+  > blockquote::before {
+    @apply content-[""] w-1 absolute top-0 bottom-0 left-0 bg-medium-emphasis rounded-lg;
+  }
+
+  > hr {
+    @apply border-t-divider my-10;
+  }
+
+  table {
+    @apply my-4;
+
+    th, td {
+      @apply border-medium-emphasis p-2;
+    }
+  }
+
+  p > code {
+    @apply body-2 bg-surface p-1 rounded-sm;
+  }
+
+  pre {
+    @apply body-2 bg-surface my-4 px-3 py-2 rounded-sm;
+    
+    .hljs-doctag,
+    .hljs-keyword,
+    .hljs-meta .hljs-keyword,
+    .hljs-template-tag,
+    .hljs-template-variable,
+    .hljs-type,
+    .hljs-variable.language_ {
+      @apply text-red;
+    }
+    .hljs-title,
+    .hljs-title.class_,
+    .hljs-title.class_.inherited__,
+    .hljs-title.function_ {
+      @apply text-yellow-dim;
+    }
+    .hljs-attr,
+    .hljs-attribute,
+    .hljs-literal,
+    .hljs-meta,
+    .hljs-number,
+    .hljs-operator,
+    .hljs-selector-attr,
+    .hljs-selector-class,
+    .hljs-selector-id,
+    .hljs-variable {
+      @apply text-blue;
+    }
+    .hljs-meta .hljs-string,
+    .hljs-regexp,
+    .hljs-string {
+      @apply text-blue-dim;
+    }
+    .hljs-built_in,
+    .hljs-symbol {
+      @apply text-yellow;
+    }
+    .hljs-code,
+    .hljs-comment,
+    .hljs-formula {
+      @apply text-medium-emphasis;
+    }
+    .hljs-name,
+    .hljs-quote,
+    .hljs-selector-pseudo,
+    .hljs-selector-tag {
+      @apply text-green;
+    }
+    .hljs-subst {
+      @apply text-medium-emphasis;
+    }
+    .hljs-section {
+      @apply text-blue-dim font-bold;
+    }
+    .hljs-bullet {
+      color: #735c0f;
+    }
+    .hljs-emphasis {
+      @apply text-high-emphasis italic;
+    }
+    .hljs-strong {
+      @apply text-high-emphasis font-bold;
+    }
+    .hljs-addition {
+      @apply text-green bg-surface-variant;
+    }
+    .hljs-deletion {
+      @apply text-red bg-surface-variant;
+    }
+  }
+}
+
