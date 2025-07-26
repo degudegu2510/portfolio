@@ -23,17 +23,30 @@ export const getTocTree = (slug: string) => {
   const parseStructure = parseSetting.parse(content).children
 
   const flatToc: TocItem[] = []
+  const idCounts: { [key: string]: number } = {}
+
   parseStructure.forEach((item) => {
     if (item.type === 'heading' && item.children[0] && "value" in item.children[0]) {
+      const text = item.children[0].value
+      let id = text
+      
+      // 重複するIDに連番を付ける
+      if (idCounts[id]) {
+        idCounts[id]++
+        id = `${text}-${idCounts[id] - 1}`
+      } else {
+        idCounts[id] = 1
+      }
+
       switch (item.depth) {
         case 1:
-          flatToc.push({ level: 1, text: item.children[0].value, id: item.children[0].value})
+          flatToc.push({ level: 1, text: text, id: id})
           break
         case 2:
-          flatToc.push({ level: 2, text: item.children[0].value, id: item.children[0].value})
+          flatToc.push({ level: 2, text: text, id: id})
           break
         case 3:
-          flatToc.push({ level: 3, text: item.children[0].value, id: item.children[0].value})
+          flatToc.push({ level: 3, text: text, id: id})
           break
       }
     }
