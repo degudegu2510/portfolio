@@ -1,11 +1,10 @@
 
 import { useParams } from "react-router"
-import { getMarkdownHeader } from "../../../utils/markdown"
+import { getMarkdownHeader } from "../../../utils/Markdown"
 
 export const MarkdownHeader = () => {
   const { productId } = useParams()
   const date = getMarkdownHeader(productId ? productId : '')
-  console.log(date)
   return (
     <header>
       <h1 className="heading-1">{date.title}</h1>
