@@ -74,7 +74,7 @@
   }
 
   pre {
-    @apply body-2 bg-surface my-4 px-3 py-2 rounded-sm;
+    @apply body-2 bg-surface my-4 px-3 py-2 rounded-sm overflow-x-auto;
     
     .hljs-doctag,
     .hljs-keyword,
