@@ -32,10 +32,10 @@ export const getMarkdownBody = (slug: string) => {
   const parseContent = remark()
     .use(remarkParse)
     .use(remarkGfm)
-    .use(remarkRehype)
+    .use(remarkRehype, { allowDangerousHtml: true })
     .use(rehypeSlug, { prefix: '', uniqueSlugStartIndex: 1 })
     .use(rehypeHighlight)
-    .use(rehypeStringify)
+    .use(rehypeStringify, { allowDangerousHtml: true })
     .process(content)
 
   return parseContent

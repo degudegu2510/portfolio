@@ -1,26 +1,30 @@
 @utility markdown-body {
+  > * {
+    @apply first:mt-0 last:mb-0;
+  }
+
   h1 {
-    @apply heading-2 mt-10 mb-2 scroll-m-20 first:mt-0;
+    @apply heading-2 mt-10 mb-2 scroll-m-20;
   }
 
   h2 {
-    @apply subhead-1 mt-10 mb-2 scroll-m-20 first:mt-0;
+    @apply subhead-1 mt-10 mb-2 scroll-m-20;
   }
 
   h3 {
-    @apply subhead-2 mt-6 mb-2 scroll-m-20 first:mt-0;
+    @apply subhead-2 mt-6 mb-2 scroll-m-20;
   }
 
   h4 {
-    @apply body-1-bold mt-4 mb-2 first:mt-0;
+    @apply body-1-bold mt-4 mb-2;
   }
 
   h5 {
-    @apply body-2-bold mt-4 mb-2 first:mt-0;
+    @apply body-2-bold mt-4 mb-2;
   }
 
   h6 {
-    @apply body-2-bold text-medium-emphasis mt-4 mb-2 first:mt-0;
+    @apply body-2-bold text-medium-emphasis mt-4 mb-2;
   }
 
   > p {
@@ -67,6 +71,10 @@
     th, td {
       @apply border-medium-emphasis p-2;
     }
+  }
+
+  details {
+    @apply my-4;
   }
 
   p > code {
