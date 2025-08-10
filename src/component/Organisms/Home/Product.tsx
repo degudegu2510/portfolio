@@ -1,6 +1,6 @@
 import { useId } from "react"
 import { ProductCard } from "../../Molecules/ProductCard.tsx/ProductCard"
-import { ProductList, ProductListItem } from "../../../utils/productList"
+import { ProductList, ProductListItem } from "../../../utils/ProductList"
 
 export const Product = () => {
   const id = useId()

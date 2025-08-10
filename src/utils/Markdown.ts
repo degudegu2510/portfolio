@@ -7,13 +7,13 @@ import remarkGfm from 'remark-gfm'
 import remarkParse from 'remark-parse'
 import remarkRehype from 'remark-rehype'
 
-const productFiles = import.meta.glob('/src/contents/product/**/*.md', {
+const productFiles = import.meta.glob('/src/contents/Product/**/*.md', {
   eager: true,
   as: 'raw',
 })
 
 export const getMarkdownHeader = (slug: string) => {
-  const filePath = `/src/contents/product/${slug}/${slug}.md`
+  const filePath = `/src/contents/Product/${slug}/${slug}.md`
   const markdown = productFiles[filePath] as string
   const { data: frontmatter } = matter(markdown)
 
@@ -24,7 +24,7 @@ export const getMarkdownHeader = (slug: string) => {
 }
 
 export const getMarkdownBody = (slug: string) => {
-  const filePath = `/src/contents/product/${slug}/${slug}.md`
+  const filePath = `/src/contents/Product/${slug}/${slug}.md`
   const markdown = productFiles[filePath] as string
 
   const { content } = matter(markdown)

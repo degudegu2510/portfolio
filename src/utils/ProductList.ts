@@ -1,6 +1,6 @@
 import matter from 'gray-matter';
 
-const productFiles = import.meta.glob('/src/contents/product/**/*.md', {
+const productFiles = import.meta.glob('/src/contents/Product/**/*.md', {
   eager: true,
   as: 'raw',
 })

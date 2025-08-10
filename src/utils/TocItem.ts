@@ -9,13 +9,13 @@ export interface TocItem {
   children?: TocItem[]
 }
 
-const productFiles = import.meta.glob('/src/contents/product/**/*.md', {
+const productFiles = import.meta.glob('/src/contents/Product/**/*.md', {
   eager: true,
   as: 'raw',
 })
 
 export const getTocTree = (slug: string) => {
-  const filePath = `/src/contents/product/${slug}/${slug}.md`
+  const filePath = `/src/contents/Product/${slug}/${slug}.md`
   const markdown = productFiles[filePath] as string
   
   const { content } = matter(markdown)
