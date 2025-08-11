@@ -26,7 +26,7 @@ export const StageHistoryTable = ({ ...props }: Props) => {
               <p className="subhead-2 font-bold truncate max-tablet:body-1">{data.event}</p>
               <a
                 href={data.link}
-                className="flex items-center hover:bg-surface-variant p-2 pr-0.5 rounded"
+                className="flex items-center hover:bg-surface p-2 pr-0.5 rounded"
               >
                 発表資料
                 <MaterialSymbols size={24}>chevron_right</MaterialSymbols>
