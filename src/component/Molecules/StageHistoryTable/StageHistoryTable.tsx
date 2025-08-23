@@ -23,9 +23,14 @@ export const StageHistoryTable = ({ ...props }: Props) => {
               </time>
               </td>
             <td className="border-none pl-4 pr-2 py-4 grid gap-[4px_32px] grid-cols-[minmax(0,_1fr)_auto] items-center max-tablet:grid-cols-1 max-tablet:pl-2">
-              <p className="subhead-2 font-bold truncate max-tablet:body-1">{data.event}</p>
               <a
-                href={data.link}
+                href={data.eventLink}
+                className="subhead-2 font-bold truncate hover:underline underline-offset-4 max-tablet:body-1"
+              >
+                {data.event}
+              </a>
+              <a
+                href={data.presentationLink}
                 className="flex items-center hover:bg-surface p-2 pr-0.5 rounded"
               >
                 発表資料
