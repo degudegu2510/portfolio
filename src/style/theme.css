@@ -81,6 +81,7 @@
   --color-surface: light-dark(var(--base-gray-0), var(--base-gray-100));
   --color-surface-variant: light-dark(var(--base-gray-10), var(--base-gray-90));
   --color-surface-variant-dim: light-dark(var(--base-gray-20), var(--base-gray-80));
+  --color-surface-alpha: light-dark(rgba(255, 255, 255, 0.30), rgba(51, 51, 51, 0.3));
   --color-blue: light-dark(var(--base-blue-100), var(--base-blue-10));
   --color-blue-dim: light-dark(var(--base-blue-110), var(--base-blue-20));
   --color-blue-variant: light-dark(var(--base-blue-10), var(--base-blue-100));
