@@ -1,4 +1,5 @@
 import { Link } from "react-router"
+import { ProductPagePath } from "../../../utils/routes"
 
 export interface ProductCardProps {
   title: string
@@ -9,7 +10,7 @@ export interface ProductCardProps {
 export const ProductCard = ({ title, thumbnail, slug }: ProductCardProps) => {
   return (
     <li>
-      <Link to={`/product/${slug}`}>
+      <Link to={ProductPagePath(slug)}>
         <img
           src={thumbnail}
           alt=""

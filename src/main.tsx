@@ -5,12 +5,13 @@ import { HomePage, ProductPage } from './component/Pages'
 import './style/index.css'
 import { Base } from './component/Templates/Base/Base';
 import { Buffer } from 'buffer';
+import * as Routes from './utils/routes';
 
 (window as any).Buffer = Buffer;
 
 const router = createBrowserRouter([
   {
-    path: '/',
+    path: Routes.HomePagePath(),
     element: <Base />,
     children: [
       {
@@ -18,7 +19,7 @@ const router = createBrowserRouter([
         element: <HomePage />,
       },
       {
-        path: '/product/:productId',
+        path: Routes.ProductPagePath(':productId'),
         element: <ProductPage />,
       },
     ]
