@@ -2,12 +2,12 @@ import { useEffect, useState } from "react";
 import { ArticleListInterface, getArticleList } from "../../../utils/ArticleList"
 import { Article } from "../../Atoms/Article/Article"
 
-export const PostArticleList = () => {
+export const PostArticleList = ({ items }: { items?: number }) => {
   const [articleList, setArticleList] = useState<ArticleListInterface[]>([])
 
   useEffect(() => {
-    getArticleList(1, 5).then(setArticleList)
-  }, [])
+    getArticleList(1, items).then(setArticleList)
+  }, [items])
 
   return (
     <ul className="mt-8 grid gap-4">

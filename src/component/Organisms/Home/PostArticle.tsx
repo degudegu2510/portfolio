@@ -8,7 +8,7 @@ export const PostArticle = () => {
   return (
     <section className="py-16">
       <h2 className="heading-1">投稿記事</h2>
-      <PostArticleList />
+      <PostArticleList items={5} />
       <Link
         to={ArticlesPagePath()}
         className="flex items-center hover:bg-surface p-2 pr-0.5 rounded mt-6 w-fit"
