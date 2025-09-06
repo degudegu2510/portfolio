@@ -1,6 +1,7 @@
 import { FirstView } from "../../Organisms/Home/FirstView"
 import { PostArticle } from "../../Organisms/Home/PostArticle"
 import { Product } from "../../Organisms/Home/Product"
+import { Project } from "../../Organisms/Home/Project"
 import { StageHistory } from "../../Organisms/Home/StageHistory"
 
 export const HomePage = () => {
@@ -10,6 +11,7 @@ export const HomePage = () => {
       <Product />
       <StageHistory />
       <PostArticle />
+      <Project />
     </main>
   )
 }
