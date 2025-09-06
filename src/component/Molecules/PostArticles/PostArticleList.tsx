@@ -1,23 +1,16 @@
-import { useEffect, useState } from "react";
-import { ArticleListInterface, getArticleList } from "../../../utils/ArticleList"
+import { ArticlesInterface } from "../../../hooks/useArticles"
 import { Article } from "../../Atoms/Article/Article"
 
-export const PostArticleList = ({ items }: { items?: number }) => {
-  const [articleList, setArticleList] = useState<ArticleListInterface[]>([])
-
-  useEffect(() => {
-    getArticleList(1, items).then(setArticleList)
-  }, [items])
-
+export const PostArticleList = ({ items, className }: { items: ArticlesInterface[], className?: string }) => {
   return (
-    <ul className="mt-8 grid gap-4">
-      {articleList.map(article => (
-        <li key={article.url}>
+    <ul className={`grid gap-4 ${className}`}>
+      {items.map(item => (
+        <li key={item.url}>
           <Article
-            title={article.title}
-            link={article.url}
-            likes={article.likes_count}
-            tags={article.tags}
+            title={item.title}
+            link={item.url}
+            likes={item.likes_count}
+            tags={item.tags}
           />
         </li>
       ))}
