@@ -10,7 +10,7 @@ type ArticleProps = {
 
 export const Article: React.FC<ArticleProps> = ({ title, link, likes, tags }) => {
   return (
-    <article className="backdrop-blur-[2px] backdrop-filter bg-surface-alpha rounded-lg">
+    <article className="backdrop-blur-[2px] backdrop-filter bg-surface-alpha rounded-lg border border-gray-variant">
       <a href={link} className="px-4 py-2 w-full group grid gap-1" target="_blank">
         <h3 className="font-bold subhead-2 text-high-emphasis group-hover:underline underline-offset-4">{title}</h3>
         <div className="flex gap-4 items-center">

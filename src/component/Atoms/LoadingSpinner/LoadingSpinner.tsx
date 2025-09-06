@@ -6,7 +6,7 @@ interface LoadingSpinnerProps {
 export const LoadingSpinner = ({ message = '読み込み中...', className }: LoadingSpinnerProps) => {
 
   return (
-    <div className={`flex flex-col items-center justify-center gap-4 p-8 backdrop-blur-[2px] backdrop-filter bg-surface-alpha rounded-lg ${className}`}>
+    <div className={`flex flex-col items-center justify-center gap-4 p-8 backdrop-blur-[2px] backdrop-filter bg-surface-alpha rounded-lg border border-gray-variant ${className}`}>
       <svg width="24" height="24" viewBox="0 0 24 24" className="animate-spin fill-gray-dim">
         <path d="M12,1A11,11,0,1,0,23,12,11,11,0,0,0,12,1Zm0,19a8,8,0,1,1,8-8A8,8,0,0,1,12,20Z" opacity=".25"/>
         <path d="M10.14,1.16a11,11,0,0,0-9,8.92A1.59,1.59,0,0,0,2.46,12,1.52,1.52,0,0,0,4.11,10.7a8,8,0,0,1,6.66-6.61A1.42,1.42,0,0,0,12,2.69h0A1.57,1.57,0,0,0,10.14,1.16Z"/>

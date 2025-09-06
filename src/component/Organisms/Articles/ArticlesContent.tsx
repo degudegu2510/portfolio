@@ -1,4 +1,4 @@
-import { PostArticleList } from "../../Molecules/PostArticles/PostArticleList";
+import { PostArticleList } from "../../Molecules/PostArticleList/PostArticleList";
 import { Pagination } from "../../Molecules/Pagination/Pagenation";
 import { useSearchParams } from "react-router";
 import { ArticlesPagePath } from "../../../utils/Routes";
@@ -27,7 +27,7 @@ export const ArticlesContent = () => {
           <Pagination totalPage={totalPages} currentPage={currentPage} href={ArticlesPagePath()} className="mt-8"/>
         </>
       ) : (
-        <div className={`flex flex-col items-center justify-center gap-4 p-8 backdrop-blur-[2px] backdrop-filter bg-surface-alpha rounded-lg mt-8`}>
+        <div className={`flex flex-col items-center justify-center gap-4 p-8 backdrop-blur-[2px] backdrop-filter bg-surface-alpha rounded-lg border border-gray-variant mt-8`}>
           <p>記事がありません</p>
         </div>
       )}

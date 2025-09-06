@@ -1,5 +1,5 @@
 import { Link } from "react-router"
-import { PostArticleList } from "../../Molecules/PostArticles/PostArticleList"
+import { PostArticleList } from "../../Molecules/PostArticleList/PostArticleList"
 import { MaterialSymbols } from "../../Atoms/MaterialSymbols/MaterialSymbols"
 import { ArticlesPagePath } from "../../../utils/Routes"
 import { useArticles } from "../../../hooks/useArticles"
@@ -22,7 +22,7 @@ export const PostArticle = () => {
             <PostArticleList items={articles} className="mt-8"/>
           </>
         ) : (
-          <div className={`flex flex-col items-center justify-center gap-4 p-8 backdrop-blur-[2px] backdrop-filter bg-surface-alpha rounded-lg mt-8`}>
+          <div className={`flex flex-col items-center justify-center gap-4 p-8 backdrop-blur-[2px] backdrop-filter bg-surface-alpha rounded-lg border border-gray-variant mt-8`}>
             <p>記事がありません</p>
           </div>
         )}

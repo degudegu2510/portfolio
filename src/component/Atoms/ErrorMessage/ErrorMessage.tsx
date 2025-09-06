@@ -14,7 +14,7 @@ export const ErrorMessage = ({
   className
 }: ErrorMessageProps) => {
   return (
-    <div className={`flex flex-col items-center justify-center gap-4 p-8 backdrop-blur-[2px] backdrop-filter bg-surface-alpha rounded-lg ${className}`}>
+    <div className={`flex flex-col items-center justify-center gap-4 p-8 backdrop-blur-[2px] backdrop-filter bg-surface-alpha rounded-lg border border-gray-variant ${className}`}>
       <MaterialSymbols size={48} className='text-red'>error</MaterialSymbols>
       <p className="text-red">{message}</p>
       {showRetryButton && onRetry && (

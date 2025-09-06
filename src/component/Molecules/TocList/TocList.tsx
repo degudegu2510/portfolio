@@ -1,4 +1,4 @@
-import { TocItem } from "../../../utils/TocItem"
+import { TocItem } from "../../../hooks/useToc"
 
 interface Props {
   items: TocItem[]

@@ -30,7 +30,7 @@ export const Product = () => {
           ))}
         </ul>
       ) : (
-        <div className={`flex flex-col items-center justify-center gap-4 p-8 backdrop-blur-[2px] backdrop-filter bg-surface-alpha rounded-lg mt-8`}>
+        <div className={`flex flex-col items-center justify-center gap-4 p-8 backdrop-blur-[2px] backdrop-filter bg-surface-alpha rounded-lg border border-gray-variant mt-8`}>
           <p>制作物がありません</p>
         </div>
       )}

@@ -1,5 +1,5 @@
 import { Link } from "react-router"
-import { ProductPagePath } from "../../../utils/routes"
+import { ProductPagePath } from "../../../utils/Routes"
 
 export interface ProductCardProps {
   title: string

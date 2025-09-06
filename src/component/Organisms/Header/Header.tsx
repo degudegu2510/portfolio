@@ -2,7 +2,7 @@ import { Link } from "react-router"
 import { LogoIcon } from "../../Atoms/BrandIcon"
 import { ModeSelector } from "../../Molecules/ModeSelector/ModeSelector"
 import { Ref } from "react"
-import { HomePagePath } from "../../../utils/routes"
+import { HomePagePath } from "../../../utils/Routes"
 
 interface Props {
   logoRef: Ref<HTMLAnchorElement>
