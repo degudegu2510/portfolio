@@ -16,7 +16,7 @@ export const StageHistoryTable = ({ ...props }: Props) => {
       </thead>
       <tbody>
         {StageHistory.map(data => (
-          <StageHistoryTableRow data={data} />
+          <StageHistoryTableRow data={data} key={data.date} />
         ))}
       </tbody>
     </table>
