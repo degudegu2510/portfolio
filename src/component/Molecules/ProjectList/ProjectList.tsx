@@ -8,7 +8,7 @@ interface ProjectListProps {
 
 export const ProjectList = ({ className, projects }: ProjectListProps) => {
   return (
-    <ul className={`grid grid-cols-2 gap-8 ${className}`}>
+    <ul className={`grid grid-cols-2 gap-8 max-tablet:grid-cols-1 ${className}`}>
       {projects.map(project => (
         <ProjectCard key={project.title} project={project} />
       ))}
