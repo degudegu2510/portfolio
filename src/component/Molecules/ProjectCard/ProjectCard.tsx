@@ -10,7 +10,12 @@ export const ProjectCard = ({ project }: ProjectCardProps) => {
       <a href={project.url} className="p-4 group grid"  target="_blank">
         <ul className="flex gap-2 wrap">
           {project.labels.map(label => (
-            <li className="body-2-bold-dense bg-green text-on-container flex rounded-2xl px-3 py-0.5 w-fit">{label}</li>
+            <li
+              key={label}
+              className="body-2-bold-dense bg-green text-on-container flex rounded-2xl px-3 py-0.5 w-fit"
+            >
+              {label}
+            </li>
           ))}
         </ul>
         <h3 className="subhead-2 mt-2.5 group-hover:underline underline-offset-4">{project.title}</h3>
