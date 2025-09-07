@@ -1,7 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import { createBrowserRouter, RouterProvider } from "react-router";
-import { HomePage, ProductPage, ArticlesPage, ProjectsPage } from './component/Pages'
+import { HomePage, ProductPage, ArticlesPage, ProjectsPage, StageHistoryPage } from './component/Pages'
 import './style/index.css'
 import { Base } from './component/Templates/Base/Base';
 import { Buffer } from 'buffer';
@@ -21,6 +21,10 @@ const router = createBrowserRouter([
       {
         path: Routes.ProductPagePath(':productId'),
         element: <ProductPage />,
+      },
+      {
+        path: Routes.StageHistoryPagePath(),
+        element: <StageHistoryPage />,
       },
       {
         path: Routes.ArticlesPagePath(),

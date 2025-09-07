@@ -1,13 +1,15 @@
-import { TableHTMLAttributes } from "react";
-import { StageHistory } from "../../../contents/StageHistory/StageHistory";
+import { StageHistoryProps } from "../../../contents/StageHistory/StageHistory";
 import { StageHistoryTableRow } from "./StageHistoryTableRow";
 
-interface Props extends TableHTMLAttributes<HTMLTableElement> {}
+interface Props {
+  stageHistories: StageHistoryProps[]
+  className: string
+}
 
 
-export const StageHistoryTable = ({ ...props }: Props) => {
+export const StageHistoryTable = ({ stageHistories, className }: Props) => {
   return (
-    <table {...props}>
+    <table className={`border-none ${className}`}>
       <thead>
         <tr className="text-left border-b border-gray">
           <th className="font-bold body-2 border-none pl-2 pr-4 pb-1 max-tablet:pr-2">日付</th>
@@ -15,7 +17,7 @@ export const StageHistoryTable = ({ ...props }: Props) => {
         </tr>
       </thead>
       <tbody>
-        {StageHistory.map(data => (
+        {stageHistories.map(data => (
           <StageHistoryTableRow data={data} key={data.date} />
         ))}
       </tbody>

@@ -5,7 +5,7 @@ interface Props {
   data: StageHistoryProps
 }
 
-export const StageHistoryTableRow = ({data}: Props) => {
+export const StageHistoryTableRow = ({ data }: Props) => {
   return (
     <tr key={data.event} className="border-b border-gray">
       <td className="border-none w-fit whitespace-nowrap pl-2 pr-4 py-4 font-bold max-tablet:pr-2">
@@ -20,13 +20,15 @@ export const StageHistoryTableRow = ({data}: Props) => {
         >
           {data.event}
         </a>
-        <a
-          href={data.presentationLink}
-          className="flex items-center hover:bg-surface p-2 pr-0.5 rounded"
-        >
-          発表資料
-          <MaterialSymbols size={24}>chevron_right</MaterialSymbols>
-        </a>
+        {data.presentationLink && (
+          <a
+            href={data.presentationLink}
+            className="flex items-center hover:bg-surface p-2 pr-0.5 rounded"
+          >
+            発表資料
+            <MaterialSymbols size={24}>chevron_right</MaterialSymbols>
+          </a>
+        )}
       </td>
     </tr>
   );
