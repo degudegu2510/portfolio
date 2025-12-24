@@ -153,5 +153,9 @@
       @apply text-red bg-surface-variant;
     }
   }
+
+  img {
+    border-radius: 8px;
+  }
 }
 
