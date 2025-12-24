@@ -7,6 +7,7 @@ import { remark } from 'remark';
 import remarkGfm from 'remark-gfm';
 import remarkParse from 'remark-parse';
 import remarkRehype from 'remark-rehype';
+import { rehypeImageResolver, resolveImagePath } from '../utils/rehypeImageResolver';
 
 const productFiles = import.meta.glob('/src/contents/Product/**/*.md', {
   eager: true,
@@ -46,9 +47,10 @@ export const useMarkdown = (slug: string): UseMarkdownResult => {
 
         // ヘッダー情報の取得
         const { data: frontmatter } = matter(markdown);
+        const thumbnailPath = frontmatter.thumbnail as string;
         setHeader({
           title: frontmatter.title as string,
-          thumbnail: frontmatter.thumbnail as string,
+          thumbnail: resolveImagePath(thumbnailPath, slug),
         });
 
         // ボディの処理
@@ -58,6 +60,7 @@ export const useMarkdown = (slug: string): UseMarkdownResult => {
           .use(remarkGfm)
           .use(remarkRehype, { allowDangerousHtml: true })
           .use(rehypeSlug, { prefix: '', uniqueSlugStartIndex: 1 })
+          .use(rehypeImageResolver(slug))
           .use(rehypeHighlight)
           .use(rehypeStringify, { allowDangerousHtml: true })
           .process(content);

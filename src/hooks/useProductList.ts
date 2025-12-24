@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import matter from 'gray-matter';
+import { resolveImagePath } from '../utils/rehypeImageResolver';
 
 const productFiles = import.meta.glob('/src/contents/Product/**/*.md', {
   eager: true,
@@ -35,10 +36,11 @@ export const useProductList = (): UseProductListResult => {
           try {
             const slug = filePath.split('/').pop()?.replace('.md', '') || '';
             const { data: frontmatter } = matter(content as string);
+            const thumbnailPath = frontmatter.thumbnail as string || '';
             
             productList.push({
               title: frontmatter.title || '',
-              thumbnail: frontmatter.thumbnail || '',
+              thumbnail: resolveImagePath(thumbnailPath, slug),
               slug: slug,
             });
           } catch (err) {

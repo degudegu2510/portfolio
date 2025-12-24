@@ -1,6 +1,6 @@
 ---
 title: sample
-thumbnail: ./../public/image-ogp.png
+thumbnail: ./img/image-ogp.png
 ---
 
 ## h2だよ
@@ -67,6 +67,8 @@ someElement.addEventListener(
 ```
 
 [Link](/test)
+
+![サンプル画像](./img/image-ogp.png)
 
 > 引用1
 
