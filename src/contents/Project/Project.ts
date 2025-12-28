@@ -9,6 +9,13 @@ export interface ProjectInterface {
 export const Projects: ProjectInterface[] = [
   {
     labels: ["Qiita", "PdM"],
+    title: "Qiita Advent Calendar 2025 プロジェクト",
+    description: "新企画の立案、新機能/機能アップデートの企画/設計を担当した。",
+    term: "2025年8月〜2026年1月",
+    url: "https://corp.qiita.com/releases/2025/10/qiita-advent-calendar-2025/",
+  },
+  {
+    labels: ["Qiita", "PdM"],
     title: "ストックのシェア機能プロジェクト",
     description: "ストックのシェア機能の企画/設計を担当した。",
     term: "2025年2月〜",
