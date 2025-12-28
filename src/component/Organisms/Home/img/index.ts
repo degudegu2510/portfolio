@@ -1,2 +1,2 @@
-export { default as profileImage } from './image-myIcon.png';
+export { default as profileVideo } from './video-profile.mp4';
 
