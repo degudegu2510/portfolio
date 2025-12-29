@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import { createBrowserRouter, RouterProvider } from "react-router";
+import { createHashRouter, RouterProvider } from "react-router";
 import { HomePage, ProductPage, ArticlesPage, ProjectsPage, StageHistoryPage } from './component/Pages'
 import './style/index.css'
 import { Base } from './component/Templates/Base/Base';
@@ -9,7 +9,7 @@ import * as Routes from './utils/Routes';
 
 (window as any).Buffer = Buffer;
 
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
     path: Routes.HomePagePath(),
     element: <Base />,
@@ -36,9 +36,7 @@ const router = createBrowserRouter([
       },
     ]
   },
-], {
-  basename: '/portfolio',
-});
+]);
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
