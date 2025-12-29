@@ -39,6 +39,9 @@ export const useMarkdown = (slug: string): UseMarkdownResult => {
         setLoading(true);
         setError(null);
 
+        console.log('productFiles count:', Object.keys(productFiles).length);
+        console.log('productFiles keys:', Object.keys(productFiles));
+
         const filePath = `/src/contents/Product/${slug}/${slug}.md`;
         const markdown = productFiles[filePath] as string;
 
