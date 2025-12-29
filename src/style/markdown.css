@@ -32,7 +32,7 @@
   }
 
   a {
-    @apply text-blue underline underline-offset-4 ;
+    @apply text-blue underline underline-offset-4 hover:text-blue-dim ;
   }
 
   ul,
