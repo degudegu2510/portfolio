@@ -6,7 +6,8 @@ const imageFiles: Record<string, string> = import.meta.glob(
   '/src/contents/Product/**/*.{png,jpg,jpeg,gif,webp,svg}',
   {
     eager: true,
-    as: 'url',
+    query: '?url',
+    import: 'default',
   }
 ) as Record<string, string>;
 
@@ -83,4 +84,3 @@ export function rehypeImageResolver(slug: string) {
     };
   };
 }
-

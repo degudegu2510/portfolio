@@ -11,8 +11,9 @@ import { rehypeImageResolver, resolveImagePath } from '../utils/rehypeImageResol
 
 const productFiles = import.meta.glob('/src/contents/Product/**/*.md', {
   eager: true,
-  as: 'raw',
-});
+  query: '?raw',
+  import: 'default',
+}) as Record<string, string>;
 
 export interface MarkdownHeader {
   title: string;

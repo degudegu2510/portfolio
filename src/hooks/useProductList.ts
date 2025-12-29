@@ -4,8 +4,9 @@ import { resolveImagePath } from '../utils/rehypeImageResolver';
 
 const productFiles = import.meta.glob('/src/contents/Product/**/*.md', {
   eager: true,
-  as: 'raw',
-});
+  query: '?raw',
+  import: 'default',
+}) as Record<string, string>;
 
 export interface ProductListItem {
   title: string;
