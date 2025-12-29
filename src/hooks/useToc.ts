@@ -3,7 +3,7 @@ import matter from 'gray-matter';
 import { remark } from 'remark';
 import remarkToc from 'remark-toc';
 
-const productFiles = import.meta.glob('/src/contents/Product/**/*.md', {
+const productFiles = import.meta.glob('../contents/Product/**/*.md', {
   eager: true,
   query: '?raw',
   import: 'default',

@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import matter from 'gray-matter';
 import { resolveImagePath } from '../utils/rehypeImageResolver';
 
-const productFiles = import.meta.glob('/src/contents/Product/**/*.md', {
+const productFiles = import.meta.glob('../contents/Product/**/*.md', {
   eager: true,
   query: '?raw',
   import: 'default',

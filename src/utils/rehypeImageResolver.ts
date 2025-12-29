@@ -3,7 +3,7 @@ import type { Root } from 'hast';
 
 
 const imageFiles: Record<string, string> = import.meta.glob(
-  '/src/contents/Product/**/*.{png,jpg,jpeg,gif,webp,svg}',
+  '../contents/Product/**/*.{png,jpg,jpeg,gif,webp,svg}',
   {
     eager: true,
     query: '?url',
