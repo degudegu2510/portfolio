@@ -33,7 +33,7 @@ export const useToc = (slug: string): UseTocResult => {
         setLoading(true);
         setError(null);
 
-        const filePath = `/src/contents/Product/${slug}/${slug}.md`;
+        const filePath = `../contents/Product/${slug}/${slug}.md`;
         const markdown = productFiles[filePath] as string;
 
         if (!markdown) {

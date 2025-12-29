@@ -22,9 +22,10 @@ export function resolveImagePath(imagePath: string, slug: string): string {
   }
 
   // /src/で始まる絶対パスの場合、imageFilesから解決されたURLを取得
-  // imageFilesのキーは元のファイルパス（/src/...）で、値は解決されたURL
+  // imageFilesのキーはglobの指定に依存するため、/src と ../ 両方を試す
   if (imagePath.startsWith('/src/')) {
-    const resolvedUrl = imageFiles[imagePath];
+    const relativeKey = imagePath.replace(/^\/src\//, '../');
+    const resolvedUrl = imageFiles[imagePath] || imageFiles[relativeKey];
     if (resolvedUrl) {
       return resolvedUrl;
     }
@@ -48,7 +49,8 @@ export function resolveImagePath(imagePath: string, slug: string): string {
   }
 
   // imageFilesから解決されたURLを取得
-  const resolvedUrl = imageFiles[absolutePath];
+  const relativeKey = absolutePath.replace(/^\/src\//, '../');
+  const resolvedUrl = imageFiles[absolutePath] || imageFiles[relativeKey];
   if (resolvedUrl) {
     return resolvedUrl;
   } else {
