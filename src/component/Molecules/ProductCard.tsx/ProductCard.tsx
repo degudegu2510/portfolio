@@ -10,11 +10,11 @@ export interface ProductCardProps {
 export const ProductCard = ({ title, thumbnail, slug }: ProductCardProps) => {
   return (
     <li>
-      <Link to={ProductPagePath(slug)}>
+      <Link to={ProductPagePath(slug)} className="hover:elevation-4 [&>img]:hover:scale-102">
         <img
           src={thumbnail}
           alt=""
-          className="rounded-lg aspect-[16/9] object-cover border border-divider box-sizing-border w-full"
+          className="rounded-lg aspect-[16/9] object-cover border border-divider box-sizing-border w-full duration-300"
           width={352}
           height={198}
           loading="lazy"
