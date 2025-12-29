@@ -33,7 +33,7 @@ export const Profile = () => {
             className="rounded-lg bg-gray-variant w-full max-w-[352px] h-auto aspect-[1/1]"
           />
           <button
-            className="flex items-center hover:bg-surface p-2 p-0.5 rounded w-fit"
+            className="flex items-center hover:bg-surface p-2 rounded w-fit"
             onClick={() => { setIsPause(!isPause) }}
           >
             {isPause ? (

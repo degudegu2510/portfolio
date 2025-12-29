@@ -17,21 +17,21 @@ export const MaterialSymbols = ({
 }: MaterialSymbolsProps) => {
 
   const style: React.CSSProperties = {
-    '--grad-value': 'light-dark(0, -25)',
     alignItems: 'center',
-    display: 'flex',
+    display: 'inline-flex',
     fontFamily: 'Material Symbols Rounded',
     fontSize: size,
-    fontVariationSettings: `'FILL' ${fill ? 1 : 0}, 'wght' 300, 'GRAD' var(--grad-value), 'opsz' 24`,
+    fontVariationSettings: `'FILL' ${fill ? 1 : 0}, 'wght' 400, 'GRAD' 0, 'opsz' 24`,
     height: size,
     userSelect: 'none',
     width: size,
+
     ...props.style,
   };
 
   return (
     <span
-      className={`material-symbols ${className}`}
+      className={`material-symbols-rounded ${className}`}
       style={style}
       {...props}
     >
