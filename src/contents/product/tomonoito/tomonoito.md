@@ -19,7 +19,6 @@ TOMONOITO では、ユーザーが過去に撮影した写真をもとに、 **�
 ### 補足情報
 
 * チーム名：知り合いの知り合い
-* アプリ名：TOMONOITO
 * 担当：デザイナー（体験設計 / UI設計 / 演出設計）
 * SPAJAM：https://history.spajam.jp/2023/result/
 
