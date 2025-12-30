@@ -24,14 +24,16 @@ export const Profile = () => {
         <div className="grid grid-cols-[minmax(0,_1fr)] gap-2 justify-items-center w-fit">
           <video
             ref={videoRef}
-            autoPlay
             loop
+            autoPlay
             muted
-            src={profileVideo}
+            playsInline
             width={352}
             height={352}
             className="rounded-lg bg-gray-variant w-full max-w-[352px] h-auto aspect-[1/1]"
-          />
+          >
+            <source src={profileVideo} type="video/mp4"/>
+          </video>
           <button
             className="flex items-center hover:bg-surface p-2 rounded w-fit"
             onClick={() => { setIsPause(!isPause) }}
