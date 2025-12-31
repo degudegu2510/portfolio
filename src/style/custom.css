@@ -15,19 +15,19 @@
       var(--color-background-grid-alpha) 12%,
       var(--color-background-grid) 12%,
       var(--color-background-grid) calc(12% + 1px),
-      var(--color-background-grid-alpha) calc(12% + 2px)
+      var(--color-background-grid-alpha) calc(12% + 1px)
     ),
     linear-gradient(to bottom,
       var(--color-background-grid-alpha) 12%,
       var(--color-background-grid) 12%,
       var(--color-background-grid) calc(12% + 1px),
-      var(--color-background-grid-alpha) calc(12% + 2px)
+      var(--color-background-grid-alpha) calc(12% + 1px)
     ),
     linear-gradient(to top,
       var(--color-background-grid-alpha) 12%,
       var(--color-background-grid) 12%,
       var(--color-background-grid) calc(12% + 1px),
-      var(--color-background-grid-alpha) calc(12% + 2px)
+      var(--color-background-grid-alpha) calc(12% + 1px)
     );
   background-size: 192px 192px;
   background-position: center;
