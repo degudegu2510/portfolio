@@ -30,7 +30,7 @@ export const Profile = () => {
             playsInline
             width={352}
             height={352}
-            className="rounded-lg bg-gray-variant w-full max-w-[352px] h-auto aspect-[1/1] max-mobile:max-w-full"
+            className="rounded-lg bg-gray-variant w-full max-w-[22rem] h-auto aspect-[1/1] max-mobile:max-w-full"
           >
             <source src={profileVideo} type="video/mp4"/>
           </video>

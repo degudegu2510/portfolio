@@ -4,7 +4,7 @@ import { ScrollDown } from "../../Atoms/ScrollDown/ScrollDown"
 
 export const FirstView = () => {
   return (
-    <section className="grid grid-cols-[minmax(0,_1fr)] grid-rows-[minmax(0,_1fr)_auto] h-[calc(100dvh-80px)] min-h-137 relative">
+    <section className="grid grid-cols-[minmax(0,_1fr)] grid-rows-[minmax(0,_1fr)_auto] h-[calc(100dvh-5rem)] min-h-137 relative">
       <div className="grid gap-8 items-center content-center py-4">
         <h1>
           <Logo className="w-full max-w-170 h-auto" ariaLabel="Deguchi Hiroki Portfolio"/>

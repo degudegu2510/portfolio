@@ -17,7 +17,7 @@ export const Product = () => {
         <ErrorMessage message={error} showRetryButton={false} className="mt-8" />
       ) : products.length > 0 ? (
         <ul
-          className="grid grid-cols-[repeat(auto-fill,minmax(352px,1fr))] gap-8 mt-8 max-mobile:grid-cols-1"
+          className="grid grid-cols-[repeat(auto-fill,minmax(22rem,1fr))] gap-8 mt-8 max-mobile:grid-cols-1"
           aria-labelledby={id}
         >
           {products.map((product, index) => (
