@@ -11,9 +11,9 @@ export const HomePage = () => {
       <FirstView />
       <Profile />
       <Product />
+      <Project />
       <StageHistory />
       <PostArticle />
-      <Project />
     </main>
   )
 }

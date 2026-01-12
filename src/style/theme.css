@@ -143,5 +143,5 @@
   /* breakpoint */
   --breakpoint-desktop: 72rem;
   --breakpoint-tablet: 48rem;
-  --breakpoint-mobile: 24rem;
+  --breakpoint-mobile: 32rem;
 }
