@@ -12,7 +12,7 @@ export const FirstView = () => {
         <div className="text-medium-emphasis">
           <p>デザインとテクノロジーの架け橋を担うデザインテクノロジスト。</p>
           <p>デザインとテクノロジーの両面から誰にとっても心地よく使えるプロダクトづくりを大切にしています。</p>
-          <ul className="flex gap-[0_16px] mt-4 body-2 flex-wrap">
+          <ul className="flex gap-x-4 mt-4 body-2 flex-wrap">
             <li>#Design</li>
             <li>#PdM</li>
             <li>#UX</li>

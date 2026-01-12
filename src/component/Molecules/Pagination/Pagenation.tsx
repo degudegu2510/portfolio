@@ -1,5 +1,6 @@
 import { MaterialSymbols } from "../../Atoms/MaterialSymbols/MaterialSymbols";
 import { Link } from "react-router";
+import { useState, useEffect } from "react";
 
 interface PaginationProps {
   totalPage: number;
@@ -9,17 +10,42 @@ interface PaginationProps {
 };
 
 export const Pagination = ({ totalPage, currentPage, href, className }: PaginationProps) => {
+  const [maxVisiblePages, setMaxVisiblePages] = useState(5);
+
+  useEffect(() => {
+    const updateMaxVisiblePages = () => {
+      const width = window.innerWidth;
+      // mobile: < 768px (48rem) -> 1つ
+      // tablet: 768px - 1152px (48rem - 72rem) -> 5つ
+      // desktop: >= 1152px (72rem) -> 5つ
+      if (width < 768) {
+        setMaxVisiblePages(1);
+      } else {
+        setMaxVisiblePages(5);
+      }
+    };
+
+    updateMaxVisiblePages();
+    window.addEventListener('resize', updateMaxVisiblePages);
+    return () => window.removeEventListener('resize', updateMaxVisiblePages);
+  }, []);
+
   if (totalPage <= 1) return null
 
+  const halfVisible = Math.floor(maxVisiblePages / 2);
   let pageNumbers: number[] = []
-  if (totalPage <= 5) {
+  
+  if (totalPage <= maxVisiblePages) {
     pageNumbers = Array.from({ length: totalPage }, (_, i) => i + 1)
-  } else if (currentPage <= 3) {
-    pageNumbers = [1, 2, 3, 4, 5]
-  } else if (currentPage >= totalPage - 2) {
-    pageNumbers = [totalPage - 4, totalPage - 3, totalPage - 2, totalPage - 1, totalPage].filter(n => n > 0)
+  } else if (currentPage <= halfVisible + 1) {
+    // 最初の方のページ
+    pageNumbers = Array.from({ length: maxVisiblePages }, (_, i) => i + 1)
+  } else if (currentPage >= totalPage - halfVisible) {
+    // 最後の方のページ
+    pageNumbers = Array.from({ length: maxVisiblePages }, (_, i) => totalPage - maxVisiblePages + i + 1).filter(n => n > 0)
   } else {
-    pageNumbers = [currentPage - 2, currentPage - 1, currentPage, currentPage + 1, currentPage + 2]
+    // 中間のページ
+    pageNumbers = Array.from({ length: maxVisiblePages }, (_, i) => currentPage - halfVisible + i)
   }
 
   const addParams = ( page: number ) => {

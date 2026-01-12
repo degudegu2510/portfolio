@@ -9,7 +9,7 @@ export const SkillList = ({ className }: SkillListProps) => {
   return (
     <ul className={`grid grid-cols-[minmax(0,_1fr)] gap-2 ${className}`}>
       {skillsList.map( skillList => (
-        <li key={skillList.title} className="backdrop-blur-[2px] backdrop-filter bg-surface-alpha rounded-lg border border-gray-variant p-[8px_16px]">
+        <li key={skillList.title} className="backdrop-blur-[2px] backdrop-filter bg-surface-alpha rounded-lg border border-gray-variant py-2 px-4">
           <p className="body-2-bold text-medium-emphasis">{skillList.title}</p>
           <ul className="flex flex-wrap gap-x-5 mt-1">
             {skillList.skills.map(skill => (

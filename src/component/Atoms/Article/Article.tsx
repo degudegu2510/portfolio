@@ -12,8 +12,8 @@ export const Article: React.FC<ArticleProps> = ({ title, link, likes, tags }) =>
   return (
     <article className="backdrop-blur-[2px] backdrop-filter bg-surface-alpha rounded-lg border border-gray-variant">
       <a href={link} className="px-4 py-2 w-full group grid gap-1" target="_blank">
-        <h3 className="font-bold subhead-2 text-high-emphasis group-hover:underline underline-offset-4">{title}</h3>
-        <div className="flex gap-4 items-center">
+        <h3 className="font-bold subhead-2 text-high-emphasis break-all group-hover:underline underline-offset-4">{title}</h3>
+        <div className="flex gap-x-4 items-center max-mobile:flex-wrap">
           <div className="flex gap-1 items-center">
             <MaterialSymbols size={20} fill={false}>favorite</MaterialSymbols>
             <span>{likes}</span>

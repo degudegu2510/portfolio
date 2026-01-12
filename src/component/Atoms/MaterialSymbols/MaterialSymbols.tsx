@@ -4,7 +4,7 @@ interface MaterialSymbolsProps {
   children: string;
   fill?: boolean;
   className?: string;
-  size?: number;
+  size?: 12 | 14 | 16 | 20 | 24 | 28 | 32 | 48;
   [key: string]: any;
 }
 
@@ -16,15 +16,26 @@ export const MaterialSymbols = ({
   ...props
 }: MaterialSymbolsProps) => {
 
+  const relativeSize = {
+    48: '2.5rem',
+    32: '2rem',
+    28: '1.5rem',
+    24: '1.25rem',
+    20: '1.125rem',
+    16: '1rem',
+    14: '0.875rem',
+    12: '0.75rem'
+  }
+
   const style: React.CSSProperties = {
     alignItems: 'center',
     display: 'inline-flex',
     fontFamily: 'Material Symbols Rounded',
-    fontSize: size,
+    fontSize: relativeSize[size],
     fontVariationSettings: `'FILL' ${fill ? 1 : 0}, 'wght' 400, 'GRAD' 0, 'opsz' 24`,
-    height: size,
+    height: relativeSize[size],
     userSelect: 'none',
-    width: size,
+    width: relativeSize[size],
 
     ...props.style,
   };
