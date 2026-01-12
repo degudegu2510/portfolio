@@ -18,6 +18,8 @@ const productFiles = import.meta.glob('../contents/Product/**/*.md', {
 export interface MarkdownHeader {
   title: string;
   thumbnail: string;
+  keywords: string;
+  description: string;
 }
 
 export interface UseMarkdownResult {
@@ -52,6 +54,8 @@ export const useMarkdown = (slug: string): UseMarkdownResult => {
         setHeader({
           title: frontmatter.title as string,
           thumbnail: resolveImagePath(thumbnailPath, slug),
+          keywords: frontmatter.keywords,
+          description: frontmatter.description,
         });
 
         // ボディの処理
