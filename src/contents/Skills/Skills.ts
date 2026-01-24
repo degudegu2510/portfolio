@@ -7,7 +7,7 @@ export const skillsList: SkillListInterface[] = [
   {
     title: "マネジメントスキル",
     skills: [
-      "プロジェクトマネジメント",
+      "プロダクトマネジメント",
       "ピープルマネジメント",
     ],
   },
@@ -30,7 +30,8 @@ export const skillsList: SkillListInterface[] = [
       "TypeScript",
       "React",
       "アクセシビリティ",
-      "Git"
+      "Git",
+      "Next.js"
     ],
   },
   {
@@ -39,6 +40,7 @@ export const skillsList: SkillListInterface[] = [
       "ChatGPT",
       "Cursor",
       "Copilot",
+      "Claude Code",
       "Premiere Pro",
       "After Effects"
     ]
