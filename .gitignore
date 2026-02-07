@@ -27,3 +27,6 @@ dist-ssr
 .claude/
 .document/
 .vite/
+
+*storybook.log
+storybook-static
