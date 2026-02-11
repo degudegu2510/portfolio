@@ -11,6 +11,7 @@ const config: StorybookConfig = {
   framework: "@storybook/react-vite",
   viteFinal: async (config) => {
     return mergeConfig(config, {
+      base: "/portfolio/storybook/",
       plugins: [tailwindcss()],
       define: { global: "globalThis" },
       resolve: { alias: { buffer: "buffer" } },
