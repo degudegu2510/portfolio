@@ -18,8 +18,8 @@ export const HomePage = () => {
     <main className="max-w-6xl px-4 w-full m-auto">
       <FirstView />
       <Profile />
-      <Product />
       <Project />
+      <Product />
       <StageHistory />
       <PostArticle />
     </main>
