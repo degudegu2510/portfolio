@@ -26,6 +26,9 @@ export const Footer = ({ logoRef }: Props) => {
           <li>
             <a href="https://qiita.com/degudegu2510" className="hover:underline underline-offset-4">Qiita</a>
           </li>
+          <li>
+            <a href={import.meta.env.DEV ? "http://localhost:6006/" : "/portfolio/storybook/"} className="hover:underline underline-offset-4">Storybook</a>
+          </li>
         </ul>
       </nav>
       <small className="body-1">&copy; 2025 出口 裕貴</small>
