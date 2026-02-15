@@ -1,11 +1,10 @@
 import React from 'react';
 
-interface MaterialSymbolsProps {
+interface MaterialSymbolsProps extends React.HTMLAttributes<HTMLSpanElement> {
   children: string;
   fill?: boolean;
   className?: string;
   size?: 12 | 14 | 16 | 20 | 24 | 28 | 32 | 48;
-  [key: string]: any;
 }
 
 export const MaterialSymbols = ({

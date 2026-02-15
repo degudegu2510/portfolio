@@ -9,7 +9,7 @@
       Meiryo, sans-serif;
     line-height: var(--line-height-body);
     color: var(--color-high-emphasis);
-    background-color: var(--color-background);
+    background-color: transparent;
   }
 
   #root {
