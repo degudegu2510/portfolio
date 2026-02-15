@@ -121,14 +121,22 @@ const getIsDark = () => {
 
 const getPixelRatio = () => Math.min(window.devicePixelRatio, MAX_PIXEL_RATIO)
 
-export const GradientBackground = () => {
+interface Props {
+  isAnimating?: boolean
+}
+
+export const GradientBackground = ({ isAnimating = true }: Props) => {
   const containerRef = useRef<HTMLDivElement>(null)
+  const isAnimatingRef = useRef(isAnimating)
+
+  useEffect(() => {
+    isAnimatingRef.current = isAnimating
+  }, [isAnimating])
 
   useEffect(() => {
     const container = containerRef.current
     if (!container) return
 
-    const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches
     const colors = getIsDark() ? COLORS.dark : COLORS.light
 
     // Scene
@@ -180,21 +188,38 @@ export const GradientBackground = () => {
     scene.add(flagMesh)
 
     // Animation
-    const clock = new THREE.Clock()
+    let accumulatedTime = 0
+    let lastTime = performance.now()
+    let wasAnimating = isAnimatingRef.current
+    let needsRender = false
     let animationId: number
 
-    if (prefersReducedMotion) {
-      renderer.render(scene, camera)
-    } else {
-      const animate = () => {
-        const elapsedTime = clock.getElapsedTime()
-        backgroundMaterial.uniforms.uTime.value = elapsedTime
-        flagMaterial.uniforms.uTime.value = elapsedTime
+    const animate = () => {
+      const now = performance.now()
+      if (isAnimatingRef.current) {
+        if (!wasAnimating) {
+          lastTime = now
+          wasAnimating = true
+        }
+        accumulatedTime += (now - lastTime) / 1000
+        lastTime = now
+        backgroundMaterial.uniforms.uTime.value = accumulatedTime
+        flagMaterial.uniforms.uTime.value = accumulatedTime
         renderer.render(scene, camera)
-        animationId = requestAnimationFrame(animate)
+      } else {
+        wasAnimating = false
+        lastTime = now
+        if (needsRender) {
+          renderer.render(scene, camera)
+          needsRender = false
+        }
       }
-      animate()
+      animationId = requestAnimationFrame(animate)
     }
+
+    // Initial render
+    renderer.render(scene, camera)
+    animate()
 
     // Resize
     const handleResize = () => {
@@ -202,9 +227,7 @@ export const GradientBackground = () => {
       camera.updateProjectionMatrix()
       renderer.setPixelRatio(getPixelRatio())
       renderer.setSize(window.innerWidth, window.innerHeight)
-      if (prefersReducedMotion) {
-        renderer.render(scene, camera)
-      }
+      needsRender = true
     }
     window.addEventListener("resize", handleResize)
 
@@ -214,9 +237,7 @@ export const GradientBackground = () => {
       backgroundMaterial.uniforms.uTopColor.value.set(c.top)
       backgroundMaterial.uniforms.uMiddleColor.value.set(c.middle)
       backgroundMaterial.uniforms.uBottomColor.value.set(c.bottom)
-      if (prefersReducedMotion) {
-        renderer.render(scene, camera)
-      }
+      needsRender = true
     }
 
     // ModeSelector による colorScheme 変更を検知
