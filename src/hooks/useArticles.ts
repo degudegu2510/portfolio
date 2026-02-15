@@ -1,10 +1,21 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useCallback } from 'react';
 
 export interface ArticlesInterface {
   title: string;
   url: string;
   likes_count: number;
   tags: string[];
+}
+
+interface QiitaTag {
+  name: string;
+}
+
+interface QiitaArticle {
+  title: string;
+  url: string;
+  likes_count: number;
+  tags: QiitaTag[];
 }
 
 export interface UseArticlesResult {
@@ -19,7 +30,7 @@ export const useArticles = (page: number = 1, perPage: number = 20): UseArticles
   const [loading, setLoading] = useState<boolean>(true);
   const [error, setError] = useState<string | null>(null);
 
-  const fetchArticles = async () => {
+  const fetchArticles = useCallback(async () => {
     try {
       setLoading(true);
       setError(null);
@@ -32,12 +43,12 @@ export const useArticles = (page: number = 1, perPage: number = 20): UseArticles
         throw new Error('Qiita APIから記事リストの取得に失敗しました');
       }
 
-      const articlesData = await response.json();
-      const formattedArticles = articlesData.map((article: any) => ({
+      const articlesData: QiitaArticle[] = await response.json();
+      const formattedArticles = articlesData.map((article) => ({
         title: article.title,
         url: article.url,
         likes_count: article.likes_count,
-        tags: Array.isArray(article.tags) ? article.tags.map((tag: any) => tag.name) : [],
+        tags: Array.isArray(article.tags) ? article.tags.map((tag) => tag.name) : [],
       }));
 
       setArticles(formattedArticles);
@@ -47,11 +58,11 @@ export const useArticles = (page: number = 1, perPage: number = 20): UseArticles
     } finally {
       setLoading(false);
     }
-  };
+  }, [page, perPage]);
 
   useEffect(() => {
     fetchArticles();
-  }, [page, perPage]);
+  }, [fetchArticles]);
 
   return {
     articles,

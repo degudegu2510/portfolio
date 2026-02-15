@@ -7,7 +7,7 @@ import { Base } from './component/Templates/Base/Base';
 import { Buffer } from 'buffer';
 import * as Routes from './utils/Routes';
 
-(window as any).Buffer = Buffer;
+(window as unknown as Record<string, unknown>).Buffer = Buffer;
 
 const router = createBrowserRouter([
   {

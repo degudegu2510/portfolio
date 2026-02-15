@@ -7,7 +7,7 @@ interface PaginationProps {
   currentPage: number;
   href: string
   className?: string
-};
+}
 
 export const Pagination = ({ totalPage, currentPage, href, className }: PaginationProps) => {
   const [maxVisiblePages, setMaxVisiblePages] = useState(5);

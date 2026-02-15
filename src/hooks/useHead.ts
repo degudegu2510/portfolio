@@ -19,9 +19,11 @@ const defaultMeta: HeadMeta = {
 
 export const useHead = (meta: Partial<HeadMeta> = {}) => {
   const location = useLocation();
+  const metaStr = JSON.stringify(meta);
 
   useEffect(() => {
-    const mergedMeta = { ...defaultMeta, ...meta };
+    const parsed: Partial<HeadMeta> = JSON.parse(metaStr);
+    const mergedMeta = { ...defaultMeta, ...parsed };
     const currentUrl = `https://degudegu2510.github.io/portfolio${mergedMeta.url}`;
 
     document.title = mergedMeta.title;
@@ -42,7 +44,7 @@ export const useHead = (meta: Partial<HeadMeta> = {}) => {
     updateMetaTag('name', 'twitter:description', mergedMeta.description);
     updateMetaTag('name', 'twitter:image', mergedMeta.ogp);
 
-  }, [location.pathname, JSON.stringify(meta)]);
+  }, [location.pathname, metaStr]);
 };
 
 const updateMetaTag = (attribute: 'name' | 'property', key: string, value?: string) => {
