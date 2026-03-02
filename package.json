@@ -45,7 +45,7 @@
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.3",
     "eslint-plugin-storybook": "^10.2.7",
-    "storybook": "^10.2.7",
+    "storybook": "^10.2.13",
     "tailwindcss": "^4.1.10",
     "typescript": "^5.0.2",
     "vite": "^6.4.1"
