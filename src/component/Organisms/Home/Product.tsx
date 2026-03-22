@@ -3,13 +3,14 @@ import { ProductCard } from "../../Molecules/ProductCard.tsx/ProductCard"
 import { useProductList } from "../../../hooks/useProductList"
 import { LoadingSpinner } from "../../Atoms/LoadingSpinner/LoadingSpinner"
 import { ErrorMessage } from "../../Atoms/ErrorMessage/ErrorMessage"
+import { FadeIn } from "../../Animations/FadeIn/FadeIn"
 
 export const Product = () => {
   const id = useId()
   const { products, loading, error } = useProductList()
 
   return (
-    <section className="mt-16 py-16">
+    <FadeIn as="section" className="mt-16 py-16">
       <h2 id={id} className="heading-1">制作物</h2>
       {loading ? (
         <LoadingSpinner message="制作物を読み込み中..." className="mt-8" />
@@ -34,6 +35,6 @@ export const Product = () => {
           <p>制作物がありません</p>
         </div>
       )}
-    </section>
+    </FadeIn>
   )
 }

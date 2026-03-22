@@ -1,10 +1,15 @@
 import { QiitaIcon, XIcon } from "../../Atoms/BrandIcon"
 import { Logo } from "../../Atoms/Logo/Logo"
 import { ScrollDown } from "../../Atoms/ScrollDown/ScrollDown"
+import { useScrollAnimation } from "../../../hooks/useScrollAnimation"
 
 export const FirstView = () => {
+  const { ref, isInView } = useScrollAnimation<HTMLElement>()
   return (
-    <section className="grid grid-cols-[minmax(0,_1fr)] grid-rows-[minmax(0,_1fr)_auto] h-[calc(100dvh-5rem)] min-h-137 relative">
+    <section
+      ref={ref}
+      className={`grid grid-cols-[minmax(0,_1fr)] grid-rows-[minmax(0,_1fr)_auto] h-[calc(100dvh-5rem)] min-h-137 relative transition-all duration-1000 ease-out ${isInView ? "opacity-100" : "opacity-0"}`}
+    >
       <div className="grid gap-8 items-center content-center py-4">
         <h1>
           <Logo className="w-full max-w-170 h-auto" ariaLabel="Deguchi Hiroki Portfolio"/>
