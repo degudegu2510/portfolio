@@ -33,7 +33,7 @@ export const Profile = () => {
             height={352}
             className="rounded-lg bg-gray-variant w-full max-w-[22rem] h-auto aspect-[1/1] max-mobile:max-w-full"
           >
-            <source src={profileVideo} type="video/mp4"/>
+            <source src={profileVideo} type="video/mp4" />
           </video>
           <button
             className="flex items-center hover:bg-surface p-2 rounded w-fit"
