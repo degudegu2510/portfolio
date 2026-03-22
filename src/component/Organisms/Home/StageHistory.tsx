@@ -4,15 +4,16 @@ import { StageHistory as StageHistories } from "../../../contents/StageHistory/S
 import { Link } from "react-router"
 import { MaterialSymbols } from "../../Atoms/MaterialSymbols/MaterialSymbols"
 import { StageHistoryPagePath } from "../../../utils/Routes"
+import { FadeIn } from "../../Animations/FadeIn/FadeIn"
 
 export const StageHistory = () => {
   const id = useId()
   const stageHistories = StageHistories.slice(0, 5)
 
   return (
-    <section className="py-16">
+    <FadeIn as="section" className="py-16">
       <h2 id={id} className="heading-1">登壇歴</h2>
-      <StageHistoryTable 
+      <StageHistoryTable
         className="mt-8"
         aria-labelledby={id}
         stageHistories={stageHistories}
@@ -24,6 +25,6 @@ export const StageHistory = () => {
         もっと見る
         <MaterialSymbols size={24}>chevron_right</MaterialSymbols>
       </Link>
-    </section>
+    </FadeIn>
   )
 }

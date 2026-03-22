@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from "react"
 import { MaterialSymbols } from "../../Atoms/MaterialSymbols/MaterialSymbols"
 import { SkillList } from "../../Molecules/SkillList/SkillList"
 import { profileVideo } from "./img"
+import { FadeIn } from "../../Animations/FadeIn/FadeIn"
 
 export const Profile = () => {
   const [isPause, setIsPause] = useState(false)
@@ -18,7 +19,7 @@ export const Profile = () => {
   }, [isPause])
 
   return (
-    <section className="mt-16 py-16">
+    <FadeIn as="section" className="mt-16 py-16">
       <h2 className="heading-1">プロフィール</h2>
       <div className="grid grid-cols-[auto_minmax(0,_1fr)] gap-8 mt-6 items-start max-tablet:grid-cols-1">
         <div className="grid grid-cols-[minmax(0,_1fr)] gap-2 justify-items-center w-fit">
@@ -62,7 +63,6 @@ export const Profile = () => {
           <SkillList className="mt-2" />
         </div>
       </div>
-    </section>
+    </FadeIn>
   )
-
 }
