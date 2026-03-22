@@ -34,7 +34,7 @@ export const Pagination = ({ totalPage, currentPage, href, className }: Paginati
 
   const halfVisible = Math.floor(maxVisiblePages / 2);
   let pageNumbers: number[] = []
-  
+
   if (totalPage <= maxVisiblePages) {
     pageNumbers = Array.from({ length: totalPage }, (_, i) => i + 1)
   } else if (currentPage <= halfVisible + 1) {
@@ -48,32 +48,15 @@ export const Pagination = ({ totalPage, currentPage, href, className }: Paginati
     pageNumbers = Array.from({ length: maxVisiblePages }, (_, i) => currentPage - halfVisible + i)
   }
 
-  const addParams = ( page: number ) => {
-    if ( page < 1 ) return href + `?page=1`
-    else if ( totalPage < page ) return href + `?page=${totalPage}`
+  const addParams = (page: number) => {
+    if (page < 1) return href + `?page=1`
+    else if (totalPage < page) return href + `?page=${totalPage}`
     return href + `?page=${page}`
   }
 
   return (
     <nav aria-label="ページネーション" className={`flex justify-center ${className}`}>
-      {currentPage === 1 ? (
-        <>
-          <span
-            aria-disabled
-            aria-label="最初のページに戻る"
-            className="flex items-center justify-center px-1 py-1 rounded-lg text-medium-emphasis"
-          >
-            <MaterialSymbols>keyboard_double_arrow_left</MaterialSymbols>
-          </span>
-          <span
-            aria-disabled
-            aria-label="前のページに戻る"
-            className="flex items-center justify-center px-1 py-1 rounded-lg text-medium-emphasis"
-          >
-            <MaterialSymbols>chevron_left</MaterialSymbols>
-          </span>
-        </>
-      ) : (
+      {currentPage !== 1 && (
         <>
           <Link
             to={addParams(1)}
@@ -102,24 +85,7 @@ export const Pagination = ({ totalPage, currentPage, href, className }: Paginati
           {num}
         </Link>
       ))}
-      {totalPage === currentPage ? (
-        <>
-          <span
-            aria-disabled
-            aria-label="次のページに進む"
-            className="flex items-center justify-center px-1 py-1 rounded-lg text-medium-emphasis"
-          >
-            <MaterialSymbols>chevron_right</MaterialSymbols>
-          </span>
-          <span
-            aria-disabled
-            aria-label="最後のページに進む"
-            className="flex items-center justify-center px-1 py-1 rounded-lg text-medium-emphasis"
-          >
-            <MaterialSymbols>keyboard_double_arrow_right</MaterialSymbols>
-          </span>
-        </>
-      ):(
+      {totalPage !== currentPage && (
         <>
           <Link
             to={addParams(currentPage + 1)}

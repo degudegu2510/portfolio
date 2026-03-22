@@ -7,7 +7,7 @@ interface ProjectCardProps {
 export const ProjectCard = ({ project }: ProjectCardProps) => {
   return (
     <li className="rounded-lg bg-surface-alpha backdrop-blur-[2px] backdrop-filter border border-gray-variant">
-      <a href={project.url} className="p-4 group grid"  target="_blank">
+      <a href={project.url} className="p-4 group grid" target="_blank" rel="noreferrer">
         <ul className="flex gap-2 flex-wrap">
           {project.labels.map(label => (
             <li
