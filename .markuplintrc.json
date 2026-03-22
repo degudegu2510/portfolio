@@ -1,0 +1,28 @@
+{
+  "parser": {
+    ".tsx": "@markuplint/jsx-parser"
+  },
+  "specs": {
+    ".tsx": "@markuplint/react-spec"
+  },
+  "rules": {
+    "invalid-attr": true,
+    "no-use-event-handler-attr": false,
+    "required-attr": true,
+    "wai-aria": true,
+    "landmark-roles": true,
+    "required-h1": true,
+    "use-list": true,
+    "no-empty-palpable-content": false
+  },
+  "overrides": {
+    "**/*.stories.tsx": {
+      "rules": {
+        "wai-aria": false,
+        "use-list": false,
+        "landmark-roles": false,
+        "required-h1": false
+      }
+    }
+  }
+}
