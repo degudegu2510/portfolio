@@ -7,6 +7,12 @@ export interface StageHistoryProps {
 
 export const StageHistory: StageHistoryProps[] = [
   {
+    date: "2026年4月10日",
+    event: "アクセシビリティ対応の「どこまでやる？」を言語化する　~チームで迷わないための設計と判断基準~",
+    eventLink: "https://findy.connpass.com/event/387942/",
+    presentationLink: "https://speakerdeck.com/degudegu2510/ai-driven-accessibility-improvement"
+  },
+  {
     date: "2025年8月7日",
     event: "Canly Tech Hub ~vol.1~ みんなで学ぼう！開発現場におけるMCPの活用事例LT会",
     eventLink: "https://connpass.com/event/361426/",
