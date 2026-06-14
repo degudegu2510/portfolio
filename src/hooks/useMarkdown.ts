@@ -9,6 +9,7 @@ import remarkParse from 'remark-parse';
 import remarkRehype from 'remark-rehype';
 import { rehypeImageResolver, resolveImagePath } from '../utils/rehypeImageResolver';
 import { rehypeMermaid } from '../utils/rehypeMermaid';
+import { rehypeUrlCard } from '../utils/rehypeUrlCard';
 
 const productFiles = import.meta.glob('../contents/Product/**/*.md', {
   eager: true,
@@ -68,6 +69,7 @@ export const useMarkdown = (slug: string): UseMarkdownResult => {
           .use(rehypeSlug, { prefix: '', uniqueSlugStartIndex: 1 })
           .use(rehypeImageResolver(slug))
           .use(rehypeMermaid)
+          .use(rehypeUrlCard)
           .use(rehypeHighlight)
           .use(rehypeStringify, { allowDangerousHtml: true })
           .process(content);
