@@ -14,12 +14,18 @@ export const StageHistoryTableRow = ({ data }: Props) => {
         </time>
         </td>
       <td className="border-none pl-4 pr-2 py-4 grid gap-x-8 gap-y-1 grid-cols-[minmax(0,_1fr)_auto] items-center max-tablet:grid-cols-1 max-tablet:pl-2">
-        <a
-          href={data.eventLink}
-          className="subhead-2 font-bold truncate hover:underline underline-offset-4 max-tablet:body-1"
-        >
-          {data.event}
-        </a>
+        {data.eventLink ? (
+          <a
+            href={data.eventLink}
+            className="subhead-2 font-bold truncate hover:underline underline-offset-4 max-tablet:body-1"
+          >
+            {data.event}
+          </a>
+        ) : (
+          <span className="subhead-2 font-bold truncate max-tablet:body-1">
+            {data.event}
+          </span>
+        )}
         {data.presentationLink && (
           <a
             href={data.presentationLink}

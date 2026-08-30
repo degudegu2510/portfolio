@@ -1,11 +1,28 @@
 export interface StageHistoryProps {
   date: string;
   event: string;
-  eventLink: string;
+  eventLink?: string;
   presentationLink?: string;
 }
 
 export const StageHistory: StageHistoryProps[] = [
+  {
+    date: "2026年8月21日",
+    event: "Vibe.TOKYO, AI & CRAFT｜AIネイティブ・エキシビション",
+    eventLink: "https://vibe-tokyo.peatix.com/",
+    presentationLink: "https://qiita.com/degudegu2510/slides/2a9bcb31fe9d44b9695d"
+  },
+  {
+    date: "2026年8月7日",
+    event: "TechTalks! #4：それぞれのデザインシステム。",
+    eventLink: "https://studio.connpass.com/event/399174/",
+    presentationLink: "https://qiita.com/degudegu2510/slides/372c09e281b9630abb73"
+  },
+  {
+    date: "2026年8月6日",
+    event: "社内LT会",
+    presentationLink: "https://qiita.com/degudegu2510/slides/78533a5a24dcbb6c06b8"
+  },
   {
     date: "2026年4月10日",
     event: "アクセシビリティ対応の「どこまでやる？」を言語化する　~チームで迷わないための設計と判断基準~",
