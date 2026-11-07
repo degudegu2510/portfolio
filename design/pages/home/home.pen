@@ -1,0 +1,3384 @@
+{
+  "version": "2.22",
+  "children": [
+    {
+      "type": "frame",
+      "id": "pDqjj",
+      "x": 0,
+      "y": -900,
+      "name": "Home/Logo Wordmark",
+      "reusable": true,
+      "width": 680,
+      "height": 198,
+      "layout": "none",
+      "children": [
+        {
+          "type": "path",
+          "id": "l552HR",
+          "x": 0,
+          "y": 0,
+          "name": "Wordmark Path",
+          "geometry": "M6.73319 15.4063l-6.73319-11.52562h35.4939c20.9821 0 33.232 15.85922 33.232 36.58062 0 20.7213-12.2499 36.2673-33.232 36.2673h-28.76071v-53.5428h12.99301v42.0237h15.7612c13.3151 0 20.1338-11.2059 20.1338-24.7417 0-13.5358-6.8187-25.0549-20.1338-25.0549h-28.75421v-0.0066z m120.21081 40.9207h-38.5642c1.3874 6.8723 6.7134 10.5728 14.1702 10.5728 5.326 0 10.547-2.3234 13.42-6.3437l8.311 6.2393c-4.583 7.1921-13.42 11.2058-22.474 11.2058-14.8081 0-26.098-10.5728-26.098-26.0077 0-15.435 11.8225-25.9034 26.098-25.9034 14.275 0 25.354 10.0441 25.354 25.4791 0 1.3771-0.105 2.963-0.21 4.7578h-0.007z m-12.039-8.5627c-0.743-6.7679-6.069-10.7816-12.993-10.7816-6.924 0-12.0396 3.2762-13.5322 10.7816h26.5252z m61.059-20.4081h12.355v42.9243c0 22.2029-10.863 31.8225-27.913 31.8225-10.224 0-19.173-5.4949-23.539-14.3774l10.224-4.6533c2.453 4.7577 7.884 7.9296 13.315 7.9296 9.587 0 15.551-5.3909 15.551-19.5597v-1.1617c-3.518 5.0775-10.441 7.7207-16.511 7.7207-13.104 0-24.499-10.253-24.499-26.0077 0-15.7548 11.29-25.9034 24.394-25.9034 6.392 0 13.105 2.6432 16.616 7.7207v-6.4481l0.007-0.0065z m-0.211 24.5263c0-8.6671-7.246-14.3777-14.38-14.3777-7.667 0-13.953 6.1348-13.953 14.3777 0 8.2429 6.286 14.6975 13.953 14.6975 7.667 0 14.38-6.0239 14.38-14.6975z m59.021-24.5263h12.355v49.3789h-12.355v-7.7207c-2.558 6.2392-10.442 8.9869-15.445 8.9869-12.783 0-19.917-8.5627-19.917-22.9404v-27.6981h12.355v27.1694c0 7.9296 4.793 12.0543 10.33 12.0543 5.536 0 12.677-3.1718 12.677-12.7917v-26.432-0.0066z m21.002 24.6372c0-15.6503 12.677-25.9033 27.058-25.9033 8.627 0 15.656 3.8049 20.239 9.5155l-8.732 6.8723c-2.558-3.0674-6.819-4.9666-11.29-4.9666-8.627 0-14.808 6.1349-14.808 14.4821 0 8.3473 6.181 14.5931 14.808 14.5931 4.471 0 8.732-1.9057 11.29-4.9666l8.732 6.8723c-4.583 5.7107-11.612 9.5156-20.239 9.5156-14.381 0-27.058-10.364-27.058-26.0078v-0.0066z m101.951-2.9629v27.6981h-12.355v-26.8562c0-7.9296-4.793-12.1588-10.33-12.1588-5.536 0-12.677 3.2763-12.677 12.8963v26.1122h-12.355v-76.2221h12.355v34.3616c2.452-6.0239 10.442-8.778 15.445-8.778 12.783 0 19.917 8.5626 19.917 22.9403v0.0066z m8.936-39.11942c0-4.33354 3.728-7.50538 8.095-7.50538 4.366 0 7.989 3.17184 7.989 7.50538 0 4.33352-3.518 7.50542-7.989 7.50542-4.472 0-8.095-3.2763-8.095-7.50542z m1.92 66.81752v-49.3724h12.355v49.3789h-12.355v-0.0065z m96.612-72.84792h12.993v72.84792h-12.993v-30.4523h-30.463v30.4523h-12.993v-72.84792h12.993v30.86992h30.463v-30.86992z m24.757 6.0304c0-4.33354 3.728-7.50538 8.094-7.50538 4.366 0 7.989 3.17184 7.989 7.50538 0 4.33352-3.518 7.50542-7.989 7.50542-4.471 0-8.094-3.2763-8.094-7.50542z m1.913 66.81752v-49.3724h12.355v49.3789h-12.355v-0.0065z m58.567-46.7814l-7.154 8.6867-1.322 1.5859c-1.663-1.0573-3.379-1.5598-5.142-1.5598-2.498 0-4.655 0.8288-6.437 2.5061-2.012 1.6316-3.057 4.2944-3.103 7.9492v27.6198h-12.362v-49.3136h12.362v4.6207h0.184c3.241-3.955 7.476-5.926 12.71-5.926 3.912 0.0718 7.338 1.3314 10.257 3.8375l0.007-0.0065z m1.611 22.0463c0-15.6504 12.25-25.9034 26.42-25.9034 14.17 0 26.525 10.253 26.525 25.9034 0 15.6503-12.355 26.0077-26.525 26.0077-14.17 0-26.42-10.3639-26.42-26.0077z m40.478 0c0-8.4583-6.391-14.4822-14.058-14.4822-7.667 0-13.953 6.0239-13.953 14.4822 0 8.4582 6.286 14.593 13.953 14.593 7.667 0 14.058-5.9194 14.058-14.593z m68.568 24.7351h-15.656l-19.384-22.4117v22.4117h-12.355v-76.2286h12.355v42.611l14.275-15.7548h16.083l-20.239 21.5698 24.928 27.8091-0.007-0.0065z m2.828-66.81752c0-4.33354 3.728-7.50538 8.094-7.50538 4.366 0 7.989 3.17184 7.989 7.50538 0 4.33352-3.518 7.50542-7.989 7.50542-4.471 0-8.094-3.2763-8.094-7.50542z m1.92 66.81752v-49.3724h12.355v49.3789h-12.355v-0.0065z m-629.5475 46.7224h-36.2895l6.60826 11.526h29.37224c7.4499 0 10.4286 6.109 10.4286 11.826 0 5.717-3.0905 11.721-10.7574 11.721h-16.0768v-15.768h-12.96664v53.471h12.96664v-26.092h16.7146c16.1886 0 23.0862-11.5 23.0862-23.332 0-11.833-6.8976-23.352-23.0862-23.352z m25.9662 48.08c0-15.624 12.2302-25.864 26.3739-25.864 14.1434 0 26.4794 10.24 26.4794 25.864 0 15.625-12.336 25.969-26.4794 25.969-14.1437 0-26.3739-10.344-26.3739-25.969z m40.4123 0c0-8.445-6.3781-14.462-14.0384-14.462-7.6603 0-13.9332 6.017-13.9332 14.462 0 8.446 6.2729 14.567 13.9332 14.567 7.6603 0 14.0384-5.913 14.0384-14.567z m56.43-22.02l-7.141 8.674-1.315 1.586c-1.663-1.058-3.373-1.56-5.129-1.56-2.498 0-4.649 0.829-6.424 2.5-2.012 1.631-3.051 4.287-3.097 7.936v27.58h-12.342v-49.235h12.342v4.614h0.184c3.235-3.948 7.47-5.919 12.691-5.919 3.906 0.072 7.325 1.331 10.238 3.831l-0.007-0.007z m36.835-2.571l2.315 9.711h-10.527v39.583h-12.336v-39.583h-8.936l-2.314-9.711h11.244v-18.157h12.335v18.157h8.213 0.006z m42.366-15.409c-8.404 0-10.85 4.647-10.738 10.658v4.751h8.752l2.314 9.711h-11.06v39.583h-12.335v-39.583h-9.468l-2.315-9.711h11.776v-4.118c0-14.143 6.806-22.693 20.634-22.693h5.852v11.402h-3.406-0.006z m4.458 40c0-15.624 12.23-25.864 26.374-25.864 14.143 0 26.479 10.24 26.479 25.864 0 15.625-12.336 25.969-26.479 25.969-14.144 0-26.374-10.344-26.374-25.969z m40.412 0c0-8.445-6.378-14.462-14.038-14.462-7.661 0-13.934 6.017-13.934 14.462 0 8.446 6.273 14.567 13.934 14.567 7.66 0 14.038-5.913 14.038-14.567z m20.943 24.703v-76.105h12.335v76.105h-12.335z m24.138-66.713c0-4.327 3.721-7.493 8.081-7.493 4.359 0 7.976 3.166 7.976 7.493 0 4.327-3.511 7.492-7.976 7.492-4.465 0-8.081-3.27-8.081-7.492z m1.913 66.713v-49.294h12.336v49.294h-12.336z m20.844-24.703c0-15.624 12.23-25.864 26.374-25.864 14.144 0 26.479 10.24 26.479 25.864 0 15.625-12.335 25.969-26.479 25.969-14.144 0-26.374-10.344-26.374-25.969z m40.413 0c0-8.445-6.379-14.462-14.039-14.462-7.66 0-13.933 6.017-13.933 14.462 0 8.446 6.273 14.567 13.933 14.567 7.66 0 14.039-5.913 14.039-14.567z",
+          "viewBox": [
+            0,
+            0,
+            680,
+            198
+          ],
+          "fill": "$ds:color-high-emphasis",
+          "width": 680,
+          "height": 198
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "pQM5T",
+      "x": 760,
+      "y": -900,
+      "name": "Home/Scroll Down",
+      "reusable": true,
+      "gap": 8,
+      "children": [
+        {
+          "type": "frame",
+          "id": "tTk7n",
+          "name": "Scroll Line",
+          "width": 17,
+          "height": 100,
+          "layout": "none",
+          "children": [
+            {
+              "type": "rectangle",
+              "id": "fZAX6",
+              "x": 8,
+              "y": 0,
+              "name": "Scroll Line Bar",
+              "fill": "$ds:color-gray",
+              "width": 1,
+              "height": 64
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "id": "rVVSi",
+          "name": "Scroll Label",
+          "fill": "$ds:color-medium-emphasis",
+          "content": "下にスクロール",
+          "lineHeight": "$ds:line-height-body",
+          "fontFamily": "$ds:font-family",
+          "fontSize": "$ds:font-size-body-1",
+          "fontWeight": "$ds:font-weight-regular"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "Nkk5Z",
+      "x": 960,
+      "y": -900,
+      "name": "Home/Social Links",
+      "reusable": true,
+      "layout": "vertical",
+      "children": [
+        {
+          "type": "frame",
+          "id": "RnMYn",
+          "name": "Social X",
+          "cornerRadius": "$ds:radius-lg",
+          "padding": 12,
+          "justifyContent": "center",
+          "alignItems": "center",
+          "children": [
+            {
+              "id": "HRKuB",
+              "type": "ref",
+              "ref": "ds:vpq69",
+              "name": "Social X Icon"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "jwx5E",
+          "name": "Social Qiita",
+          "cornerRadius": "$ds:radius-lg",
+          "padding": 12,
+          "justifyContent": "center",
+          "alignItems": "center",
+          "children": [
+            {
+              "id": "J2p3AX",
+              "type": "ref",
+              "ref": "ds:mvNRV",
+              "name": "Social Qiita Icon"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "niu9U",
+      "x": 1080,
+      "y": -900,
+      "name": "Home/Skill Card",
+      "reusable": true,
+      "width": 704,
+      "fill": "$ds:color-surface-alpha",
+      "cornerRadius": "$ds:radius-lg",
+      "stroke": "$ds:color-gray-variant",
+      "strokeWidth": 1,
+      "strokeAlignment": "inner",
+      "effect": {
+        "type": "background_blur",
+        "radius": 2
+      },
+      "layout": "vertical",
+      "gap": 4,
+      "padding": [
+        8,
+        16
+      ],
+      "children": [
+        {
+          "type": "text",
+          "id": "Mnbg3",
+          "name": "Skill Category",
+          "fill": "$ds:color-medium-emphasis",
+          "content": "デザインスキル",
+          "lineHeight": "$ds:line-height-body",
+          "fontFamily": "$ds:font-family",
+          "fontSize": "$ds:font-size-body-2",
+          "fontWeight": "$ds:font-weight-bold"
+        },
+        {
+          "type": "frame",
+          "id": "Km8Ne",
+          "name": "Skill Items",
+          "gap": 20,
+          "children": [
+            {
+              "type": "text",
+              "id": "dYJXR",
+              "name": "Skill UIデザイン",
+              "fill": "$ds:color-high-emphasis",
+              "content": "UIデザイン",
+              "lineHeight": "$ds:line-height-body",
+              "fontFamily": "$ds:font-family",
+              "fontSize": "$ds:font-size-body-1",
+              "fontWeight": "$ds:font-weight-bold"
+            },
+            {
+              "type": "text",
+              "id": "Q39u5K",
+              "name": "Skill Figma",
+              "fill": "$ds:color-high-emphasis",
+              "content": "Figma",
+              "lineHeight": "$ds:line-height-body",
+              "fontFamily": "$ds:font-family",
+              "fontSize": "$ds:font-size-body-1",
+              "fontWeight": "$ds:font-weight-bold"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "ffFng",
+      "x": 1880,
+      "y": -900,
+      "name": "Home/Product Card",
+      "reusable": true,
+      "width": 352,
+      "layout": "vertical",
+      "gap": 16,
+      "children": [
+        {
+          "type": "frame",
+          "id": "YMs9M",
+          "name": "Product Thumbnail",
+          "width": "fill_container",
+          "height": 198,
+          "fill": {
+            "type": "image",
+            "enabled": true,
+            "url": "../../../src/contents/Product/fivia/img/image-ogp.png",
+            "mode": "cover"
+          },
+          "cornerRadius": "$ds:radius-lg",
+          "stroke": "$ds:color-divider",
+          "strokeWidth": 1,
+          "strokeAlignment": "inner"
+        },
+        {
+          "type": "text",
+          "id": "x9w1Od",
+          "name": "Product Title",
+          "fill": "$ds:color-high-emphasis",
+          "content": "Fivia",
+          "lineHeight": "$ds:line-height-body",
+          "fontFamily": "$ds:font-family",
+          "fontSize": "$ds:font-size-body-1",
+          "fontWeight": "$ds:font-weight-regular"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "Tpy3j",
+      "x": 0,
+      "y": 0,
+      "name": "/ (Home) — light",
+      "theme": {
+        "ds:mode": "light"
+      },
+      "clip": true,
+      "width": 1440,
+      "fill": {
+        "type": "shader",
+        "enabled": true,
+        "url": "../../../src/component/Atoms/GradientBackground/gradientBackground.glsl",
+        "uniforms": {
+          "u_top": "$ds:background-top",
+          "u_middle": "$ds:background-middle",
+          "u_bottom": "$ds:background-bottom",
+          "u_gridColor": "$ds:background-grid",
+          "u_gridOpacity": 0.1,
+          "u_noise": 30,
+          "u_waveSpeed": 0.5,
+          "u_waveAmplitude": 0.3,
+          "u_flagOpacity": 8,
+          "u_gridSize": 192
+        }
+      },
+      "layout": "vertical",
+      "alignItems": "center",
+      "children": [
+        {
+          "id": "RhOsG",
+          "type": "ref",
+          "ref": "ds:xdOlG",
+          "name": "Header",
+          "width": 1152
+        },
+        {
+          "type": "frame",
+          "id": "dU1bu",
+          "name": "Main",
+          "width": 1152,
+          "layout": "vertical",
+          "padding": [
+            0,
+            16
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "vUXhT",
+              "name": "FirstView",
+              "width": "fill_container",
+              "height": 820,
+              "layout": "vertical",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "aHDoc",
+                  "name": "FirstView Content",
+                  "width": "fill_container",
+                  "height": "fill_container",
+                  "layout": "vertical",
+                  "gap": 32,
+                  "padding": [
+                    16,
+                    0
+                  ],
+                  "justifyContent": "center",
+                  "children": [
+                    {
+                      "id": "KGmeZ",
+                      "type": "ref",
+                      "ref": "pDqjj",
+                      "name": "Logo Wordmark"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "G8rVnZ",
+                      "name": "Intro",
+                      "layout": "vertical",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "q96Ws",
+                          "name": "Intro Line",
+                          "fill": "$ds:color-medium-emphasis",
+                          "content": "デザインとテクノロジーの架け橋を担うデザインテクノロジスト。",
+                          "lineHeight": "$ds:line-height-body",
+                          "fontFamily": "$ds:font-family",
+                          "fontSize": "$ds:font-size-body-1",
+                          "fontWeight": "$ds:font-weight-regular"
+                        },
+                        {
+                          "type": "text",
+                          "id": "WoaTz",
+                          "name": "Intro Line",
+                          "fill": "$ds:color-medium-emphasis",
+                          "content": "デザインとテクノロジーの両面から誰にとっても心地よく使えるプロダクトづくりを大切にしています。",
+                          "lineHeight": "$ds:line-height-body",
+                          "fontFamily": "$ds:font-family",
+                          "fontSize": "$ds:font-size-body-1",
+                          "fontWeight": "$ds:font-weight-regular"
+                        },
+                        {
+                          "type": "frame",
+                          "id": "XLRXJ",
+                          "name": "Spacer",
+                          "width": 1,
+                          "height": 16
+                        },
+                        {
+                          "type": "frame",
+                          "id": "VVAq9",
+                          "name": "Hashtags",
+                          "gap": 16,
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "lrZQj",
+                              "name": "Hashtag",
+                              "fill": "$ds:color-medium-emphasis",
+                              "content": "#Design",
+                              "lineHeight": "$ds:line-height-body",
+                              "fontFamily": "$ds:font-family",
+                              "fontSize": "$ds:font-size-body-2",
+                              "fontWeight": "$ds:font-weight-regular"
+                            },
+                            {
+                              "type": "text",
+                              "id": "TjIOm",
+                              "name": "Hashtag",
+                              "fill": "$ds:color-medium-emphasis",
+                              "content": "#PdM",
+                              "lineHeight": "$ds:line-height-body",
+                              "fontFamily": "$ds:font-family",
+                              "fontSize": "$ds:font-size-body-2",
+                              "fontWeight": "$ds:font-weight-regular"
+                            },
+                            {
+                              "type": "text",
+                              "id": "zrWk5",
+                              "name": "Hashtag",
+                              "fill": "$ds:color-medium-emphasis",
+                              "content": "#UX",
+                              "lineHeight": "$ds:line-height-body",
+                              "fontFamily": "$ds:font-family",
+                              "fontSize": "$ds:font-size-body-2",
+                              "fontWeight": "$ds:font-weight-regular"
+                            },
+                            {
+                              "type": "text",
+                              "id": "AuqUy",
+                              "name": "Hashtag",
+                              "fill": "$ds:color-medium-emphasis",
+                              "content": "#UI",
+                              "lineHeight": "$ds:line-height-body",
+                              "fontFamily": "$ds:font-family",
+                              "fontSize": "$ds:font-size-body-2",
+                              "fontWeight": "$ds:font-weight-regular"
+                            },
+                            {
+                              "type": "text",
+                              "id": "R20swT",
+                              "name": "Hashtag",
+                              "fill": "$ds:color-medium-emphasis",
+                              "content": "#Accessibility",
+                              "lineHeight": "$ds:line-height-body",
+                              "fontFamily": "$ds:font-family",
+                              "fontSize": "$ds:font-size-body-2",
+                              "fontWeight": "$ds:font-weight-regular"
+                            },
+                            {
+                              "type": "text",
+                              "id": "caZvn",
+                              "name": "Hashtag",
+                              "fill": "$ds:color-medium-emphasis",
+                              "content": "#Frontend",
+                              "lineHeight": "$ds:line-height-body",
+                              "fontFamily": "$ds:font-family",
+                              "fontSize": "$ds:font-size-body-2",
+                              "fontWeight": "$ds:font-weight-regular"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "c2wDpe",
+                  "type": "ref",
+                  "ref": "pQM5T",
+                  "name": "Scroll Down"
+                },
+                {
+                  "id": "oyojO",
+                  "type": "ref",
+                  "ref": "Nkk5Z",
+                  "name": "Social Links",
+                  "layoutPosition": "absolute",
+                  "x": 1078,
+                  "y": 708
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "ifDIC",
+              "name": "Profile",
+              "width": "fill_container",
+              "layout": "vertical",
+              "padding": [
+                128,
+                0,
+                64,
+                0
+              ],
+              "children": [
+                {
+                  "type": "text",
+                  "id": "hp2hW",
+                  "name": "Section Heading",
+                  "fill": "$ds:color-high-emphasis",
+                  "content": "プロフィール",
+                  "lineHeight": "$ds:line-height-heading",
+                  "fontFamily": "$ds:font-family",
+                  "fontSize": "$ds:font-size-heading-1",
+                  "fontWeight": "$ds:font-weight-bold"
+                },
+                {
+                  "type": "frame",
+                  "id": "pTT6b",
+                  "name": "Spacer",
+                  "width": 1,
+                  "height": 32
+                },
+                {
+                  "type": "frame",
+                  "id": "ZHLvU",
+                  "name": "Profile Body",
+                  "width": "fill_container",
+                  "gap": 32,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "A1vTJS",
+                      "name": "Profile Media",
+                      "width": 352,
+                      "layout": "vertical",
+                      "gap": 8,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "NxTHd",
+                          "name": "Profile Video",
+                          "width": 352,
+                          "height": 352,
+                          "fill": [
+                            "$ds:color-gray-variant",
+                            {
+                              "type": "image",
+                              "enabled": true,
+                              "url": "assets/profile.png",
+                              "mode": "cover"
+                            }
+                          ],
+                          "cornerRadius": "$ds:radius-lg"
+                        },
+                        {
+                          "id": "N533k",
+                          "type": "ref",
+                          "ref": "ds:X94P1S",
+                          "name": "Video Toggle",
+                          "padding": 8,
+                          "descendants": {
+                            "ds:wnBJ9": {
+                              "content": "停止する"
+                            },
+                            "ds:mziJA": {
+                              "icon": "pause_circle"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "OFCP2",
+                      "name": "Profile Text",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "pd2To",
+                          "name": "Name En",
+                          "fill": "$ds:color-green",
+                          "content": "Deguchi Hiroki",
+                          "lineHeight": "$ds:line-height-body",
+                          "fontFamily": "$ds:font-family",
+                          "fontSize": "$ds:font-size-body-2",
+                          "fontWeight": "$ds:font-weight-bold"
+                        },
+                        {
+                          "type": "frame",
+                          "id": "FoAy7",
+                          "name": "Spacer",
+                          "width": 1,
+                          "height": 4
+                        },
+                        {
+                          "type": "text",
+                          "id": "B5pkE",
+                          "name": "Name Ja",
+                          "fill": "$ds:color-high-emphasis",
+                          "content": "出口 裕貴",
+                          "lineHeight": "$ds:line-height-heading",
+                          "fontFamily": "$ds:font-family",
+                          "fontSize": "$ds:font-size-heading-1",
+                          "fontWeight": "$ds:font-weight-bold"
+                        },
+                        {
+                          "type": "frame",
+                          "id": "P9wdSo",
+                          "name": "Spacer",
+                          "width": 1,
+                          "height": 24
+                        },
+                        {
+                          "type": "text",
+                          "id": "r953T",
+                          "name": "Bio",
+                          "fill": "$ds:color-high-emphasis",
+                          "content": "デザインとテクノロジーの架け橋を担うデザインテクノロジスト。",
+                          "lineHeight": "$ds:line-height-body",
+                          "fontFamily": "$ds:font-family",
+                          "fontSize": "$ds:font-size-body-1",
+                          "fontWeight": "$ds:font-weight-regular"
+                        },
+                        {
+                          "type": "text",
+                          "id": "ln9CH",
+                          "name": "Bio",
+                          "fill": "$ds:color-high-emphasis",
+                          "content": "デザインとテクノロジーの両面から誰にとっても心地よく使えるプロダクトづくりを大切にします。",
+                          "lineHeight": "$ds:line-height-body",
+                          "fontFamily": "$ds:font-family",
+                          "fontSize": "$ds:font-size-body-1",
+                          "fontWeight": "$ds:font-weight-regular"
+                        },
+                        {
+                          "type": "frame",
+                          "id": "x8Om2Y",
+                          "name": "Spacer",
+                          "width": 1,
+                          "height": 16
+                        },
+                        {
+                          "type": "text",
+                          "id": "Q6wqO",
+                          "name": "Bio",
+                          "fill": "$ds:color-high-emphasis",
+                          "content": "現在は、Qiita 株式会社プロダクト開発部 デザインG マネージャーとして、",
+                          "lineHeight": "$ds:line-height-body",
+                          "fontFamily": "$ds:font-family",
+                          "fontSize": "$ds:font-size-body-1",
+                          "fontWeight": "$ds:font-weight-regular"
+                        },
+                        {
+                          "type": "text",
+                          "id": "g16OH",
+                          "name": "Bio",
+                          "fill": "$ds:color-high-emphasis",
+                          "content": "Qiitaのプロダクトマネジメントとデザイナーの4名のマネジメントを行っています。",
+                          "lineHeight": "$ds:line-height-body",
+                          "fontFamily": "$ds:font-family",
+                          "fontSize": "$ds:font-size-body-1",
+                          "fontWeight": "$ds:font-weight-regular"
+                        },
+                        {
+                          "type": "frame",
+                          "id": "TGze6",
+                          "name": "Spacer",
+                          "width": 1,
+                          "height": 24
+                        },
+                        {
+                          "type": "text",
+                          "id": "zqAIi",
+                          "name": "Skills Heading",
+                          "fill": "$ds:color-high-emphasis",
+                          "content": "できること",
+                          "lineHeight": "$ds:line-height-body",
+                          "fontFamily": "$ds:font-family",
+                          "fontSize": "$ds:font-size-body-2",
+                          "fontWeight": "$ds:font-weight-bold"
+                        },
+                        {
+                          "type": "frame",
+                          "id": "GNySh",
+                          "name": "Spacer",
+                          "width": 1,
+                          "height": 8
+                        },
+                        {
+                          "type": "frame",
+                          "id": "Wy3Uy",
+                          "name": "Skill List",
+                          "width": "fill_container",
+                          "layout": "vertical",
+                          "gap": 8,
+                          "children": [
+                            {
+                              "id": "JDxKU",
+                              "type": "ref",
+                              "ref": "niu9U",
+                              "name": "Skill マネジメントスキル",
+                              "width": "fill_container",
+                              "descendants": {
+                                "Mnbg3": {
+                                  "content": "マネジメントスキル"
+                                },
+                                "Km8Ne": {
+                                  "type": "frame",
+                                  "id": "Qadg2",
+                                  "name": "Skill Items",
+                                  "gap": 20,
+                                  "children": [
+                                    {
+                                      "type": "text",
+                                      "id": "Z9GSI",
+                                      "name": "Skill",
+                                      "fill": "$ds:color-high-emphasis",
+                                      "content": "プロダクトマネジメント",
+                                      "lineHeight": "$ds:line-height-body",
+                                      "fontFamily": "$ds:font-family",
+                                      "fontSize": "$ds:font-size-body-1",
+                                      "fontWeight": "$ds:font-weight-bold"
+                                    },
+                                    {
+                                      "type": "text",
+                                      "id": "aOGee",
+                                      "name": "Skill",
+                                      "fill": "$ds:color-high-emphasis",
+                                      "content": "ピープルマネジメント",
+                                      "lineHeight": "$ds:line-height-body",
+                                      "fontFamily": "$ds:font-family",
+                                      "fontSize": "$ds:font-size-body-1",
+                                      "fontWeight": "$ds:font-weight-bold"
+                                    }
+                                  ]
+                                }
+                              }
+                            },
+                            {
+                              "id": "ZCcfP",
+                              "type": "ref",
+                              "ref": "niu9U",
+                              "name": "Skill デザインスキル",
+                              "width": "fill_container",
+                              "descendants": {
+                                "Mnbg3": {
+                                  "content": "デザインスキル"
+                                },
+                                "Km8Ne": {
+                                  "type": "frame",
+                                  "id": "A7Upa",
+                                  "name": "Skill Items",
+                                  "gap": 20,
+                                  "children": [
+                                    {
+                                      "type": "text",
+                                      "id": "T3hw4X",
+                                      "name": "Skill",
+                                      "fill": "$ds:color-high-emphasis",
+                                      "content": "UIデザイン",
+                                      "lineHeight": "$ds:line-height-body",
+                                      "fontFamily": "$ds:font-family",
+                                      "fontSize": "$ds:font-size-body-1",
+                                      "fontWeight": "$ds:font-weight-bold"
+                                    },
+                                    {
+                                      "type": "text",
+                                      "id": "BAhLK",
+                                      "name": "Skill",
+                                      "fill": "$ds:color-high-emphasis",
+                                      "content": "UXデザイン",
+                                      "lineHeight": "$ds:line-height-body",
+                                      "fontFamily": "$ds:font-family",
+                                      "fontSize": "$ds:font-size-body-1",
+                                      "fontWeight": "$ds:font-weight-bold"
+                                    },
+                                    {
+                                      "type": "text",
+                                      "id": "Kc0pW",
+                                      "name": "Skill",
+                                      "fill": "$ds:color-high-emphasis",
+                                      "content": "Figma",
+                                      "lineHeight": "$ds:line-height-body",
+                                      "fontFamily": "$ds:font-family",
+                                      "fontSize": "$ds:font-size-body-1",
+                                      "fontWeight": "$ds:font-weight-bold"
+                                    },
+                                    {
+                                      "type": "text",
+                                      "id": "A62kGv",
+                                      "name": "Skill",
+                                      "fill": "$ds:color-high-emphasis",
+                                      "content": "Illustrator",
+                                      "lineHeight": "$ds:line-height-body",
+                                      "fontFamily": "$ds:font-family",
+                                      "fontSize": "$ds:font-size-body-1",
+                                      "fontWeight": "$ds:font-weight-bold"
+                                    },
+                                    {
+                                      "type": "text",
+                                      "id": "mRHPQ",
+                                      "name": "Skill",
+                                      "fill": "$ds:color-high-emphasis",
+                                      "content": "Photoshop",
+                                      "lineHeight": "$ds:line-height-body",
+                                      "fontFamily": "$ds:font-family",
+                                      "fontSize": "$ds:font-size-body-1",
+                                      "fontWeight": "$ds:font-weight-bold"
+                                    }
+                                  ]
+                                }
+                              }
+                            },
+                            {
+                              "id": "Q8hs5",
+                              "type": "ref",
+                              "ref": "niu9U",
+                              "name": "Skill フロントエンドスキル",
+                              "width": "fill_container",
+                              "descendants": {
+                                "Mnbg3": {
+                                  "content": "フロントエンドスキル"
+                                },
+                                "Km8Ne": {
+                                  "type": "frame",
+                                  "id": "ePgIa",
+                                  "name": "Skill Items",
+                                  "gap": 20,
+                                  "children": [
+                                    {
+                                      "type": "text",
+                                      "id": "ZSifY",
+                                      "name": "Skill",
+                                      "fill": "$ds:color-high-emphasis",
+                                      "content": "HTML",
+                                      "lineHeight": "$ds:line-height-body",
+                                      "fontFamily": "$ds:font-family",
+                                      "fontSize": "$ds:font-size-body-1",
+                                      "fontWeight": "$ds:font-weight-bold"
+                                    },
+                                    {
+                                      "type": "text",
+                                      "id": "l5dVAH",
+                                      "name": "Skill",
+                                      "fill": "$ds:color-high-emphasis",
+                                      "content": "CSS",
+                                      "lineHeight": "$ds:line-height-body",
+                                      "fontFamily": "$ds:font-family",
+                                      "fontSize": "$ds:font-size-body-1",
+                                      "fontWeight": "$ds:font-weight-bold"
+                                    },
+                                    {
+                                      "type": "text",
+                                      "id": "DN6lu",
+                                      "name": "Skill",
+                                      "fill": "$ds:color-high-emphasis",
+                                      "content": "JavaScript",
+                                      "lineHeight": "$ds:line-height-body",
+                                      "fontFamily": "$ds:font-family",
+                                      "fontSize": "$ds:font-size-body-1",
+                                      "fontWeight": "$ds:font-weight-bold"
+                                    },
+                                    {
+                                      "type": "text",
+                                      "id": "Q6v37",
+                                      "name": "Skill",
+                                      "fill": "$ds:color-high-emphasis",
+                                      "content": "TypeScript",
+                                      "lineHeight": "$ds:line-height-body",
+                                      "fontFamily": "$ds:font-family",
+                                      "fontSize": "$ds:font-size-body-1",
+                                      "fontWeight": "$ds:font-weight-bold"
+                                    },
+                                    {
+                                      "type": "text",
+                                      "id": "HxDql",
+                                      "name": "Skill",
+                                      "fill": "$ds:color-high-emphasis",
+                                      "content": "React",
+                                      "lineHeight": "$ds:line-height-body",
+                                      "fontFamily": "$ds:font-family",
+                                      "fontSize": "$ds:font-size-body-1",
+                                      "fontWeight": "$ds:font-weight-bold"
+                                    },
+                                    {
+                                      "type": "text",
+                                      "id": "EFFZV",
+                                      "name": "Skill",
+                                      "fill": "$ds:color-high-emphasis",
+                                      "content": "アクセシビリティ",
+                                      "lineHeight": "$ds:line-height-body",
+                                      "fontFamily": "$ds:font-family",
+                                      "fontSize": "$ds:font-size-body-1",
+                                      "fontWeight": "$ds:font-weight-bold"
+                                    },
+                                    {
+                                      "type": "text",
+                                      "id": "J6gq1b",
+                                      "name": "Skill",
+                                      "fill": "$ds:color-high-emphasis",
+                                      "content": "Git",
+                                      "lineHeight": "$ds:line-height-body",
+                                      "fontFamily": "$ds:font-family",
+                                      "fontSize": "$ds:font-size-body-1",
+                                      "fontWeight": "$ds:font-weight-bold"
+                                    },
+                                    {
+                                      "type": "text",
+                                      "id": "DZEqj",
+                                      "name": "Skill",
+                                      "fill": "$ds:color-high-emphasis",
+                                      "content": "Next.js",
+                                      "lineHeight": "$ds:line-height-body",
+                                      "fontFamily": "$ds:font-family",
+                                      "fontSize": "$ds:font-size-body-1",
+                                      "fontWeight": "$ds:font-weight-bold"
+                                    }
+                                  ]
+                                }
+                              }
+                            },
+                            {
+                              "id": "BhppZ",
+                              "type": "ref",
+                              "ref": "niu9U",
+                              "name": "Skill その他",
+                              "width": "fill_container",
+                              "descendants": {
+                                "Mnbg3": {
+                                  "content": "その他"
+                                },
+                                "Km8Ne": {
+                                  "type": "frame",
+                                  "id": "hNFlT",
+                                  "name": "Skill Items",
+                                  "gap": 20,
+                                  "children": [
+                                    {
+                                      "type": "text",
+                                      "id": "AXq6c",
+                                      "name": "Skill",
+                                      "fill": "$ds:color-high-emphasis",
+                                      "content": "ChatGPT",
+                                      "lineHeight": "$ds:line-height-body",
+                                      "fontFamily": "$ds:font-family",
+                                      "fontSize": "$ds:font-size-body-1",
+                                      "fontWeight": "$ds:font-weight-bold"
+                                    },
+                                    {
+                                      "type": "text",
+                                      "id": "GCg5T",
+                                      "name": "Skill",
+                                      "fill": "$ds:color-high-emphasis",
+                                      "content": "Cursor",
+                                      "lineHeight": "$ds:line-height-body",
+                                      "fontFamily": "$ds:font-family",
+                                      "fontSize": "$ds:font-size-body-1",
+                                      "fontWeight": "$ds:font-weight-bold"
+                                    },
+                                    {
+                                      "type": "text",
+                                      "id": "eoW1v",
+                                      "name": "Skill",
+                                      "fill": "$ds:color-high-emphasis",
+                                      "content": "Copilot",
+                                      "lineHeight": "$ds:line-height-body",
+                                      "fontFamily": "$ds:font-family",
+                                      "fontSize": "$ds:font-size-body-1",
+                                      "fontWeight": "$ds:font-weight-bold"
+                                    },
+                                    {
+                                      "type": "text",
+                                      "id": "V2keK",
+                                      "name": "Skill",
+                                      "fill": "$ds:color-high-emphasis",
+                                      "content": "Claude Code",
+                                      "lineHeight": "$ds:line-height-body",
+                                      "fontFamily": "$ds:font-family",
+                                      "fontSize": "$ds:font-size-body-1",
+                                      "fontWeight": "$ds:font-weight-bold"
+                                    },
+                                    {
+                                      "type": "text",
+                                      "id": "z8O5QF",
+                                      "name": "Skill",
+                                      "fill": "$ds:color-high-emphasis",
+                                      "content": "Premiere Pro",
+                                      "lineHeight": "$ds:line-height-body",
+                                      "fontFamily": "$ds:font-family",
+                                      "fontSize": "$ds:font-size-body-1",
+                                      "fontWeight": "$ds:font-weight-bold"
+                                    },
+                                    {
+                                      "type": "text",
+                                      "id": "pU1QZ",
+                                      "name": "Skill",
+                                      "fill": "$ds:color-high-emphasis",
+                                      "content": "After Effects",
+                                      "lineHeight": "$ds:line-height-body",
+                                      "fontFamily": "$ds:font-family",
+                                      "fontSize": "$ds:font-size-body-1",
+                                      "fontWeight": "$ds:font-weight-bold"
+                                    }
+                                  ]
+                                }
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "ctPY6",
+              "name": "Project",
+              "width": "fill_container",
+              "layout": "vertical",
+              "padding": [
+                64,
+                0
+              ],
+              "children": [
+                {
+                  "type": "text",
+                  "id": "g0Zxc",
+                  "name": "Section Heading",
+                  "fill": "$ds:color-high-emphasis",
+                  "content": "プロジェクト",
+                  "lineHeight": "$ds:line-height-heading",
+                  "fontFamily": "$ds:font-family",
+                  "fontSize": "$ds:font-size-heading-1",
+                  "fontWeight": "$ds:font-weight-bold"
+                },
+                {
+                  "type": "frame",
+                  "id": "f92HU",
+                  "name": "Spacer",
+                  "width": 1,
+                  "height": 32
+                },
+                {
+                  "type": "frame",
+                  "id": "Q12CZ",
+                  "name": "Project List",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 32,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "d0jo2",
+                      "name": "Row 1",
+                      "width": "fill_container",
+                      "gap": 32,
+                      "children": [
+                        {
+                          "id": "ScOCK",
+                          "type": "ref",
+                          "ref": "ds:fWOYf",
+                          "name": "Project qiita-for-business-lp",
+                          "width": "fill_container",
+                          "descendants": {
+                            "ds:CVcDO": {
+                              "type": "frame",
+                              "id": "FmsOT",
+                              "name": "Project Labels",
+                              "gap": 8,
+                              "padding": [
+                                0,
+                                0,
+                                2,
+                                0
+                              ],
+                              "children": [
+                                {
+                                  "id": "x8LcM",
+                                  "type": "ref",
+                                  "ref": "ds:b7blZ",
+                                  "name": "Chip Qiita for Business",
+                                  "descendants": {
+                                    "ds:XWOq8": {
+                                      "content": "Qiita for Business"
+                                    }
+                                  }
+                                },
+                                {
+                                  "id": "Re9cF",
+                                  "type": "ref",
+                                  "ref": "ds:b7blZ",
+                                  "name": "Chip BtoB",
+                                  "descendants": {
+                                    "ds:XWOq8": {
+                                      "content": "BtoB"
+                                    }
+                                  }
+                                },
+                                {
+                                  "id": "NINjX",
+                                  "type": "ref",
+                                  "ref": "ds:b7blZ",
+                                  "name": "Chip UI",
+                                  "descendants": {
+                                    "ds:XWOq8": {
+                                      "content": "UI"
+                                    }
+                                  }
+                                },
+                                {
+                                  "id": "SvoSk",
+                                  "type": "ref",
+                                  "ref": "ds:b7blZ",
+                                  "name": "Chip UX",
+                                  "descendants": {
+                                    "ds:XWOq8": {
+                                      "content": "UX"
+                                    }
+                                  }
+                                },
+                                {
+                                  "id": "Y8i7C7",
+                                  "type": "ref",
+                                  "ref": "ds:b7blZ",
+                                  "name": "Chip Frontend",
+                                  "descendants": {
+                                    "ds:XWOq8": {
+                                      "content": "Frontend"
+                                    }
+                                  }
+                                }
+                              ]
+                            },
+                            "ds:nNTog": {
+                              "content": "Qiita for Business LP改善"
+                            },
+                            "ds:eHeHZ": {
+                              "content": "広告主向けLPの課題の特定から情報設計・UIデザイン・実装・リリースまでを一人で担当した。"
+                            },
+                            "ds:A08RFM": {
+                              "content": "2026年7月〜2026年8月"
+                            }
+                          }
+                        },
+                        {
+                          "id": "nnrsI",
+                          "type": "ref",
+                          "ref": "ds:fWOYf",
+                          "name": "Project qiita-slide-beta",
+                          "width": "fill_container",
+                          "descendants": {
+                            "ds:CVcDO": {
+                              "type": "frame",
+                              "id": "Xvp9R",
+                              "name": "Project Labels",
+                              "gap": 8,
+                              "padding": [
+                                0,
+                                0,
+                                2,
+                                0
+                              ],
+                              "children": [
+                                {
+                                  "id": "Hud4K",
+                                  "type": "ref",
+                                  "ref": "ds:b7blZ",
+                                  "name": "Chip Qiita",
+                                  "descendants": {
+                                    "ds:XWOq8": {
+                                      "content": "Qiita"
+                                    }
+                                  }
+                                },
+                                {
+                                  "id": "IKPsz",
+                                  "type": "ref",
+                                  "ref": "ds:b7blZ",
+                                  "name": "Chip PdM",
+                                  "descendants": {
+                                    "ds:XWOq8": {
+                                      "content": "PdM"
+                                    }
+                                  }
+                                }
+                              ]
+                            },
+                            "ds:nNTog": {
+                              "content": "Qiita スライド機能(ベータ版)"
+                            },
+                            "ds:eHeHZ": {
+                              "content": "スライド機能の企画/管理を担当した。"
+                            },
+                            "ds:A08RFM": {
+                              "content": "2025年7月〜2026年7月"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "GzAow",
+                      "name": "Row 2",
+                      "width": "fill_container",
+                      "gap": 32,
+                      "children": [
+                        {
+                          "id": "WYNNS",
+                          "type": "ref",
+                          "ref": "ds:fWOYf",
+                          "name": "Project qiita-advent-calendar-2025",
+                          "width": "fill_container",
+                          "descendants": {
+                            "ds:CVcDO": {
+                              "type": "frame",
+                              "id": "H3t4y",
+                              "name": "Project Labels",
+                              "gap": 8,
+                              "padding": [
+                                0,
+                                0,
+                                2,
+                                0
+                              ],
+                              "children": [
+                                {
+                                  "id": "hReiA",
+                                  "type": "ref",
+                                  "ref": "ds:b7blZ",
+                                  "name": "Chip Qiita",
+                                  "descendants": {
+                                    "ds:XWOq8": {
+                                      "content": "Qiita"
+                                    }
+                                  }
+                                },
+                                {
+                                  "id": "aXVrH",
+                                  "type": "ref",
+                                  "ref": "ds:b7blZ",
+                                  "name": "Chip PdM",
+                                  "descendants": {
+                                    "ds:XWOq8": {
+                                      "content": "PdM"
+                                    }
+                                  }
+                                }
+                              ]
+                            },
+                            "ds:nNTog": {
+                              "content": "Qiita Advent Calendar 2025 プロジェクト"
+                            },
+                            "ds:eHeHZ": {
+                              "content": "新企画の立案、新機能/機能アップデートの企画/設計を担当した。"
+                            },
+                            "ds:A08RFM": {
+                              "content": "2025年8月〜2026年1月"
+                            }
+                          }
+                        },
+                        {
+                          "id": "NpVtX",
+                          "type": "ref",
+                          "ref": "ds:fWOYf",
+                          "name": "Project stock-share",
+                          "width": "fill_container",
+                          "descendants": {
+                            "ds:CVcDO": {
+                              "type": "frame",
+                              "id": "LlDHI",
+                              "name": "Project Labels",
+                              "gap": 8,
+                              "padding": [
+                                0,
+                                0,
+                                2,
+                                0
+                              ],
+                              "children": [
+                                {
+                                  "id": "ZEM33",
+                                  "type": "ref",
+                                  "ref": "ds:b7blZ",
+                                  "name": "Chip Qiita",
+                                  "descendants": {
+                                    "ds:XWOq8": {
+                                      "content": "Qiita"
+                                    }
+                                  }
+                                },
+                                {
+                                  "id": "voq3p",
+                                  "type": "ref",
+                                  "ref": "ds:b7blZ",
+                                  "name": "Chip PdM",
+                                  "descendants": {
+                                    "ds:XWOq8": {
+                                      "content": "PdM"
+                                    }
+                                  }
+                                }
+                              ]
+                            },
+                            "ds:nNTog": {
+                              "content": "ストックのシェア機能プロジェクト"
+                            },
+                            "ds:eHeHZ": {
+                              "content": "ストックのシェア機能の企画/設計を担当した。"
+                            },
+                            "ds:A08RFM": {
+                              "content": "2025年2月〜"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "W7SWpe",
+                      "name": "Row 3",
+                      "width": "fill_container",
+                      "gap": 32,
+                      "children": [
+                        {
+                          "id": "nHpSP",
+                          "type": "ref",
+                          "ref": "ds:fWOYf",
+                          "name": "Project qiita-bash",
+                          "width": "fill_container",
+                          "descendants": {
+                            "ds:CVcDO": {
+                              "type": "frame",
+                              "id": "v80JMC",
+                              "name": "Project Labels",
+                              "gap": 8,
+                              "padding": [
+                                0,
+                                0,
+                                2,
+                                0
+                              ],
+                              "children": [
+                                {
+                                  "id": "Opiq9",
+                                  "type": "ref",
+                                  "ref": "ds:b7blZ",
+                                  "name": "Chip Qiita",
+                                  "descendants": {
+                                    "ds:XWOq8": {
+                                      "content": "Qiita"
+                                    }
+                                  }
+                                },
+                                {
+                                  "id": "SBVDD",
+                                  "type": "ref",
+                                  "ref": "ds:b7blZ",
+                                  "name": "Chip イベント",
+                                  "descendants": {
+                                    "ds:XWOq8": {
+                                      "content": "イベント"
+                                    }
+                                  }
+                                }
+                              ]
+                            },
+                            "ds:nNTog": {
+                              "content": "Qiita Bash"
+                            },
+                            "ds:eHeHZ": {
+                              "content": "Qiita Bashに関するイベント企画・集客・運営・配信"
+                            },
+                            "ds:A08RFM": {
+                              "content": "2024年4月〜"
+                            }
+                          }
+                        },
+                        {
+                          "id": "q3vTP",
+                          "type": "ref",
+                          "ref": "ds:fWOYf",
+                          "name": "Project accessibility-project",
+                          "width": "fill_container",
+                          "descendants": {
+                            "ds:CVcDO": {
+                              "type": "frame",
+                              "id": "DdH83",
+                              "name": "Project Labels",
+                              "gap": 8,
+                              "padding": [
+                                0,
+                                0,
+                                2,
+                                0
+                              ],
+                              "children": [
+                                {
+                                  "id": "l1bGI5",
+                                  "type": "ref",
+                                  "ref": "ds:b7blZ",
+                                  "name": "Chip Qiita",
+                                  "descendants": {
+                                    "ds:XWOq8": {
+                                      "content": "Qiita"
+                                    }
+                                  }
+                                },
+                                {
+                                  "id": "KASSy",
+                                  "type": "ref",
+                                  "ref": "ds:b7blZ",
+                                  "name": "Chip Accessibility",
+                                  "descendants": {
+                                    "ds:XWOq8": {
+                                      "content": "Accessibility"
+                                    }
+                                  }
+                                },
+                                {
+                                  "id": "pPpSQ",
+                                  "type": "ref",
+                                  "ref": "ds:b7blZ",
+                                  "name": "Chip 人材育成",
+                                  "descendants": {
+                                    "ds:XWOq8": {
+                                      "content": "人材育成"
+                                    }
+                                  }
+                                }
+                              ]
+                            },
+                            "ds:nNTog": {
+                              "content": "アクセシビリティ改善プロジェクト"
+                            },
+                            "ds:eHeHZ": {
+                              "content": "アクセシビリティに関する知識の浸透、人材育成、Qiitaのプロダクト改善を担当した。"
+                            },
+                            "ds:A08RFM": {
+                              "content": "2024年4月〜"
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "gBTWx",
+                  "name": "Spacer",
+                  "width": 1,
+                  "height": 24
+                },
+                {
+                  "id": "sOops",
+                  "type": "ref",
+                  "ref": "ds:X94P1S",
+                  "name": "More Projects"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "rT0ht",
+              "name": "Product",
+              "width": "fill_container",
+              "layout": "vertical",
+              "padding": [
+                128,
+                0,
+                64,
+                0
+              ],
+              "children": [
+                {
+                  "type": "text",
+                  "id": "m4R6yK",
+                  "name": "Section Heading",
+                  "fill": "$ds:color-high-emphasis",
+                  "content": "制作物",
+                  "lineHeight": "$ds:line-height-heading",
+                  "fontFamily": "$ds:font-family",
+                  "fontSize": "$ds:font-size-heading-1",
+                  "fontWeight": "$ds:font-weight-bold"
+                },
+                {
+                  "type": "frame",
+                  "id": "fRnPG",
+                  "name": "Spacer",
+                  "width": 1,
+                  "height": 32
+                },
+                {
+                  "type": "frame",
+                  "id": "j1i2Lu",
+                  "name": "Product List",
+                  "width": "fill_container",
+                  "gap": 32,
+                  "children": [
+                    {
+                      "id": "lmpq2",
+                      "type": "ref",
+                      "ref": "ffFng",
+                      "name": "Product Fivia",
+                      "width": "fill_container",
+                      "descendants": {
+                        "YMs9M": {
+                          "fill": {
+                            "type": "image",
+                            "enabled": true,
+                            "url": "../../../src/contents/Product/fivia/img/image-ogp.png",
+                            "mode": "cover"
+                          }
+                        },
+                        "x9w1Od": {
+                          "content": "Fivia"
+                        }
+                      }
+                    },
+                    {
+                      "id": "l82acD",
+                      "type": "ref",
+                      "ref": "ffFng",
+                      "name": "Product michibiki",
+                      "width": "fill_container",
+                      "descendants": {
+                        "YMs9M": {
+                          "fill": {
+                            "type": "image",
+                            "enabled": true,
+                            "url": "../../../src/contents/Product/michibiki/img/image-ogp.png",
+                            "mode": "cover"
+                          }
+                        },
+                        "x9w1Od": {
+                          "content": "michibiki"
+                        }
+                      }
+                    },
+                    {
+                      "id": "lLcpU",
+                      "type": "ref",
+                      "ref": "ffFng",
+                      "name": "Product TOMONOITO",
+                      "width": "fill_container",
+                      "descendants": {
+                        "YMs9M": {
+                          "fill": {
+                            "type": "image",
+                            "enabled": true,
+                            "url": "../../../src/contents/Product/tomonoito/img/image-ogp.png",
+                            "mode": "cover"
+                          }
+                        },
+                        "x9w1Od": {
+                          "content": "TOMONOITO"
+                        }
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "U6IQc",
+              "name": "StageHistory",
+              "width": "fill_container",
+              "layout": "vertical",
+              "padding": [
+                64,
+                0
+              ],
+              "children": [
+                {
+                  "type": "text",
+                  "id": "XjLoW",
+                  "name": "Section Heading",
+                  "fill": "$ds:color-high-emphasis",
+                  "content": "登壇歴",
+                  "lineHeight": "$ds:line-height-heading",
+                  "fontFamily": "$ds:font-family",
+                  "fontSize": "$ds:font-size-heading-1",
+                  "fontWeight": "$ds:font-weight-bold"
+                },
+                {
+                  "type": "frame",
+                  "id": "RlcOu",
+                  "name": "Spacer",
+                  "width": 1,
+                  "height": 32
+                },
+                {
+                  "type": "frame",
+                  "id": "uxI1r",
+                  "name": "StageHistory Table",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "children": [
+                    {
+                      "id": "b8BdPW",
+                      "type": "ref",
+                      "ref": "ds:FmWaQ",
+                      "name": "Table Header",
+                      "width": "fill_container"
+                    },
+                    {
+                      "id": "j1KP7",
+                      "type": "ref",
+                      "ref": "ds:Vn7Cy",
+                      "name": "Row 2026年8月21日",
+                      "width": "fill_container",
+                      "descendants": {
+                        "ds:cCisc": {
+                          "content": "2026年8月21日"
+                        },
+                        "ds:A0JB7": {
+                          "content": "Vibe.TOKYO, AI & CRAFT｜AIネイティブ・エキシビション"
+                        }
+                      }
+                    },
+                    {
+                      "id": "OCkTr",
+                      "type": "ref",
+                      "ref": "ds:Vn7Cy",
+                      "name": "Row 2026年8月7日",
+                      "width": "fill_container",
+                      "descendants": {
+                        "ds:cCisc": {
+                          "content": "2026年8月7日"
+                        },
+                        "ds:A0JB7": {
+                          "content": "TechTalks! #4：それぞれのデザインシステム。"
+                        }
+                      }
+                    },
+                    {
+                      "id": "PZrbb",
+                      "type": "ref",
+                      "ref": "ds:Vn7Cy",
+                      "name": "Row 2026年8月6日",
+                      "width": "fill_container",
+                      "descendants": {
+                        "ds:cCisc": {
+                          "content": "2026年8月6日"
+                        },
+                        "ds:A0JB7": {
+                          "content": "社内LT会"
+                        }
+                      }
+                    },
+                    {
+                      "id": "GryXR",
+                      "type": "ref",
+                      "ref": "ds:Vn7Cy",
+                      "name": "Row 2026年4月10日",
+                      "width": "fill_container",
+                      "descendants": {
+                        "ds:cCisc": {
+                          "content": "2026年4月10日"
+                        },
+                        "ds:A0JB7": {
+                          "content": "アクセシビリティ対応の「どこまでやる？」を言語化する　~チームで迷わないための設計と判断基準~"
+                        }
+                      }
+                    },
+                    {
+                      "id": "yDXqG",
+                      "type": "ref",
+                      "ref": "ds:Vn7Cy",
+                      "name": "Row 2025年8月7日",
+                      "width": "fill_container",
+                      "descendants": {
+                        "ds:cCisc": {
+                          "content": "2025年8月7日"
+                        },
+                        "ds:A0JB7": {
+                          "content": "Canly Tech Hub ~vol.1~ みんなで学ぼう！開発現場におけるMCPの活用事例LT会"
+                        }
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "Qhg7g",
+                  "name": "Spacer",
+                  "width": 1,
+                  "height": 24
+                },
+                {
+                  "id": "b0m5w",
+                  "type": "ref",
+                  "ref": "ds:X94P1S",
+                  "name": "More StageHistory"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "gXYzc",
+              "name": "PostArticle",
+              "width": "fill_container",
+              "layout": "vertical",
+              "padding": [
+                64,
+                0
+              ],
+              "children": [
+                {
+                  "type": "text",
+                  "id": "mNFah",
+                  "name": "Section Heading",
+                  "fill": "$ds:color-high-emphasis",
+                  "content": "投稿記事",
+                  "lineHeight": "$ds:line-height-heading",
+                  "fontFamily": "$ds:font-family",
+                  "fontSize": "$ds:font-size-heading-1",
+                  "fontWeight": "$ds:font-weight-bold"
+                },
+                {
+                  "type": "frame",
+                  "id": "x36PuG",
+                  "name": "Spacer",
+                  "width": 1,
+                  "height": 32
+                },
+                {
+                  "type": "frame",
+                  "id": "UOQKY",
+                  "name": "Article List",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 16,
+                  "children": [
+                    {
+                      "id": "C1oZr",
+                      "type": "ref",
+                      "ref": "ds:Kdg5E",
+                      "name": "Article",
+                      "width": "fill_container",
+                      "descendants": {
+                        "ds:BsILQ": {
+                          "content": "【Personal OS #3】Claude Codeで、ミーティングを自動でドキュメント化する仕組み"
+                        },
+                        "ds:eHBgO": {
+                          "content": "7"
+                        },
+                        "ds:HpPC7": {
+                          "content": "自動化  AI  タスク管理  MCP  ClaudeCode"
+                        }
+                      }
+                    },
+                    {
+                      "id": "WlwRj",
+                      "type": "ref",
+                      "ref": "ds:Kdg5E",
+                      "name": "Article",
+                      "width": "fill_container",
+                      "descendants": {
+                        "ds:BsILQ": {
+                          "content": "【Personal OS #2】Claude Codeで、Gmailをタスク化・返信提案する仕組み"
+                        },
+                        "ds:eHBgO": {
+                          "content": "3"
+                        },
+                        "ds:HpPC7": {
+                          "content": "自動化  AI  タスク管理  MCP  ClaudeCode"
+                        }
+                      }
+                    },
+                    {
+                      "id": "QiPCS",
+                      "type": "ref",
+                      "ref": "ds:Kdg5E",
+                      "name": "Article",
+                      "width": "fill_container",
+                      "descendants": {
+                        "ds:BsILQ": {
+                          "content": "【Personal OS #1】Claude Codeで、毎日の仕事を自動化する仕組み"
+                        },
+                        "ds:eHBgO": {
+                          "content": "11"
+                        },
+                        "ds:HpPC7": {
+                          "content": "自動化  AI  タスク管理  MCP  ClaudeCode"
+                        }
+                      }
+                    },
+                    {
+                      "id": "j9OLxF",
+                      "type": "ref",
+                      "ref": "ds:Kdg5E",
+                      "name": "Article",
+                      "width": "fill_container",
+                      "descendants": {
+                        "ds:BsILQ": {
+                          "content": "Chrome 151 で追加された textStream() で、テキストストリーミングがシンプルになった"
+                        },
+                        "ds:eHBgO": {
+                          "content": "1"
+                        },
+                        "ds:HpPC7": {
+                          "content": "JavaScript  Chrome  Web  フロントエンド"
+                        }
+                      }
+                    },
+                    {
+                      "id": "y4JHv",
+                      "type": "ref",
+                      "ref": "ds:Kdg5E",
+                      "name": "Article",
+                      "width": "fill_container",
+                      "descendants": {
+                        "ds:BsILQ": {
+                          "content": "【CSS】ルビのはみ出し制御が Chrome 151 で可能に"
+                        },
+                        "ds:eHBgO": {
+                          "content": "0"
+                        },
+                        "ds:HpPC7": {
+                          "content": "HTML  CSS  Chrome  フロントエンド"
+                        }
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "uy3kP",
+                  "name": "Spacer",
+                  "width": 1,
+                  "height": 24
+                },
+                {
+                  "id": "OxNrp",
+                  "type": "ref",
+                  "ref": "ds:X94P1S",
+                  "name": "More Articles"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "Gr1jz",
+          "type": "ref",
+          "ref": "ds:q77i4",
+          "name": "Footer",
+          "width": 1152
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "aQaj9",
+      "x": 1540,
+      "y": 0,
+      "name": "/ (Home) — dark",
+      "theme": {
+        "ds:mode": "dark"
+      },
+      "clip": true,
+      "width": 1440,
+      "fill": {
+        "type": "shader",
+        "enabled": true,
+        "url": "../../../src/component/Atoms/GradientBackground/gradientBackground.glsl",
+        "uniforms": {
+          "u_top": "$ds:background-top",
+          "u_middle": "$ds:background-middle",
+          "u_bottom": "$ds:background-bottom",
+          "u_gridColor": "$ds:background-grid",
+          "u_gridOpacity": 0.1,
+          "u_noise": 30,
+          "u_waveSpeed": 0.5,
+          "u_waveAmplitude": 0.3,
+          "u_flagOpacity": 8,
+          "u_gridSize": 192
+        }
+      },
+      "layout": "vertical",
+      "alignItems": "center",
+      "children": [
+        {
+          "id": "Si3VC",
+          "type": "ref",
+          "ref": "ds:xdOlG",
+          "name": "Header",
+          "width": 1152
+        },
+        {
+          "type": "frame",
+          "id": "zuxEr",
+          "name": "Main",
+          "width": 1152,
+          "layout": "vertical",
+          "padding": [
+            0,
+            16
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "z8pH2s",
+              "name": "FirstView",
+              "width": "fill_container",
+              "height": 820,
+              "layout": "vertical",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "X9R1g",
+                  "name": "FirstView Content",
+                  "width": "fill_container",
+                  "height": "fill_container",
+                  "layout": "vertical",
+                  "gap": 32,
+                  "padding": [
+                    16,
+                    0
+                  ],
+                  "justifyContent": "center",
+                  "children": [
+                    {
+                      "id": "j7BjI",
+                      "type": "ref",
+                      "ref": "pDqjj",
+                      "name": "Logo Wordmark"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "D4hLu",
+                      "name": "Intro",
+                      "layout": "vertical",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "lltCW",
+                          "name": "Intro Line",
+                          "fill": "$ds:color-medium-emphasis",
+                          "content": "デザインとテクノロジーの架け橋を担うデザインテクノロジスト。",
+                          "lineHeight": "$ds:line-height-body",
+                          "fontFamily": "$ds:font-family",
+                          "fontSize": "$ds:font-size-body-1",
+                          "fontWeight": "$ds:font-weight-regular"
+                        },
+                        {
+                          "type": "text",
+                          "id": "tqwiH",
+                          "name": "Intro Line",
+                          "fill": "$ds:color-medium-emphasis",
+                          "content": "デザインとテクノロジーの両面から誰にとっても心地よく使えるプロダクトづくりを大切にしています。",
+                          "lineHeight": "$ds:line-height-body",
+                          "fontFamily": "$ds:font-family",
+                          "fontSize": "$ds:font-size-body-1",
+                          "fontWeight": "$ds:font-weight-regular"
+                        },
+                        {
+                          "type": "frame",
+                          "id": "Y9CI3c",
+                          "name": "Spacer",
+                          "width": 1,
+                          "height": 16
+                        },
+                        {
+                          "type": "frame",
+                          "id": "C7msS",
+                          "name": "Hashtags",
+                          "gap": 16,
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "n6AiP",
+                              "name": "Hashtag",
+                              "fill": "$ds:color-medium-emphasis",
+                              "content": "#Design",
+                              "lineHeight": "$ds:line-height-body",
+                              "fontFamily": "$ds:font-family",
+                              "fontSize": "$ds:font-size-body-2",
+                              "fontWeight": "$ds:font-weight-regular"
+                            },
+                            {
+                              "type": "text",
+                              "id": "QBSKM",
+                              "name": "Hashtag",
+                              "fill": "$ds:color-medium-emphasis",
+                              "content": "#PdM",
+                              "lineHeight": "$ds:line-height-body",
+                              "fontFamily": "$ds:font-family",
+                              "fontSize": "$ds:font-size-body-2",
+                              "fontWeight": "$ds:font-weight-regular"
+                            },
+                            {
+                              "type": "text",
+                              "id": "FsjBM",
+                              "name": "Hashtag",
+                              "fill": "$ds:color-medium-emphasis",
+                              "content": "#UX",
+                              "lineHeight": "$ds:line-height-body",
+                              "fontFamily": "$ds:font-family",
+                              "fontSize": "$ds:font-size-body-2",
+                              "fontWeight": "$ds:font-weight-regular"
+                            },
+                            {
+                              "type": "text",
+                              "id": "VJAuj",
+                              "name": "Hashtag",
+                              "fill": "$ds:color-medium-emphasis",
+                              "content": "#UI",
+                              "lineHeight": "$ds:line-height-body",
+                              "fontFamily": "$ds:font-family",
+                              "fontSize": "$ds:font-size-body-2",
+                              "fontWeight": "$ds:font-weight-regular"
+                            },
+                            {
+                              "type": "text",
+                              "id": "jihKp",
+                              "name": "Hashtag",
+                              "fill": "$ds:color-medium-emphasis",
+                              "content": "#Accessibility",
+                              "lineHeight": "$ds:line-height-body",
+                              "fontFamily": "$ds:font-family",
+                              "fontSize": "$ds:font-size-body-2",
+                              "fontWeight": "$ds:font-weight-regular"
+                            },
+                            {
+                              "type": "text",
+                              "id": "KX95I",
+                              "name": "Hashtag",
+                              "fill": "$ds:color-medium-emphasis",
+                              "content": "#Frontend",
+                              "lineHeight": "$ds:line-height-body",
+                              "fontFamily": "$ds:font-family",
+                              "fontSize": "$ds:font-size-body-2",
+                              "fontWeight": "$ds:font-weight-regular"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "i4vU49",
+                  "type": "ref",
+                  "ref": "pQM5T",
+                  "name": "Scroll Down"
+                },
+                {
+                  "id": "nzupb",
+                  "type": "ref",
+                  "ref": "Nkk5Z",
+                  "name": "Social Links",
+                  "layoutPosition": "absolute",
+                  "x": 1078,
+                  "y": 708
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "RbQDr",
+              "name": "Profile",
+              "width": "fill_container",
+              "layout": "vertical",
+              "padding": [
+                128,
+                0,
+                64,
+                0
+              ],
+              "children": [
+                {
+                  "type": "text",
+                  "id": "qkyJM",
+                  "name": "Section Heading",
+                  "fill": "$ds:color-high-emphasis",
+                  "content": "プロフィール",
+                  "lineHeight": "$ds:line-height-heading",
+                  "fontFamily": "$ds:font-family",
+                  "fontSize": "$ds:font-size-heading-1",
+                  "fontWeight": "$ds:font-weight-bold"
+                },
+                {
+                  "type": "frame",
+                  "id": "wvPma",
+                  "name": "Spacer",
+                  "width": 1,
+                  "height": 32
+                },
+                {
+                  "type": "frame",
+                  "id": "ZKtXJ",
+                  "name": "Profile Body",
+                  "width": "fill_container",
+                  "gap": 32,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "EhFYr",
+                      "name": "Profile Media",
+                      "width": 352,
+                      "layout": "vertical",
+                      "gap": 8,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "CLOWF",
+                          "name": "Profile Video",
+                          "width": 352,
+                          "height": 352,
+                          "fill": [
+                            "$ds:color-gray-variant",
+                            {
+                              "type": "image",
+                              "enabled": true,
+                              "url": "assets/profile.png",
+                              "mode": "cover"
+                            }
+                          ],
+                          "cornerRadius": "$ds:radius-lg"
+                        },
+                        {
+                          "id": "x8nvjo",
+                          "type": "ref",
+                          "ref": "ds:X94P1S",
+                          "name": "Video Toggle",
+                          "padding": 8,
+                          "descendants": {
+                            "ds:wnBJ9": {
+                              "content": "停止する"
+                            },
+                            "ds:mziJA": {
+                              "icon": "pause_circle"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "A1akr",
+                      "name": "Profile Text",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "QdiEJ",
+                          "name": "Name En",
+                          "fill": "$ds:color-green",
+                          "content": "Deguchi Hiroki",
+                          "lineHeight": "$ds:line-height-body",
+                          "fontFamily": "$ds:font-family",
+                          "fontSize": "$ds:font-size-body-2",
+                          "fontWeight": "$ds:font-weight-bold"
+                        },
+                        {
+                          "type": "frame",
+                          "id": "e7vrG",
+                          "name": "Spacer",
+                          "width": 1,
+                          "height": 4
+                        },
+                        {
+                          "type": "text",
+                          "id": "pnRzT",
+                          "name": "Name Ja",
+                          "fill": "$ds:color-high-emphasis",
+                          "content": "出口 裕貴",
+                          "lineHeight": "$ds:line-height-heading",
+                          "fontFamily": "$ds:font-family",
+                          "fontSize": "$ds:font-size-heading-1",
+                          "fontWeight": "$ds:font-weight-bold"
+                        },
+                        {
+                          "type": "frame",
+                          "id": "ll1b1",
+                          "name": "Spacer",
+                          "width": 1,
+                          "height": 24
+                        },
+                        {
+                          "type": "text",
+                          "id": "h8D3WC",
+                          "name": "Bio",
+                          "fill": "$ds:color-high-emphasis",
+                          "content": "デザインとテクノロジーの架け橋を担うデザインテクノロジスト。",
+                          "lineHeight": "$ds:line-height-body",
+                          "fontFamily": "$ds:font-family",
+                          "fontSize": "$ds:font-size-body-1",
+                          "fontWeight": "$ds:font-weight-regular"
+                        },
+                        {
+                          "type": "text",
+                          "id": "AayP5",
+                          "name": "Bio",
+                          "fill": "$ds:color-high-emphasis",
+                          "content": "デザインとテクノロジーの両面から誰にとっても心地よく使えるプロダクトづくりを大切にします。",
+                          "lineHeight": "$ds:line-height-body",
+                          "fontFamily": "$ds:font-family",
+                          "fontSize": "$ds:font-size-body-1",
+                          "fontWeight": "$ds:font-weight-regular"
+                        },
+                        {
+                          "type": "frame",
+                          "id": "QyVzE",
+                          "name": "Spacer",
+                          "width": 1,
+                          "height": 16
+                        },
+                        {
+                          "type": "text",
+                          "id": "PPjYW",
+                          "name": "Bio",
+                          "fill": "$ds:color-high-emphasis",
+                          "content": "現在は、Qiita 株式会社プロダクト開発部 デザインG マネージャーとして、",
+                          "lineHeight": "$ds:line-height-body",
+                          "fontFamily": "$ds:font-family",
+                          "fontSize": "$ds:font-size-body-1",
+                          "fontWeight": "$ds:font-weight-regular"
+                        },
+                        {
+                          "type": "text",
+                          "id": "gN0f2",
+                          "name": "Bio",
+                          "fill": "$ds:color-high-emphasis",
+                          "content": "Qiitaのプロダクトマネジメントとデザイナーの4名のマネジメントを行っています。",
+                          "lineHeight": "$ds:line-height-body",
+                          "fontFamily": "$ds:font-family",
+                          "fontSize": "$ds:font-size-body-1",
+                          "fontWeight": "$ds:font-weight-regular"
+                        },
+                        {
+                          "type": "frame",
+                          "id": "D69KLE",
+                          "name": "Spacer",
+                          "width": 1,
+                          "height": 24
+                        },
+                        {
+                          "type": "text",
+                          "id": "T3XGcK",
+                          "name": "Skills Heading",
+                          "fill": "$ds:color-high-emphasis",
+                          "content": "できること",
+                          "lineHeight": "$ds:line-height-body",
+                          "fontFamily": "$ds:font-family",
+                          "fontSize": "$ds:font-size-body-2",
+                          "fontWeight": "$ds:font-weight-bold"
+                        },
+                        {
+                          "type": "frame",
+                          "id": "VbhbW",
+                          "name": "Spacer",
+                          "width": 1,
+                          "height": 8
+                        },
+                        {
+                          "type": "frame",
+                          "id": "JE8AQ",
+                          "name": "Skill List",
+                          "width": "fill_container",
+                          "layout": "vertical",
+                          "gap": 8,
+                          "children": [
+                            {
+                              "id": "KjjGy",
+                              "type": "ref",
+                              "ref": "niu9U",
+                              "name": "Skill マネジメントスキル",
+                              "width": "fill_container",
+                              "descendants": {
+                                "Mnbg3": {
+                                  "content": "マネジメントスキル"
+                                },
+                                "Km8Ne": {
+                                  "type": "frame",
+                                  "id": "Wn7i7",
+                                  "name": "Skill Items",
+                                  "gap": 20,
+                                  "children": [
+                                    {
+                                      "type": "text",
+                                      "id": "O8dE1B",
+                                      "name": "Skill",
+                                      "fill": "$ds:color-high-emphasis",
+                                      "content": "プロダクトマネジメント",
+                                      "lineHeight": "$ds:line-height-body",
+                                      "fontFamily": "$ds:font-family",
+                                      "fontSize": "$ds:font-size-body-1",
+                                      "fontWeight": "$ds:font-weight-bold"
+                                    },
+                                    {
+                                      "type": "text",
+                                      "id": "u22g0q",
+                                      "name": "Skill",
+                                      "fill": "$ds:color-high-emphasis",
+                                      "content": "ピープルマネジメント",
+                                      "lineHeight": "$ds:line-height-body",
+                                      "fontFamily": "$ds:font-family",
+                                      "fontSize": "$ds:font-size-body-1",
+                                      "fontWeight": "$ds:font-weight-bold"
+                                    }
+                                  ]
+                                }
+                              }
+                            },
+                            {
+                              "id": "U2VaG0",
+                              "type": "ref",
+                              "ref": "niu9U",
+                              "name": "Skill デザインスキル",
+                              "width": "fill_container",
+                              "descendants": {
+                                "Mnbg3": {
+                                  "content": "デザインスキル"
+                                },
+                                "Km8Ne": {
+                                  "type": "frame",
+                                  "id": "e3vNBp",
+                                  "name": "Skill Items",
+                                  "gap": 20,
+                                  "children": [
+                                    {
+                                      "type": "text",
+                                      "id": "HebAa",
+                                      "name": "Skill",
+                                      "fill": "$ds:color-high-emphasis",
+                                      "content": "UIデザイン",
+                                      "lineHeight": "$ds:line-height-body",
+                                      "fontFamily": "$ds:font-family",
+                                      "fontSize": "$ds:font-size-body-1",
+                                      "fontWeight": "$ds:font-weight-bold"
+                                    },
+                                    {
+                                      "type": "text",
+                                      "id": "D9Wbc",
+                                      "name": "Skill",
+                                      "fill": "$ds:color-high-emphasis",
+                                      "content": "UXデザイン",
+                                      "lineHeight": "$ds:line-height-body",
+                                      "fontFamily": "$ds:font-family",
+                                      "fontSize": "$ds:font-size-body-1",
+                                      "fontWeight": "$ds:font-weight-bold"
+                                    },
+                                    {
+                                      "type": "text",
+                                      "id": "kpJ9C",
+                                      "name": "Skill",
+                                      "fill": "$ds:color-high-emphasis",
+                                      "content": "Figma",
+                                      "lineHeight": "$ds:line-height-body",
+                                      "fontFamily": "$ds:font-family",
+                                      "fontSize": "$ds:font-size-body-1",
+                                      "fontWeight": "$ds:font-weight-bold"
+                                    },
+                                    {
+                                      "type": "text",
+                                      "id": "jHgpV",
+                                      "name": "Skill",
+                                      "fill": "$ds:color-high-emphasis",
+                                      "content": "Illustrator",
+                                      "lineHeight": "$ds:line-height-body",
+                                      "fontFamily": "$ds:font-family",
+                                      "fontSize": "$ds:font-size-body-1",
+                                      "fontWeight": "$ds:font-weight-bold"
+                                    },
+                                    {
+                                      "type": "text",
+                                      "id": "feSgH",
+                                      "name": "Skill",
+                                      "fill": "$ds:color-high-emphasis",
+                                      "content": "Photoshop",
+                                      "lineHeight": "$ds:line-height-body",
+                                      "fontFamily": "$ds:font-family",
+                                      "fontSize": "$ds:font-size-body-1",
+                                      "fontWeight": "$ds:font-weight-bold"
+                                    }
+                                  ]
+                                }
+                              }
+                            },
+                            {
+                              "id": "gMyjv",
+                              "type": "ref",
+                              "ref": "niu9U",
+                              "name": "Skill フロントエンドスキル",
+                              "width": "fill_container",
+                              "descendants": {
+                                "Mnbg3": {
+                                  "content": "フロントエンドスキル"
+                                },
+                                "Km8Ne": {
+                                  "type": "frame",
+                                  "id": "p6TveT",
+                                  "name": "Skill Items",
+                                  "gap": 20,
+                                  "children": [
+                                    {
+                                      "type": "text",
+                                      "id": "j5nvzj",
+                                      "name": "Skill",
+                                      "fill": "$ds:color-high-emphasis",
+                                      "content": "HTML",
+                                      "lineHeight": "$ds:line-height-body",
+                                      "fontFamily": "$ds:font-family",
+                                      "fontSize": "$ds:font-size-body-1",
+                                      "fontWeight": "$ds:font-weight-bold"
+                                    },
+                                    {
+                                      "type": "text",
+                                      "id": "NYfUT",
+                                      "name": "Skill",
+                                      "fill": "$ds:color-high-emphasis",
+                                      "content": "CSS",
+                                      "lineHeight": "$ds:line-height-body",
+                                      "fontFamily": "$ds:font-family",
+                                      "fontSize": "$ds:font-size-body-1",
+                                      "fontWeight": "$ds:font-weight-bold"
+                                    },
+                                    {
+                                      "type": "text",
+                                      "id": "Iyf8a",
+                                      "name": "Skill",
+                                      "fill": "$ds:color-high-emphasis",
+                                      "content": "JavaScript",
+                                      "lineHeight": "$ds:line-height-body",
+                                      "fontFamily": "$ds:font-family",
+                                      "fontSize": "$ds:font-size-body-1",
+                                      "fontWeight": "$ds:font-weight-bold"
+                                    },
+                                    {
+                                      "type": "text",
+                                      "id": "L9loij",
+                                      "name": "Skill",
+                                      "fill": "$ds:color-high-emphasis",
+                                      "content": "TypeScript",
+                                      "lineHeight": "$ds:line-height-body",
+                                      "fontFamily": "$ds:font-family",
+                                      "fontSize": "$ds:font-size-body-1",
+                                      "fontWeight": "$ds:font-weight-bold"
+                                    },
+                                    {
+                                      "type": "text",
+                                      "id": "kvCUQ",
+                                      "name": "Skill",
+                                      "fill": "$ds:color-high-emphasis",
+                                      "content": "React",
+                                      "lineHeight": "$ds:line-height-body",
+                                      "fontFamily": "$ds:font-family",
+                                      "fontSize": "$ds:font-size-body-1",
+                                      "fontWeight": "$ds:font-weight-bold"
+                                    },
+                                    {
+                                      "type": "text",
+                                      "id": "fGIDu",
+                                      "name": "Skill",
+                                      "fill": "$ds:color-high-emphasis",
+                                      "content": "アクセシビリティ",
+                                      "lineHeight": "$ds:line-height-body",
+                                      "fontFamily": "$ds:font-family",
+                                      "fontSize": "$ds:font-size-body-1",
+                                      "fontWeight": "$ds:font-weight-bold"
+                                    },
+                                    {
+                                      "type": "text",
+                                      "id": "ubQvb",
+                                      "name": "Skill",
+                                      "fill": "$ds:color-high-emphasis",
+                                      "content": "Git",
+                                      "lineHeight": "$ds:line-height-body",
+                                      "fontFamily": "$ds:font-family",
+                                      "fontSize": "$ds:font-size-body-1",
+                                      "fontWeight": "$ds:font-weight-bold"
+                                    },
+                                    {
+                                      "type": "text",
+                                      "id": "NaTFD",
+                                      "name": "Skill",
+                                      "fill": "$ds:color-high-emphasis",
+                                      "content": "Next.js",
+                                      "lineHeight": "$ds:line-height-body",
+                                      "fontFamily": "$ds:font-family",
+                                      "fontSize": "$ds:font-size-body-1",
+                                      "fontWeight": "$ds:font-weight-bold"
+                                    }
+                                  ]
+                                }
+                              }
+                            },
+                            {
+                              "id": "HdRJX",
+                              "type": "ref",
+                              "ref": "niu9U",
+                              "name": "Skill その他",
+                              "width": "fill_container",
+                              "descendants": {
+                                "Mnbg3": {
+                                  "content": "その他"
+                                },
+                                "Km8Ne": {
+                                  "type": "frame",
+                                  "id": "FiCul",
+                                  "name": "Skill Items",
+                                  "gap": 20,
+                                  "children": [
+                                    {
+                                      "type": "text",
+                                      "id": "UWBQU",
+                                      "name": "Skill",
+                                      "fill": "$ds:color-high-emphasis",
+                                      "content": "ChatGPT",
+                                      "lineHeight": "$ds:line-height-body",
+                                      "fontFamily": "$ds:font-family",
+                                      "fontSize": "$ds:font-size-body-1",
+                                      "fontWeight": "$ds:font-weight-bold"
+                                    },
+                                    {
+                                      "type": "text",
+                                      "id": "EZep1",
+                                      "name": "Skill",
+                                      "fill": "$ds:color-high-emphasis",
+                                      "content": "Cursor",
+                                      "lineHeight": "$ds:line-height-body",
+                                      "fontFamily": "$ds:font-family",
+                                      "fontSize": "$ds:font-size-body-1",
+                                      "fontWeight": "$ds:font-weight-bold"
+                                    },
+                                    {
+                                      "type": "text",
+                                      "id": "z7ELmP",
+                                      "name": "Skill",
+                                      "fill": "$ds:color-high-emphasis",
+                                      "content": "Copilot",
+                                      "lineHeight": "$ds:line-height-body",
+                                      "fontFamily": "$ds:font-family",
+                                      "fontSize": "$ds:font-size-body-1",
+                                      "fontWeight": "$ds:font-weight-bold"
+                                    },
+                                    {
+                                      "type": "text",
+                                      "id": "h8OeT",
+                                      "name": "Skill",
+                                      "fill": "$ds:color-high-emphasis",
+                                      "content": "Claude Code",
+                                      "lineHeight": "$ds:line-height-body",
+                                      "fontFamily": "$ds:font-family",
+                                      "fontSize": "$ds:font-size-body-1",
+                                      "fontWeight": "$ds:font-weight-bold"
+                                    },
+                                    {
+                                      "type": "text",
+                                      "id": "uMHkH",
+                                      "name": "Skill",
+                                      "fill": "$ds:color-high-emphasis",
+                                      "content": "Premiere Pro",
+                                      "lineHeight": "$ds:line-height-body",
+                                      "fontFamily": "$ds:font-family",
+                                      "fontSize": "$ds:font-size-body-1",
+                                      "fontWeight": "$ds:font-weight-bold"
+                                    },
+                                    {
+                                      "type": "text",
+                                      "id": "Hwk8I",
+                                      "name": "Skill",
+                                      "fill": "$ds:color-high-emphasis",
+                                      "content": "After Effects",
+                                      "lineHeight": "$ds:line-height-body",
+                                      "fontFamily": "$ds:font-family",
+                                      "fontSize": "$ds:font-size-body-1",
+                                      "fontWeight": "$ds:font-weight-bold"
+                                    }
+                                  ]
+                                }
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "a9vZM0",
+              "name": "Project",
+              "width": "fill_container",
+              "layout": "vertical",
+              "padding": [
+                64,
+                0
+              ],
+              "children": [
+                {
+                  "type": "text",
+                  "id": "a8fa9",
+                  "name": "Section Heading",
+                  "fill": "$ds:color-high-emphasis",
+                  "content": "プロジェクト",
+                  "lineHeight": "$ds:line-height-heading",
+                  "fontFamily": "$ds:font-family",
+                  "fontSize": "$ds:font-size-heading-1",
+                  "fontWeight": "$ds:font-weight-bold"
+                },
+                {
+                  "type": "frame",
+                  "id": "PgUXy",
+                  "name": "Spacer",
+                  "width": 1,
+                  "height": 32
+                },
+                {
+                  "type": "frame",
+                  "id": "VQgZ1",
+                  "name": "Project List",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 32,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "YdLDJ",
+                      "name": "Row 1",
+                      "width": "fill_container",
+                      "gap": 32,
+                      "children": [
+                        {
+                          "id": "PnlFC",
+                          "type": "ref",
+                          "ref": "ds:fWOYf",
+                          "name": "Project qiita-for-business-lp",
+                          "width": "fill_container",
+                          "descendants": {
+                            "ds:CVcDO": {
+                              "type": "frame",
+                              "id": "EEROb",
+                              "name": "Project Labels",
+                              "gap": 8,
+                              "padding": [
+                                0,
+                                0,
+                                2,
+                                0
+                              ],
+                              "children": [
+                                {
+                                  "id": "ohQSM",
+                                  "type": "ref",
+                                  "ref": "ds:b7blZ",
+                                  "name": "Chip Qiita for Business",
+                                  "descendants": {
+                                    "ds:XWOq8": {
+                                      "content": "Qiita for Business"
+                                    }
+                                  }
+                                },
+                                {
+                                  "id": "w8aEMC",
+                                  "type": "ref",
+                                  "ref": "ds:b7blZ",
+                                  "name": "Chip BtoB",
+                                  "descendants": {
+                                    "ds:XWOq8": {
+                                      "content": "BtoB"
+                                    }
+                                  }
+                                },
+                                {
+                                  "id": "t9Vz5g",
+                                  "type": "ref",
+                                  "ref": "ds:b7blZ",
+                                  "name": "Chip UI",
+                                  "descendants": {
+                                    "ds:XWOq8": {
+                                      "content": "UI"
+                                    }
+                                  }
+                                },
+                                {
+                                  "id": "A4lGH4",
+                                  "type": "ref",
+                                  "ref": "ds:b7blZ",
+                                  "name": "Chip UX",
+                                  "descendants": {
+                                    "ds:XWOq8": {
+                                      "content": "UX"
+                                    }
+                                  }
+                                },
+                                {
+                                  "id": "Xi3jJ",
+                                  "type": "ref",
+                                  "ref": "ds:b7blZ",
+                                  "name": "Chip Frontend",
+                                  "descendants": {
+                                    "ds:XWOq8": {
+                                      "content": "Frontend"
+                                    }
+                                  }
+                                }
+                              ]
+                            },
+                            "ds:nNTog": {
+                              "content": "Qiita for Business LP改善"
+                            },
+                            "ds:eHeHZ": {
+                              "content": "広告主向けLPの課題の特定から情報設計・UIデザイン・実装・リリースまでを一人で担当した。"
+                            },
+                            "ds:A08RFM": {
+                              "content": "2026年7月〜2026年8月"
+                            }
+                          }
+                        },
+                        {
+                          "id": "ogtHF",
+                          "type": "ref",
+                          "ref": "ds:fWOYf",
+                          "name": "Project qiita-slide-beta",
+                          "width": "fill_container",
+                          "descendants": {
+                            "ds:CVcDO": {
+                              "type": "frame",
+                              "id": "uoW2G",
+                              "name": "Project Labels",
+                              "gap": 8,
+                              "padding": [
+                                0,
+                                0,
+                                2,
+                                0
+                              ],
+                              "children": [
+                                {
+                                  "id": "z8Di7",
+                                  "type": "ref",
+                                  "ref": "ds:b7blZ",
+                                  "name": "Chip Qiita",
+                                  "descendants": {
+                                    "ds:XWOq8": {
+                                      "content": "Qiita"
+                                    }
+                                  }
+                                },
+                                {
+                                  "id": "LxCq0",
+                                  "type": "ref",
+                                  "ref": "ds:b7blZ",
+                                  "name": "Chip PdM",
+                                  "descendants": {
+                                    "ds:XWOq8": {
+                                      "content": "PdM"
+                                    }
+                                  }
+                                }
+                              ]
+                            },
+                            "ds:nNTog": {
+                              "content": "Qiita スライド機能(ベータ版)"
+                            },
+                            "ds:eHeHZ": {
+                              "content": "スライド機能の企画/管理を担当した。"
+                            },
+                            "ds:A08RFM": {
+                              "content": "2025年7月〜2026年7月"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "rBKMa",
+                      "name": "Row 2",
+                      "width": "fill_container",
+                      "gap": 32,
+                      "children": [
+                        {
+                          "id": "X4T1E",
+                          "type": "ref",
+                          "ref": "ds:fWOYf",
+                          "name": "Project qiita-advent-calendar-2025",
+                          "width": "fill_container",
+                          "descendants": {
+                            "ds:CVcDO": {
+                              "type": "frame",
+                              "id": "s8nS5s",
+                              "name": "Project Labels",
+                              "gap": 8,
+                              "padding": [
+                                0,
+                                0,
+                                2,
+                                0
+                              ],
+                              "children": [
+                                {
+                                  "id": "zA3Cn",
+                                  "type": "ref",
+                                  "ref": "ds:b7blZ",
+                                  "name": "Chip Qiita",
+                                  "descendants": {
+                                    "ds:XWOq8": {
+                                      "content": "Qiita"
+                                    }
+                                  }
+                                },
+                                {
+                                  "id": "YE9fe",
+                                  "type": "ref",
+                                  "ref": "ds:b7blZ",
+                                  "name": "Chip PdM",
+                                  "descendants": {
+                                    "ds:XWOq8": {
+                                      "content": "PdM"
+                                    }
+                                  }
+                                }
+                              ]
+                            },
+                            "ds:nNTog": {
+                              "content": "Qiita Advent Calendar 2025 プロジェクト"
+                            },
+                            "ds:eHeHZ": {
+                              "content": "新企画の立案、新機能/機能アップデートの企画/設計を担当した。"
+                            },
+                            "ds:A08RFM": {
+                              "content": "2025年8月〜2026年1月"
+                            }
+                          }
+                        },
+                        {
+                          "id": "XrFyC",
+                          "type": "ref",
+                          "ref": "ds:fWOYf",
+                          "name": "Project stock-share",
+                          "width": "fill_container",
+                          "descendants": {
+                            "ds:CVcDO": {
+                              "type": "frame",
+                              "id": "K8Lhbz",
+                              "name": "Project Labels",
+                              "gap": 8,
+                              "padding": [
+                                0,
+                                0,
+                                2,
+                                0
+                              ],
+                              "children": [
+                                {
+                                  "id": "l0Y4vI",
+                                  "type": "ref",
+                                  "ref": "ds:b7blZ",
+                                  "name": "Chip Qiita",
+                                  "descendants": {
+                                    "ds:XWOq8": {
+                                      "content": "Qiita"
+                                    }
+                                  }
+                                },
+                                {
+                                  "id": "K3afsx",
+                                  "type": "ref",
+                                  "ref": "ds:b7blZ",
+                                  "name": "Chip PdM",
+                                  "descendants": {
+                                    "ds:XWOq8": {
+                                      "content": "PdM"
+                                    }
+                                  }
+                                }
+                              ]
+                            },
+                            "ds:nNTog": {
+                              "content": "ストックのシェア機能プロジェクト"
+                            },
+                            "ds:eHeHZ": {
+                              "content": "ストックのシェア機能の企画/設計を担当した。"
+                            },
+                            "ds:A08RFM": {
+                              "content": "2025年2月〜"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "nwSKR",
+                      "name": "Row 3",
+                      "width": "fill_container",
+                      "gap": 32,
+                      "children": [
+                        {
+                          "id": "DTghZ",
+                          "type": "ref",
+                          "ref": "ds:fWOYf",
+                          "name": "Project qiita-bash",
+                          "width": "fill_container",
+                          "descendants": {
+                            "ds:CVcDO": {
+                              "type": "frame",
+                              "id": "TN1IA",
+                              "name": "Project Labels",
+                              "gap": 8,
+                              "padding": [
+                                0,
+                                0,
+                                2,
+                                0
+                              ],
+                              "children": [
+                                {
+                                  "id": "THL7l",
+                                  "type": "ref",
+                                  "ref": "ds:b7blZ",
+                                  "name": "Chip Qiita",
+                                  "descendants": {
+                                    "ds:XWOq8": {
+                                      "content": "Qiita"
+                                    }
+                                  }
+                                },
+                                {
+                                  "id": "WUFSb",
+                                  "type": "ref",
+                                  "ref": "ds:b7blZ",
+                                  "name": "Chip イベント",
+                                  "descendants": {
+                                    "ds:XWOq8": {
+                                      "content": "イベント"
+                                    }
+                                  }
+                                }
+                              ]
+                            },
+                            "ds:nNTog": {
+                              "content": "Qiita Bash"
+                            },
+                            "ds:eHeHZ": {
+                              "content": "Qiita Bashに関するイベント企画・集客・運営・配信"
+                            },
+                            "ds:A08RFM": {
+                              "content": "2024年4月〜"
+                            }
+                          }
+                        },
+                        {
+                          "id": "BRxOv",
+                          "type": "ref",
+                          "ref": "ds:fWOYf",
+                          "name": "Project accessibility-project",
+                          "width": "fill_container",
+                          "descendants": {
+                            "ds:CVcDO": {
+                              "type": "frame",
+                              "id": "k2mec",
+                              "name": "Project Labels",
+                              "gap": 8,
+                              "padding": [
+                                0,
+                                0,
+                                2,
+                                0
+                              ],
+                              "children": [
+                                {
+                                  "id": "j9cJvL",
+                                  "type": "ref",
+                                  "ref": "ds:b7blZ",
+                                  "name": "Chip Qiita",
+                                  "descendants": {
+                                    "ds:XWOq8": {
+                                      "content": "Qiita"
+                                    }
+                                  }
+                                },
+                                {
+                                  "id": "L8m8PZ",
+                                  "type": "ref",
+                                  "ref": "ds:b7blZ",
+                                  "name": "Chip Accessibility",
+                                  "descendants": {
+                                    "ds:XWOq8": {
+                                      "content": "Accessibility"
+                                    }
+                                  }
+                                },
+                                {
+                                  "id": "HfZ2i",
+                                  "type": "ref",
+                                  "ref": "ds:b7blZ",
+                                  "name": "Chip 人材育成",
+                                  "descendants": {
+                                    "ds:XWOq8": {
+                                      "content": "人材育成"
+                                    }
+                                  }
+                                }
+                              ]
+                            },
+                            "ds:nNTog": {
+                              "content": "アクセシビリティ改善プロジェクト"
+                            },
+                            "ds:eHeHZ": {
+                              "content": "アクセシビリティに関する知識の浸透、人材育成、Qiitaのプロダクト改善を担当した。"
+                            },
+                            "ds:A08RFM": {
+                              "content": "2024年4月〜"
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "BX0Q9",
+                  "name": "Spacer",
+                  "width": 1,
+                  "height": 24
+                },
+                {
+                  "id": "zDXs5",
+                  "type": "ref",
+                  "ref": "ds:X94P1S",
+                  "name": "More Projects"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "hC8yz",
+              "name": "Product",
+              "width": "fill_container",
+              "layout": "vertical",
+              "padding": [
+                128,
+                0,
+                64,
+                0
+              ],
+              "children": [
+                {
+                  "type": "text",
+                  "id": "r6Efh",
+                  "name": "Section Heading",
+                  "fill": "$ds:color-high-emphasis",
+                  "content": "制作物",
+                  "lineHeight": "$ds:line-height-heading",
+                  "fontFamily": "$ds:font-family",
+                  "fontSize": "$ds:font-size-heading-1",
+                  "fontWeight": "$ds:font-weight-bold"
+                },
+                {
+                  "type": "frame",
+                  "id": "sgjK4",
+                  "name": "Spacer",
+                  "width": 1,
+                  "height": 32
+                },
+                {
+                  "type": "frame",
+                  "id": "uLmRX",
+                  "name": "Product List",
+                  "width": "fill_container",
+                  "gap": 32,
+                  "children": [
+                    {
+                      "id": "wpbTF",
+                      "type": "ref",
+                      "ref": "ffFng",
+                      "name": "Product Fivia",
+                      "width": "fill_container",
+                      "descendants": {
+                        "YMs9M": {
+                          "fill": {
+                            "type": "image",
+                            "enabled": true,
+                            "url": "../../../src/contents/Product/fivia/img/image-ogp.png",
+                            "mode": "cover"
+                          }
+                        },
+                        "x9w1Od": {
+                          "content": "Fivia"
+                        }
+                      }
+                    },
+                    {
+                      "id": "mDv1k",
+                      "type": "ref",
+                      "ref": "ffFng",
+                      "name": "Product michibiki",
+                      "width": "fill_container",
+                      "descendants": {
+                        "YMs9M": {
+                          "fill": {
+                            "type": "image",
+                            "enabled": true,
+                            "url": "../../../src/contents/Product/michibiki/img/image-ogp.png",
+                            "mode": "cover"
+                          }
+                        },
+                        "x9w1Od": {
+                          "content": "michibiki"
+                        }
+                      }
+                    },
+                    {
+                      "id": "x4Cta",
+                      "type": "ref",
+                      "ref": "ffFng",
+                      "name": "Product TOMONOITO",
+                      "width": "fill_container",
+                      "descendants": {
+                        "YMs9M": {
+                          "fill": {
+                            "type": "image",
+                            "enabled": true,
+                            "url": "../../../src/contents/Product/tomonoito/img/image-ogp.png",
+                            "mode": "cover"
+                          }
+                        },
+                        "x9w1Od": {
+                          "content": "TOMONOITO"
+                        }
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "eyb1x",
+              "name": "StageHistory",
+              "width": "fill_container",
+              "layout": "vertical",
+              "padding": [
+                64,
+                0
+              ],
+              "children": [
+                {
+                  "type": "text",
+                  "id": "bKQw2",
+                  "name": "Section Heading",
+                  "fill": "$ds:color-high-emphasis",
+                  "content": "登壇歴",
+                  "lineHeight": "$ds:line-height-heading",
+                  "fontFamily": "$ds:font-family",
+                  "fontSize": "$ds:font-size-heading-1",
+                  "fontWeight": "$ds:font-weight-bold"
+                },
+                {
+                  "type": "frame",
+                  "id": "RFPH6",
+                  "name": "Spacer",
+                  "width": 1,
+                  "height": 32
+                },
+                {
+                  "type": "frame",
+                  "id": "vqTCY",
+                  "name": "StageHistory Table",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "children": [
+                    {
+                      "id": "xJP58",
+                      "type": "ref",
+                      "ref": "ds:FmWaQ",
+                      "name": "Table Header",
+                      "width": "fill_container"
+                    },
+                    {
+                      "id": "ci0EM",
+                      "type": "ref",
+                      "ref": "ds:Vn7Cy",
+                      "name": "Row 2026年8月21日",
+                      "width": "fill_container",
+                      "descendants": {
+                        "ds:cCisc": {
+                          "content": "2026年8月21日"
+                        },
+                        "ds:A0JB7": {
+                          "content": "Vibe.TOKYO, AI & CRAFT｜AIネイティブ・エキシビション"
+                        }
+                      }
+                    },
+                    {
+                      "id": "Oq4uB",
+                      "type": "ref",
+                      "ref": "ds:Vn7Cy",
+                      "name": "Row 2026年8月7日",
+                      "width": "fill_container",
+                      "descendants": {
+                        "ds:cCisc": {
+                          "content": "2026年8月7日"
+                        },
+                        "ds:A0JB7": {
+                          "content": "TechTalks! #4：それぞれのデザインシステム。"
+                        }
+                      }
+                    },
+                    {
+                      "id": "N4rVS",
+                      "type": "ref",
+                      "ref": "ds:Vn7Cy",
+                      "name": "Row 2026年8月6日",
+                      "width": "fill_container",
+                      "descendants": {
+                        "ds:cCisc": {
+                          "content": "2026年8月6日"
+                        },
+                        "ds:A0JB7": {
+                          "content": "社内LT会"
+                        }
+                      }
+                    },
+                    {
+                      "id": "FLvVV",
+                      "type": "ref",
+                      "ref": "ds:Vn7Cy",
+                      "name": "Row 2026年4月10日",
+                      "width": "fill_container",
+                      "descendants": {
+                        "ds:cCisc": {
+                          "content": "2026年4月10日"
+                        },
+                        "ds:A0JB7": {
+                          "content": "アクセシビリティ対応の「どこまでやる？」を言語化する　~チームで迷わないための設計と判断基準~"
+                        }
+                      }
+                    },
+                    {
+                      "id": "R0X6I",
+                      "type": "ref",
+                      "ref": "ds:Vn7Cy",
+                      "name": "Row 2025年8月7日",
+                      "width": "fill_container",
+                      "descendants": {
+                        "ds:cCisc": {
+                          "content": "2025年8月7日"
+                        },
+                        "ds:A0JB7": {
+                          "content": "Canly Tech Hub ~vol.1~ みんなで学ぼう！開発現場におけるMCPの活用事例LT会"
+                        }
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "lKxoa",
+                  "name": "Spacer",
+                  "width": 1,
+                  "height": 24
+                },
+                {
+                  "id": "xc8Eo",
+                  "type": "ref",
+                  "ref": "ds:X94P1S",
+                  "name": "More StageHistory"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "ba8bu",
+              "name": "PostArticle",
+              "width": "fill_container",
+              "layout": "vertical",
+              "padding": [
+                64,
+                0
+              ],
+              "children": [
+                {
+                  "type": "text",
+                  "id": "b98o7t",
+                  "name": "Section Heading",
+                  "fill": "$ds:color-high-emphasis",
+                  "content": "投稿記事",
+                  "lineHeight": "$ds:line-height-heading",
+                  "fontFamily": "$ds:font-family",
+                  "fontSize": "$ds:font-size-heading-1",
+                  "fontWeight": "$ds:font-weight-bold"
+                },
+                {
+                  "type": "frame",
+                  "id": "C8PmoS",
+                  "name": "Spacer",
+                  "width": 1,
+                  "height": 32
+                },
+                {
+                  "type": "frame",
+                  "id": "LUihO",
+                  "name": "Article List",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 16,
+                  "children": [
+                    {
+                      "id": "kPSUM",
+                      "type": "ref",
+                      "ref": "ds:Kdg5E",
+                      "name": "Article",
+                      "width": "fill_container",
+                      "descendants": {
+                        "ds:BsILQ": {
+                          "content": "【Personal OS #3】Claude Codeで、ミーティングを自動でドキュメント化する仕組み"
+                        },
+                        "ds:eHBgO": {
+                          "content": "7"
+                        },
+                        "ds:HpPC7": {
+                          "content": "自動化  AI  タスク管理  MCP  ClaudeCode"
+                        }
+                      }
+                    },
+                    {
+                      "id": "d5gXYo",
+                      "type": "ref",
+                      "ref": "ds:Kdg5E",
+                      "name": "Article",
+                      "width": "fill_container",
+                      "descendants": {
+                        "ds:BsILQ": {
+                          "content": "【Personal OS #2】Claude Codeで、Gmailをタスク化・返信提案する仕組み"
+                        },
+                        "ds:eHBgO": {
+                          "content": "3"
+                        },
+                        "ds:HpPC7": {
+                          "content": "自動化  AI  タスク管理  MCP  ClaudeCode"
+                        }
+                      }
+                    },
+                    {
+                      "id": "N98HID",
+                      "type": "ref",
+                      "ref": "ds:Kdg5E",
+                      "name": "Article",
+                      "width": "fill_container",
+                      "descendants": {
+                        "ds:BsILQ": {
+                          "content": "【Personal OS #1】Claude Codeで、毎日の仕事を自動化する仕組み"
+                        },
+                        "ds:eHBgO": {
+                          "content": "11"
+                        },
+                        "ds:HpPC7": {
+                          "content": "自動化  AI  タスク管理  MCP  ClaudeCode"
+                        }
+                      }
+                    },
+                    {
+                      "id": "OoUVL",
+                      "type": "ref",
+                      "ref": "ds:Kdg5E",
+                      "name": "Article",
+                      "width": "fill_container",
+                      "descendants": {
+                        "ds:BsILQ": {
+                          "content": "Chrome 151 で追加された textStream() で、テキストストリーミングがシンプルになった"
+                        },
+                        "ds:eHBgO": {
+                          "content": "1"
+                        },
+                        "ds:HpPC7": {
+                          "content": "JavaScript  Chrome  Web  フロントエンド"
+                        }
+                      }
+                    },
+                    {
+                      "id": "YJp07",
+                      "type": "ref",
+                      "ref": "ds:Kdg5E",
+                      "name": "Article",
+                      "width": "fill_container",
+                      "descendants": {
+                        "ds:BsILQ": {
+                          "content": "【CSS】ルビのはみ出し制御が Chrome 151 で可能に"
+                        },
+                        "ds:eHBgO": {
+                          "content": "0"
+                        },
+                        "ds:HpPC7": {
+                          "content": "HTML  CSS  Chrome  フロントエンド"
+                        }
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "j3eXb",
+                  "name": "Spacer",
+                  "width": 1,
+                  "height": 24
+                },
+                {
+                  "id": "e9W1uV",
+                  "type": "ref",
+                  "ref": "ds:X94P1S",
+                  "name": "More Articles"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "exlJq",
+          "type": "ref",
+          "ref": "ds:q77i4",
+          "name": "Footer",
+          "width": 1152
+        }
+      ]
+    }
+  ],
+  "imports": {
+    "ds": "../../design-system.lib.pen"
+  },
+  "fileToken": "bad97e6c-ac5a-423f-8784-24db75d890cf"
+}

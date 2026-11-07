@@ -1,0 +1,975 @@
+{
+  "version": "2.22",
+  "children": [
+    {
+      "type": "frame",
+      "id": "YU1NQ",
+      "x": 0,
+      "y": 0,
+      "name": "/articles — light",
+      "theme": {
+        "ds:mode": "light"
+      },
+      "clip": true,
+      "width": 1440,
+      "fill": {
+        "type": "shader",
+        "enabled": true,
+        "url": "../../../src/component/Atoms/GradientBackground/gradientBackground.glsl",
+        "uniforms": {
+          "u_top": "$ds:background-top",
+          "u_middle": "$ds:background-middle",
+          "u_bottom": "$ds:background-bottom",
+          "u_gridColor": "$ds:background-grid",
+          "u_gridOpacity": 0.1,
+          "u_noise": 30,
+          "u_waveSpeed": 0.5,
+          "u_waveAmplitude": 0.3,
+          "u_flagOpacity": 8,
+          "u_gridSize": 192
+        }
+      },
+      "layout": "vertical",
+      "alignItems": "center",
+      "children": [
+        {
+          "id": "KDcI3",
+          "type": "ref",
+          "ref": "ds:xdOlG",
+          "name": "Header",
+          "width": 1152
+        },
+        {
+          "type": "frame",
+          "id": "M5nXuJ",
+          "name": "Main",
+          "width": 1152,
+          "layout": "vertical",
+          "padding": [
+            0,
+            16
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "mOTP4",
+              "name": "Articles",
+              "width": "fill_container",
+              "layout": "vertical",
+              "padding": [
+                64,
+                0
+              ],
+              "children": [
+                {
+                  "type": "text",
+                  "id": "FXTgn",
+                  "name": "Section Heading",
+                  "fill": "$ds:color-high-emphasis",
+                  "content": "投稿記事",
+                  "lineHeight": "$ds:line-height-heading",
+                  "fontFamily": "$ds:font-family",
+                  "fontSize": "$ds:font-size-heading-1",
+                  "fontWeight": "$ds:font-weight-bold"
+                },
+                {
+                  "type": "frame",
+                  "id": "ng1za",
+                  "name": "Spacer",
+                  "width": 1,
+                  "height": 32
+                },
+                {
+                  "type": "frame",
+                  "id": "l76Y3",
+                  "name": "Articles Body",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 16,
+                  "children": [
+                    {
+                      "id": "pvW8z",
+                      "type": "ref",
+                      "ref": "ds:Kdg5E",
+                      "name": "Article",
+                      "width": "fill_container",
+                      "descendants": {
+                        "ds:BsILQ": {
+                          "content": "【Personal OS #3】Claude Codeで、ミーティングを自動でドキュメント化する仕組み"
+                        },
+                        "ds:eHBgO": {
+                          "content": "7"
+                        },
+                        "ds:HpPC7": {
+                          "content": "自動化  AI  タスク管理  MCP  ClaudeCode"
+                        }
+                      }
+                    },
+                    {
+                      "id": "qzDWX",
+                      "type": "ref",
+                      "ref": "ds:Kdg5E",
+                      "name": "Article",
+                      "width": "fill_container",
+                      "descendants": {
+                        "ds:BsILQ": {
+                          "content": "【Personal OS #2】Claude Codeで、Gmailをタスク化・返信提案する仕組み"
+                        },
+                        "ds:eHBgO": {
+                          "content": "3"
+                        },
+                        "ds:HpPC7": {
+                          "content": "自動化  AI  タスク管理  MCP  ClaudeCode"
+                        }
+                      }
+                    },
+                    {
+                      "id": "tz7rB",
+                      "type": "ref",
+                      "ref": "ds:Kdg5E",
+                      "name": "Article",
+                      "width": "fill_container",
+                      "descendants": {
+                        "ds:BsILQ": {
+                          "content": "【Personal OS #1】Claude Codeで、毎日の仕事を自動化する仕組み"
+                        },
+                        "ds:eHBgO": {
+                          "content": "11"
+                        },
+                        "ds:HpPC7": {
+                          "content": "自動化  AI  タスク管理  MCP  ClaudeCode"
+                        }
+                      }
+                    },
+                    {
+                      "id": "Yzj6O",
+                      "type": "ref",
+                      "ref": "ds:Kdg5E",
+                      "name": "Article",
+                      "width": "fill_container",
+                      "descendants": {
+                        "ds:BsILQ": {
+                          "content": "Chrome 151 で追加された textStream() で、テキストストリーミングがシンプルになった"
+                        },
+                        "ds:eHBgO": {
+                          "content": "1"
+                        },
+                        "ds:HpPC7": {
+                          "content": "JavaScript  Chrome  Web  フロントエンド"
+                        }
+                      }
+                    },
+                    {
+                      "id": "DVjun",
+                      "type": "ref",
+                      "ref": "ds:Kdg5E",
+                      "name": "Article",
+                      "width": "fill_container",
+                      "descendants": {
+                        "ds:BsILQ": {
+                          "content": "【CSS】ルビのはみ出し制御が Chrome 151 で可能に"
+                        },
+                        "ds:eHBgO": {
+                          "content": "0"
+                        },
+                        "ds:HpPC7": {
+                          "content": "HTML  CSS  Chrome  フロントエンド"
+                        }
+                      }
+                    },
+                    {
+                      "id": "PC6Xh",
+                      "type": "ref",
+                      "ref": "ds:Kdg5E",
+                      "name": "Article",
+                      "width": "fill_container",
+                      "descendants": {
+                        "ds:BsILQ": {
+                          "content": "【HTML】focusgroup属性でキーボードナビゲーションを宣言的に実装しよう"
+                        },
+                        "ds:eHBgO": {
+                          "content": "1"
+                        },
+                        "ds:HpPC7": {
+                          "content": "HTML  フロントエンド  アクセシビリティ"
+                        }
+                      }
+                    },
+                    {
+                      "id": "xvd6I",
+                      "type": "ref",
+                      "ref": "ds:Kdg5E",
+                      "name": "Article",
+                      "width": "fill_container",
+                      "descendants": {
+                        "ds:BsILQ": {
+                          "content": "【Chrome】ソフトナビゲーション（Soft Navigation）とは？SPA のパフォーマンス計測が変わる新しい仕組み"
+                        },
+                        "ds:eHBgO": {
+                          "content": "2"
+                        },
+                        "ds:HpPC7": {
+                          "content": "JavaScript  Chrome  SPA  パフォーマンス  CoreWebVitals"
+                        }
+                      }
+                    },
+                    {
+                      "id": "QE4ql",
+                      "type": "ref",
+                      "ref": "ds:Kdg5E",
+                      "name": "Article",
+                      "width": "fill_container",
+                      "descendants": {
+                        "ds:BsILQ": {
+                          "content": "【Vite+】フロントエンド開発に必要なツールを全部入りにしたオールインワンCLI"
+                        },
+                        "ds:eHBgO": {
+                          "content": "4"
+                        },
+                        "ds:HpPC7": {
+                          "content": "フロントエンド  vite  vite+"
+                        }
+                      }
+                    },
+                    {
+                      "id": "lcrsF",
+                      "type": "ref",
+                      "ref": "ds:Kdg5E",
+                      "name": "Article",
+                      "width": "fill_container",
+                      "descendants": {
+                        "ds:BsILQ": {
+                          "content": "Figma Config 2026 まとめ"
+                        },
+                        "ds:eHBgO": {
+                          "content": "2"
+                        },
+                        "ds:HpPC7": {
+                          "content": "Design  AI  Figma"
+                        }
+                      }
+                    },
+                    {
+                      "id": "Cv9R8",
+                      "type": "ref",
+                      "ref": "ds:Kdg5E",
+                      "name": "Article",
+                      "width": "fill_container",
+                      "descendants": {
+                        "ds:BsILQ": {
+                          "content": "WebMCP 命令型 API で始める AI エージェント対応 Web ページの作り方"
+                        },
+                        "ds:eHBgO": {
+                          "content": "2"
+                        },
+                        "ds:HpPC7": {
+                          "content": "JavaScript  Chrome  AI  MCP  WebMCP"
+                        }
+                      }
+                    },
+                    {
+                      "id": "mYz0F",
+                      "type": "ref",
+                      "ref": "ds:Kdg5E",
+                      "name": "Article",
+                      "width": "fill_container",
+                      "descendants": {
+                        "ds:BsILQ": {
+                          "content": "WebMCP 宣言型 API で始める AI エージェント対応 Web ページの作り方"
+                        },
+                        "ds:eHBgO": {
+                          "content": "1"
+                        },
+                        "ds:HpPC7": {
+                          "content": "JavaScript  Chrome  AI  MCP  WebMCP"
+                        }
+                      }
+                    },
+                    {
+                      "id": "Kp5Pf",
+                      "type": "ref",
+                      "ref": "ds:Kdg5E",
+                      "name": "Article",
+                      "width": "fill_container",
+                      "descendants": {
+                        "ds:BsILQ": {
+                          "content": "AIを定期実行するベストプラクティス：Cron・launchd・/loop・GitHub Actions 徹底比較"
+                        },
+                        "ds:eHBgO": {
+                          "content": "8"
+                        },
+                        "ds:HpPC7": {
+                          "content": "ShellScript  自動化  AI  GitHubActions  ClaudeCode"
+                        }
+                      }
+                    },
+                    {
+                      "id": "dtQzA",
+                      "type": "ref",
+                      "ref": "ds:Kdg5E",
+                      "name": "Article",
+                      "width": "fill_container",
+                      "descendants": {
+                        "ds:BsILQ": {
+                          "content": "【CSS】clip-pathのpolygon()を角丸にする方法"
+                        },
+                        "ds:eHBgO": {
+                          "content": "7"
+                        },
+                        "ds:HpPC7": {
+                          "content": "HTML  CSS  Design  フロントエンド"
+                        }
+                      }
+                    },
+                    {
+                      "id": "yvJUh",
+                      "type": "ref",
+                      "ref": "ds:Kdg5E",
+                      "name": "Article",
+                      "width": "fill_container",
+                      "descendants": {
+                        "ds:BsILQ": {
+                          "content": "【Chrome】ふりがなのautocompleteサポートするようになった！！"
+                        },
+                        "ds:eHBgO": {
+                          "content": "4"
+                        },
+                        "ds:HpPC7": {
+                          "content": "HTML  Chrome  フロントエンド"
+                        }
+                      }
+                    },
+                    {
+                      "id": "Tp39w",
+                      "type": "ref",
+                      "ref": "ds:Kdg5E",
+                      "name": "Article",
+                      "width": "fill_container",
+                      "descendants": {
+                        "ds:BsILQ": {
+                          "content": "【CSS】text-fitプロパティでテキストをコンテナ幅にフィットさせる！！"
+                        },
+                        "ds:eHBgO": {
+                          "content": "2"
+                        },
+                        "ds:HpPC7": {
+                          "content": "HTML  CSS  Design  フロントエンド"
+                        }
+                      }
+                    },
+                    {
+                      "id": "qN6s4",
+                      "type": "ref",
+                      "ref": "ds:Kdg5E",
+                      "name": "Article",
+                      "width": "fill_container",
+                      "descendants": {
+                        "ds:BsILQ": {
+                          "content": "【CSS】FlexとGridのGapにBorderをつけることができるようになった！！"
+                        },
+                        "ds:eHBgO": {
+                          "content": "24"
+                        },
+                        "ds:HpPC7": {
+                          "content": "HTML  CSS  Design  フロントエンド"
+                        }
+                      }
+                    },
+                    {
+                      "id": "pzTvo",
+                      "type": "ref",
+                      "ref": "ds:Kdg5E",
+                      "name": "Article",
+                      "width": "fill_container",
+                      "descendants": {
+                        "ds:BsILQ": {
+                          "content": "自作Chrome拡張機能をChrome Web Storeに公開するまでにやったこと"
+                        },
+                        "ds:eHBgO": {
+                          "content": "7"
+                        },
+                        "ds:HpPC7": {
+                          "content": "TypeScript  chrome-extension  個人開発  Supabase"
+                        }
+                      }
+                    },
+                    {
+                      "id": "MU5lM",
+                      "type": "ref",
+                      "ref": "ds:Kdg5E",
+                      "name": "Article",
+                      "width": "fill_container",
+                      "descendants": {
+                        "ds:BsILQ": {
+                          "content": "個人開発に AI-DLC を導入してみたら、開発体験がガラッと変わった話"
+                        },
+                        "ds:eHBgO": {
+                          "content": "10"
+                        },
+                        "ds:HpPC7": {
+                          "content": "個人開発  生成AI  ClaudeCode  AI-DLC"
+                        }
+                      }
+                    },
+                    {
+                      "id": "G6d7a",
+                      "type": "ref",
+                      "ref": "ds:Kdg5E",
+                      "name": "Article",
+                      "width": "fill_container",
+                      "descendants": {
+                        "ds:BsILQ": {
+                          "content": "Claude Codeから画像をWezTermに表示する方法"
+                        },
+                        "ds:eHBgO": {
+                          "content": "5"
+                        },
+                        "ds:HpPC7": {
+                          "content": "OpenAI  画像生成  Wezterm  ClaudeCode"
+                        }
+                      }
+                    },
+                    {
+                      "id": "UaL10",
+                      "type": "ref",
+                      "ref": "ds:Kdg5E",
+                      "name": "Article",
+                      "width": "fill_container",
+                      "descendants": {
+                        "ds:BsILQ": {
+                          "content": "AIに「このスタイルで」を伝えたくてMCPツールを作った話"
+                        },
+                        "ds:eHBgO": {
+                          "content": "3"
+                        },
+                        "ds:HpPC7": {
+                          "content": "chrome-extension  AI  MCP  個人開発  ClaudeCode"
+                        }
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "bORV5",
+                  "name": "Spacer",
+                  "width": 1,
+                  "height": 32
+                },
+                {
+                  "type": "frame",
+                  "id": "zXfC9",
+                  "name": "Pagination Wrapper",
+                  "width": "fill_container",
+                  "justifyContent": "center",
+                  "children": [
+                    {
+                      "id": "P7VjKN",
+                      "type": "ref",
+                      "ref": "ds:yTFaz",
+                      "name": "Pagination"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "e7auA",
+          "type": "ref",
+          "ref": "ds:q77i4",
+          "name": "Footer",
+          "width": 1152
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "L2pxz",
+      "x": 1540,
+      "y": 0,
+      "name": "/articles — dark",
+      "theme": {
+        "ds:mode": "dark"
+      },
+      "clip": true,
+      "width": 1440,
+      "fill": {
+        "type": "shader",
+        "enabled": true,
+        "url": "../../../src/component/Atoms/GradientBackground/gradientBackground.glsl",
+        "uniforms": {
+          "u_top": "$ds:background-top",
+          "u_middle": "$ds:background-middle",
+          "u_bottom": "$ds:background-bottom",
+          "u_gridColor": "$ds:background-grid",
+          "u_gridOpacity": 0.1,
+          "u_noise": 30,
+          "u_waveSpeed": 0.5,
+          "u_waveAmplitude": 0.3,
+          "u_flagOpacity": 8,
+          "u_gridSize": 192
+        }
+      },
+      "layout": "vertical",
+      "alignItems": "center",
+      "children": [
+        {
+          "id": "udpHU",
+          "type": "ref",
+          "ref": "ds:xdOlG",
+          "name": "Header",
+          "width": 1152
+        },
+        {
+          "type": "frame",
+          "id": "x9rnL",
+          "name": "Main",
+          "width": 1152,
+          "layout": "vertical",
+          "padding": [
+            0,
+            16
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "MxAKf",
+              "name": "Articles",
+              "width": "fill_container",
+              "layout": "vertical",
+              "padding": [
+                64,
+                0
+              ],
+              "children": [
+                {
+                  "type": "text",
+                  "id": "k3k5PK",
+                  "name": "Section Heading",
+                  "fill": "$ds:color-high-emphasis",
+                  "content": "投稿記事",
+                  "lineHeight": "$ds:line-height-heading",
+                  "fontFamily": "$ds:font-family",
+                  "fontSize": "$ds:font-size-heading-1",
+                  "fontWeight": "$ds:font-weight-bold"
+                },
+                {
+                  "type": "frame",
+                  "id": "QuGLT",
+                  "name": "Spacer",
+                  "width": 1,
+                  "height": 32
+                },
+                {
+                  "type": "frame",
+                  "id": "m6gw0",
+                  "name": "Articles Body",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 16,
+                  "children": [
+                    {
+                      "id": "DQvgh",
+                      "type": "ref",
+                      "ref": "ds:Kdg5E",
+                      "name": "Article",
+                      "width": "fill_container",
+                      "descendants": {
+                        "ds:BsILQ": {
+                          "content": "【Personal OS #3】Claude Codeで、ミーティングを自動でドキュメント化する仕組み"
+                        },
+                        "ds:eHBgO": {
+                          "content": "7"
+                        },
+                        "ds:HpPC7": {
+                          "content": "自動化  AI  タスク管理  MCP  ClaudeCode"
+                        }
+                      }
+                    },
+                    {
+                      "id": "P6qEe",
+                      "type": "ref",
+                      "ref": "ds:Kdg5E",
+                      "name": "Article",
+                      "width": "fill_container",
+                      "descendants": {
+                        "ds:BsILQ": {
+                          "content": "【Personal OS #2】Claude Codeで、Gmailをタスク化・返信提案する仕組み"
+                        },
+                        "ds:eHBgO": {
+                          "content": "3"
+                        },
+                        "ds:HpPC7": {
+                          "content": "自動化  AI  タスク管理  MCP  ClaudeCode"
+                        }
+                      }
+                    },
+                    {
+                      "id": "X5TcXk",
+                      "type": "ref",
+                      "ref": "ds:Kdg5E",
+                      "name": "Article",
+                      "width": "fill_container",
+                      "descendants": {
+                        "ds:BsILQ": {
+                          "content": "【Personal OS #1】Claude Codeで、毎日の仕事を自動化する仕組み"
+                        },
+                        "ds:eHBgO": {
+                          "content": "11"
+                        },
+                        "ds:HpPC7": {
+                          "content": "自動化  AI  タスク管理  MCP  ClaudeCode"
+                        }
+                      }
+                    },
+                    {
+                      "id": "FeJSa",
+                      "type": "ref",
+                      "ref": "ds:Kdg5E",
+                      "name": "Article",
+                      "width": "fill_container",
+                      "descendants": {
+                        "ds:BsILQ": {
+                          "content": "Chrome 151 で追加された textStream() で、テキストストリーミングがシンプルになった"
+                        },
+                        "ds:eHBgO": {
+                          "content": "1"
+                        },
+                        "ds:HpPC7": {
+                          "content": "JavaScript  Chrome  Web  フロントエンド"
+                        }
+                      }
+                    },
+                    {
+                      "id": "ZWFj7",
+                      "type": "ref",
+                      "ref": "ds:Kdg5E",
+                      "name": "Article",
+                      "width": "fill_container",
+                      "descendants": {
+                        "ds:BsILQ": {
+                          "content": "【CSS】ルビのはみ出し制御が Chrome 151 で可能に"
+                        },
+                        "ds:eHBgO": {
+                          "content": "0"
+                        },
+                        "ds:HpPC7": {
+                          "content": "HTML  CSS  Chrome  フロントエンド"
+                        }
+                      }
+                    },
+                    {
+                      "id": "tGxr3",
+                      "type": "ref",
+                      "ref": "ds:Kdg5E",
+                      "name": "Article",
+                      "width": "fill_container",
+                      "descendants": {
+                        "ds:BsILQ": {
+                          "content": "【HTML】focusgroup属性でキーボードナビゲーションを宣言的に実装しよう"
+                        },
+                        "ds:eHBgO": {
+                          "content": "1"
+                        },
+                        "ds:HpPC7": {
+                          "content": "HTML  フロントエンド  アクセシビリティ"
+                        }
+                      }
+                    },
+                    {
+                      "id": "WJ5BG",
+                      "type": "ref",
+                      "ref": "ds:Kdg5E",
+                      "name": "Article",
+                      "width": "fill_container",
+                      "descendants": {
+                        "ds:BsILQ": {
+                          "content": "【Chrome】ソフトナビゲーション（Soft Navigation）とは？SPA のパフォーマンス計測が変わる新しい仕組み"
+                        },
+                        "ds:eHBgO": {
+                          "content": "2"
+                        },
+                        "ds:HpPC7": {
+                          "content": "JavaScript  Chrome  SPA  パフォーマンス  CoreWebVitals"
+                        }
+                      }
+                    },
+                    {
+                      "id": "m1bIt",
+                      "type": "ref",
+                      "ref": "ds:Kdg5E",
+                      "name": "Article",
+                      "width": "fill_container",
+                      "descendants": {
+                        "ds:BsILQ": {
+                          "content": "【Vite+】フロントエンド開発に必要なツールを全部入りにしたオールインワンCLI"
+                        },
+                        "ds:eHBgO": {
+                          "content": "4"
+                        },
+                        "ds:HpPC7": {
+                          "content": "フロントエンド  vite  vite+"
+                        }
+                      }
+                    },
+                    {
+                      "id": "zvD2n",
+                      "type": "ref",
+                      "ref": "ds:Kdg5E",
+                      "name": "Article",
+                      "width": "fill_container",
+                      "descendants": {
+                        "ds:BsILQ": {
+                          "content": "Figma Config 2026 まとめ"
+                        },
+                        "ds:eHBgO": {
+                          "content": "2"
+                        },
+                        "ds:HpPC7": {
+                          "content": "Design  AI  Figma"
+                        }
+                      }
+                    },
+                    {
+                      "id": "K123M",
+                      "type": "ref",
+                      "ref": "ds:Kdg5E",
+                      "name": "Article",
+                      "width": "fill_container",
+                      "descendants": {
+                        "ds:BsILQ": {
+                          "content": "WebMCP 命令型 API で始める AI エージェント対応 Web ページの作り方"
+                        },
+                        "ds:eHBgO": {
+                          "content": "2"
+                        },
+                        "ds:HpPC7": {
+                          "content": "JavaScript  Chrome  AI  MCP  WebMCP"
+                        }
+                      }
+                    },
+                    {
+                      "id": "d8TfF",
+                      "type": "ref",
+                      "ref": "ds:Kdg5E",
+                      "name": "Article",
+                      "width": "fill_container",
+                      "descendants": {
+                        "ds:BsILQ": {
+                          "content": "WebMCP 宣言型 API で始める AI エージェント対応 Web ページの作り方"
+                        },
+                        "ds:eHBgO": {
+                          "content": "1"
+                        },
+                        "ds:HpPC7": {
+                          "content": "JavaScript  Chrome  AI  MCP  WebMCP"
+                        }
+                      }
+                    },
+                    {
+                      "id": "oZZ14",
+                      "type": "ref",
+                      "ref": "ds:Kdg5E",
+                      "name": "Article",
+                      "width": "fill_container",
+                      "descendants": {
+                        "ds:BsILQ": {
+                          "content": "AIを定期実行するベストプラクティス：Cron・launchd・/loop・GitHub Actions 徹底比較"
+                        },
+                        "ds:eHBgO": {
+                          "content": "8"
+                        },
+                        "ds:HpPC7": {
+                          "content": "ShellScript  自動化  AI  GitHubActions  ClaudeCode"
+                        }
+                      }
+                    },
+                    {
+                      "id": "rAZsj",
+                      "type": "ref",
+                      "ref": "ds:Kdg5E",
+                      "name": "Article",
+                      "width": "fill_container",
+                      "descendants": {
+                        "ds:BsILQ": {
+                          "content": "【CSS】clip-pathのpolygon()を角丸にする方法"
+                        },
+                        "ds:eHBgO": {
+                          "content": "7"
+                        },
+                        "ds:HpPC7": {
+                          "content": "HTML  CSS  Design  フロントエンド"
+                        }
+                      }
+                    },
+                    {
+                      "id": "ukZAW",
+                      "type": "ref",
+                      "ref": "ds:Kdg5E",
+                      "name": "Article",
+                      "width": "fill_container",
+                      "descendants": {
+                        "ds:BsILQ": {
+                          "content": "【Chrome】ふりがなのautocompleteサポートするようになった！！"
+                        },
+                        "ds:eHBgO": {
+                          "content": "4"
+                        },
+                        "ds:HpPC7": {
+                          "content": "HTML  Chrome  フロントエンド"
+                        }
+                      }
+                    },
+                    {
+                      "id": "i915y",
+                      "type": "ref",
+                      "ref": "ds:Kdg5E",
+                      "name": "Article",
+                      "width": "fill_container",
+                      "descendants": {
+                        "ds:BsILQ": {
+                          "content": "【CSS】text-fitプロパティでテキストをコンテナ幅にフィットさせる！！"
+                        },
+                        "ds:eHBgO": {
+                          "content": "2"
+                        },
+                        "ds:HpPC7": {
+                          "content": "HTML  CSS  Design  フロントエンド"
+                        }
+                      }
+                    },
+                    {
+                      "id": "tpO9t",
+                      "type": "ref",
+                      "ref": "ds:Kdg5E",
+                      "name": "Article",
+                      "width": "fill_container",
+                      "descendants": {
+                        "ds:BsILQ": {
+                          "content": "【CSS】FlexとGridのGapにBorderをつけることができるようになった！！"
+                        },
+                        "ds:eHBgO": {
+                          "content": "24"
+                        },
+                        "ds:HpPC7": {
+                          "content": "HTML  CSS  Design  フロントエンド"
+                        }
+                      }
+                    },
+                    {
+                      "id": "CHJhm",
+                      "type": "ref",
+                      "ref": "ds:Kdg5E",
+                      "name": "Article",
+                      "width": "fill_container",
+                      "descendants": {
+                        "ds:BsILQ": {
+                          "content": "自作Chrome拡張機能をChrome Web Storeに公開するまでにやったこと"
+                        },
+                        "ds:eHBgO": {
+                          "content": "7"
+                        },
+                        "ds:HpPC7": {
+                          "content": "TypeScript  chrome-extension  個人開発  Supabase"
+                        }
+                      }
+                    },
+                    {
+                      "id": "Fevtg",
+                      "type": "ref",
+                      "ref": "ds:Kdg5E",
+                      "name": "Article",
+                      "width": "fill_container",
+                      "descendants": {
+                        "ds:BsILQ": {
+                          "content": "個人開発に AI-DLC を導入してみたら、開発体験がガラッと変わった話"
+                        },
+                        "ds:eHBgO": {
+                          "content": "10"
+                        },
+                        "ds:HpPC7": {
+                          "content": "個人開発  生成AI  ClaudeCode  AI-DLC"
+                        }
+                      }
+                    },
+                    {
+                      "id": "a7Jvn9",
+                      "type": "ref",
+                      "ref": "ds:Kdg5E",
+                      "name": "Article",
+                      "width": "fill_container",
+                      "descendants": {
+                        "ds:BsILQ": {
+                          "content": "Claude Codeから画像をWezTermに表示する方法"
+                        },
+                        "ds:eHBgO": {
+                          "content": "5"
+                        },
+                        "ds:HpPC7": {
+                          "content": "OpenAI  画像生成  Wezterm  ClaudeCode"
+                        }
+                      }
+                    },
+                    {
+                      "id": "J4fIN",
+                      "type": "ref",
+                      "ref": "ds:Kdg5E",
+                      "name": "Article",
+                      "width": "fill_container",
+                      "descendants": {
+                        "ds:BsILQ": {
+                          "content": "AIに「このスタイルで」を伝えたくてMCPツールを作った話"
+                        },
+                        "ds:eHBgO": {
+                          "content": "3"
+                        },
+                        "ds:HpPC7": {
+                          "content": "chrome-extension  AI  MCP  個人開発  ClaudeCode"
+                        }
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "H9M14",
+                  "name": "Spacer",
+                  "width": 1,
+                  "height": 32
+                },
+                {
+                  "type": "frame",
+                  "id": "KfkY4",
+                  "name": "Pagination Wrapper",
+                  "width": "fill_container",
+                  "justifyContent": "center",
+                  "children": [
+                    {
+                      "id": "w4uAJ",
+                      "type": "ref",
+                      "ref": "ds:yTFaz",
+                      "name": "Pagination"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "kz64o",
+          "type": "ref",
+          "ref": "ds:q77i4",
+          "name": "Footer",
+          "width": 1152
+        }
+      ]
+    }
+  ],
+  "imports": {
+    "ds": "../../design-system.lib.pen"
+  },
+  "fileToken": "37f20b05-8994-4758-9ae2-90c45565b6e4"
+}

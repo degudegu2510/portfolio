@@ -1,0 +1,4621 @@
+{
+  "version": "2.22",
+  "children": [
+    {
+      "type": "frame",
+      "id": "jmKId",
+      "x": 0,
+      "y": 0,
+      "name": "/projects — light",
+      "theme": {
+        "ds:mode": "light"
+      },
+      "clip": true,
+      "width": 1440,
+      "fill": {
+        "type": "shader",
+        "enabled": true,
+        "url": "../../../src/component/Atoms/GradientBackground/gradientBackground.glsl",
+        "uniforms": {
+          "u_top": "$ds:background-top",
+          "u_middle": "$ds:background-middle",
+          "u_bottom": "$ds:background-bottom",
+          "u_gridColor": "$ds:background-grid",
+          "u_gridOpacity": 0.1,
+          "u_noise": 30,
+          "u_waveSpeed": 0.5,
+          "u_waveAmplitude": 0.3,
+          "u_flagOpacity": 8,
+          "u_gridSize": 192
+        }
+      },
+      "layout": "vertical",
+      "alignItems": "center",
+      "children": [
+        {
+          "id": "REMpj",
+          "type": "ref",
+          "ref": "ds:xdOlG",
+          "name": "Header",
+          "width": 1152
+        },
+        {
+          "type": "frame",
+          "id": "RTR3V",
+          "name": "Main",
+          "width": 1152,
+          "layout": "vertical",
+          "padding": [
+            0,
+            16
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "idHJ2",
+              "name": "Projects",
+              "width": "fill_container",
+              "layout": "vertical",
+              "padding": [
+                64,
+                0
+              ],
+              "children": [
+                {
+                  "type": "text",
+                  "id": "bpysN",
+                  "name": "Section Heading",
+                  "fill": "$ds:color-high-emphasis",
+                  "content": "プロジェクト",
+                  "lineHeight": "$ds:line-height-heading",
+                  "fontFamily": "$ds:font-family",
+                  "fontSize": "$ds:font-size-heading-1",
+                  "fontWeight": "$ds:font-weight-bold"
+                },
+                {
+                  "type": "frame",
+                  "id": "wEG0V",
+                  "name": "Spacer",
+                  "width": 1,
+                  "height": 32
+                },
+                {
+                  "type": "frame",
+                  "id": "OomL7",
+                  "name": "Projects Body",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 32,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "jWK0Z",
+                      "name": "Row 1",
+                      "width": "fill_container",
+                      "gap": 32,
+                      "children": [
+                        {
+                          "id": "jSpg9",
+                          "type": "ref",
+                          "ref": "ds:fWOYf",
+                          "name": "Project qiita-for-business-lp",
+                          "width": "fill_container",
+                          "descendants": {
+                            "ds:CVcDO": {
+                              "type": "frame",
+                              "id": "Gto0f",
+                              "name": "Project Labels",
+                              "gap": 8,
+                              "padding": [
+                                0,
+                                0,
+                                2,
+                                0
+                              ],
+                              "children": [
+                                {
+                                  "id": "gGOaV",
+                                  "type": "ref",
+                                  "ref": "ds:b7blZ",
+                                  "name": "Chip Qiita for Business",
+                                  "descendants": {
+                                    "ds:XWOq8": {
+                                      "content": "Qiita for Business"
+                                    }
+                                  }
+                                },
+                                {
+                                  "id": "YYUId",
+                                  "type": "ref",
+                                  "ref": "ds:b7blZ",
+                                  "name": "Chip BtoB",
+                                  "descendants": {
+                                    "ds:XWOq8": {
+                                      "content": "BtoB"
+                                    }
+                                  }
+                                },
+                                {
+                                  "id": "qHWoD",
+                                  "type": "ref",
+                                  "ref": "ds:b7blZ",
+                                  "name": "Chip UI",
+                                  "descendants": {
+                                    "ds:XWOq8": {
+                                      "content": "UI"
+                                    }
+                                  }
+                                },
+                                {
+                                  "id": "zBmpQ",
+                                  "type": "ref",
+                                  "ref": "ds:b7blZ",
+                                  "name": "Chip UX",
+                                  "descendants": {
+                                    "ds:XWOq8": {
+                                      "content": "UX"
+                                    }
+                                  }
+                                },
+                                {
+                                  "id": "P5Zn1W",
+                                  "type": "ref",
+                                  "ref": "ds:b7blZ",
+                                  "name": "Chip Frontend",
+                                  "descendants": {
+                                    "ds:XWOq8": {
+                                      "content": "Frontend"
+                                    }
+                                  }
+                                }
+                              ]
+                            },
+                            "ds:nNTog": {
+                              "content": "Qiita for Business LP改善"
+                            },
+                            "ds:eHeHZ": {
+                              "content": "広告主向けLPの課題の特定から情報設計・UIデザイン・実装・リリースまでを一人で担当した。"
+                            },
+                            "ds:A08RFM": {
+                              "content": "2026年7月〜2026年8月"
+                            }
+                          }
+                        },
+                        {
+                          "id": "U6pVd1",
+                          "type": "ref",
+                          "ref": "ds:fWOYf",
+                          "name": "Project qiita-slide-beta",
+                          "width": "fill_container",
+                          "descendants": {
+                            "ds:CVcDO": {
+                              "type": "frame",
+                              "id": "plKeG",
+                              "name": "Project Labels",
+                              "gap": 8,
+                              "padding": [
+                                0,
+                                0,
+                                2,
+                                0
+                              ],
+                              "children": [
+                                {
+                                  "id": "ls2hL",
+                                  "type": "ref",
+                                  "ref": "ds:b7blZ",
+                                  "name": "Chip Qiita",
+                                  "descendants": {
+                                    "ds:XWOq8": {
+                                      "content": "Qiita"
+                                    }
+                                  }
+                                },
+                                {
+                                  "id": "WuYja",
+                                  "type": "ref",
+                                  "ref": "ds:b7blZ",
+                                  "name": "Chip PdM",
+                                  "descendants": {
+                                    "ds:XWOq8": {
+                                      "content": "PdM"
+                                    }
+                                  }
+                                }
+                              ]
+                            },
+                            "ds:nNTog": {
+                              "content": "Qiita スライド機能(ベータ版)"
+                            },
+                            "ds:eHeHZ": {
+                              "content": "スライド機能の企画/管理を担当した。"
+                            },
+                            "ds:A08RFM": {
+                              "content": "2025年7月〜2026年7月"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "XQDtr",
+                      "name": "Row 2",
+                      "width": "fill_container",
+                      "gap": 32,
+                      "children": [
+                        {
+                          "id": "LLjqb",
+                          "type": "ref",
+                          "ref": "ds:fWOYf",
+                          "name": "Project qiita-advent-calendar-2025",
+                          "width": "fill_container",
+                          "descendants": {
+                            "ds:CVcDO": {
+                              "type": "frame",
+                              "id": "PRt3w",
+                              "name": "Project Labels",
+                              "gap": 8,
+                              "padding": [
+                                0,
+                                0,
+                                2,
+                                0
+                              ],
+                              "children": [
+                                {
+                                  "id": "dUAdQ",
+                                  "type": "ref",
+                                  "ref": "ds:b7blZ",
+                                  "name": "Chip Qiita",
+                                  "descendants": {
+                                    "ds:XWOq8": {
+                                      "content": "Qiita"
+                                    }
+                                  }
+                                },
+                                {
+                                  "id": "NKumg",
+                                  "type": "ref",
+                                  "ref": "ds:b7blZ",
+                                  "name": "Chip PdM",
+                                  "descendants": {
+                                    "ds:XWOq8": {
+                                      "content": "PdM"
+                                    }
+                                  }
+                                }
+                              ]
+                            },
+                            "ds:nNTog": {
+                              "content": "Qiita Advent Calendar 2025 プロジェクト"
+                            },
+                            "ds:eHeHZ": {
+                              "content": "新企画の立案、新機能/機能アップデートの企画/設計を担当した。"
+                            },
+                            "ds:A08RFM": {
+                              "content": "2025年8月〜2026年1月"
+                            }
+                          }
+                        },
+                        {
+                          "id": "bXMgY",
+                          "type": "ref",
+                          "ref": "ds:fWOYf",
+                          "name": "Project stock-share",
+                          "width": "fill_container",
+                          "descendants": {
+                            "ds:CVcDO": {
+                              "type": "frame",
+                              "id": "D9cvEL",
+                              "name": "Project Labels",
+                              "gap": 8,
+                              "padding": [
+                                0,
+                                0,
+                                2,
+                                0
+                              ],
+                              "children": [
+                                {
+                                  "id": "Od4LN",
+                                  "type": "ref",
+                                  "ref": "ds:b7blZ",
+                                  "name": "Chip Qiita",
+                                  "descendants": {
+                                    "ds:XWOq8": {
+                                      "content": "Qiita"
+                                    }
+                                  }
+                                },
+                                {
+                                  "id": "LqJuF",
+                                  "type": "ref",
+                                  "ref": "ds:b7blZ",
+                                  "name": "Chip PdM",
+                                  "descendants": {
+                                    "ds:XWOq8": {
+                                      "content": "PdM"
+                                    }
+                                  }
+                                }
+                              ]
+                            },
+                            "ds:nNTog": {
+                              "content": "ストックのシェア機能プロジェクト"
+                            },
+                            "ds:eHeHZ": {
+                              "content": "ストックのシェア機能の企画/設計を担当した。"
+                            },
+                            "ds:A08RFM": {
+                              "content": "2025年2月〜"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "cJU6q",
+                      "name": "Row 3",
+                      "width": "fill_container",
+                      "gap": 32,
+                      "children": [
+                        {
+                          "id": "ANdXH",
+                          "type": "ref",
+                          "ref": "ds:fWOYf",
+                          "name": "Project qiita-bash",
+                          "width": "fill_container",
+                          "descendants": {
+                            "ds:CVcDO": {
+                              "type": "frame",
+                              "id": "e0HJFh",
+                              "name": "Project Labels",
+                              "gap": 8,
+                              "padding": [
+                                0,
+                                0,
+                                2,
+                                0
+                              ],
+                              "children": [
+                                {
+                                  "id": "lMHl6",
+                                  "type": "ref",
+                                  "ref": "ds:b7blZ",
+                                  "name": "Chip Qiita",
+                                  "descendants": {
+                                    "ds:XWOq8": {
+                                      "content": "Qiita"
+                                    }
+                                  }
+                                },
+                                {
+                                  "id": "UyexW",
+                                  "type": "ref",
+                                  "ref": "ds:b7blZ",
+                                  "name": "Chip イベント",
+                                  "descendants": {
+                                    "ds:XWOq8": {
+                                      "content": "イベント"
+                                    }
+                                  }
+                                }
+                              ]
+                            },
+                            "ds:nNTog": {
+                              "content": "Qiita Bash"
+                            },
+                            "ds:eHeHZ": {
+                              "content": "Qiita Bashに関するイベント企画・集客・運営・配信"
+                            },
+                            "ds:A08RFM": {
+                              "content": "2024年4月〜"
+                            }
+                          }
+                        },
+                        {
+                          "id": "L8uWQI",
+                          "type": "ref",
+                          "ref": "ds:fWOYf",
+                          "name": "Project accessibility-project",
+                          "width": "fill_container",
+                          "descendants": {
+                            "ds:CVcDO": {
+                              "type": "frame",
+                              "id": "tQRzm",
+                              "name": "Project Labels",
+                              "gap": 8,
+                              "padding": [
+                                0,
+                                0,
+                                2,
+                                0
+                              ],
+                              "children": [
+                                {
+                                  "id": "sXQk4",
+                                  "type": "ref",
+                                  "ref": "ds:b7blZ",
+                                  "name": "Chip Qiita",
+                                  "descendants": {
+                                    "ds:XWOq8": {
+                                      "content": "Qiita"
+                                    }
+                                  }
+                                },
+                                {
+                                  "id": "jPZ1l",
+                                  "type": "ref",
+                                  "ref": "ds:b7blZ",
+                                  "name": "Chip Accessibility",
+                                  "descendants": {
+                                    "ds:XWOq8": {
+                                      "content": "Accessibility"
+                                    }
+                                  }
+                                },
+                                {
+                                  "id": "qMKRh",
+                                  "type": "ref",
+                                  "ref": "ds:b7blZ",
+                                  "name": "Chip 人材育成",
+                                  "descendants": {
+                                    "ds:XWOq8": {
+                                      "content": "人材育成"
+                                    }
+                                  }
+                                }
+                              ]
+                            },
+                            "ds:nNTog": {
+                              "content": "アクセシビリティ改善プロジェクト"
+                            },
+                            "ds:eHeHZ": {
+                              "content": "アクセシビリティに関する知識の浸透、人材育成、Qiitaのプロダクト改善を担当した。"
+                            },
+                            "ds:A08RFM": {
+                              "content": "2024年4月〜"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "r6dwF9",
+                      "name": "Row 4",
+                      "width": "fill_container",
+                      "gap": 32,
+                      "children": [
+                        {
+                          "id": "jnBVh",
+                          "type": "ref",
+                          "ref": "ds:fWOYf",
+                          "name": "Project dark-mode",
+                          "width": "fill_container",
+                          "descendants": {
+                            "ds:CVcDO": {
+                              "type": "frame",
+                              "id": "V9m0y",
+                              "name": "Project Labels",
+                              "gap": 8,
+                              "padding": [
+                                0,
+                                0,
+                                2,
+                                0
+                              ],
+                              "children": [
+                                {
+                                  "id": "XitoH",
+                                  "type": "ref",
+                                  "ref": "ds:b7blZ",
+                                  "name": "Chip Qiita",
+                                  "descendants": {
+                                    "ds:XWOq8": {
+                                      "content": "Qiita"
+                                    }
+                                  }
+                                },
+                                {
+                                  "id": "W9kxP",
+                                  "type": "ref",
+                                  "ref": "ds:b7blZ",
+                                  "name": "Chip Frontend",
+                                  "descendants": {
+                                    "ds:XWOq8": {
+                                      "content": "Frontend"
+                                    }
+                                  }
+                                },
+                                {
+                                  "id": "pMwU9",
+                                  "type": "ref",
+                                  "ref": "ds:b7blZ",
+                                  "name": "Chip Accessibility",
+                                  "descendants": {
+                                    "ds:XWOq8": {
+                                      "content": "Accessibility"
+                                    }
+                                  }
+                                },
+                                {
+                                  "id": "aDZhS",
+                                  "type": "ref",
+                                  "ref": "ds:b7blZ",
+                                  "name": "Chip UI",
+                                  "descendants": {
+                                    "ds:XWOq8": {
+                                      "content": "UI"
+                                    }
+                                  }
+                                }
+                              ]
+                            },
+                            "ds:nNTog": {
+                              "content": "Qiitaダークモード導入"
+                            },
+                            "ds:eHeHZ": {
+                              "content": "Qiitaにダークモードを導入するため、カラーパレットの修正、カラートークンの設計、開発を担当した。"
+                            },
+                            "ds:A08RFM": {
+                              "content": "2023年2月〜2024年2月"
+                            }
+                          }
+                        },
+                        {
+                          "id": "wdMXL",
+                          "type": "ref",
+                          "ref": "ds:fWOYf",
+                          "name": "Project github-sponsors",
+                          "width": "fill_container",
+                          "descendants": {
+                            "ds:CVcDO": {
+                              "type": "frame",
+                              "id": "NKkF9",
+                              "name": "Project Labels",
+                              "gap": 8,
+                              "padding": [
+                                0,
+                                0,
+                                2,
+                                0
+                              ],
+                              "children": [
+                                {
+                                  "id": "pAfjq",
+                                  "type": "ref",
+                                  "ref": "ds:b7blZ",
+                                  "name": "Chip Qiita",
+                                  "descendants": {
+                                    "ds:XWOq8": {
+                                      "content": "Qiita"
+                                    }
+                                  }
+                                },
+                                {
+                                  "id": "bTqv5",
+                                  "type": "ref",
+                                  "ref": "ds:b7blZ",
+                                  "name": "Chip PdM",
+                                  "descendants": {
+                                    "ds:XWOq8": {
+                                      "content": "PdM"
+                                    }
+                                  }
+                                }
+                              ]
+                            },
+                            "ds:nNTog": {
+                              "content": "GitHub Sponsors 連携機能"
+                            },
+                            "ds:eHeHZ": {
+                              "content": "GitHub Sponsors 連携機能の企画/設計・プロジェクトマネジメントを担当した。"
+                            },
+                            "ds:A08RFM": {
+                              "content": "2023年11月〜2024年1月"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "ppUrC",
+                      "name": "Row 5",
+                      "width": "fill_container",
+                      "gap": 32,
+                      "children": [
+                        {
+                          "id": "GNZWR",
+                          "type": "ref",
+                          "ref": "ds:fWOYf",
+                          "name": "Project qiita-hackathon",
+                          "width": "fill_container",
+                          "descendants": {
+                            "ds:CVcDO": {
+                              "type": "frame",
+                              "id": "NtPpJ",
+                              "name": "Project Labels",
+                              "gap": 8,
+                              "padding": [
+                                0,
+                                0,
+                                2,
+                                0
+                              ],
+                              "children": [
+                                {
+                                  "id": "R5DbCi",
+                                  "type": "ref",
+                                  "ref": "ds:b7blZ",
+                                  "name": "Chip Qiita",
+                                  "descendants": {
+                                    "ds:XWOq8": {
+                                      "content": "Qiita"
+                                    }
+                                  }
+                                },
+                                {
+                                  "id": "rFXc2",
+                                  "type": "ref",
+                                  "ref": "ds:b7blZ",
+                                  "name": "Chip イベント",
+                                  "descendants": {
+                                    "ds:XWOq8": {
+                                      "content": "イベント"
+                                    }
+                                  }
+                                }
+                              ]
+                            },
+                            "ds:nNTog": {
+                              "content": "Qiita Hackathon"
+                            },
+                            "ds:eHeHZ": {
+                              "content": "Qiita Hackathonに関するクリエイティブディレクションを担当した。"
+                            },
+                            "ds:A08RFM": {
+                              "content": "2023年9月〜2023年12月"
+                            }
+                          }
+                        },
+                        {
+                          "id": "z1Nhw",
+                          "type": "ref",
+                          "ref": "ds:fWOYf",
+                          "name": "Project ai-suggest",
+                          "width": "fill_container",
+                          "descendants": {
+                            "ds:CVcDO": {
+                              "type": "frame",
+                              "id": "U6wy8T",
+                              "name": "Project Labels",
+                              "gap": 8,
+                              "padding": [
+                                0,
+                                0,
+                                2,
+                                0
+                              ],
+                              "children": [
+                                {
+                                  "id": "d9LnB",
+                                  "type": "ref",
+                                  "ref": "ds:b7blZ",
+                                  "name": "Chip Qiita",
+                                  "descendants": {
+                                    "ds:XWOq8": {
+                                      "content": "Qiita"
+                                    }
+                                  }
+                                },
+                                {
+                                  "id": "e3SyMp",
+                                  "type": "ref",
+                                  "ref": "ds:b7blZ",
+                                  "name": "Chip PdM",
+                                  "descendants": {
+                                    "ds:XWOq8": {
+                                      "content": "PdM"
+                                    }
+                                  }
+                                },
+                                {
+                                  "id": "wAYpg",
+                                  "type": "ref",
+                                  "ref": "ds:b7blZ",
+                                  "name": "Chip UI",
+                                  "descendants": {
+                                    "ds:XWOq8": {
+                                      "content": "UI"
+                                    }
+                                  }
+                                },
+                                {
+                                  "id": "Ox2nf",
+                                  "type": "ref",
+                                  "ref": "ds:b7blZ",
+                                  "name": "Chip UX",
+                                  "descendants": {
+                                    "ds:XWOq8": {
+                                      "content": "UX"
+                                    }
+                                  }
+                                }
+                              ]
+                            },
+                            "ds:nNTog": {
+                              "content": "AIサジェスト機能"
+                            },
+                            "ds:eHeHZ": {
+                              "content": "機能開発の企画/設計・プロジェクトマネジメント・UXの設計・UIデザインを担当した。"
+                            },
+                            "ds:A08RFM": {
+                              "content": "2023年8月〜2023年11月"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "ld4oe",
+                      "name": "Row 6",
+                      "width": "fill_container",
+                      "gap": 32,
+                      "children": [
+                        {
+                          "id": "Owwet",
+                          "type": "ref",
+                          "ref": "ds:fWOYf",
+                          "name": "Project qiita-engineer-festa-2023",
+                          "width": "fill_container",
+                          "descendants": {
+                            "ds:CVcDO": {
+                              "type": "frame",
+                              "id": "dY6hz",
+                              "name": "Project Labels",
+                              "gap": 8,
+                              "padding": [
+                                0,
+                                0,
+                                2,
+                                0
+                              ],
+                              "children": [
+                                {
+                                  "id": "jL1p8",
+                                  "type": "ref",
+                                  "ref": "ds:b7blZ",
+                                  "name": "Chip Qiita",
+                                  "descendants": {
+                                    "ds:XWOq8": {
+                                      "content": "Qiita"
+                                    }
+                                  }
+                                },
+                                {
+                                  "id": "gpbm9",
+                                  "type": "ref",
+                                  "ref": "ds:b7blZ",
+                                  "name": "Chip イベント",
+                                  "descendants": {
+                                    "ds:XWOq8": {
+                                      "content": "イベント"
+                                    }
+                                  }
+                                },
+                                {
+                                  "id": "S04wqN",
+                                  "type": "ref",
+                                  "ref": "ds:b7blZ",
+                                  "name": "Chip UI",
+                                  "descendants": {
+                                    "ds:XWOq8": {
+                                      "content": "UI"
+                                    }
+                                  }
+                                },
+                                {
+                                  "id": "fg27g",
+                                  "type": "ref",
+                                  "ref": "ds:b7blZ",
+                                  "name": "Chip UX",
+                                  "descendants": {
+                                    "ds:XWOq8": {
+                                      "content": "UX"
+                                    }
+                                  }
+                                }
+                              ]
+                            },
+                            "ds:nNTog": {
+                              "content": "Qiita Engineer Festa 2023"
+                            },
+                            "ds:eHeHZ": {
+                              "content": "Qiita Engineer Festa 2023に関するクリエイティブディレクション・UX設計・UIデザインを担当した。"
+                            },
+                            "ds:A08RFM": {
+                              "content": "2023年2月〜2023年8月"
+                            }
+                          }
+                        },
+                        {
+                          "id": "A5PQX",
+                          "type": "ref",
+                          "ref": "ds:fWOYf",
+                          "name": "Project qiita-engineer-festa-2022",
+                          "width": "fill_container",
+                          "descendants": {
+                            "ds:CVcDO": {
+                              "type": "frame",
+                              "id": "u5Cmc",
+                              "name": "Project Labels",
+                              "gap": 8,
+                              "padding": [
+                                0,
+                                0,
+                                2,
+                                0
+                              ],
+                              "children": [
+                                {
+                                  "id": "Muz2z",
+                                  "type": "ref",
+                                  "ref": "ds:b7blZ",
+                                  "name": "Chip Qiita",
+                                  "descendants": {
+                                    "ds:XWOq8": {
+                                      "content": "Qiita"
+                                    }
+                                  }
+                                },
+                                {
+                                  "id": "pC24j",
+                                  "type": "ref",
+                                  "ref": "ds:b7blZ",
+                                  "name": "Chip イベント",
+                                  "descendants": {
+                                    "ds:XWOq8": {
+                                      "content": "イベント"
+                                    }
+                                  }
+                                },
+                                {
+                                  "id": "ZLVFW",
+                                  "type": "ref",
+                                  "ref": "ds:b7blZ",
+                                  "name": "Chip UI",
+                                  "descendants": {
+                                    "ds:XWOq8": {
+                                      "content": "UI"
+                                    }
+                                  }
+                                },
+                                {
+                                  "id": "xmYvA",
+                                  "type": "ref",
+                                  "ref": "ds:b7blZ",
+                                  "name": "Chip UX",
+                                  "descendants": {
+                                    "ds:XWOq8": {
+                                      "content": "UX"
+                                    }
+                                  }
+                                },
+                                {
+                                  "id": "naDq3",
+                                  "type": "ref",
+                                  "ref": "ds:b7blZ",
+                                  "name": "Chip Frontend",
+                                  "descendants": {
+                                    "ds:XWOq8": {
+                                      "content": "Frontend"
+                                    }
+                                  }
+                                }
+                              ]
+                            },
+                            "ds:nNTog": {
+                              "content": "Qiita Engineer Festa 2022"
+                            },
+                            "ds:eHeHZ": {
+                              "content": "Qiita Engineer Festa 2022に関するクリエイティブディレクション・UX設計・UIデザインを担当した。"
+                            },
+                            "ds:A08RFM": {
+                              "content": "2022年2月〜2022年8月"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "zwJLD",
+                      "name": "Row 7",
+                      "width": "fill_container",
+                      "gap": 32,
+                      "children": [
+                        {
+                          "id": "mMRv8",
+                          "type": "ref",
+                          "ref": "ds:fWOYf",
+                          "name": "Project qiita-team-restructure",
+                          "width": "fill_container",
+                          "descendants": {
+                            "ds:CVcDO": {
+                              "type": "frame",
+                              "id": "P4d2Os",
+                              "name": "Project Labels",
+                              "gap": 8,
+                              "padding": [
+                                0,
+                                0,
+                                2,
+                                0
+                              ],
+                              "children": [
+                                {
+                                  "id": "rZB9F",
+                                  "type": "ref",
+                                  "ref": "ds:b7blZ",
+                                  "name": "Chip Qiita Team",
+                                  "descendants": {
+                                    "ds:XWOq8": {
+                                      "content": "Qiita Team"
+                                    }
+                                  }
+                                },
+                                {
+                                  "id": "qq8sT",
+                                  "type": "ref",
+                                  "ref": "ds:b7blZ",
+                                  "name": "Chip BtoB",
+                                  "descendants": {
+                                    "ds:XWOq8": {
+                                      "content": "BtoB"
+                                    }
+                                  }
+                                },
+                                {
+                                  "id": "cfwiM",
+                                  "type": "ref",
+                                  "ref": "ds:b7blZ",
+                                  "name": "Chip UI",
+                                  "descendants": {
+                                    "ds:XWOq8": {
+                                      "content": "UI"
+                                    }
+                                  }
+                                },
+                                {
+                                  "id": "dhLGL",
+                                  "type": "ref",
+                                  "ref": "ds:b7blZ",
+                                  "name": "Chip UX",
+                                  "descendants": {
+                                    "ds:XWOq8": {
+                                      "content": "UX"
+                                    }
+                                  }
+                                },
+                                {
+                                  "id": "JqoIo",
+                                  "type": "ref",
+                                  "ref": "ds:b7blZ",
+                                  "name": "Chip Frontend",
+                                  "descendants": {
+                                    "ds:XWOq8": {
+                                      "content": "Frontend"
+                                    }
+                                  }
+                                }
+                              ]
+                            },
+                            "ds:nNTog": {
+                              "content": "Qiita Team 構造再設計・UIリニューアル"
+                            },
+                            "ds:eHeHZ": {
+                              "content": "Qiita Teamをグループ起点の構造に再設計するため、情報設計・UI/UXデザイン・フロントエンド実装を担当した。"
+                            },
+                            "ds:A08RFM": {
+                              "content": "2021年9月〜2022年6月"
+                            }
+                          }
+                        },
+                        {
+                          "id": "qYlFw",
+                          "type": "ref",
+                          "ref": "ds:fWOYf",
+                          "name": "Project qiita-advent-calendar-2021",
+                          "width": "fill_container",
+                          "descendants": {
+                            "ds:CVcDO": {
+                              "type": "frame",
+                              "id": "d0YYaX",
+                              "name": "Project Labels",
+                              "gap": 8,
+                              "padding": [
+                                0,
+                                0,
+                                2,
+                                0
+                              ],
+                              "children": [
+                                {
+                                  "id": "k4yuCe",
+                                  "type": "ref",
+                                  "ref": "ds:b7blZ",
+                                  "name": "Chip Qiita",
+                                  "descendants": {
+                                    "ds:XWOq8": {
+                                      "content": "Qiita"
+                                    }
+                                  }
+                                },
+                                {
+                                  "id": "rR8dn",
+                                  "type": "ref",
+                                  "ref": "ds:b7blZ",
+                                  "name": "Chip イベント",
+                                  "descendants": {
+                                    "ds:XWOq8": {
+                                      "content": "イベント"
+                                    }
+                                  }
+                                },
+                                {
+                                  "id": "tNKFu",
+                                  "type": "ref",
+                                  "ref": "ds:b7blZ",
+                                  "name": "Chip UI",
+                                  "descendants": {
+                                    "ds:XWOq8": {
+                                      "content": "UI"
+                                    }
+                                  }
+                                },
+                                {
+                                  "id": "QsHbR",
+                                  "type": "ref",
+                                  "ref": "ds:b7blZ",
+                                  "name": "Chip UX",
+                                  "descendants": {
+                                    "ds:XWOq8": {
+                                      "content": "UX"
+                                    }
+                                  }
+                                }
+                              ]
+                            },
+                            "ds:nNTog": {
+                              "content": "Qiita Advent Calendar 2021"
+                            },
+                            "ds:eHeHZ": {
+                              "content": "Qiita Advent Calendar 2021に関するクリエイティブディレクション・UX設計・UIデザインを担当した。"
+                            },
+                            "ds:A08RFM": {
+                              "content": "2021年8月〜2021年12月"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "SfXRH",
+                      "name": "Row 8",
+                      "width": "fill_container",
+                      "gap": 32,
+                      "children": [
+                        {
+                          "id": "no0Nq",
+                          "type": "ref",
+                          "ref": "ds:fWOYf",
+                          "name": "Project qiita-award",
+                          "width": "fill_container",
+                          "descendants": {
+                            "ds:CVcDO": {
+                              "type": "frame",
+                              "id": "zOCZr",
+                              "name": "Project Labels",
+                              "gap": 8,
+                              "padding": [
+                                0,
+                                0,
+                                2,
+                                0
+                              ],
+                              "children": [
+                                {
+                                  "id": "ZSMz2",
+                                  "type": "ref",
+                                  "ref": "ds:b7blZ",
+                                  "name": "Chip Qiita",
+                                  "descendants": {
+                                    "ds:XWOq8": {
+                                      "content": "Qiita"
+                                    }
+                                  }
+                                },
+                                {
+                                  "id": "OSVPy",
+                                  "type": "ref",
+                                  "ref": "ds:b7blZ",
+                                  "name": "Chip UI",
+                                  "descendants": {
+                                    "ds:XWOq8": {
+                                      "content": "UI"
+                                    }
+                                  }
+                                },
+                                {
+                                  "id": "tbxLa",
+                                  "type": "ref",
+                                  "ref": "ds:b7blZ",
+                                  "name": "Chip UX",
+                                  "descendants": {
+                                    "ds:XWOq8": {
+                                      "content": "UX"
+                                    }
+                                  }
+                                },
+                                {
+                                  "id": "EgHwD",
+                                  "type": "ref",
+                                  "ref": "ds:b7blZ",
+                                  "name": "Chip Frontend",
+                                  "descendants": {
+                                    "ds:XWOq8": {
+                                      "content": "Frontend"
+                                    }
+                                  }
+                                }
+                              ]
+                            },
+                            "ds:nNTog": {
+                              "content": "Qiita 表彰プログラム 特設サイト"
+                            },
+                            "ds:eHeHZ": {
+                              "content": "Qiita 表彰プログラム 特設サイトに関するクリエイティブディレクション・UX設計・UIデザインを担当した。"
+                            },
+                            "ds:A08RFM": {
+                              "content": "2021年7月〜2021年9月"
+                            }
+                          }
+                        },
+                        {
+                          "id": "h7sxf8",
+                          "type": "ref",
+                          "ref": "ds:fWOYf",
+                          "name": "Project qiita-engineer-summit-2021",
+                          "width": "fill_container",
+                          "descendants": {
+                            "ds:CVcDO": {
+                              "type": "frame",
+                              "id": "T6QzQH",
+                              "name": "Project Labels",
+                              "gap": 8,
+                              "padding": [
+                                0,
+                                0,
+                                2,
+                                0
+                              ],
+                              "children": [
+                                {
+                                  "id": "mWmz3",
+                                  "type": "ref",
+                                  "ref": "ds:b7blZ",
+                                  "name": "Chip Qiita",
+                                  "descendants": {
+                                    "ds:XWOq8": {
+                                      "content": "Qiita"
+                                    }
+                                  }
+                                },
+                                {
+                                  "id": "gInRb",
+                                  "type": "ref",
+                                  "ref": "ds:b7blZ",
+                                  "name": "Chip イベント",
+                                  "descendants": {
+                                    "ds:XWOq8": {
+                                      "content": "イベント"
+                                    }
+                                  }
+                                },
+                                {
+                                  "id": "JaLrD",
+                                  "type": "ref",
+                                  "ref": "ds:b7blZ",
+                                  "name": "Chip UI",
+                                  "descendants": {
+                                    "ds:XWOq8": {
+                                      "content": "UI"
+                                    }
+                                  }
+                                },
+                                {
+                                  "id": "avO8f",
+                                  "type": "ref",
+                                  "ref": "ds:b7blZ",
+                                  "name": "Chip UX",
+                                  "descendants": {
+                                    "ds:XWOq8": {
+                                      "content": "UX"
+                                    }
+                                  }
+                                },
+                                {
+                                  "id": "Y6TMGm",
+                                  "type": "ref",
+                                  "ref": "ds:b7blZ",
+                                  "name": "Chip Frontend",
+                                  "descendants": {
+                                    "ds:XWOq8": {
+                                      "content": "Frontend"
+                                    }
+                                  }
+                                }
+                              ]
+                            },
+                            "ds:nNTog": {
+                              "content": "Qiita Engineer Summit 2021"
+                            },
+                            "ds:eHeHZ": {
+                              "content": "Qiita Engineer Summit 2021に関するクリエイティブディレクション・UX設計・UIデザインを担当した。"
+                            },
+                            "ds:A08RFM": {
+                              "content": "2021年3月〜2021年7月"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "AUwrc",
+                      "name": "Row 9",
+                      "width": "fill_container",
+                      "gap": 32,
+                      "children": [
+                        {
+                          "id": "S2Mdb",
+                          "type": "ref",
+                          "ref": "ds:fWOYf",
+                          "name": "Project qiita-engineer-festa-2021",
+                          "width": "fill_container",
+                          "descendants": {
+                            "ds:CVcDO": {
+                              "type": "frame",
+                              "id": "l2u1i",
+                              "name": "Project Labels",
+                              "gap": 8,
+                              "padding": [
+                                0,
+                                0,
+                                2,
+                                0
+                              ],
+                              "children": [
+                                {
+                                  "id": "RE88I",
+                                  "type": "ref",
+                                  "ref": "ds:b7blZ",
+                                  "name": "Chip Qiita",
+                                  "descendants": {
+                                    "ds:XWOq8": {
+                                      "content": "Qiita"
+                                    }
+                                  }
+                                },
+                                {
+                                  "id": "tOGAv",
+                                  "type": "ref",
+                                  "ref": "ds:b7blZ",
+                                  "name": "Chip イベント",
+                                  "descendants": {
+                                    "ds:XWOq8": {
+                                      "content": "イベント"
+                                    }
+                                  }
+                                },
+                                {
+                                  "id": "Y1wlQ2",
+                                  "type": "ref",
+                                  "ref": "ds:b7blZ",
+                                  "name": "Chip UI",
+                                  "descendants": {
+                                    "ds:XWOq8": {
+                                      "content": "UI"
+                                    }
+                                  }
+                                },
+                                {
+                                  "id": "VKjzT",
+                                  "type": "ref",
+                                  "ref": "ds:b7blZ",
+                                  "name": "Chip UX",
+                                  "descendants": {
+                                    "ds:XWOq8": {
+                                      "content": "UX"
+                                    }
+                                  }
+                                }
+                              ]
+                            },
+                            "ds:nNTog": {
+                              "content": "Qiita エンジニアフェスタ 2021"
+                            },
+                            "ds:eHeHZ": {
+                              "content": "Qiita エンジニアフェスタ 2021に関するクリエイティブディレクション・UX設計・UIデザインを担当した。"
+                            },
+                            "ds:A08RFM": {
+                              "content": "2021年2月〜2021年8月"
+                            }
+                          }
+                        },
+                        {
+                          "id": "NdbPZ",
+                          "type": "ref",
+                          "ref": "ds:fWOYf",
+                          "name": "Project qiita-jobs-renewal",
+                          "width": "fill_container",
+                          "descendants": {
+                            "ds:CVcDO": {
+                              "type": "frame",
+                              "id": "e6wJp",
+                              "name": "Project Labels",
+                              "gap": 8,
+                              "padding": [
+                                0,
+                                0,
+                                2,
+                                0
+                              ],
+                              "children": [
+                                {
+                                  "id": "eWxJb",
+                                  "type": "ref",
+                                  "ref": "ds:b7blZ",
+                                  "name": "Chip Qiita Jobs",
+                                  "descendants": {
+                                    "ds:XWOq8": {
+                                      "content": "Qiita Jobs"
+                                    }
+                                  }
+                                },
+                                {
+                                  "id": "j9QFHx",
+                                  "type": "ref",
+                                  "ref": "ds:b7blZ",
+                                  "name": "Chip UI",
+                                  "descendants": {
+                                    "ds:XWOq8": {
+                                      "content": "UI"
+                                    }
+                                  }
+                                },
+                                {
+                                  "id": "LiT9F",
+                                  "type": "ref",
+                                  "ref": "ds:b7blZ",
+                                  "name": "Chip UX",
+                                  "descendants": {
+                                    "ds:XWOq8": {
+                                      "content": "UX"
+                                    }
+                                  }
+                                }
+                              ]
+                            },
+                            "ds:nNTog": {
+                              "content": "Qiita Jobs サービスリニューアル"
+                            },
+                            "ds:eHeHZ": {
+                              "content": "Qiita Jobs サービスリニューアルに関するUX設計・UIデザインを担当した。"
+                            },
+                            "ds:A08RFM": {
+                              "content": "2020年6月〜2020年8月"
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "SSKlv",
+          "type": "ref",
+          "ref": "ds:q77i4",
+          "name": "Footer",
+          "width": 1152
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "U2I2F",
+      "x": 1540,
+      "y": 0,
+      "name": "/projects — dark",
+      "theme": {
+        "ds:mode": "dark"
+      },
+      "clip": true,
+      "width": 1440,
+      "fill": {
+        "type": "shader",
+        "enabled": true,
+        "url": "../../../src/component/Atoms/GradientBackground/gradientBackground.glsl",
+        "uniforms": {
+          "u_top": "$ds:background-top",
+          "u_middle": "$ds:background-middle",
+          "u_bottom": "$ds:background-bottom",
+          "u_gridColor": "$ds:background-grid",
+          "u_gridOpacity": 0.1,
+          "u_noise": 30,
+          "u_waveSpeed": 0.5,
+          "u_waveAmplitude": 0.3,
+          "u_flagOpacity": 8,
+          "u_gridSize": 192
+        }
+      },
+      "layout": "vertical",
+      "alignItems": "center",
+      "children": [
+        {
+          "id": "du3AU",
+          "type": "ref",
+          "ref": "ds:xdOlG",
+          "name": "Header",
+          "width": 1152
+        },
+        {
+          "type": "frame",
+          "id": "ZMhXk",
+          "name": "Main",
+          "width": 1152,
+          "layout": "vertical",
+          "padding": [
+            0,
+            16
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "P5poN",
+              "name": "Projects",
+              "width": "fill_container",
+              "layout": "vertical",
+              "padding": [
+                64,
+                0
+              ],
+              "children": [
+                {
+                  "type": "text",
+                  "id": "Y55es",
+                  "name": "Section Heading",
+                  "fill": "$ds:color-high-emphasis",
+                  "content": "プロジェクト",
+                  "lineHeight": "$ds:line-height-heading",
+                  "fontFamily": "$ds:font-family",
+                  "fontSize": "$ds:font-size-heading-1",
+                  "fontWeight": "$ds:font-weight-bold"
+                },
+                {
+                  "type": "frame",
+                  "id": "Q7sgxE",
+                  "name": "Spacer",
+                  "width": 1,
+                  "height": 32
+                },
+                {
+                  "type": "frame",
+                  "id": "IG716",
+                  "name": "Projects Body",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 32,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "A8jq7",
+                      "name": "Row 1",
+                      "width": "fill_container",
+                      "gap": 32,
+                      "children": [
+                        {
+                          "id": "j5xIp",
+                          "type": "ref",
+                          "ref": "ds:fWOYf",
+                          "name": "Project qiita-for-business-lp",
+                          "width": "fill_container",
+                          "descendants": {
+                            "ds:CVcDO": {
+                              "type": "frame",
+                              "id": "nTOcT",
+                              "name": "Project Labels",
+                              "gap": 8,
+                              "padding": [
+                                0,
+                                0,
+                                2,
+                                0
+                              ],
+                              "children": [
+                                {
+                                  "id": "E1RJP",
+                                  "type": "ref",
+                                  "ref": "ds:b7blZ",
+                                  "name": "Chip Qiita for Business",
+                                  "descendants": {
+                                    "ds:XWOq8": {
+                                      "content": "Qiita for Business"
+                                    }
+                                  }
+                                },
+                                {
+                                  "id": "PpKsK",
+                                  "type": "ref",
+                                  "ref": "ds:b7blZ",
+                                  "name": "Chip BtoB",
+                                  "descendants": {
+                                    "ds:XWOq8": {
+                                      "content": "BtoB"
+                                    }
+                                  }
+                                },
+                                {
+                                  "id": "p5j9kS",
+                                  "type": "ref",
+                                  "ref": "ds:b7blZ",
+                                  "name": "Chip UI",
+                                  "descendants": {
+                                    "ds:XWOq8": {
+                                      "content": "UI"
+                                    }
+                                  }
+                                },
+                                {
+                                  "id": "XErBK",
+                                  "type": "ref",
+                                  "ref": "ds:b7blZ",
+                                  "name": "Chip UX",
+                                  "descendants": {
+                                    "ds:XWOq8": {
+                                      "content": "UX"
+                                    }
+                                  }
+                                },
+                                {
+                                  "id": "AWPe5",
+                                  "type": "ref",
+                                  "ref": "ds:b7blZ",
+                                  "name": "Chip Frontend",
+                                  "descendants": {
+                                    "ds:XWOq8": {
+                                      "content": "Frontend"
+                                    }
+                                  }
+                                }
+                              ]
+                            },
+                            "ds:nNTog": {
+                              "content": "Qiita for Business LP改善"
+                            },
+                            "ds:eHeHZ": {
+                              "content": "広告主向けLPの課題の特定から情報設計・UIデザイン・実装・リリースまでを一人で担当した。"
+                            },
+                            "ds:A08RFM": {
+                              "content": "2026年7月〜2026年8月"
+                            }
+                          }
+                        },
+                        {
+                          "id": "juxsy",
+                          "type": "ref",
+                          "ref": "ds:fWOYf",
+                          "name": "Project qiita-slide-beta",
+                          "width": "fill_container",
+                          "descendants": {
+                            "ds:CVcDO": {
+                              "type": "frame",
+                              "id": "YhnvA",
+                              "name": "Project Labels",
+                              "gap": 8,
+                              "padding": [
+                                0,
+                                0,
+                                2,
+                                0
+                              ],
+                              "children": [
+                                {
+                                  "id": "LyFKl",
+                                  "type": "ref",
+                                  "ref": "ds:b7blZ",
+                                  "name": "Chip Qiita",
+                                  "descendants": {
+                                    "ds:XWOq8": {
+                                      "content": "Qiita"
+                                    }
+                                  }
+                                },
+                                {
+                                  "id": "o5A2AI",
+                                  "type": "ref",
+                                  "ref": "ds:b7blZ",
+                                  "name": "Chip PdM",
+                                  "descendants": {
+                                    "ds:XWOq8": {
+                                      "content": "PdM"
+                                    }
+                                  }
+                                }
+                              ]
+                            },
+                            "ds:nNTog": {
+                              "content": "Qiita スライド機能(ベータ版)"
+                            },
+                            "ds:eHeHZ": {
+                              "content": "スライド機能の企画/管理を担当した。"
+                            },
+                            "ds:A08RFM": {
+                              "content": "2025年7月〜2026年7月"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "NS33h",
+                      "name": "Row 2",
+                      "width": "fill_container",
+                      "gap": 32,
+                      "children": [
+                        {
+                          "id": "YtOLV",
+                          "type": "ref",
+                          "ref": "ds:fWOYf",
+                          "name": "Project qiita-advent-calendar-2025",
+                          "width": "fill_container",
+                          "descendants": {
+                            "ds:CVcDO": {
+                              "type": "frame",
+                              "id": "E7D3yk",
+                              "name": "Project Labels",
+                              "gap": 8,
+                              "padding": [
+                                0,
+                                0,
+                                2,
+                                0
+                              ],
+                              "children": [
+                                {
+                                  "id": "irbVP",
+                                  "type": "ref",
+                                  "ref": "ds:b7blZ",
+                                  "name": "Chip Qiita",
+                                  "descendants": {
+                                    "ds:XWOq8": {
+                                      "content": "Qiita"
+                                    }
+                                  }
+                                },
+                                {
+                                  "id": "NgzXw",
+                                  "type": "ref",
+                                  "ref": "ds:b7blZ",
+                                  "name": "Chip PdM",
+                                  "descendants": {
+                                    "ds:XWOq8": {
+                                      "content": "PdM"
+                                    }
+                                  }
+                                }
+                              ]
+                            },
+                            "ds:nNTog": {
+                              "content": "Qiita Advent Calendar 2025 プロジェクト"
+                            },
+                            "ds:eHeHZ": {
+                              "content": "新企画の立案、新機能/機能アップデートの企画/設計を担当した。"
+                            },
+                            "ds:A08RFM": {
+                              "content": "2025年8月〜2026年1月"
+                            }
+                          }
+                        },
+                        {
+                          "id": "lSxZ4",
+                          "type": "ref",
+                          "ref": "ds:fWOYf",
+                          "name": "Project stock-share",
+                          "width": "fill_container",
+                          "descendants": {
+                            "ds:CVcDO": {
+                              "type": "frame",
+                              "id": "h7ApG",
+                              "name": "Project Labels",
+                              "gap": 8,
+                              "padding": [
+                                0,
+                                0,
+                                2,
+                                0
+                              ],
+                              "children": [
+                                {
+                                  "id": "erqUp",
+                                  "type": "ref",
+                                  "ref": "ds:b7blZ",
+                                  "name": "Chip Qiita",
+                                  "descendants": {
+                                    "ds:XWOq8": {
+                                      "content": "Qiita"
+                                    }
+                                  }
+                                },
+                                {
+                                  "id": "GDudR",
+                                  "type": "ref",
+                                  "ref": "ds:b7blZ",
+                                  "name": "Chip PdM",
+                                  "descendants": {
+                                    "ds:XWOq8": {
+                                      "content": "PdM"
+                                    }
+                                  }
+                                }
+                              ]
+                            },
+                            "ds:nNTog": {
+                              "content": "ストックのシェア機能プロジェクト"
+                            },
+                            "ds:eHeHZ": {
+                              "content": "ストックのシェア機能の企画/設計を担当した。"
+                            },
+                            "ds:A08RFM": {
+                              "content": "2025年2月〜"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "mfIwg",
+                      "name": "Row 3",
+                      "width": "fill_container",
+                      "gap": 32,
+                      "children": [
+                        {
+                          "id": "Iiq3v",
+                          "type": "ref",
+                          "ref": "ds:fWOYf",
+                          "name": "Project qiita-bash",
+                          "width": "fill_container",
+                          "descendants": {
+                            "ds:CVcDO": {
+                              "type": "frame",
+                              "id": "C06iQa",
+                              "name": "Project Labels",
+                              "gap": 8,
+                              "padding": [
+                                0,
+                                0,
+                                2,
+                                0
+                              ],
+                              "children": [
+                                {
+                                  "id": "rEBU2",
+                                  "type": "ref",
+                                  "ref": "ds:b7blZ",
+                                  "name": "Chip Qiita",
+                                  "descendants": {
+                                    "ds:XWOq8": {
+                                      "content": "Qiita"
+                                    }
+                                  }
+                                },
+                                {
+                                  "id": "pNqlU",
+                                  "type": "ref",
+                                  "ref": "ds:b7blZ",
+                                  "name": "Chip イベント",
+                                  "descendants": {
+                                    "ds:XWOq8": {
+                                      "content": "イベント"
+                                    }
+                                  }
+                                }
+                              ]
+                            },
+                            "ds:nNTog": {
+                              "content": "Qiita Bash"
+                            },
+                            "ds:eHeHZ": {
+                              "content": "Qiita Bashに関するイベント企画・集客・運営・配信"
+                            },
+                            "ds:A08RFM": {
+                              "content": "2024年4月〜"
+                            }
+                          }
+                        },
+                        {
+                          "id": "IwEhn",
+                          "type": "ref",
+                          "ref": "ds:fWOYf",
+                          "name": "Project accessibility-project",
+                          "width": "fill_container",
+                          "descendants": {
+                            "ds:CVcDO": {
+                              "type": "frame",
+                              "id": "gUDpR",
+                              "name": "Project Labels",
+                              "gap": 8,
+                              "padding": [
+                                0,
+                                0,
+                                2,
+                                0
+                              ],
+                              "children": [
+                                {
+                                  "id": "GiTPC",
+                                  "type": "ref",
+                                  "ref": "ds:b7blZ",
+                                  "name": "Chip Qiita",
+                                  "descendants": {
+                                    "ds:XWOq8": {
+                                      "content": "Qiita"
+                                    }
+                                  }
+                                },
+                                {
+                                  "id": "PPek1",
+                                  "type": "ref",
+                                  "ref": "ds:b7blZ",
+                                  "name": "Chip Accessibility",
+                                  "descendants": {
+                                    "ds:XWOq8": {
+                                      "content": "Accessibility"
+                                    }
+                                  }
+                                },
+                                {
+                                  "id": "CNiwx",
+                                  "type": "ref",
+                                  "ref": "ds:b7blZ",
+                                  "name": "Chip 人材育成",
+                                  "descendants": {
+                                    "ds:XWOq8": {
+                                      "content": "人材育成"
+                                    }
+                                  }
+                                }
+                              ]
+                            },
+                            "ds:nNTog": {
+                              "content": "アクセシビリティ改善プロジェクト"
+                            },
+                            "ds:eHeHZ": {
+                              "content": "アクセシビリティに関する知識の浸透、人材育成、Qiitaのプロダクト改善を担当した。"
+                            },
+                            "ds:A08RFM": {
+                              "content": "2024年4月〜"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "cZeTf",
+                      "name": "Row 4",
+                      "width": "fill_container",
+                      "gap": 32,
+                      "children": [
+                        {
+                          "id": "gcafU",
+                          "type": "ref",
+                          "ref": "ds:fWOYf",
+                          "name": "Project dark-mode",
+                          "width": "fill_container",
+                          "descendants": {
+                            "ds:CVcDO": {
+                              "type": "frame",
+                              "id": "J0Uzp",
+                              "name": "Project Labels",
+                              "gap": 8,
+                              "padding": [
+                                0,
+                                0,
+                                2,
+                                0
+                              ],
+                              "children": [
+                                {
+                                  "id": "H4hyx",
+                                  "type": "ref",
+                                  "ref": "ds:b7blZ",
+                                  "name": "Chip Qiita",
+                                  "descendants": {
+                                    "ds:XWOq8": {
+                                      "content": "Qiita"
+                                    }
+                                  }
+                                },
+                                {
+                                  "id": "Bjg3l",
+                                  "type": "ref",
+                                  "ref": "ds:b7blZ",
+                                  "name": "Chip Frontend",
+                                  "descendants": {
+                                    "ds:XWOq8": {
+                                      "content": "Frontend"
+                                    }
+                                  }
+                                },
+                                {
+                                  "id": "e5YLJp",
+                                  "type": "ref",
+                                  "ref": "ds:b7blZ",
+                                  "name": "Chip Accessibility",
+                                  "descendants": {
+                                    "ds:XWOq8": {
+                                      "content": "Accessibility"
+                                    }
+                                  }
+                                },
+                                {
+                                  "id": "mCLoe",
+                                  "type": "ref",
+                                  "ref": "ds:b7blZ",
+                                  "name": "Chip UI",
+                                  "descendants": {
+                                    "ds:XWOq8": {
+                                      "content": "UI"
+                                    }
+                                  }
+                                }
+                              ]
+                            },
+                            "ds:nNTog": {
+                              "content": "Qiitaダークモード導入"
+                            },
+                            "ds:eHeHZ": {
+                              "content": "Qiitaにダークモードを導入するため、カラーパレットの修正、カラートークンの設計、開発を担当した。"
+                            },
+                            "ds:A08RFM": {
+                              "content": "2023年2月〜2024年2月"
+                            }
+                          }
+                        },
+                        {
+                          "id": "y1wvVx",
+                          "type": "ref",
+                          "ref": "ds:fWOYf",
+                          "name": "Project github-sponsors",
+                          "width": "fill_container",
+                          "descendants": {
+                            "ds:CVcDO": {
+                              "type": "frame",
+                              "id": "dje4Z",
+                              "name": "Project Labels",
+                              "gap": 8,
+                              "padding": [
+                                0,
+                                0,
+                                2,
+                                0
+                              ],
+                              "children": [
+                                {
+                                  "id": "TEvxB",
+                                  "type": "ref",
+                                  "ref": "ds:b7blZ",
+                                  "name": "Chip Qiita",
+                                  "descendants": {
+                                    "ds:XWOq8": {
+                                      "content": "Qiita"
+                                    }
+                                  }
+                                },
+                                {
+                                  "id": "eGCbL",
+                                  "type": "ref",
+                                  "ref": "ds:b7blZ",
+                                  "name": "Chip PdM",
+                                  "descendants": {
+                                    "ds:XWOq8": {
+                                      "content": "PdM"
+                                    }
+                                  }
+                                }
+                              ]
+                            },
+                            "ds:nNTog": {
+                              "content": "GitHub Sponsors 連携機能"
+                            },
+                            "ds:eHeHZ": {
+                              "content": "GitHub Sponsors 連携機能の企画/設計・プロジェクトマネジメントを担当した。"
+                            },
+                            "ds:A08RFM": {
+                              "content": "2023年11月〜2024年1月"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "a5fvIt",
+                      "name": "Row 5",
+                      "width": "fill_container",
+                      "gap": 32,
+                      "children": [
+                        {
+                          "id": "y5cdE0",
+                          "type": "ref",
+                          "ref": "ds:fWOYf",
+                          "name": "Project qiita-hackathon",
+                          "width": "fill_container",
+                          "descendants": {
+                            "ds:CVcDO": {
+                              "type": "frame",
+                              "id": "eogxK",
+                              "name": "Project Labels",
+                              "gap": 8,
+                              "padding": [
+                                0,
+                                0,
+                                2,
+                                0
+                              ],
+                              "children": [
+                                {
+                                  "id": "zi4OT",
+                                  "type": "ref",
+                                  "ref": "ds:b7blZ",
+                                  "name": "Chip Qiita",
+                                  "descendants": {
+                                    "ds:XWOq8": {
+                                      "content": "Qiita"
+                                    }
+                                  }
+                                },
+                                {
+                                  "id": "RqhHD",
+                                  "type": "ref",
+                                  "ref": "ds:b7blZ",
+                                  "name": "Chip イベント",
+                                  "descendants": {
+                                    "ds:XWOq8": {
+                                      "content": "イベント"
+                                    }
+                                  }
+                                }
+                              ]
+                            },
+                            "ds:nNTog": {
+                              "content": "Qiita Hackathon"
+                            },
+                            "ds:eHeHZ": {
+                              "content": "Qiita Hackathonに関するクリエイティブディレクションを担当した。"
+                            },
+                            "ds:A08RFM": {
+                              "content": "2023年9月〜2023年12月"
+                            }
+                          }
+                        },
+                        {
+                          "id": "YaL29",
+                          "type": "ref",
+                          "ref": "ds:fWOYf",
+                          "name": "Project ai-suggest",
+                          "width": "fill_container",
+                          "descendants": {
+                            "ds:CVcDO": {
+                              "type": "frame",
+                              "id": "emvaO",
+                              "name": "Project Labels",
+                              "gap": 8,
+                              "padding": [
+                                0,
+                                0,
+                                2,
+                                0
+                              ],
+                              "children": [
+                                {
+                                  "id": "GRqUn",
+                                  "type": "ref",
+                                  "ref": "ds:b7blZ",
+                                  "name": "Chip Qiita",
+                                  "descendants": {
+                                    "ds:XWOq8": {
+                                      "content": "Qiita"
+                                    }
+                                  }
+                                },
+                                {
+                                  "id": "u693O",
+                                  "type": "ref",
+                                  "ref": "ds:b7blZ",
+                                  "name": "Chip PdM",
+                                  "descendants": {
+                                    "ds:XWOq8": {
+                                      "content": "PdM"
+                                    }
+                                  }
+                                },
+                                {
+                                  "id": "LZ7iU",
+                                  "type": "ref",
+                                  "ref": "ds:b7blZ",
+                                  "name": "Chip UI",
+                                  "descendants": {
+                                    "ds:XWOq8": {
+                                      "content": "UI"
+                                    }
+                                  }
+                                },
+                                {
+                                  "id": "XHfZt",
+                                  "type": "ref",
+                                  "ref": "ds:b7blZ",
+                                  "name": "Chip UX",
+                                  "descendants": {
+                                    "ds:XWOq8": {
+                                      "content": "UX"
+                                    }
+                                  }
+                                }
+                              ]
+                            },
+                            "ds:nNTog": {
+                              "content": "AIサジェスト機能"
+                            },
+                            "ds:eHeHZ": {
+                              "content": "機能開発の企画/設計・プロジェクトマネジメント・UXの設計・UIデザインを担当した。"
+                            },
+                            "ds:A08RFM": {
+                              "content": "2023年8月〜2023年11月"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "NXNin",
+                      "name": "Row 6",
+                      "width": "fill_container",
+                      "gap": 32,
+                      "children": [
+                        {
+                          "id": "CCdHj",
+                          "type": "ref",
+                          "ref": "ds:fWOYf",
+                          "name": "Project qiita-engineer-festa-2023",
+                          "width": "fill_container",
+                          "descendants": {
+                            "ds:CVcDO": {
+                              "type": "frame",
+                              "id": "qzH4V",
+                              "name": "Project Labels",
+                              "gap": 8,
+                              "padding": [
+                                0,
+                                0,
+                                2,
+                                0
+                              ],
+                              "children": [
+                                {
+                                  "id": "yBlMK",
+                                  "type": "ref",
+                                  "ref": "ds:b7blZ",
+                                  "name": "Chip Qiita",
+                                  "descendants": {
+                                    "ds:XWOq8": {
+                                      "content": "Qiita"
+                                    }
+                                  }
+                                },
+                                {
+                                  "id": "h6SztB",
+                                  "type": "ref",
+                                  "ref": "ds:b7blZ",
+                                  "name": "Chip イベント",
+                                  "descendants": {
+                                    "ds:XWOq8": {
+                                      "content": "イベント"
+                                    }
+                                  }
+                                },
+                                {
+                                  "id": "djBe5",
+                                  "type": "ref",
+                                  "ref": "ds:b7blZ",
+                                  "name": "Chip UI",
+                                  "descendants": {
+                                    "ds:XWOq8": {
+                                      "content": "UI"
+                                    }
+                                  }
+                                },
+                                {
+                                  "id": "HoUpC",
+                                  "type": "ref",
+                                  "ref": "ds:b7blZ",
+                                  "name": "Chip UX",
+                                  "descendants": {
+                                    "ds:XWOq8": {
+                                      "content": "UX"
+                                    }
+                                  }
+                                }
+                              ]
+                            },
+                            "ds:nNTog": {
+                              "content": "Qiita Engineer Festa 2023"
+                            },
+                            "ds:eHeHZ": {
+                              "content": "Qiita Engineer Festa 2023に関するクリエイティブディレクション・UX設計・UIデザインを担当した。"
+                            },
+                            "ds:A08RFM": {
+                              "content": "2023年2月〜2023年8月"
+                            }
+                          }
+                        },
+                        {
+                          "id": "vOOXw",
+                          "type": "ref",
+                          "ref": "ds:fWOYf",
+                          "name": "Project qiita-engineer-festa-2022",
+                          "width": "fill_container",
+                          "descendants": {
+                            "ds:CVcDO": {
+                              "type": "frame",
+                              "id": "AzkKc",
+                              "name": "Project Labels",
+                              "gap": 8,
+                              "padding": [
+                                0,
+                                0,
+                                2,
+                                0
+                              ],
+                              "children": [
+                                {
+                                  "id": "CTJFp",
+                                  "type": "ref",
+                                  "ref": "ds:b7blZ",
+                                  "name": "Chip Qiita",
+                                  "descendants": {
+                                    "ds:XWOq8": {
+                                      "content": "Qiita"
+                                    }
+                                  }
+                                },
+                                {
+                                  "id": "cZFEr",
+                                  "type": "ref",
+                                  "ref": "ds:b7blZ",
+                                  "name": "Chip イベント",
+                                  "descendants": {
+                                    "ds:XWOq8": {
+                                      "content": "イベント"
+                                    }
+                                  }
+                                },
+                                {
+                                  "id": "c6eAmQ",
+                                  "type": "ref",
+                                  "ref": "ds:b7blZ",
+                                  "name": "Chip UI",
+                                  "descendants": {
+                                    "ds:XWOq8": {
+                                      "content": "UI"
+                                    }
+                                  }
+                                },
+                                {
+                                  "id": "Fk1cC",
+                                  "type": "ref",
+                                  "ref": "ds:b7blZ",
+                                  "name": "Chip UX",
+                                  "descendants": {
+                                    "ds:XWOq8": {
+                                      "content": "UX"
+                                    }
+                                  }
+                                },
+                                {
+                                  "id": "l6k58",
+                                  "type": "ref",
+                                  "ref": "ds:b7blZ",
+                                  "name": "Chip Frontend",
+                                  "descendants": {
+                                    "ds:XWOq8": {
+                                      "content": "Frontend"
+                                    }
+                                  }
+                                }
+                              ]
+                            },
+                            "ds:nNTog": {
+                              "content": "Qiita Engineer Festa 2022"
+                            },
+                            "ds:eHeHZ": {
+                              "content": "Qiita Engineer Festa 2022に関するクリエイティブディレクション・UX設計・UIデザインを担当した。"
+                            },
+                            "ds:A08RFM": {
+                              "content": "2022年2月〜2022年8月"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "mBfQ9",
+                      "name": "Row 7",
+                      "width": "fill_container",
+                      "gap": 32,
+                      "children": [
+                        {
+                          "id": "K65IIk",
+                          "type": "ref",
+                          "ref": "ds:fWOYf",
+                          "name": "Project qiita-team-restructure",
+                          "width": "fill_container",
+                          "descendants": {
+                            "ds:CVcDO": {
+                              "type": "frame",
+                              "id": "e55tGT",
+                              "name": "Project Labels",
+                              "gap": 8,
+                              "padding": [
+                                0,
+                                0,
+                                2,
+                                0
+                              ],
+                              "children": [
+                                {
+                                  "id": "rWIlw",
+                                  "type": "ref",
+                                  "ref": "ds:b7blZ",
+                                  "name": "Chip Qiita Team",
+                                  "descendants": {
+                                    "ds:XWOq8": {
+                                      "content": "Qiita Team"
+                                    }
+                                  }
+                                },
+                                {
+                                  "id": "cgg6i",
+                                  "type": "ref",
+                                  "ref": "ds:b7blZ",
+                                  "name": "Chip BtoB",
+                                  "descendants": {
+                                    "ds:XWOq8": {
+                                      "content": "BtoB"
+                                    }
+                                  }
+                                },
+                                {
+                                  "id": "g9bqw",
+                                  "type": "ref",
+                                  "ref": "ds:b7blZ",
+                                  "name": "Chip UI",
+                                  "descendants": {
+                                    "ds:XWOq8": {
+                                      "content": "UI"
+                                    }
+                                  }
+                                },
+                                {
+                                  "id": "FC1Gg",
+                                  "type": "ref",
+                                  "ref": "ds:b7blZ",
+                                  "name": "Chip UX",
+                                  "descendants": {
+                                    "ds:XWOq8": {
+                                      "content": "UX"
+                                    }
+                                  }
+                                },
+                                {
+                                  "id": "b03pi2",
+                                  "type": "ref",
+                                  "ref": "ds:b7blZ",
+                                  "name": "Chip Frontend",
+                                  "descendants": {
+                                    "ds:XWOq8": {
+                                      "content": "Frontend"
+                                    }
+                                  }
+                                }
+                              ]
+                            },
+                            "ds:nNTog": {
+                              "content": "Qiita Team 構造再設計・UIリニューアル"
+                            },
+                            "ds:eHeHZ": {
+                              "content": "Qiita Teamをグループ起点の構造に再設計するため、情報設計・UI/UXデザイン・フロントエンド実装を担当した。"
+                            },
+                            "ds:A08RFM": {
+                              "content": "2021年9月〜2022年6月"
+                            }
+                          }
+                        },
+                        {
+                          "id": "e4Se83",
+                          "type": "ref",
+                          "ref": "ds:fWOYf",
+                          "name": "Project qiita-advent-calendar-2021",
+                          "width": "fill_container",
+                          "descendants": {
+                            "ds:CVcDO": {
+                              "type": "frame",
+                              "id": "lAJzx",
+                              "name": "Project Labels",
+                              "gap": 8,
+                              "padding": [
+                                0,
+                                0,
+                                2,
+                                0
+                              ],
+                              "children": [
+                                {
+                                  "id": "wuAD5",
+                                  "type": "ref",
+                                  "ref": "ds:b7blZ",
+                                  "name": "Chip Qiita",
+                                  "descendants": {
+                                    "ds:XWOq8": {
+                                      "content": "Qiita"
+                                    }
+                                  }
+                                },
+                                {
+                                  "id": "uXmPn",
+                                  "type": "ref",
+                                  "ref": "ds:b7blZ",
+                                  "name": "Chip イベント",
+                                  "descendants": {
+                                    "ds:XWOq8": {
+                                      "content": "イベント"
+                                    }
+                                  }
+                                },
+                                {
+                                  "id": "itAqi",
+                                  "type": "ref",
+                                  "ref": "ds:b7blZ",
+                                  "name": "Chip UI",
+                                  "descendants": {
+                                    "ds:XWOq8": {
+                                      "content": "UI"
+                                    }
+                                  }
+                                },
+                                {
+                                  "id": "isHAe",
+                                  "type": "ref",
+                                  "ref": "ds:b7blZ",
+                                  "name": "Chip UX",
+                                  "descendants": {
+                                    "ds:XWOq8": {
+                                      "content": "UX"
+                                    }
+                                  }
+                                }
+                              ]
+                            },
+                            "ds:nNTog": {
+                              "content": "Qiita Advent Calendar 2021"
+                            },
+                            "ds:eHeHZ": {
+                              "content": "Qiita Advent Calendar 2021に関するクリエイティブディレクション・UX設計・UIデザインを担当した。"
+                            },
+                            "ds:A08RFM": {
+                              "content": "2021年8月〜2021年12月"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "DWRcu",
+                      "name": "Row 8",
+                      "width": "fill_container",
+                      "gap": 32,
+                      "children": [
+                        {
+                          "id": "j6SIH",
+                          "type": "ref",
+                          "ref": "ds:fWOYf",
+                          "name": "Project qiita-award",
+                          "width": "fill_container",
+                          "descendants": {
+                            "ds:CVcDO": {
+                              "type": "frame",
+                              "id": "uBgt6",
+                              "name": "Project Labels",
+                              "gap": 8,
+                              "padding": [
+                                0,
+                                0,
+                                2,
+                                0
+                              ],
+                              "children": [
+                                {
+                                  "id": "c40pe5",
+                                  "type": "ref",
+                                  "ref": "ds:b7blZ",
+                                  "name": "Chip Qiita",
+                                  "descendants": {
+                                    "ds:XWOq8": {
+                                      "content": "Qiita"
+                                    }
+                                  }
+                                },
+                                {
+                                  "id": "Hhfhw",
+                                  "type": "ref",
+                                  "ref": "ds:b7blZ",
+                                  "name": "Chip UI",
+                                  "descendants": {
+                                    "ds:XWOq8": {
+                                      "content": "UI"
+                                    }
+                                  }
+                                },
+                                {
+                                  "id": "QPfbF",
+                                  "type": "ref",
+                                  "ref": "ds:b7blZ",
+                                  "name": "Chip UX",
+                                  "descendants": {
+                                    "ds:XWOq8": {
+                                      "content": "UX"
+                                    }
+                                  }
+                                },
+                                {
+                                  "id": "oKATi",
+                                  "type": "ref",
+                                  "ref": "ds:b7blZ",
+                                  "name": "Chip Frontend",
+                                  "descendants": {
+                                    "ds:XWOq8": {
+                                      "content": "Frontend"
+                                    }
+                                  }
+                                }
+                              ]
+                            },
+                            "ds:nNTog": {
+                              "content": "Qiita 表彰プログラム 特設サイト"
+                            },
+                            "ds:eHeHZ": {
+                              "content": "Qiita 表彰プログラム 特設サイトに関するクリエイティブディレクション・UX設計・UIデザインを担当した。"
+                            },
+                            "ds:A08RFM": {
+                              "content": "2021年7月〜2021年9月"
+                            }
+                          }
+                        },
+                        {
+                          "id": "hlt3C",
+                          "type": "ref",
+                          "ref": "ds:fWOYf",
+                          "name": "Project qiita-engineer-summit-2021",
+                          "width": "fill_container",
+                          "descendants": {
+                            "ds:CVcDO": {
+                              "type": "frame",
+                              "id": "wswlk",
+                              "name": "Project Labels",
+                              "gap": 8,
+                              "padding": [
+                                0,
+                                0,
+                                2,
+                                0
+                              ],
+                              "children": [
+                                {
+                                  "id": "BJgPN",
+                                  "type": "ref",
+                                  "ref": "ds:b7blZ",
+                                  "name": "Chip Qiita",
+                                  "descendants": {
+                                    "ds:XWOq8": {
+                                      "content": "Qiita"
+                                    }
+                                  }
+                                },
+                                {
+                                  "id": "eNZc8",
+                                  "type": "ref",
+                                  "ref": "ds:b7blZ",
+                                  "name": "Chip イベント",
+                                  "descendants": {
+                                    "ds:XWOq8": {
+                                      "content": "イベント"
+                                    }
+                                  }
+                                },
+                                {
+                                  "id": "jPtpl",
+                                  "type": "ref",
+                                  "ref": "ds:b7blZ",
+                                  "name": "Chip UI",
+                                  "descendants": {
+                                    "ds:XWOq8": {
+                                      "content": "UI"
+                                    }
+                                  }
+                                },
+                                {
+                                  "id": "bB5Vw",
+                                  "type": "ref",
+                                  "ref": "ds:b7blZ",
+                                  "name": "Chip UX",
+                                  "descendants": {
+                                    "ds:XWOq8": {
+                                      "content": "UX"
+                                    }
+                                  }
+                                },
+                                {
+                                  "id": "sn6G3",
+                                  "type": "ref",
+                                  "ref": "ds:b7blZ",
+                                  "name": "Chip Frontend",
+                                  "descendants": {
+                                    "ds:XWOq8": {
+                                      "content": "Frontend"
+                                    }
+                                  }
+                                }
+                              ]
+                            },
+                            "ds:nNTog": {
+                              "content": "Qiita Engineer Summit 2021"
+                            },
+                            "ds:eHeHZ": {
+                              "content": "Qiita Engineer Summit 2021に関するクリエイティブディレクション・UX設計・UIデザインを担当した。"
+                            },
+                            "ds:A08RFM": {
+                              "content": "2021年3月〜2021年7月"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "GFcWd",
+                      "name": "Row 9",
+                      "width": "fill_container",
+                      "gap": 32,
+                      "children": [
+                        {
+                          "id": "U10v0R",
+                          "type": "ref",
+                          "ref": "ds:fWOYf",
+                          "name": "Project qiita-engineer-festa-2021",
+                          "width": "fill_container",
+                          "descendants": {
+                            "ds:CVcDO": {
+                              "type": "frame",
+                              "id": "a4Fne0",
+                              "name": "Project Labels",
+                              "gap": 8,
+                              "padding": [
+                                0,
+                                0,
+                                2,
+                                0
+                              ],
+                              "children": [
+                                {
+                                  "id": "i6uQP",
+                                  "type": "ref",
+                                  "ref": "ds:b7blZ",
+                                  "name": "Chip Qiita",
+                                  "descendants": {
+                                    "ds:XWOq8": {
+                                      "content": "Qiita"
+                                    }
+                                  }
+                                },
+                                {
+                                  "id": "TRwj5",
+                                  "type": "ref",
+                                  "ref": "ds:b7blZ",
+                                  "name": "Chip イベント",
+                                  "descendants": {
+                                    "ds:XWOq8": {
+                                      "content": "イベント"
+                                    }
+                                  }
+                                },
+                                {
+                                  "id": "oCJz0",
+                                  "type": "ref",
+                                  "ref": "ds:b7blZ",
+                                  "name": "Chip UI",
+                                  "descendants": {
+                                    "ds:XWOq8": {
+                                      "content": "UI"
+                                    }
+                                  }
+                                },
+                                {
+                                  "id": "Peyut",
+                                  "type": "ref",
+                                  "ref": "ds:b7blZ",
+                                  "name": "Chip UX",
+                                  "descendants": {
+                                    "ds:XWOq8": {
+                                      "content": "UX"
+                                    }
+                                  }
+                                }
+                              ]
+                            },
+                            "ds:nNTog": {
+                              "content": "Qiita エンジニアフェスタ 2021"
+                            },
+                            "ds:eHeHZ": {
+                              "content": "Qiita エンジニアフェスタ 2021に関するクリエイティブディレクション・UX設計・UIデザインを担当した。"
+                            },
+                            "ds:A08RFM": {
+                              "content": "2021年2月〜2021年8月"
+                            }
+                          }
+                        },
+                        {
+                          "id": "ENq2K",
+                          "type": "ref",
+                          "ref": "ds:fWOYf",
+                          "name": "Project qiita-jobs-renewal",
+                          "width": "fill_container",
+                          "descendants": {
+                            "ds:CVcDO": {
+                              "type": "frame",
+                              "id": "pq3tL",
+                              "name": "Project Labels",
+                              "gap": 8,
+                              "padding": [
+                                0,
+                                0,
+                                2,
+                                0
+                              ],
+                              "children": [
+                                {
+                                  "id": "mEpWS",
+                                  "type": "ref",
+                                  "ref": "ds:b7blZ",
+                                  "name": "Chip Qiita Jobs",
+                                  "descendants": {
+                                    "ds:XWOq8": {
+                                      "content": "Qiita Jobs"
+                                    }
+                                  }
+                                },
+                                {
+                                  "id": "BQCuK",
+                                  "type": "ref",
+                                  "ref": "ds:b7blZ",
+                                  "name": "Chip UI",
+                                  "descendants": {
+                                    "ds:XWOq8": {
+                                      "content": "UI"
+                                    }
+                                  }
+                                },
+                                {
+                                  "id": "Ok1w5",
+                                  "type": "ref",
+                                  "ref": "ds:b7blZ",
+                                  "name": "Chip UX",
+                                  "descendants": {
+                                    "ds:XWOq8": {
+                                      "content": "UX"
+                                    }
+                                  }
+                                }
+                              ]
+                            },
+                            "ds:nNTog": {
+                              "content": "Qiita Jobs サービスリニューアル"
+                            },
+                            "ds:eHeHZ": {
+                              "content": "Qiita Jobs サービスリニューアルに関するUX設計・UIデザインを担当した。"
+                            },
+                            "ds:A08RFM": {
+                              "content": "2020年6月〜2020年8月"
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "vVir0",
+          "type": "ref",
+          "ref": "ds:q77i4",
+          "name": "Footer",
+          "width": 1152
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "m1QuG7",
+      "x": 3200,
+      "y": 0,
+      "name": "/projects/:id — light",
+      "theme": {
+        "ds:mode": "light"
+      },
+      "clip": true,
+      "width": 1440,
+      "fill": {
+        "type": "shader",
+        "enabled": true,
+        "url": "../../../src/component/Atoms/GradientBackground/gradientBackground.glsl",
+        "uniforms": {
+          "u_top": "$ds:background-top",
+          "u_middle": "$ds:background-middle",
+          "u_bottom": "$ds:background-bottom",
+          "u_gridColor": "$ds:background-grid",
+          "u_gridOpacity": 0.1,
+          "u_noise": 30,
+          "u_waveSpeed": 0.5,
+          "u_waveAmplitude": 0.3,
+          "u_flagOpacity": 8,
+          "u_gridSize": 192
+        }
+      },
+      "layout": "vertical",
+      "alignItems": "center",
+      "children": [
+        {
+          "id": "hv6H3",
+          "type": "ref",
+          "ref": "ds:xdOlG",
+          "name": "Header",
+          "width": 1152
+        },
+        {
+          "type": "frame",
+          "id": "VmxmH",
+          "name": "Main",
+          "width": 1152,
+          "gap": 32,
+          "padding": [
+            64,
+            16
+          ],
+          "children": [
+            {
+              "id": "FOT7s",
+              "type": "ref",
+              "ref": "ds:G7b2t",
+              "name": "Aside",
+              "descendants": {
+                "ds:apAsl": {
+                  "type": "frame",
+                  "id": "S58qQr",
+                  "name": "TOC List",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "children": [
+                    {
+                      "id": "M9KeNO",
+                      "type": "ref",
+                      "ref": "ds:UykH9",
+                      "name": "TOC プロジェクト概要",
+                      "width": "fill_container",
+                      "descendants": {
+                        "ds:dyFtp": {
+                          "content": "プロジェクト概要"
+                        }
+                      }
+                    },
+                    {
+                      "id": "zZgxM",
+                      "type": "ref",
+                      "ref": "ds:UykH9",
+                      "name": "TOC 補足情報",
+                      "width": "fill_container",
+                      "descendants": {
+                        "ds:dyFtp": {
+                          "content": "補足情報"
+                        }
+                      }
+                    },
+                    {
+                      "id": "TR9T7",
+                      "type": "ref",
+                      "ref": "ds:UykH9",
+                      "name": "TOC 背景・課題",
+                      "width": "fill_container",
+                      "descendants": {
+                        "ds:dyFtp": {
+                          "content": "背景・課題"
+                        }
+                      }
+                    },
+                    {
+                      "id": "cFo1o",
+                      "type": "ref",
+                      "ref": "ds:UykH9",
+                      "name": "TOC 進め方",
+                      "width": "fill_container",
+                      "descendants": {
+                        "ds:dyFtp": {
+                          "content": "進め方"
+                        }
+                      }
+                    },
+                    {
+                      "id": "FLtjd",
+                      "type": "ref",
+                      "ref": "ds:UykH9",
+                      "name": "TOC デザイン上の判断とその理由",
+                      "width": "fill_container",
+                      "descendants": {
+                        "ds:dyFtp": {
+                          "content": "デザイン上の判断とその理由"
+                        }
+                      }
+                    },
+                    {
+                      "id": "B7D4Le",
+                      "type": "ref",
+                      "ref": "ds:UykH9",
+                      "name": "TOC ブランドカラーと UI で使う色を分けた",
+                      "width": "fill_container",
+                      "descendants": {
+                        "ds:dyFtp": {
+                          "content": "ブランドカラーと UI で使う色を分けた"
+                        }
+                      }
+                    },
+                    {
+                      "id": "R9scG",
+                      "type": "ref",
+                      "ref": "ds:UykH9",
+                      "name": "TOC カラーパレットとカラートークンの2層にした",
+                      "width": "fill_container",
+                      "descendants": {
+                        "ds:dyFtp": {
+                          "content": "カラーパレットとカラートークンの2層にした"
+                        }
+                      }
+                    },
+                    {
+                      "id": "vhuFx",
+                      "type": "ref",
+                      "ref": "ds:UykH9",
+                      "name": "TOC ライトテーマとダークテーマで同じカラーパレットを使った",
+                      "width": "fill_container",
+                      "descendants": {
+                        "ds:dyFtp": {
+                          "content": "ライトテーマとダークテーマで同じカラーパレットを使った"
+                        }
+                      }
+                    },
+                    {
+                      "id": "MTfCd",
+                      "type": "ref",
+                      "ref": "ds:UykH9",
+                      "name": "TOC コントラスト比を表で管理した",
+                      "width": "fill_container",
+                      "descendants": {
+                        "ds:dyFtp": {
+                          "content": "コントラスト比を表で管理した"
+                        }
+                      }
+                    },
+                    {
+                      "id": "Q8MAz",
+                      "type": "ref",
+                      "ref": "ds:UykH9",
+                      "name": "TOC 対応ページを段階的に広げた",
+                      "width": "fill_container",
+                      "descendants": {
+                        "ds:dyFtp": {
+                          "content": "対応ページを段階的に広げた"
+                        }
+                      }
+                    },
+                    {
+                      "id": "i4kRuj",
+                      "type": "ref",
+                      "ref": "ds:UykH9",
+                      "name": "TOC 成果",
+                      "width": "fill_container",
+                      "descendants": {
+                        "ds:dyFtp": {
+                          "content": "成果"
+                        }
+                      }
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "type": "frame",
+              "id": "l12pf",
+              "name": "Article",
+              "width": "fill_container",
+              "layout": "vertical",
+              "children": [
+                {
+                  "id": "TO6I8",
+                  "type": "ref",
+                  "ref": "ds:nqO7H",
+                  "name": "Title",
+                  "width": "fill_container",
+                  "descendants": {
+                    "ds:HbhKi": {
+                      "content": "Qiitaダークモード導入"
+                    }
+                  }
+                },
+                {
+                  "type": "frame",
+                  "id": "Sfj5a",
+                  "name": "Spacer",
+                  "width": 1,
+                  "height": 40
+                },
+                {
+                  "type": "frame",
+                  "id": "lCphw",
+                  "name": "Markdown Body",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 16,
+                  "children": [
+                    {
+                      "id": "gYjxX",
+                      "type": "ref",
+                      "ref": "ds:sfUgQ",
+                      "name": "H2 プロジェクト概要",
+                      "width": "fill_container",
+                      "padding": 0,
+                      "descendants": {
+                        "ds:cBitj": {
+                          "content": "プロジェクト概要"
+                        }
+                      }
+                    },
+                    {
+                      "id": "EksXy",
+                      "type": "ref",
+                      "ref": "ds:O0JhwX",
+                      "name": "Paragraph",
+                      "width": "fill_container",
+                      "descendants": {
+                        "ds:bXG7z": {
+                          "content": "Qiita にダークモード（ダークテーマ）を導入したプロジェクトです。約半年間のベータ版を経て、正式版としてリリースしました。"
+                        }
+                      }
+                    },
+                    {
+                      "id": "j3FFsk",
+                      "type": "ref",
+                      "ref": "ds:O0JhwX",
+                      "name": "Paragraph",
+                      "width": "fill_container",
+                      "descendants": {
+                        "ds:bXG7z": {
+                          "content": "カラーパレットの修正、カラートークンの設計、開発を担当しました。"
+                        }
+                      }
+                    },
+                    {
+                      "id": "P90A4l",
+                      "type": "ref",
+                      "ref": "ds:GJgMM",
+                      "name": "H3 補足情報",
+                      "width": "fill_container",
+                      "descendants": {
+                        "ds:LWyRT": {
+                          "content": "補足情報"
+                        }
+                      }
+                    },
+                    {
+                      "type": "frame",
+                      "id": "Y4c4R7",
+                      "name": "List",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "children": [
+                        {
+                          "id": "Y4QkB6",
+                          "type": "ref",
+                          "ref": "ds:PKmz9",
+                          "name": "List Item",
+                          "width": "fill_container",
+                          "padding": [
+                            0,
+                            0,
+                            0,
+                            8
+                          ],
+                          "descendants": {
+                            "ds:VXikS": {
+                              "content": "•"
+                            },
+                            "ds:d5FOiq": {
+                              "content": "期間：2023年2月〜2024年2月"
+                            }
+                          }
+                        },
+                        {
+                          "id": "pdIS9",
+                          "type": "ref",
+                          "ref": "ds:PKmz9",
+                          "name": "List Item",
+                          "width": "fill_container",
+                          "padding": [
+                            0,
+                            0,
+                            0,
+                            8
+                          ],
+                          "descendants": {
+                            "ds:VXikS": {
+                              "content": "•"
+                            },
+                            "ds:d5FOiq": {
+                              "content": "担当：カラーパレット修正 / カラートークン設計 / 開発"
+                            }
+                          }
+                        },
+                        {
+                          "id": "FY8Kb",
+                          "type": "ref",
+                          "ref": "ds:PKmz9",
+                          "name": "List Item",
+                          "width": "fill_container",
+                          "padding": [
+                            0,
+                            0,
+                            0,
+                            8
+                          ],
+                          "descendants": {
+                            "ds:VXikS": {
+                              "content": "•"
+                            },
+                            "ds:d5FOiq": {
+                              "content": "チーム体制：デザイナー 3名"
+                            }
+                          }
+                        },
+                        {
+                          "id": "pMRAw",
+                          "type": "ref",
+                          "ref": "ds:PKmz9",
+                          "name": "List Item",
+                          "width": "fill_container",
+                          "padding": [
+                            0,
+                            0,
+                            0,
+                            8
+                          ],
+                          "descendants": {
+                            "ds:VXikS": {
+                              "content": "•"
+                            },
+                            "ds:d5FOiq": {
+                              "content": "使用ツール・技術：Figma / CSS / Emotion"
+                            }
+                          }
+                        },
+                        {
+                          "id": "k8LFo0",
+                          "type": "ref",
+                          "ref": "ds:PKmz9",
+                          "name": "List Item",
+                          "width": "fill_container",
+                          "padding": [
+                            0,
+                            0,
+                            0,
+                            8
+                          ],
+                          "descendants": {
+                            "ds:VXikS": {
+                              "content": "•"
+                            },
+                            "ds:d5FOiq": {
+                              "content": "Qiita Blog：ダークテーマ・ライトテーマの正式リリース"
+                            }
+                          }
+                        },
+                        {
+                          "id": "YfJHD",
+                          "type": "ref",
+                          "ref": "ds:PKmz9",
+                          "name": "List Item",
+                          "width": "fill_container",
+                          "padding": [
+                            0,
+                            0,
+                            0,
+                            8
+                          ],
+                          "descendants": {
+                            "ds:VXikS": {
+                              "content": "•"
+                            },
+                            "ds:d5FOiq": {
+                              "content": "ダークテーマとアクセシビリティの融合したカラートークンの設計"
+                            }
+                          }
+                        },
+                        {
+                          "id": "LOWEA",
+                          "type": "ref",
+                          "ref": "ds:PKmz9",
+                          "name": "List Item",
+                          "width": "fill_container",
+                          "padding": [
+                            0,
+                            0,
+                            0,
+                            8
+                          ],
+                          "descendants": {
+                            "ds:VXikS": {
+                              "content": "•"
+                            },
+                            "ds:d5FOiq": {
+                              "content": "フロントエンドカンファレンス北海道2024 登壇資料：ダークテーマとアクセシビリティの融合したカラートークンの設計"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "id": "g4c4o",
+                      "type": "ref",
+                      "ref": "ds:sfUgQ",
+                      "name": "H2 背景・課題",
+                      "width": "fill_container",
+                      "descendants": {
+                        "ds:cBitj": {
+                          "content": "背景・課題"
+                        }
+                      }
+                    },
+                    {
+                      "id": "ToPXo",
+                      "type": "ref",
+                      "ref": "ds:O0JhwX",
+                      "name": "Paragraph",
+                      "width": "fill_container",
+                      "descendants": {
+                        "ds:bXG7z": {
+                          "content": "ダークモードに対応するサービスが増え、Qiita にも多くの要望が寄せられていました。"
+                        }
+                      }
+                    },
+                    {
+                      "id": "miohR",
+                      "type": "ref",
+                      "ref": "ds:O0JhwX",
+                      "name": "Paragraph",
+                      "width": "fill_container",
+                      "descendants": {
+                        "ds:bXG7z": {
+                          "content": "一方で、既存の色にはアクセシビリティの課題がありました。Qiita のブランドカラーである緑（#55C500）は、上に白い文字を乗せるとコントラスト比が 2.24 しかなく、基準を満たせません。しかし、黒い文字を乗せるとブランドガイドラインに反してしまいます。"
+                        }
+                      }
+                    },
+                    {
+                      "id": "nAQCp",
+                      "type": "ref",
+                      "ref": "ds:O0JhwX",
+                      "name": "Paragraph",
+                      "width": "fill_container",
+                      "descendants": {
+                        "ds:bXG7z": {
+                          "content": "ダークテーマを導入するなら、色の仕組みそのものを見直す必要がありました。そこで、ダークテーマの導入とアクセシビリティの改善を一緒に進める ことにしました。"
+                        }
+                      }
+                    },
+                    {
+                      "id": "eoxCP",
+                      "type": "ref",
+                      "ref": "ds:sfUgQ",
+                      "name": "H2 進め方",
+                      "width": "fill_container",
+                      "descendants": {
+                        "ds:cBitj": {
+                          "content": "進め方"
+                        }
+                      }
+                    },
+                    {
+                      "type": "frame",
+                      "id": "OnREW",
+                      "name": "List",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "children": [
+                        {
+                          "id": "g9Fq2",
+                          "type": "ref",
+                          "ref": "ds:PKmz9",
+                          "name": "List Item",
+                          "width": "fill_container",
+                          "padding": [
+                            0,
+                            0,
+                            0,
+                            8
+                          ],
+                          "descendants": {
+                            "ds:VXikS": {
+                              "content": "•"
+                            },
+                            "ds:d5FOiq": {
+                              "content": "ブランドカラーと UI で使う色を分ける方針を決める"
+                            }
+                          }
+                        },
+                        {
+                          "id": "XD1cl",
+                          "type": "ref",
+                          "ref": "ds:PKmz9",
+                          "name": "List Item",
+                          "width": "fill_container",
+                          "padding": [
+                            0,
+                            0,
+                            0,
+                            8
+                          ],
+                          "descendants": {
+                            "ds:VXikS": {
+                              "content": "•"
+                            },
+                            "ds:d5FOiq": {
+                              "content": "ライトテーマとダークテーマで共通のカラーパレットを作る"
+                            }
+                          }
+                        },
+                        {
+                          "id": "Br8YY",
+                          "type": "ref",
+                          "ref": "ds:PKmz9",
+                          "name": "List Item",
+                          "width": "fill_container",
+                          "padding": [
+                            0,
+                            0,
+                            0,
+                            8
+                          ],
+                          "descendants": {
+                            "ds:VXikS": {
+                              "content": "•"
+                            },
+                            "ds:d5FOiq": {
+                              "content": "カラーパレットをもとに、UI で使うカラートークンを設計する"
+                            }
+                          }
+                        },
+                        {
+                          "id": "A5kUn7",
+                          "type": "ref",
+                          "ref": "ds:PKmz9",
+                          "name": "List Item",
+                          "width": "fill_container",
+                          "padding": [
+                            0,
+                            0,
+                            0,
+                            8
+                          ],
+                          "descendants": {
+                            "ds:VXikS": {
+                              "content": "•"
+                            },
+                            "ds:d5FOiq": {
+                              "content": "各トークンのコントラスト比を検証し、使える組み合わせを表で管理する"
+                            }
+                          }
+                        },
+                        {
+                          "id": "VmTVy",
+                          "type": "ref",
+                          "ref": "ds:PKmz9",
+                          "name": "List Item",
+                          "width": "fill_container",
+                          "padding": [
+                            0,
+                            0,
+                            0,
+                            8
+                          ],
+                          "descendants": {
+                            "ds:VXikS": {
+                              "content": "•"
+                            },
+                            "ds:d5FOiq": {
+                              "content": "ベータ版として公開し、対応ページを段階的に広げる"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "id": "fsMr6",
+                      "type": "ref",
+                      "ref": "ds:sfUgQ",
+                      "name": "H2 デザイン上の判断とその理由",
+                      "width": "fill_container",
+                      "descendants": {
+                        "ds:cBitj": {
+                          "content": "デザイン上の判断とその理由"
+                        }
+                      }
+                    },
+                    {
+                      "id": "wv4my",
+                      "type": "ref",
+                      "ref": "ds:GJgMM",
+                      "name": "H3 ブランドカラーと UI で使う色を分けた",
+                      "width": "fill_container",
+                      "descendants": {
+                        "ds:LWyRT": {
+                          "content": "ブランドカラーと UI で使う色を分けた"
+                        }
+                      }
+                    },
+                    {
+                      "id": "JcIEU",
+                      "type": "ref",
+                      "ref": "ds:O0JhwX",
+                      "name": "Paragraph",
+                      "width": "fill_container",
+                      "descendants": {
+                        "ds:bXG7z": {
+                          "content": "最初に、ブランドカラーをそのまま UI のカラーパレットには使わない と決めました。ブランドカラーはブランドとしての表現に使い、UI ではコントラスト比を満たす色をカラートークンとして使う形にしています。ブランドを守ることと、誰でも読めることを両立するためです。"
+                        }
+                      }
+                    },
+                    {
+                      "id": "tGiZ4",
+                      "type": "ref",
+                      "ref": "ds:GJgMM",
+                      "name": "H3 カラーパレットとカラートークンの2層にした",
+                      "width": "fill_container",
+                      "descendants": {
+                        "ds:LWyRT": {
+                          "content": "カラーパレットとカラートークンの2層にした"
+                        }
+                      }
+                    },
+                    {
+                      "id": "Nmjaz",
+                      "type": "ref",
+                      "ref": "ds:O0JhwX",
+                      "name": "Paragraph",
+                      "width": "fill_container",
+                      "descendants": {
+                        "ds:bXG7z": {
+                          "content": "使える色の一覧である カラーパレット と、UI のどこで使うかを表す カラートークン を分けました。カラーパレットはグレー、グリーン、ブルー、イエロー、レッドの5スケールで構成しています。"
+                        }
+                      }
+                    },
+                    {
+                      "id": "xFNZY",
+                      "type": "ref",
+                      "ref": "ds:O0JhwX",
+                      "name": "Paragraph",
+                      "width": "fill_container",
+                      "descendants": {
+                        "ds:bXG7z": {
+                          "content": "カラートークンは、背景（Base）、ボタンなどの背景（Container）、文字（Text）、枠線（Border）の役割で分けています。Markdown の中など、特定のコンポーネントでしか使わない色は別のトークンとして管理し、拡張しやすくしました。"
+                        }
+                      }
+                    },
+                    {
+                      "id": "AOvgx",
+                      "type": "ref",
+                      "ref": "ds:GJgMM",
+                      "name": "H3 ライトテーマとダークテーマで同じカラーパレットを使った",
+                      "width": "fill_container",
+                      "descendants": {
+                        "ds:LWyRT": {
+                          "content": "ライトテーマとダークテーマで同じカラーパレットを使った"
+                        }
+                      }
+                    },
+                    {
+                      "id": "nf5KU",
+                      "type": "ref",
+                      "ref": "ds:O0JhwX",
+                      "name": "Paragraph",
+                      "width": "fill_container",
+                      "descendants": {
+                        "ds:bXG7z": {
+                          "content": "テーマごとに別のパレットを持つと、管理の負荷が大きくなります。そこで、両テーマで同じカラーパレットを使い、トークンの割り当てだけをテーマごとに変える形にしました。"
+                        }
+                      }
+                    },
+                    {
+                      "id": "MnjaT",
+                      "type": "ref",
+                      "ref": "ds:O0JhwX",
+                      "name": "Paragraph",
+                      "width": "fill_container",
+                      "descendants": {
+                        "ds:bXG7z": {
+                          "content": "同じ輝度の差でも、ライトテーマとダークテーマでは見た目の色の差が変わります。そのため、輝度を等間隔にせず、見た目の差がそろうように調整しています。"
+                        }
+                      }
+                    },
+                    {
+                      "id": "z0LGJe",
+                      "type": "ref",
+                      "ref": "ds:GJgMM",
+                      "name": "H3 コントラスト比を表で管理した",
+                      "width": "fill_container",
+                      "descendants": {
+                        "ds:LWyRT": {
+                          "content": "コントラスト比を表で管理した"
+                        }
+                      }
+                    },
+                    {
+                      "id": "vBj5q",
+                      "type": "ref",
+                      "ref": "ds:O0JhwX",
+                      "name": "Paragraph",
+                      "width": "fill_container",
+                      "descendants": {
+                        "ds:bXG7z": {
+                          "content": "トークンを1つずつ確認し、「この色より濃い色の上なら使ってよい」「この組み合わせは使ってはいけない」といったルールを表で管理し、カラートークンに落とし込みました。デザイナーが都度判断しなくても、アクセシビリティを守れるようにするためです。"
+                        }
+                      }
+                    },
+                    {
+                      "id": "trETC",
+                      "type": "ref",
+                      "ref": "ds:GJgMM",
+                      "name": "H3 対応ページを段階的に広げた",
+                      "width": "fill_container",
+                      "descendants": {
+                        "ds:LWyRT": {
+                          "content": "対応ページを段階的に広げた"
+                        }
+                      }
+                    },
+                    {
+                      "id": "mnvTY",
+                      "type": "ref",
+                      "ref": "ds:O0JhwX",
+                      "name": "Paragraph",
+                      "width": "fill_container",
+                      "descendants": {
+                        "ds:bXG7z": {
+                          "content": "Qiita はページ数が多く、一度にすべてを切り替えるのは大変です。そのため、記事ページから始めて、フィード、ユーザー・タグ、質問、検索・通知・設定、エディタと、ベータ版で使用感のフィードバックを集めながら段階的に広げました。"
+                        }
+                      }
+                    },
+                    {
+                      "id": "yX1PG",
+                      "type": "ref",
+                      "ref": "ds:sfUgQ",
+                      "name": "H2 成果",
+                      "width": "fill_container",
+                      "descendants": {
+                        "ds:cBitj": {
+                          "content": "成果"
+                        }
+                      }
+                    },
+                    {
+                      "type": "frame",
+                      "id": "limQp",
+                      "name": "List",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "children": [
+                        {
+                          "id": "CCMfX",
+                          "type": "ref",
+                          "ref": "ds:PKmz9",
+                          "name": "List Item",
+                          "width": "fill_container",
+                          "padding": [
+                            0,
+                            0,
+                            0,
+                            8
+                          ],
+                          "descendants": {
+                            "ds:VXikS": {
+                              "content": "•"
+                            },
+                            "ds:d5FOiq": {
+                              "content": "ダークテーマを正式版としてリリースし、OS の設定に連動する「システムのテーマ」と「ライトテーマ」を選べるようにした。"
+                            }
+                          }
+                        },
+                        {
+                          "id": "FZmn2",
+                          "type": "ref",
+                          "ref": "ds:PKmz9",
+                          "name": "List Item",
+                          "width": "fill_container",
+                          "padding": [
+                            0,
+                            0,
+                            0,
+                            8
+                          ],
+                          "descendants": {
+                            "ds:VXikS": {
+                              "content": "•"
+                            },
+                            "ds:d5FOiq": {
+                              "content": "色に関する不満がほとんど聞かれなくなった。"
+                            }
+                          }
+                        },
+                        {
+                          "id": "IJ94u",
+                          "type": "ref",
+                          "ref": "ds:PKmz9",
+                          "name": "List Item",
+                          "width": "fill_container",
+                          "padding": [
+                            0,
+                            0,
+                            0,
+                            8
+                          ],
+                          "descendants": {
+                            "ds:VXikS": {
+                              "content": "•"
+                            },
+                            "ds:d5FOiq": {
+                              "content": "ここで設計したカラートークンは、その後のアクセシビリティ改善プロジェクトの土台にもなった。"
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "bRz9C",
+          "type": "ref",
+          "ref": "ds:q77i4",
+          "name": "Footer",
+          "width": 1152
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "uzDvT",
+      "x": 4740,
+      "y": 0,
+      "name": "/projects/:id — dark",
+      "theme": {
+        "ds:mode": "dark"
+      },
+      "clip": true,
+      "width": 1440,
+      "fill": {
+        "type": "shader",
+        "enabled": true,
+        "url": "../../../src/component/Atoms/GradientBackground/gradientBackground.glsl",
+        "uniforms": {
+          "u_top": "$ds:background-top",
+          "u_middle": "$ds:background-middle",
+          "u_bottom": "$ds:background-bottom",
+          "u_gridColor": "$ds:background-grid",
+          "u_gridOpacity": 0.1,
+          "u_noise": 30,
+          "u_waveSpeed": 0.5,
+          "u_waveAmplitude": 0.3,
+          "u_flagOpacity": 8,
+          "u_gridSize": 192
+        }
+      },
+      "layout": "vertical",
+      "alignItems": "center",
+      "children": [
+        {
+          "id": "EkB9B",
+          "type": "ref",
+          "ref": "ds:xdOlG",
+          "name": "Header",
+          "width": 1152
+        },
+        {
+          "type": "frame",
+          "id": "N7WIq",
+          "name": "Main",
+          "width": 1152,
+          "gap": 32,
+          "padding": [
+            64,
+            16
+          ],
+          "children": [
+            {
+              "id": "DmkAs",
+              "type": "ref",
+              "ref": "ds:G7b2t",
+              "name": "Aside",
+              "descendants": {
+                "ds:apAsl": {
+                  "type": "frame",
+                  "id": "V5y04",
+                  "name": "TOC List",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "children": [
+                    {
+                      "id": "l2m0N",
+                      "type": "ref",
+                      "ref": "ds:UykH9",
+                      "name": "TOC プロジェクト概要",
+                      "width": "fill_container",
+                      "descendants": {
+                        "ds:dyFtp": {
+                          "content": "プロジェクト概要"
+                        }
+                      }
+                    },
+                    {
+                      "id": "LzIvW",
+                      "type": "ref",
+                      "ref": "ds:UykH9",
+                      "name": "TOC 補足情報",
+                      "width": "fill_container",
+                      "descendants": {
+                        "ds:dyFtp": {
+                          "content": "補足情報"
+                        }
+                      }
+                    },
+                    {
+                      "id": "gYri4",
+                      "type": "ref",
+                      "ref": "ds:UykH9",
+                      "name": "TOC 背景・課題",
+                      "width": "fill_container",
+                      "descendants": {
+                        "ds:dyFtp": {
+                          "content": "背景・課題"
+                        }
+                      }
+                    },
+                    {
+                      "id": "elj8M",
+                      "type": "ref",
+                      "ref": "ds:UykH9",
+                      "name": "TOC 進め方",
+                      "width": "fill_container",
+                      "descendants": {
+                        "ds:dyFtp": {
+                          "content": "進め方"
+                        }
+                      }
+                    },
+                    {
+                      "id": "k7AySN",
+                      "type": "ref",
+                      "ref": "ds:UykH9",
+                      "name": "TOC デザイン上の判断とその理由",
+                      "width": "fill_container",
+                      "descendants": {
+                        "ds:dyFtp": {
+                          "content": "デザイン上の判断とその理由"
+                        }
+                      }
+                    },
+                    {
+                      "id": "O2my75",
+                      "type": "ref",
+                      "ref": "ds:UykH9",
+                      "name": "TOC ブランドカラーと UI で使う色を分けた",
+                      "width": "fill_container",
+                      "descendants": {
+                        "ds:dyFtp": {
+                          "content": "ブランドカラーと UI で使う色を分けた"
+                        }
+                      }
+                    },
+                    {
+                      "id": "cibsR",
+                      "type": "ref",
+                      "ref": "ds:UykH9",
+                      "name": "TOC カラーパレットとカラートークンの2層にした",
+                      "width": "fill_container",
+                      "descendants": {
+                        "ds:dyFtp": {
+                          "content": "カラーパレットとカラートークンの2層にした"
+                        }
+                      }
+                    },
+                    {
+                      "id": "B96fgL",
+                      "type": "ref",
+                      "ref": "ds:UykH9",
+                      "name": "TOC ライトテーマとダークテーマで同じカラーパレットを使った",
+                      "width": "fill_container",
+                      "descendants": {
+                        "ds:dyFtp": {
+                          "content": "ライトテーマとダークテーマで同じカラーパレットを使った"
+                        }
+                      }
+                    },
+                    {
+                      "id": "SdSGz",
+                      "type": "ref",
+                      "ref": "ds:UykH9",
+                      "name": "TOC コントラスト比を表で管理した",
+                      "width": "fill_container",
+                      "descendants": {
+                        "ds:dyFtp": {
+                          "content": "コントラスト比を表で管理した"
+                        }
+                      }
+                    },
+                    {
+                      "id": "hV8lY",
+                      "type": "ref",
+                      "ref": "ds:UykH9",
+                      "name": "TOC 対応ページを段階的に広げた",
+                      "width": "fill_container",
+                      "descendants": {
+                        "ds:dyFtp": {
+                          "content": "対応ページを段階的に広げた"
+                        }
+                      }
+                    },
+                    {
+                      "id": "Z1CGO",
+                      "type": "ref",
+                      "ref": "ds:UykH9",
+                      "name": "TOC 成果",
+                      "width": "fill_container",
+                      "descendants": {
+                        "ds:dyFtp": {
+                          "content": "成果"
+                        }
+                      }
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "type": "frame",
+              "id": "nbwey",
+              "name": "Article",
+              "width": "fill_container",
+              "layout": "vertical",
+              "children": [
+                {
+                  "id": "Cwi9C",
+                  "type": "ref",
+                  "ref": "ds:nqO7H",
+                  "name": "Title",
+                  "width": "fill_container",
+                  "descendants": {
+                    "ds:HbhKi": {
+                      "content": "Qiitaダークモード導入"
+                    }
+                  }
+                },
+                {
+                  "type": "frame",
+                  "id": "c13GQb",
+                  "name": "Spacer",
+                  "width": 1,
+                  "height": 40
+                },
+                {
+                  "type": "frame",
+                  "id": "H7NmYj",
+                  "name": "Markdown Body",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 16,
+                  "children": [
+                    {
+                      "id": "I1aMXM",
+                      "type": "ref",
+                      "ref": "ds:sfUgQ",
+                      "name": "H2 プロジェクト概要",
+                      "width": "fill_container",
+                      "padding": 0,
+                      "descendants": {
+                        "ds:cBitj": {
+                          "content": "プロジェクト概要"
+                        }
+                      }
+                    },
+                    {
+                      "id": "TmTni",
+                      "type": "ref",
+                      "ref": "ds:O0JhwX",
+                      "name": "Paragraph",
+                      "width": "fill_container",
+                      "descendants": {
+                        "ds:bXG7z": {
+                          "content": "Qiita にダークモード（ダークテーマ）を導入したプロジェクトです。約半年間のベータ版を経て、正式版としてリリースしました。"
+                        }
+                      }
+                    },
+                    {
+                      "id": "H5P7m",
+                      "type": "ref",
+                      "ref": "ds:O0JhwX",
+                      "name": "Paragraph",
+                      "width": "fill_container",
+                      "descendants": {
+                        "ds:bXG7z": {
+                          "content": "カラーパレットの修正、カラートークンの設計、開発を担当しました。"
+                        }
+                      }
+                    },
+                    {
+                      "id": "D23AOg",
+                      "type": "ref",
+                      "ref": "ds:GJgMM",
+                      "name": "H3 補足情報",
+                      "width": "fill_container",
+                      "descendants": {
+                        "ds:LWyRT": {
+                          "content": "補足情報"
+                        }
+                      }
+                    },
+                    {
+                      "type": "frame",
+                      "id": "Dthma",
+                      "name": "List",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "children": [
+                        {
+                          "id": "bydJb",
+                          "type": "ref",
+                          "ref": "ds:PKmz9",
+                          "name": "List Item",
+                          "width": "fill_container",
+                          "padding": [
+                            0,
+                            0,
+                            0,
+                            8
+                          ],
+                          "descendants": {
+                            "ds:VXikS": {
+                              "content": "•"
+                            },
+                            "ds:d5FOiq": {
+                              "content": "期間：2023年2月〜2024年2月"
+                            }
+                          }
+                        },
+                        {
+                          "id": "bZGTE",
+                          "type": "ref",
+                          "ref": "ds:PKmz9",
+                          "name": "List Item",
+                          "width": "fill_container",
+                          "padding": [
+                            0,
+                            0,
+                            0,
+                            8
+                          ],
+                          "descendants": {
+                            "ds:VXikS": {
+                              "content": "•"
+                            },
+                            "ds:d5FOiq": {
+                              "content": "担当：カラーパレット修正 / カラートークン設計 / 開発"
+                            }
+                          }
+                        },
+                        {
+                          "id": "yxE3j",
+                          "type": "ref",
+                          "ref": "ds:PKmz9",
+                          "name": "List Item",
+                          "width": "fill_container",
+                          "padding": [
+                            0,
+                            0,
+                            0,
+                            8
+                          ],
+                          "descendants": {
+                            "ds:VXikS": {
+                              "content": "•"
+                            },
+                            "ds:d5FOiq": {
+                              "content": "チーム体制：デザイナー 3名"
+                            }
+                          }
+                        },
+                        {
+                          "id": "M8Xtky",
+                          "type": "ref",
+                          "ref": "ds:PKmz9",
+                          "name": "List Item",
+                          "width": "fill_container",
+                          "padding": [
+                            0,
+                            0,
+                            0,
+                            8
+                          ],
+                          "descendants": {
+                            "ds:VXikS": {
+                              "content": "•"
+                            },
+                            "ds:d5FOiq": {
+                              "content": "使用ツール・技術：Figma / CSS / Emotion"
+                            }
+                          }
+                        },
+                        {
+                          "id": "Y8OOI",
+                          "type": "ref",
+                          "ref": "ds:PKmz9",
+                          "name": "List Item",
+                          "width": "fill_container",
+                          "padding": [
+                            0,
+                            0,
+                            0,
+                            8
+                          ],
+                          "descendants": {
+                            "ds:VXikS": {
+                              "content": "•"
+                            },
+                            "ds:d5FOiq": {
+                              "content": "Qiita Blog：ダークテーマ・ライトテーマの正式リリース"
+                            }
+                          }
+                        },
+                        {
+                          "id": "OLr2L",
+                          "type": "ref",
+                          "ref": "ds:PKmz9",
+                          "name": "List Item",
+                          "width": "fill_container",
+                          "padding": [
+                            0,
+                            0,
+                            0,
+                            8
+                          ],
+                          "descendants": {
+                            "ds:VXikS": {
+                              "content": "•"
+                            },
+                            "ds:d5FOiq": {
+                              "content": "ダークテーマとアクセシビリティの融合したカラートークンの設計"
+                            }
+                          }
+                        },
+                        {
+                          "id": "u8w3Ij",
+                          "type": "ref",
+                          "ref": "ds:PKmz9",
+                          "name": "List Item",
+                          "width": "fill_container",
+                          "padding": [
+                            0,
+                            0,
+                            0,
+                            8
+                          ],
+                          "descendants": {
+                            "ds:VXikS": {
+                              "content": "•"
+                            },
+                            "ds:d5FOiq": {
+                              "content": "フロントエンドカンファレンス北海道2024 登壇資料：ダークテーマとアクセシビリティの融合したカラートークンの設計"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "id": "ibyNW",
+                      "type": "ref",
+                      "ref": "ds:sfUgQ",
+                      "name": "H2 背景・課題",
+                      "width": "fill_container",
+                      "descendants": {
+                        "ds:cBitj": {
+                          "content": "背景・課題"
+                        }
+                      }
+                    },
+                    {
+                      "id": "M4DWtz",
+                      "type": "ref",
+                      "ref": "ds:O0JhwX",
+                      "name": "Paragraph",
+                      "width": "fill_container",
+                      "descendants": {
+                        "ds:bXG7z": {
+                          "content": "ダークモードに対応するサービスが増え、Qiita にも多くの要望が寄せられていました。"
+                        }
+                      }
+                    },
+                    {
+                      "id": "Z5gjhp",
+                      "type": "ref",
+                      "ref": "ds:O0JhwX",
+                      "name": "Paragraph",
+                      "width": "fill_container",
+                      "descendants": {
+                        "ds:bXG7z": {
+                          "content": "一方で、既存の色にはアクセシビリティの課題がありました。Qiita のブランドカラーである緑（#55C500）は、上に白い文字を乗せるとコントラスト比が 2.24 しかなく、基準を満たせません。しかし、黒い文字を乗せるとブランドガイドラインに反してしまいます。"
+                        }
+                      }
+                    },
+                    {
+                      "id": "CcRAV",
+                      "type": "ref",
+                      "ref": "ds:O0JhwX",
+                      "name": "Paragraph",
+                      "width": "fill_container",
+                      "descendants": {
+                        "ds:bXG7z": {
+                          "content": "ダークテーマを導入するなら、色の仕組みそのものを見直す必要がありました。そこで、ダークテーマの導入とアクセシビリティの改善を一緒に進める ことにしました。"
+                        }
+                      }
+                    },
+                    {
+                      "id": "QESfp",
+                      "type": "ref",
+                      "ref": "ds:sfUgQ",
+                      "name": "H2 進め方",
+                      "width": "fill_container",
+                      "descendants": {
+                        "ds:cBitj": {
+                          "content": "進め方"
+                        }
+                      }
+                    },
+                    {
+                      "type": "frame",
+                      "id": "TUl1f",
+                      "name": "List",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "children": [
+                        {
+                          "id": "yoESL",
+                          "type": "ref",
+                          "ref": "ds:PKmz9",
+                          "name": "List Item",
+                          "width": "fill_container",
+                          "padding": [
+                            0,
+                            0,
+                            0,
+                            8
+                          ],
+                          "descendants": {
+                            "ds:VXikS": {
+                              "content": "•"
+                            },
+                            "ds:d5FOiq": {
+                              "content": "ブランドカラーと UI で使う色を分ける方針を決める"
+                            }
+                          }
+                        },
+                        {
+                          "id": "nQ1ok",
+                          "type": "ref",
+                          "ref": "ds:PKmz9",
+                          "name": "List Item",
+                          "width": "fill_container",
+                          "padding": [
+                            0,
+                            0,
+                            0,
+                            8
+                          ],
+                          "descendants": {
+                            "ds:VXikS": {
+                              "content": "•"
+                            },
+                            "ds:d5FOiq": {
+                              "content": "ライトテーマとダークテーマで共通のカラーパレットを作る"
+                            }
+                          }
+                        },
+                        {
+                          "id": "JbamG",
+                          "type": "ref",
+                          "ref": "ds:PKmz9",
+                          "name": "List Item",
+                          "width": "fill_container",
+                          "padding": [
+                            0,
+                            0,
+                            0,
+                            8
+                          ],
+                          "descendants": {
+                            "ds:VXikS": {
+                              "content": "•"
+                            },
+                            "ds:d5FOiq": {
+                              "content": "カラーパレットをもとに、UI で使うカラートークンを設計する"
+                            }
+                          }
+                        },
+                        {
+                          "id": "nDyYo",
+                          "type": "ref",
+                          "ref": "ds:PKmz9",
+                          "name": "List Item",
+                          "width": "fill_container",
+                          "padding": [
+                            0,
+                            0,
+                            0,
+                            8
+                          ],
+                          "descendants": {
+                            "ds:VXikS": {
+                              "content": "•"
+                            },
+                            "ds:d5FOiq": {
+                              "content": "各トークンのコントラスト比を検証し、使える組み合わせを表で管理する"
+                            }
+                          }
+                        },
+                        {
+                          "id": "ac5VN",
+                          "type": "ref",
+                          "ref": "ds:PKmz9",
+                          "name": "List Item",
+                          "width": "fill_container",
+                          "padding": [
+                            0,
+                            0,
+                            0,
+                            8
+                          ],
+                          "descendants": {
+                            "ds:VXikS": {
+                              "content": "•"
+                            },
+                            "ds:d5FOiq": {
+                              "content": "ベータ版として公開し、対応ページを段階的に広げる"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "id": "LmNws",
+                      "type": "ref",
+                      "ref": "ds:sfUgQ",
+                      "name": "H2 デザイン上の判断とその理由",
+                      "width": "fill_container",
+                      "descendants": {
+                        "ds:cBitj": {
+                          "content": "デザイン上の判断とその理由"
+                        }
+                      }
+                    },
+                    {
+                      "id": "wCfuE",
+                      "type": "ref",
+                      "ref": "ds:GJgMM",
+                      "name": "H3 ブランドカラーと UI で使う色を分けた",
+                      "width": "fill_container",
+                      "descendants": {
+                        "ds:LWyRT": {
+                          "content": "ブランドカラーと UI で使う色を分けた"
+                        }
+                      }
+                    },
+                    {
+                      "id": "ssX36",
+                      "type": "ref",
+                      "ref": "ds:O0JhwX",
+                      "name": "Paragraph",
+                      "width": "fill_container",
+                      "descendants": {
+                        "ds:bXG7z": {
+                          "content": "最初に、ブランドカラーをそのまま UI のカラーパレットには使わない と決めました。ブランドカラーはブランドとしての表現に使い、UI ではコントラスト比を満たす色をカラートークンとして使う形にしています。ブランドを守ることと、誰でも読めることを両立するためです。"
+                        }
+                      }
+                    },
+                    {
+                      "id": "yacyA",
+                      "type": "ref",
+                      "ref": "ds:GJgMM",
+                      "name": "H3 カラーパレットとカラートークンの2層にした",
+                      "width": "fill_container",
+                      "descendants": {
+                        "ds:LWyRT": {
+                          "content": "カラーパレットとカラートークンの2層にした"
+                        }
+                      }
+                    },
+                    {
+                      "id": "rNUuc",
+                      "type": "ref",
+                      "ref": "ds:O0JhwX",
+                      "name": "Paragraph",
+                      "width": "fill_container",
+                      "descendants": {
+                        "ds:bXG7z": {
+                          "content": "使える色の一覧である カラーパレット と、UI のどこで使うかを表す カラートークン を分けました。カラーパレットはグレー、グリーン、ブルー、イエロー、レッドの5スケールで構成しています。"
+                        }
+                      }
+                    },
+                    {
+                      "id": "CHTIw",
+                      "type": "ref",
+                      "ref": "ds:O0JhwX",
+                      "name": "Paragraph",
+                      "width": "fill_container",
+                      "descendants": {
+                        "ds:bXG7z": {
+                          "content": "カラートークンは、背景（Base）、ボタンなどの背景（Container）、文字（Text）、枠線（Border）の役割で分けています。Markdown の中など、特定のコンポーネントでしか使わない色は別のトークンとして管理し、拡張しやすくしました。"
+                        }
+                      }
+                    },
+                    {
+                      "id": "e58h9b",
+                      "type": "ref",
+                      "ref": "ds:GJgMM",
+                      "name": "H3 ライトテーマとダークテーマで同じカラーパレットを使った",
+                      "width": "fill_container",
+                      "descendants": {
+                        "ds:LWyRT": {
+                          "content": "ライトテーマとダークテーマで同じカラーパレットを使った"
+                        }
+                      }
+                    },
+                    {
+                      "id": "fo4Wz",
+                      "type": "ref",
+                      "ref": "ds:O0JhwX",
+                      "name": "Paragraph",
+                      "width": "fill_container",
+                      "descendants": {
+                        "ds:bXG7z": {
+                          "content": "テーマごとに別のパレットを持つと、管理の負荷が大きくなります。そこで、両テーマで同じカラーパレットを使い、トークンの割り当てだけをテーマごとに変える形にしました。"
+                        }
+                      }
+                    },
+                    {
+                      "id": "H4VzMY",
+                      "type": "ref",
+                      "ref": "ds:O0JhwX",
+                      "name": "Paragraph",
+                      "width": "fill_container",
+                      "descendants": {
+                        "ds:bXG7z": {
+                          "content": "同じ輝度の差でも、ライトテーマとダークテーマでは見た目の色の差が変わります。そのため、輝度を等間隔にせず、見た目の差がそろうように調整しています。"
+                        }
+                      }
+                    },
+                    {
+                      "id": "W2fdu",
+                      "type": "ref",
+                      "ref": "ds:GJgMM",
+                      "name": "H3 コントラスト比を表で管理した",
+                      "width": "fill_container",
+                      "descendants": {
+                        "ds:LWyRT": {
+                          "content": "コントラスト比を表で管理した"
+                        }
+                      }
+                    },
+                    {
+                      "id": "PTGnt",
+                      "type": "ref",
+                      "ref": "ds:O0JhwX",
+                      "name": "Paragraph",
+                      "width": "fill_container",
+                      "descendants": {
+                        "ds:bXG7z": {
+                          "content": "トークンを1つずつ確認し、「この色より濃い色の上なら使ってよい」「この組み合わせは使ってはいけない」といったルールを表で管理し、カラートークンに落とし込みました。デザイナーが都度判断しなくても、アクセシビリティを守れるようにするためです。"
+                        }
+                      }
+                    },
+                    {
+                      "id": "RjFKL",
+                      "type": "ref",
+                      "ref": "ds:GJgMM",
+                      "name": "H3 対応ページを段階的に広げた",
+                      "width": "fill_container",
+                      "descendants": {
+                        "ds:LWyRT": {
+                          "content": "対応ページを段階的に広げた"
+                        }
+                      }
+                    },
+                    {
+                      "id": "Uc4Tf",
+                      "type": "ref",
+                      "ref": "ds:O0JhwX",
+                      "name": "Paragraph",
+                      "width": "fill_container",
+                      "descendants": {
+                        "ds:bXG7z": {
+                          "content": "Qiita はページ数が多く、一度にすべてを切り替えるのは大変です。そのため、記事ページから始めて、フィード、ユーザー・タグ、質問、検索・通知・設定、エディタと、ベータ版で使用感のフィードバックを集めながら段階的に広げました。"
+                        }
+                      }
+                    },
+                    {
+                      "id": "RXRn4",
+                      "type": "ref",
+                      "ref": "ds:sfUgQ",
+                      "name": "H2 成果",
+                      "width": "fill_container",
+                      "descendants": {
+                        "ds:cBitj": {
+                          "content": "成果"
+                        }
+                      }
+                    },
+                    {
+                      "type": "frame",
+                      "id": "jAdBo",
+                      "name": "List",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "children": [
+                        {
+                          "id": "gWwiq",
+                          "type": "ref",
+                          "ref": "ds:PKmz9",
+                          "name": "List Item",
+                          "width": "fill_container",
+                          "padding": [
+                            0,
+                            0,
+                            0,
+                            8
+                          ],
+                          "descendants": {
+                            "ds:VXikS": {
+                              "content": "•"
+                            },
+                            "ds:d5FOiq": {
+                              "content": "ダークテーマを正式版としてリリースし、OS の設定に連動する「システムのテーマ」と「ライトテーマ」を選べるようにした。"
+                            }
+                          }
+                        },
+                        {
+                          "id": "W7orAh",
+                          "type": "ref",
+                          "ref": "ds:PKmz9",
+                          "name": "List Item",
+                          "width": "fill_container",
+                          "padding": [
+                            0,
+                            0,
+                            0,
+                            8
+                          ],
+                          "descendants": {
+                            "ds:VXikS": {
+                              "content": "•"
+                            },
+                            "ds:d5FOiq": {
+                              "content": "色に関する不満がほとんど聞かれなくなった。"
+                            }
+                          }
+                        },
+                        {
+                          "id": "yYiUj",
+                          "type": "ref",
+                          "ref": "ds:PKmz9",
+                          "name": "List Item",
+                          "width": "fill_container",
+                          "padding": [
+                            0,
+                            0,
+                            0,
+                            8
+                          ],
+                          "descendants": {
+                            "ds:VXikS": {
+                              "content": "•"
+                            },
+                            "ds:d5FOiq": {
+                              "content": "ここで設計したカラートークンは、その後のアクセシビリティ改善プロジェクトの土台にもなった。"
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "MhFM2",
+          "type": "ref",
+          "ref": "ds:q77i4",
+          "name": "Footer",
+          "width": 1152
+        }
+      ]
+    }
+  ],
+  "imports": {
+    "ds": "../../design-system.lib.pen"
+  },
+  "fileToken": "be0655b5-dd4c-444b-bc7e-1eb4ec0d287e"
+}

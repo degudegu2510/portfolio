@@ -1,0 +1,859 @@
+{
+  "version": "2.22",
+  "children": [
+    {
+      "type": "frame",
+      "id": "x1F3j",
+      "x": 0,
+      "y": 0,
+      "name": "/stage-history — light",
+      "theme": {
+        "ds:mode": "light"
+      },
+      "clip": true,
+      "width": 1440,
+      "fill": {
+        "type": "shader",
+        "enabled": true,
+        "url": "../../../src/component/Atoms/GradientBackground/gradientBackground.glsl",
+        "uniforms": {
+          "u_top": "$ds:background-top",
+          "u_middle": "$ds:background-middle",
+          "u_bottom": "$ds:background-bottom",
+          "u_gridColor": "$ds:background-grid",
+          "u_gridOpacity": 0.1,
+          "u_noise": 30,
+          "u_waveSpeed": 0.5,
+          "u_waveAmplitude": 0.3,
+          "u_flagOpacity": 8,
+          "u_gridSize": 192
+        }
+      },
+      "layout": "vertical",
+      "alignItems": "center",
+      "children": [
+        {
+          "id": "Wcawp",
+          "type": "ref",
+          "ref": "ds:xdOlG",
+          "name": "Header",
+          "width": 1152
+        },
+        {
+          "type": "frame",
+          "id": "jbCmf",
+          "name": "Main",
+          "width": 1152,
+          "layout": "vertical",
+          "padding": [
+            0,
+            16
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "McGv2",
+              "name": "StageHistory",
+              "width": "fill_container",
+              "layout": "vertical",
+              "padding": [
+                64,
+                0
+              ],
+              "children": [
+                {
+                  "type": "text",
+                  "id": "L4uaeL",
+                  "name": "Section Heading",
+                  "fill": "$ds:color-high-emphasis",
+                  "content": "登壇歴",
+                  "lineHeight": "$ds:line-height-heading",
+                  "fontFamily": "$ds:font-family",
+                  "fontSize": "$ds:font-size-heading-1",
+                  "fontWeight": "$ds:font-weight-bold"
+                },
+                {
+                  "type": "frame",
+                  "id": "CKrSz",
+                  "name": "Spacer",
+                  "width": 1,
+                  "height": 32
+                },
+                {
+                  "type": "frame",
+                  "id": "FQvFB",
+                  "name": "StageHistory Body",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "children": [
+                    {
+                      "id": "YSDbY",
+                      "type": "ref",
+                      "ref": "ds:FmWaQ",
+                      "name": "Table Header",
+                      "width": "fill_container"
+                    },
+                    {
+                      "id": "HWqDy",
+                      "type": "ref",
+                      "ref": "ds:Vn7Cy",
+                      "name": "Row 2026年8月21日",
+                      "width": "fill_container",
+                      "descendants": {
+                        "ds:cCisc": {
+                          "content": "2026年8月21日"
+                        },
+                        "ds:A0JB7": {
+                          "content": "Vibe.TOKYO, AI & CRAFT｜AIネイティブ・エキシビション"
+                        }
+                      }
+                    },
+                    {
+                      "id": "Fmacq",
+                      "type": "ref",
+                      "ref": "ds:Vn7Cy",
+                      "name": "Row 2026年8月7日",
+                      "width": "fill_container",
+                      "descendants": {
+                        "ds:cCisc": {
+                          "content": "2026年8月7日"
+                        },
+                        "ds:A0JB7": {
+                          "content": "TechTalks! #4：それぞれのデザインシステム。"
+                        }
+                      }
+                    },
+                    {
+                      "id": "mGOJ8",
+                      "type": "ref",
+                      "ref": "ds:Vn7Cy",
+                      "name": "Row 2026年8月6日",
+                      "width": "fill_container",
+                      "descendants": {
+                        "ds:cCisc": {
+                          "content": "2026年8月6日"
+                        },
+                        "ds:A0JB7": {
+                          "content": "社内LT会"
+                        }
+                      }
+                    },
+                    {
+                      "id": "UyCVn",
+                      "type": "ref",
+                      "ref": "ds:Vn7Cy",
+                      "name": "Row 2026年4月10日",
+                      "width": "fill_container",
+                      "descendants": {
+                        "ds:cCisc": {
+                          "content": "2026年4月10日"
+                        },
+                        "ds:A0JB7": {
+                          "content": "アクセシビリティ対応の「どこまでやる？」を言語化する　~チームで迷わないための設計と判断基準~"
+                        }
+                      }
+                    },
+                    {
+                      "id": "tytnQ",
+                      "type": "ref",
+                      "ref": "ds:Vn7Cy",
+                      "name": "Row 2025年8月7日",
+                      "width": "fill_container",
+                      "descendants": {
+                        "ds:cCisc": {
+                          "content": "2025年8月7日"
+                        },
+                        "ds:A0JB7": {
+                          "content": "Canly Tech Hub ~vol.1~ みんなで学ぼう！開発現場におけるMCPの活用事例LT会"
+                        }
+                      }
+                    },
+                    {
+                      "id": "I51enJ",
+                      "type": "ref",
+                      "ref": "ds:Vn7Cy",
+                      "name": "Row 2025年8月6日",
+                      "width": "fill_container",
+                      "descendants": {
+                        "ds:cCisc": {
+                          "content": "2025年8月6日"
+                        },
+                        "ds:A0JB7": {
+                          "content": "自作キーボード沼にハマってみた"
+                        }
+                      }
+                    },
+                    {
+                      "id": "GY871",
+                      "type": "ref",
+                      "ref": "ds:Vn7Cy",
+                      "name": "Row 2025年5月30日",
+                      "width": "fill_container",
+                      "descendants": {
+                        "ds:cCisc": {
+                          "content": "2025年5月30日"
+                        },
+                        "ds:A0JB7": {
+                          "content": "Meguro.css #12 @ oRo"
+                        },
+                        "ds:OyQ8t": {
+                          "enabled": false
+                        }
+                      }
+                    },
+                    {
+                      "id": "dpFCo",
+                      "type": "ref",
+                      "ref": "ds:Vn7Cy",
+                      "name": "Row 2024年9月18日",
+                      "width": "fill_container",
+                      "descendants": {
+                        "ds:cCisc": {
+                          "content": "2024年9月18日"
+                        },
+                        "ds:A0JB7": {
+                          "content": "夏のクリエイター勉強会&大交流会Meetup!"
+                        }
+                      }
+                    },
+                    {
+                      "id": "MRfOS",
+                      "type": "ref",
+                      "ref": "ds:Vn7Cy",
+                      "name": "Row 2024年9月7日",
+                      "width": "fill_container",
+                      "descendants": {
+                        "ds:cCisc": {
+                          "content": "2024年9月7日"
+                        },
+                        "ds:A0JB7": {
+                          "content": "アクセシビリティカンファレンス名古屋"
+                        }
+                      }
+                    },
+                    {
+                      "id": "ySDtg",
+                      "type": "ref",
+                      "ref": "ds:Vn7Cy",
+                      "name": "Row 2024年8月24日",
+                      "width": "fill_container",
+                      "descendants": {
+                        "ds:cCisc": {
+                          "content": "2024年8月24日"
+                        },
+                        "ds:A0JB7": {
+                          "content": "フロントエンドカンファレンス北海道2024"
+                        }
+                      }
+                    },
+                    {
+                      "id": "SUnm1",
+                      "type": "ref",
+                      "ref": "ds:Vn7Cy",
+                      "name": "Row 2024年6月12日",
+                      "width": "fill_container",
+                      "descendants": {
+                        "ds:cCisc": {
+                          "content": "2024年6月12日"
+                        },
+                        "ds:A0JB7": {
+                          "content": "NO MOREとりあえず！デザナレ展UXリサーチ―結果につながるすごい知恵"
+                        }
+                      }
+                    },
+                    {
+                      "id": "KLnT6",
+                      "type": "ref",
+                      "ref": "ds:Vn7Cy",
+                      "name": "Row 2024年5月20日",
+                      "width": "fill_container",
+                      "descendants": {
+                        "ds:cCisc": {
+                          "content": "2024年5月20日"
+                        },
+                        "ds:A0JB7": {
+                          "content": "アクセシビリティやるぞ！LT祭り #5"
+                        }
+                      }
+                    },
+                    {
+                      "id": "A0e1rP",
+                      "type": "ref",
+                      "ref": "ds:Vn7Cy",
+                      "name": "Row 2024年5月10日",
+                      "width": "fill_container",
+                      "descendants": {
+                        "ds:cCisc": {
+                          "content": "2024年5月10日"
+                        },
+                        "ds:A0JB7": {
+                          "content": "Meguro.css #10 @ oRo"
+                        }
+                      }
+                    },
+                    {
+                      "id": "ZT6sW",
+                      "type": "ref",
+                      "ref": "ds:Vn7Cy",
+                      "name": "Row 2024年2月22日",
+                      "width": "fill_container",
+                      "descendants": {
+                        "ds:cCisc": {
+                          "content": "2024年2月22日"
+                        },
+                        "ds:A0JB7": {
+                          "content": "あつまれデザイナ＆エンジニア 番外編 ~新春 鮮魚解体&LT大会~"
+                        },
+                        "ds:OyQ8t": {
+                          "enabled": false
+                        }
+                      }
+                    },
+                    {
+                      "id": "p23f2R",
+                      "type": "ref",
+                      "ref": "ds:Vn7Cy",
+                      "name": "Row 2024年1月23日",
+                      "width": "fill_container",
+                      "descendants": {
+                        "ds:cCisc": {
+                          "content": "2024年1月23日"
+                        },
+                        "ds:A0JB7": {
+                          "content": "Spectrum Tokyo Meetup #08"
+                        }
+                      }
+                    },
+                    {
+                      "id": "C6YQd",
+                      "type": "ref",
+                      "ref": "ds:Vn7Cy",
+                      "name": "Row 2023年12月1日",
+                      "width": "fill_container",
+                      "descendants": {
+                        "ds:cCisc": {
+                          "content": "2023年12月1日"
+                        },
+                        "ds:A0JB7": {
+                          "content": "Meguro.css #9 @ oRo"
+                        }
+                      }
+                    },
+                    {
+                      "id": "lef53",
+                      "type": "ref",
+                      "ref": "ds:Vn7Cy",
+                      "name": "Row 2023年11月9日",
+                      "width": "fill_container",
+                      "descendants": {
+                        "ds:cCisc": {
+                          "content": "2023年11月9日"
+                        },
+                        "ds:A0JB7": {
+                          "content": "デザインエンジニアリングMeetup! Vol.0"
+                        },
+                        "ds:OyQ8t": {
+                          "enabled": false
+                        }
+                      }
+                    },
+                    {
+                      "id": "pUFdU",
+                      "type": "ref",
+                      "ref": "ds:Vn7Cy",
+                      "name": "Row 2023年6月2日",
+                      "width": "fill_container",
+                      "descendants": {
+                        "ds:cCisc": {
+                          "content": "2023年6月2日"
+                        },
+                        "ds:A0JB7": {
+                          "content": "DIST.39 「みんなのFigma」"
+                        },
+                        "ds:OyQ8t": {
+                          "enabled": false
+                        }
+                      }
+                    },
+                    {
+                      "id": "rI5cb",
+                      "type": "ref",
+                      "ref": "ds:Vn7Cy",
+                      "name": "Row 2023年12月9日",
+                      "width": "fill_container",
+                      "descendants": {
+                        "ds:cCisc": {
+                          "content": "2023年12月9日"
+                        },
+                        "ds:A0JB7": {
+                          "content": "DIST.38 「CSSな夜」"
+                        },
+                        "ds:OyQ8t": {
+                          "enabled": false
+                        }
+                      }
+                    },
+                    {
+                      "id": "LgEWC",
+                      "type": "ref",
+                      "ref": "ds:Vn7Cy",
+                      "name": "Row 2021年4月28日",
+                      "width": "fill_container",
+                      "descendants": {
+                        "ds:cCisc": {
+                          "content": "2021年4月28日"
+                        },
+                        "ds:A0JB7": {
+                          "content": "第30回ゆるはち.it: アクセシビリティついてゆるく話す"
+                        },
+                        "ds:OyQ8t": {
+                          "enabled": false
+                        }
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "PxNE5",
+          "type": "ref",
+          "ref": "ds:q77i4",
+          "name": "Footer",
+          "width": 1152
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "Szi9e",
+      "x": 1540,
+      "y": 0,
+      "name": "/stage-history — dark",
+      "theme": {
+        "ds:mode": "dark"
+      },
+      "clip": true,
+      "width": 1440,
+      "fill": {
+        "type": "shader",
+        "enabled": true,
+        "url": "../../../src/component/Atoms/GradientBackground/gradientBackground.glsl",
+        "uniforms": {
+          "u_top": "$ds:background-top",
+          "u_middle": "$ds:background-middle",
+          "u_bottom": "$ds:background-bottom",
+          "u_gridColor": "$ds:background-grid",
+          "u_gridOpacity": 0.1,
+          "u_noise": 30,
+          "u_waveSpeed": 0.5,
+          "u_waveAmplitude": 0.3,
+          "u_flagOpacity": 8,
+          "u_gridSize": 192
+        }
+      },
+      "layout": "vertical",
+      "alignItems": "center",
+      "children": [
+        {
+          "id": "KHklZ",
+          "type": "ref",
+          "ref": "ds:xdOlG",
+          "name": "Header",
+          "width": 1152
+        },
+        {
+          "type": "frame",
+          "id": "tYJLv",
+          "name": "Main",
+          "width": 1152,
+          "layout": "vertical",
+          "padding": [
+            0,
+            16
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "D7P4jo",
+              "name": "StageHistory",
+              "width": "fill_container",
+              "layout": "vertical",
+              "padding": [
+                64,
+                0
+              ],
+              "children": [
+                {
+                  "type": "text",
+                  "id": "t16g4t",
+                  "name": "Section Heading",
+                  "fill": "$ds:color-high-emphasis",
+                  "content": "登壇歴",
+                  "lineHeight": "$ds:line-height-heading",
+                  "fontFamily": "$ds:font-family",
+                  "fontSize": "$ds:font-size-heading-1",
+                  "fontWeight": "$ds:font-weight-bold"
+                },
+                {
+                  "type": "frame",
+                  "id": "oue9d",
+                  "name": "Spacer",
+                  "width": 1,
+                  "height": 32
+                },
+                {
+                  "type": "frame",
+                  "id": "M3TBrk",
+                  "name": "StageHistory Body",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "children": [
+                    {
+                      "id": "qGkpK",
+                      "type": "ref",
+                      "ref": "ds:FmWaQ",
+                      "name": "Table Header",
+                      "width": "fill_container"
+                    },
+                    {
+                      "id": "J4lPkl",
+                      "type": "ref",
+                      "ref": "ds:Vn7Cy",
+                      "name": "Row 2026年8月21日",
+                      "width": "fill_container",
+                      "descendants": {
+                        "ds:cCisc": {
+                          "content": "2026年8月21日"
+                        },
+                        "ds:A0JB7": {
+                          "content": "Vibe.TOKYO, AI & CRAFT｜AIネイティブ・エキシビション"
+                        }
+                      }
+                    },
+                    {
+                      "id": "BTIlP",
+                      "type": "ref",
+                      "ref": "ds:Vn7Cy",
+                      "name": "Row 2026年8月7日",
+                      "width": "fill_container",
+                      "descendants": {
+                        "ds:cCisc": {
+                          "content": "2026年8月7日"
+                        },
+                        "ds:A0JB7": {
+                          "content": "TechTalks! #4：それぞれのデザインシステム。"
+                        }
+                      }
+                    },
+                    {
+                      "id": "mvG3y",
+                      "type": "ref",
+                      "ref": "ds:Vn7Cy",
+                      "name": "Row 2026年8月6日",
+                      "width": "fill_container",
+                      "descendants": {
+                        "ds:cCisc": {
+                          "content": "2026年8月6日"
+                        },
+                        "ds:A0JB7": {
+                          "content": "社内LT会"
+                        }
+                      }
+                    },
+                    {
+                      "id": "Dpo0k",
+                      "type": "ref",
+                      "ref": "ds:Vn7Cy",
+                      "name": "Row 2026年4月10日",
+                      "width": "fill_container",
+                      "descendants": {
+                        "ds:cCisc": {
+                          "content": "2026年4月10日"
+                        },
+                        "ds:A0JB7": {
+                          "content": "アクセシビリティ対応の「どこまでやる？」を言語化する　~チームで迷わないための設計と判断基準~"
+                        }
+                      }
+                    },
+                    {
+                      "id": "AL3b4",
+                      "type": "ref",
+                      "ref": "ds:Vn7Cy",
+                      "name": "Row 2025年8月7日",
+                      "width": "fill_container",
+                      "descendants": {
+                        "ds:cCisc": {
+                          "content": "2025年8月7日"
+                        },
+                        "ds:A0JB7": {
+                          "content": "Canly Tech Hub ~vol.1~ みんなで学ぼう！開発現場におけるMCPの活用事例LT会"
+                        }
+                      }
+                    },
+                    {
+                      "id": "pCIS4",
+                      "type": "ref",
+                      "ref": "ds:Vn7Cy",
+                      "name": "Row 2025年8月6日",
+                      "width": "fill_container",
+                      "descendants": {
+                        "ds:cCisc": {
+                          "content": "2025年8月6日"
+                        },
+                        "ds:A0JB7": {
+                          "content": "自作キーボード沼にハマってみた"
+                        }
+                      }
+                    },
+                    {
+                      "id": "Nh6l2",
+                      "type": "ref",
+                      "ref": "ds:Vn7Cy",
+                      "name": "Row 2025年5月30日",
+                      "width": "fill_container",
+                      "descendants": {
+                        "ds:cCisc": {
+                          "content": "2025年5月30日"
+                        },
+                        "ds:A0JB7": {
+                          "content": "Meguro.css #12 @ oRo"
+                        },
+                        "ds:OyQ8t": {
+                          "enabled": false
+                        }
+                      }
+                    },
+                    {
+                      "id": "LoKLC",
+                      "type": "ref",
+                      "ref": "ds:Vn7Cy",
+                      "name": "Row 2024年9月18日",
+                      "width": "fill_container",
+                      "descendants": {
+                        "ds:cCisc": {
+                          "content": "2024年9月18日"
+                        },
+                        "ds:A0JB7": {
+                          "content": "夏のクリエイター勉強会&大交流会Meetup!"
+                        }
+                      }
+                    },
+                    {
+                      "id": "fKdEc",
+                      "type": "ref",
+                      "ref": "ds:Vn7Cy",
+                      "name": "Row 2024年9月7日",
+                      "width": "fill_container",
+                      "descendants": {
+                        "ds:cCisc": {
+                          "content": "2024年9月7日"
+                        },
+                        "ds:A0JB7": {
+                          "content": "アクセシビリティカンファレンス名古屋"
+                        }
+                      }
+                    },
+                    {
+                      "id": "K60QGl",
+                      "type": "ref",
+                      "ref": "ds:Vn7Cy",
+                      "name": "Row 2024年8月24日",
+                      "width": "fill_container",
+                      "descendants": {
+                        "ds:cCisc": {
+                          "content": "2024年8月24日"
+                        },
+                        "ds:A0JB7": {
+                          "content": "フロントエンドカンファレンス北海道2024"
+                        }
+                      }
+                    },
+                    {
+                      "id": "ez3vq",
+                      "type": "ref",
+                      "ref": "ds:Vn7Cy",
+                      "name": "Row 2024年6月12日",
+                      "width": "fill_container",
+                      "descendants": {
+                        "ds:cCisc": {
+                          "content": "2024年6月12日"
+                        },
+                        "ds:A0JB7": {
+                          "content": "NO MOREとりあえず！デザナレ展UXリサーチ―結果につながるすごい知恵"
+                        }
+                      }
+                    },
+                    {
+                      "id": "k1auA",
+                      "type": "ref",
+                      "ref": "ds:Vn7Cy",
+                      "name": "Row 2024年5月20日",
+                      "width": "fill_container",
+                      "descendants": {
+                        "ds:cCisc": {
+                          "content": "2024年5月20日"
+                        },
+                        "ds:A0JB7": {
+                          "content": "アクセシビリティやるぞ！LT祭り #5"
+                        }
+                      }
+                    },
+                    {
+                      "id": "si6U7",
+                      "type": "ref",
+                      "ref": "ds:Vn7Cy",
+                      "name": "Row 2024年5月10日",
+                      "width": "fill_container",
+                      "descendants": {
+                        "ds:cCisc": {
+                          "content": "2024年5月10日"
+                        },
+                        "ds:A0JB7": {
+                          "content": "Meguro.css #10 @ oRo"
+                        }
+                      }
+                    },
+                    {
+                      "id": "gmNQc",
+                      "type": "ref",
+                      "ref": "ds:Vn7Cy",
+                      "name": "Row 2024年2月22日",
+                      "width": "fill_container",
+                      "descendants": {
+                        "ds:cCisc": {
+                          "content": "2024年2月22日"
+                        },
+                        "ds:A0JB7": {
+                          "content": "あつまれデザイナ＆エンジニア 番外編 ~新春 鮮魚解体&LT大会~"
+                        },
+                        "ds:OyQ8t": {
+                          "enabled": false
+                        }
+                      }
+                    },
+                    {
+                      "id": "uVjbH",
+                      "type": "ref",
+                      "ref": "ds:Vn7Cy",
+                      "name": "Row 2024年1月23日",
+                      "width": "fill_container",
+                      "descendants": {
+                        "ds:cCisc": {
+                          "content": "2024年1月23日"
+                        },
+                        "ds:A0JB7": {
+                          "content": "Spectrum Tokyo Meetup #08"
+                        }
+                      }
+                    },
+                    {
+                      "id": "ZSmhN",
+                      "type": "ref",
+                      "ref": "ds:Vn7Cy",
+                      "name": "Row 2023年12月1日",
+                      "width": "fill_container",
+                      "descendants": {
+                        "ds:cCisc": {
+                          "content": "2023年12月1日"
+                        },
+                        "ds:A0JB7": {
+                          "content": "Meguro.css #9 @ oRo"
+                        }
+                      }
+                    },
+                    {
+                      "id": "EKe7t",
+                      "type": "ref",
+                      "ref": "ds:Vn7Cy",
+                      "name": "Row 2023年11月9日",
+                      "width": "fill_container",
+                      "descendants": {
+                        "ds:cCisc": {
+                          "content": "2023年11月9日"
+                        },
+                        "ds:A0JB7": {
+                          "content": "デザインエンジニアリングMeetup! Vol.0"
+                        },
+                        "ds:OyQ8t": {
+                          "enabled": false
+                        }
+                      }
+                    },
+                    {
+                      "id": "ETrXB",
+                      "type": "ref",
+                      "ref": "ds:Vn7Cy",
+                      "name": "Row 2023年6月2日",
+                      "width": "fill_container",
+                      "descendants": {
+                        "ds:cCisc": {
+                          "content": "2023年6月2日"
+                        },
+                        "ds:A0JB7": {
+                          "content": "DIST.39 「みんなのFigma」"
+                        },
+                        "ds:OyQ8t": {
+                          "enabled": false
+                        }
+                      }
+                    },
+                    {
+                      "id": "xkTy8",
+                      "type": "ref",
+                      "ref": "ds:Vn7Cy",
+                      "name": "Row 2023年12月9日",
+                      "width": "fill_container",
+                      "descendants": {
+                        "ds:cCisc": {
+                          "content": "2023年12月9日"
+                        },
+                        "ds:A0JB7": {
+                          "content": "DIST.38 「CSSな夜」"
+                        },
+                        "ds:OyQ8t": {
+                          "enabled": false
+                        }
+                      }
+                    },
+                    {
+                      "id": "HrfTP",
+                      "type": "ref",
+                      "ref": "ds:Vn7Cy",
+                      "name": "Row 2021年4月28日",
+                      "width": "fill_container",
+                      "descendants": {
+                        "ds:cCisc": {
+                          "content": "2021年4月28日"
+                        },
+                        "ds:A0JB7": {
+                          "content": "第30回ゆるはち.it: アクセシビリティついてゆるく話す"
+                        },
+                        "ds:OyQ8t": {
+                          "enabled": false
+                        }
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "AASy9",
+          "type": "ref",
+          "ref": "ds:q77i4",
+          "name": "Footer",
+          "width": 1152
+        }
+      ]
+    }
+  ],
+  "imports": {
+    "ds": "../../design-system.lib.pen"
+  },
+  "fileToken": "e5fb3970-7a6d-438a-9acb-1173843fc3b9"
+}

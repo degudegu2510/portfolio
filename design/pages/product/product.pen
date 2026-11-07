@@ -1,0 +1,2532 @@
+{
+  "version": "2.22",
+  "children": [
+    {
+      "type": "frame",
+      "id": "Q0bppu",
+      "x": 0,
+      "y": -600,
+      "name": "Product/Thumbnail",
+      "reusable": true,
+      "width": 736,
+      "layout": "vertical",
+      "children": [
+        {
+          "type": "frame",
+          "id": "nrAmy",
+          "name": "Thumbnail Image",
+          "width": "fill_container",
+          "height": 414,
+          "fill": {
+            "type": "image",
+            "enabled": true,
+            "url": "../../../src/contents/Product/fivia/img/image-ogp.png",
+            "mode": "cover"
+          },
+          "cornerRadius": "$ds:radius-lg",
+          "stroke": "$ds:color-divider",
+          "strokeWidth": 1,
+          "strokeAlignment": "inner"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "OIJjN",
+      "x": 0,
+      "y": 0,
+      "name": "/product/:id — light",
+      "theme": {
+        "ds:mode": "light"
+      },
+      "clip": true,
+      "width": 1440,
+      "fill": {
+        "type": "shader",
+        "enabled": true,
+        "url": "../../../src/component/Atoms/GradientBackground/gradientBackground.glsl",
+        "uniforms": {
+          "u_top": "$ds:background-top",
+          "u_middle": "$ds:background-middle",
+          "u_bottom": "$ds:background-bottom",
+          "u_gridColor": "$ds:background-grid",
+          "u_gridOpacity": 0.1,
+          "u_noise": 30,
+          "u_waveSpeed": 0.5,
+          "u_waveAmplitude": 0.3,
+          "u_flagOpacity": 8,
+          "u_gridSize": 192
+        }
+      },
+      "layout": "vertical",
+      "alignItems": "center",
+      "children": [
+        {
+          "id": "jLJLx",
+          "type": "ref",
+          "ref": "ds:xdOlG",
+          "name": "Header",
+          "width": 1152
+        },
+        {
+          "type": "frame",
+          "id": "fD2EZ",
+          "name": "Main",
+          "width": 1152,
+          "gap": 32,
+          "padding": [
+            64,
+            16
+          ],
+          "children": [
+            {
+              "id": "mrJYN",
+              "type": "ref",
+              "ref": "ds:G7b2t",
+              "name": "Aside",
+              "descendants": {
+                "ds:apAsl": {
+                  "type": "frame",
+                  "id": "Os6C5",
+                  "name": "TOC List",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "children": [
+                    {
+                      "id": "nEvAF",
+                      "type": "ref",
+                      "ref": "ds:UykH9",
+                      "name": "TOC 作品概要",
+                      "width": "fill_container",
+                      "descendants": {
+                        "ds:dyFtp": {
+                          "content": "作品概要"
+                        }
+                      }
+                    },
+                    {
+                      "id": "mmsge",
+                      "type": "ref",
+                      "ref": "ds:UykH9",
+                      "name": "TOC 補足情報",
+                      "width": "fill_container",
+                      "descendants": {
+                        "ds:dyFtp": {
+                          "content": "補足情報"
+                        }
+                      }
+                    },
+                    {
+                      "id": "fdGI1",
+                      "type": "ref",
+                      "ref": "ds:UykH9",
+                      "name": "TOC Fivia",
+                      "width": "fill_container",
+                      "descendants": {
+                        "ds:dyFtp": {
+                          "content": "Fivia"
+                        }
+                      }
+                    },
+                    {
+                      "id": "f8Uad2",
+                      "type": "ref",
+                      "ref": "ds:UykH9",
+                      "name": "TOC 課題",
+                      "width": "fill_container",
+                      "descendants": {
+                        "ds:dyFtp": {
+                          "content": "課題"
+                        }
+                      }
+                    },
+                    {
+                      "id": "jJkmK",
+                      "type": "ref",
+                      "ref": "ds:UykH9",
+                      "name": "TOC 使い方",
+                      "width": "fill_container",
+                      "descendants": {
+                        "ds:dyFtp": {
+                          "content": "使い方"
+                        }
+                      }
+                    },
+                    {
+                      "id": "QMDPA",
+                      "type": "ref",
+                      "ref": "ds:UykH9",
+                      "name": "TOC プロダクト構成",
+                      "width": "fill_container",
+                      "descendants": {
+                        "ds:dyFtp": {
+                          "content": "プロダクト構成"
+                        }
+                      }
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "type": "frame",
+              "id": "ziC9A",
+              "name": "Article",
+              "width": "fill_container",
+              "layout": "vertical",
+              "children": [
+                {
+                  "id": "msY7J",
+                  "type": "ref",
+                  "ref": "ds:nqO7H",
+                  "name": "Title",
+                  "width": "fill_container",
+                  "descendants": {
+                    "ds:HbhKi": {
+                      "content": "Fivia"
+                    }
+                  }
+                },
+                {
+                  "type": "frame",
+                  "id": "OX8YH",
+                  "name": "Spacer",
+                  "width": 1,
+                  "height": 24
+                },
+                {
+                  "id": "Uixh1",
+                  "type": "ref",
+                  "ref": "Q0bppu",
+                  "name": "Thumbnail",
+                  "descendants": {
+                    "nrAmy": {
+                      "fill": {
+                        "type": "image",
+                        "enabled": true,
+                        "url": "../../../src/contents/Product/fivia/img/image-ogp.png",
+                        "mode": "cover"
+                      }
+                    }
+                  }
+                },
+                {
+                  "type": "frame",
+                  "id": "hWHqw",
+                  "name": "Spacer",
+                  "width": 1,
+                  "height": 40
+                },
+                {
+                  "type": "frame",
+                  "id": "EWo3E",
+                  "name": "Markdown Body",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 16,
+                  "children": [
+                    {
+                      "id": "oQyRq",
+                      "type": "ref",
+                      "ref": "ds:sfUgQ",
+                      "name": "H2 作品概要",
+                      "width": "fill_container",
+                      "padding": 0,
+                      "descendants": {
+                        "ds:cBitj": {
+                          "content": "作品概要"
+                        }
+                      }
+                    },
+                    {
+                      "id": "e8L4z",
+                      "type": "ref",
+                      "ref": "ds:O0JhwX",
+                      "name": "Paragraph",
+                      "width": "fill_container",
+                      "descendants": {
+                        "ds:bXG7z": {
+                          "content": "Fivia（フィビア） は、 「AIに渡すビジュアルコンテキストを管理する」 ツールです。"
+                        }
+                      }
+                    },
+                    {
+                      "id": "v2yBZP",
+                      "type": "ref",
+                      "ref": "ds:O0JhwX",
+                      "name": "Paragraph",
+                      "width": "fill_container",
+                      "descendants": {
+                        "ds:bXG7z": {
+                          "content": "AI画像生成やデザイン指示において、「このスタイルで」という感覚をテキストだけで伝えることには限界があります。Fiviaでは、Web上の画像をChrome拡張でアートボードに整理し、 MCP（Model Context Protocol）経由でAIにビジュアルコンテキストを渡す ことで、言語化しにくいスタイル・ムード・質感をAIに共有できます。"
+                        }
+                      }
+                    },
+                    {
+                      "id": "havR4",
+                      "type": "ref",
+                      "ref": "ds:O0JhwX",
+                      "name": "Paragraph",
+                      "width": "fill_container",
+                      "descendants": {
+                        "ds:bXG7z": {
+                          "content": "名前の由来は Figment（想像・イメージの断片） と via（経由して渡す） の造語で、ユーザーが集めたビジュアルの断片をAIに届けるというコンセプトを込めています。"
+                        }
+                      }
+                    },
+                    {
+                      "id": "wXvyJ",
+                      "type": "ref",
+                      "ref": "ds:O0JhwX",
+                      "name": "Paragraph",
+                      "width": "fill_container",
+                      "descendants": {
+                        "ds:bXG7z": {
+                          "content": "また、個人で新しいプロダクトをゼロから作りたいというモチベーションと、AIを活用すれば一人でもフルスタックな開発ができるのではという仮説を試したかった。設計・実装・リリースのすべてをAIと協働しながら進め、Chrome拡張・Webサービス・MCPサーバーという3つのコンポーネントを一人で完成させることができた。"
+                        }
+                      }
+                    },
+                    {
+                      "id": "xdlLl",
+                      "type": "ref",
+                      "ref": "ds:GJgMM",
+                      "name": "H3 補足情報",
+                      "width": "fill_container",
+                      "descendants": {
+                        "ds:LWyRT": {
+                          "content": "補足情報"
+                        }
+                      }
+                    },
+                    {
+                      "type": "frame",
+                      "id": "OMMXq",
+                      "name": "List",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "children": [
+                        {
+                          "id": "o0cMX",
+                          "type": "ref",
+                          "ref": "ds:PKmz9",
+                          "name": "List Item",
+                          "width": "fill_container",
+                          "padding": [
+                            0,
+                            0,
+                            0,
+                            8
+                          ],
+                          "descendants": {
+                            "ds:VXikS": {
+                              "content": "•"
+                            },
+                            "ds:d5FOiq": {
+                              "content": "担当：個人開発（設計・実装・リリースまで一人）"
+                            }
+                          }
+                        },
+                        {
+                          "id": "nZgyw",
+                          "type": "ref",
+                          "ref": "ds:PKmz9",
+                          "name": "List Item",
+                          "width": "fill_container",
+                          "padding": [
+                            0,
+                            0,
+                            0,
+                            8
+                          ],
+                          "descendants": {
+                            "ds:VXikS": {
+                              "content": "•"
+                            },
+                            "ds:d5FOiq": {
+                              "content": "Web App：https://fivia.dev"
+                            }
+                          }
+                        },
+                        {
+                          "id": "kBlzY",
+                          "type": "ref",
+                          "ref": "ds:PKmz9",
+                          "name": "List Item",
+                          "width": "fill_container",
+                          "padding": [
+                            0,
+                            0,
+                            0,
+                            8
+                          ],
+                          "descendants": {
+                            "ds:VXikS": {
+                              "content": "•"
+                            },
+                            "ds:d5FOiq": {
+                              "content": "Chrome拡張：Chrome Web Store"
+                            }
+                          }
+                        },
+                        {
+                          "id": "x32oO",
+                          "type": "ref",
+                          "ref": "ds:PKmz9",
+                          "name": "List Item",
+                          "width": "fill_container",
+                          "padding": [
+                            0,
+                            0,
+                            0,
+                            8
+                          ],
+                          "descendants": {
+                            "ds:VXikS": {
+                              "content": "•"
+                            },
+                            "ds:d5FOiq": {
+                              "content": "MCPサーバー：https://fivia.dev/api/mcp"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "id": "rA01C",
+                      "type": "ref",
+                      "ref": "ds:sfUgQ",
+                      "name": "H2 Fivia",
+                      "width": "fill_container",
+                      "descendants": {
+                        "ds:cBitj": {
+                          "content": "Fivia"
+                        }
+                      }
+                    },
+                    {
+                      "id": "sUM7q",
+                      "type": "ref",
+                      "ref": "ds:ZdBkV",
+                      "name": "Image",
+                      "width": "fill_container",
+                      "height": 440,
+                      "fill": {
+                        "type": "image",
+                        "enabled": true,
+                        "url": "../../../src/contents/Product/fivia/img/screenshot-artboards.png",
+                        "mode": "cover"
+                      }
+                    },
+                    {
+                      "id": "Nd61N",
+                      "type": "ref",
+                      "ref": "ds:GJgMM",
+                      "name": "H3 課題",
+                      "width": "fill_container",
+                      "descendants": {
+                        "ds:LWyRT": {
+                          "content": "課題"
+                        }
+                      }
+                    },
+                    {
+                      "id": "LjRsP",
+                      "type": "ref",
+                      "ref": "ds:O0JhwX",
+                      "name": "Paragraph",
+                      "width": "fill_container",
+                      "descendants": {
+                        "ds:bXG7z": {
+                          "content": "AIを使ったデザイン生成や画像生成において、「このスタイルで作って」という曖昧な指示をテキストのみで伝えることは難しく、意図が伝わらないまま試行錯誤に時間がかかるという課題があります。参考画像をAIに渡す方法はあるものの、その都度ファイルを用意してアップロードする手間が発生し、複数の画像を一括で整理・管理する仕組みがありません。"
+                        }
+                      }
+                    },
+                    {
+                      "id": "svjWU",
+                      "type": "ref",
+                      "ref": "ds:O0JhwX",
+                      "name": "Paragraph",
+                      "width": "fill_container",
+                      "descendants": {
+                        "ds:bXG7z": {
+                          "content": "Fiviaはこの課題に対して、 「Web上の画像を集めてアートボードとして整理し、MCPで自動的にAIに渡す」 というアプローチで解決します。"
+                        }
+                      }
+                    },
+                    {
+                      "id": "LjeI3",
+                      "type": "ref",
+                      "ref": "ds:GJgMM",
+                      "name": "H3 使い方",
+                      "width": "fill_container",
+                      "descendants": {
+                        "ds:LWyRT": {
+                          "content": "使い方"
+                        }
+                      }
+                    },
+                    {
+                      "id": "F52VTz",
+                      "type": "ref",
+                      "ref": "ds:GJgMM",
+                      "name": "H3 プロダクト構成",
+                      "width": "fill_container",
+                      "descendants": {
+                        "ds:LWyRT": {
+                          "content": "プロダクト構成"
+                        }
+                      }
+                    },
+                    {
+                      "id": "P7yfk8",
+                      "type": "ref",
+                      "ref": "ds:O0JhwX",
+                      "name": "Paragraph",
+                      "width": "fill_container",
+                      "descendants": {
+                        "ds:bXG7z": {
+                          "content": "Fiviaは以下の3つのコンポーネントで構成されています。"
+                        }
+                      }
+                    },
+                    {
+                      "id": "NnM6N",
+                      "type": "ref",
+                      "ref": "ds:GJgMM",
+                      "name": "H3 ⚪︎ Chrome拡張",
+                      "width": "fill_container",
+                      "descendants": {
+                        "ds:LWyRT": {
+                          "content": "⚪︎ Chrome拡張"
+                        }
+                      }
+                    },
+                    {
+                      "id": "x5eNaV",
+                      "type": "ref",
+                      "ref": "ds:ZdBkV",
+                      "name": "Image",
+                      "width": "fill_container",
+                      "height": 460,
+                      "fill": {
+                        "type": "image",
+                        "enabled": true,
+                        "url": "../../../src/contents/Product/fivia/img/image-extension.png",
+                        "mode": "cover"
+                      }
+                    },
+                    {
+                      "id": "u1Mnff",
+                      "type": "ref",
+                      "ref": "ds:O0JhwX",
+                      "name": "Paragraph",
+                      "width": "fill_container",
+                      "descendants": {
+                        "ds:bXG7z": {
+                          "content": "https://chromewebstore.google.com/detail/fivia/fnjmhopagijlipindphkadhpagbddpmj"
+                        }
+                      }
+                    },
+                    {
+                      "id": "W2fenV",
+                      "type": "ref",
+                      "ref": "ds:O0JhwX",
+                      "name": "Paragraph",
+                      "width": "fill_container",
+                      "descendants": {
+                        "ds:bXG7z": {
+                          "content": "Web上の画像を右クリックするだけでFiviaのアートボードに保存できます。ログイン状態に応じてコンテキストメニューが切り替わり、ログイン済みの場合はアートボードへの直接保存・新規アートボード作成・同期・ログアウトが行えます。"
+                        }
+                      }
+                    },
+                    {
+                      "id": "S5nRZY",
+                      "type": "ref",
+                      "ref": "ds:O0JhwX",
+                      "name": "Paragraph",
+                      "width": "fill_container",
+                      "descendants": {
+                        "ds:bXG7z": {
+                          "content": "MV3 Service Workerの制約をふまえ、以下の設計上の判断を行いました。"
+                        }
+                      }
+                    },
+                    {
+                      "type": "frame",
+                      "id": "aTZ2j",
+                      "name": "List",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "children": [
+                        {
+                          "id": "mNzx4",
+                          "type": "ref",
+                          "ref": "ds:PKmz9",
+                          "name": "List Item",
+                          "width": "fill_container",
+                          "padding": [
+                            0,
+                            0,
+                            0,
+                            8
+                          ],
+                          "descendants": {
+                            "ds:VXikS": {
+                              "content": "•"
+                            },
+                            "ds:d5FOiq": {
+                              "content": "Supabase SDKを使わないAPI設計"
+                            }
+                          }
+                        },
+                        {
+                          "id": "N2yLUu",
+                          "type": "ref",
+                          "ref": "ds:PKmz9",
+                          "name": "List Item",
+                          "width": "fill_container",
+                          "padding": [
+                            0,
+                            0,
+                            0,
+                            32
+                          ],
+                          "descendants": {
+                            "ds:VXikS": {
+                              "content": "◦"
+                            },
+                            "ds:d5FOiq": {
+                              "content": "MV3 Service WorkerではSupabase SDKが動作しないため、SupabaseへはWeb App API（/api/me/...）をfetchで呼び出す設計にし、プラン制限をサーバー側で確実に適用しています。"
+                            }
+                          }
+                        },
+                        {
+                          "id": "oJl72",
+                          "type": "ref",
+                          "ref": "ds:PKmz9",
+                          "name": "List Item",
+                          "width": "fill_container",
+                          "padding": [
+                            0,
+                            0,
+                            0,
+                            8
+                          ],
+                          "descendants": {
+                            "ds:VXikS": {
+                              "content": "•"
+                            },
+                            "ds:d5FOiq": {
+                              "content": "認証・セッション管理"
+                            }
+                          }
+                        },
+                        {
+                          "id": "n83uK",
+                          "type": "ref",
+                          "ref": "ds:PKmz9",
+                          "name": "List Item",
+                          "width": "fill_container",
+                          "padding": [
+                            0,
+                            0,
+                            0,
+                            32
+                          ],
+                          "descendants": {
+                            "ds:VXikS": {
+                              "content": "◦"
+                            },
+                            "ds:d5FOiq": {
+                              "content": "chrome.identity.launchWebAuthFlow でGoogle OAuth + PKCEフローを起動し、セッション（access_token / refresh_token）を chrome.storage.local に保存します。"
+                            }
+                          }
+                        },
+                        {
+                          "id": "PpLFm",
+                          "type": "ref",
+                          "ref": "ds:PKmz9",
+                          "name": "List Item",
+                          "width": "fill_container",
+                          "padding": [
+                            0,
+                            0,
+                            0,
+                            32
+                          ],
+                          "descendants": {
+                            "ds:VXikS": {
+                              "content": "◦"
+                            },
+                            "ds:d5FOiq": {
+                              "content": "有効期限切れ前（残り5分）に自動リフレッシュし、401受信時はセッションをクリアしてログイン前の状態に戻します。"
+                            }
+                          }
+                        },
+                        {
+                          "id": "xGMjc",
+                          "type": "ref",
+                          "ref": "ds:PKmz9",
+                          "name": "List Item",
+                          "width": "fill_container",
+                          "padding": [
+                            0,
+                            0,
+                            0,
+                            8
+                          ],
+                          "descendants": {
+                            "ds:VXikS": {
+                              "content": "•"
+                            },
+                            "ds:d5FOiq": {
+                              "content": "アートボードキャッシュ"
+                            }
+                          }
+                        },
+                        {
+                          "id": "JuUWK",
+                          "type": "ref",
+                          "ref": "ds:PKmz9",
+                          "name": "List Item",
+                          "width": "fill_container",
+                          "padding": [
+                            0,
+                            0,
+                            0,
+                            32
+                          ],
+                          "descendants": {
+                            "ds:VXikS": {
+                              "content": "◦"
+                            },
+                            "ds:d5FOiq": {
+                              "content": "アートボード一覧を chrome.storage.local にキャッシュし、ログイン時・ポップアップ表示時・同期操作時に更新します。"
+                            }
+                          }
+                        },
+                        {
+                          "id": "NU57A",
+                          "type": "ref",
+                          "ref": "ds:PKmz9",
+                          "name": "List Item",
+                          "width": "fill_container",
+                          "padding": [
+                            0,
+                            0,
+                            0,
+                            8
+                          ],
+                          "descendants": {
+                            "ds:VXikS": {
+                              "content": "•"
+                            },
+                            "ds:d5FOiq": {
+                              "content": "フィードバックとi18n"
+                            }
+                          }
+                        },
+                        {
+                          "id": "MDGV9",
+                          "type": "ref",
+                          "ref": "ds:PKmz9",
+                          "name": "List Item",
+                          "width": "fill_container",
+                          "padding": [
+                            0,
+                            0,
+                            0,
+                            32
+                          ],
+                          "descendants": {
+                            "ds:VXikS": {
+                              "content": "◦"
+                            },
+                            "ds:d5FOiq": {
+                              "content": "画像保存の結果をバッジ（✓ / ✗）で30秒表示し、日本語・英語のi18n対応も実装しています。"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "id": "V0lOwH",
+                      "type": "ref",
+                      "ref": "ds:GJgMM",
+                      "name": "H3 ⚪︎ Web App",
+                      "width": "fill_container",
+                      "descendants": {
+                        "ds:LWyRT": {
+                          "content": "⚪︎ Web App"
+                        }
+                      }
+                    },
+                    {
+                      "id": "u1G5V",
+                      "type": "ref",
+                      "ref": "ds:O0JhwX",
+                      "name": "Paragraph",
+                      "width": "fill_container",
+                      "descendants": {
+                        "ds:bXG7z": {
+                          "content": "https://fivia.dev/"
+                        }
+                      }
+                    },
+                    {
+                      "id": "qlNaG",
+                      "type": "ref",
+                      "ref": "ds:O0JhwX",
+                      "name": "Paragraph",
+                      "width": "fill_container",
+                      "descendants": {
+                        "ds:bXG7z": {
+                          "content": "アートボードの作成・管理・詳細閲覧を行うWebサービスです。Google OAuthによるログインに加え、Claude CodeなどのMCPクライアントがOAuth 2.0 + PKCEで接続できるリモートMCPエンドポイントを提供しています。日本語・英語のi18n対応も実装しています。"
+                        }
+                      }
+                    },
+                    {
+                      "type": "frame",
+                      "id": "hFGdv",
+                      "name": "List",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "children": [
+                        {
+                          "id": "iOuow",
+                          "type": "ref",
+                          "ref": "ds:PKmz9",
+                          "name": "List Item",
+                          "width": "fill_container",
+                          "padding": [
+                            0,
+                            0,
+                            0,
+                            8
+                          ],
+                          "descendants": {
+                            "ds:VXikS": {
+                              "content": "•"
+                            },
+                            "ds:d5FOiq": {
+                              "content": "マルチクライアント認証"
+                            }
+                          }
+                        },
+                        {
+                          "id": "Cpqne",
+                          "type": "ref",
+                          "ref": "ds:PKmz9",
+                          "name": "List Item",
+                          "width": "fill_container",
+                          "padding": [
+                            0,
+                            0,
+                            0,
+                            32
+                          ],
+                          "descendants": {
+                            "ds:VXikS": {
+                              "content": "◦"
+                            },
+                            "ds:d5FOiq": {
+                              "content": "ブラウザはCookie（Supabase自動管理）、Chrome拡張はSupabase JWTのBearerトークン、MCPはPAT（Personal Access Token）と、クライアントごとに認証方式が異なります。getUserId() ヘルパーで3つを順に試し、最初に成功したものを採用する設計にしています。"
+                            }
+                          }
+                        },
+                        {
+                          "id": "gslq8",
+                          "type": "ref",
+                          "ref": "ds:PKmz9",
+                          "name": "List Item",
+                          "width": "fill_container",
+                          "padding": [
+                            0,
+                            0,
+                            0,
+                            8
+                          ],
+                          "descendants": {
+                            "ds:VXikS": {
+                              "content": "•"
+                            },
+                            "ds:d5FOiq": {
+                              "content": "OAuth 2.0 + PKCEによるMCP認証"
+                            }
+                          }
+                        },
+                        {
+                          "id": "X6gOX",
+                          "type": "ref",
+                          "ref": "ds:PKmz9",
+                          "name": "List Item",
+                          "width": "fill_container",
+                          "padding": [
+                            0,
+                            0,
+                            0,
+                            32
+                          ],
+                          "descendants": {
+                            "ds:VXikS": {
+                              "content": "◦"
+                            },
+                            "ds:d5FOiq": {
+                              "content": "MCPクライアントがOAuth Discoveryで認可サーバー情報を取得し、ブラウザログイン後にSupabaseのaccess token / refresh tokenを受け取るため、ユーザーがトークンをコピーして設定する必要がありません。"
+                            }
+                          }
+                        },
+                        {
+                          "id": "L2Yrj",
+                          "type": "ref",
+                          "ref": "ds:PKmz9",
+                          "name": "List Item",
+                          "width": "fill_container",
+                          "padding": [
+                            0,
+                            0,
+                            0,
+                            32
+                          ],
+                          "descendants": {
+                            "ds:VXikS": {
+                              "content": "◦"
+                            },
+                            "ds:d5FOiq": {
+                              "content": "認可コードやstateはAES-256-GCMで暗号化し、PKCEの code_verifier を検証してからトークンを発行する設計にしています。"
+                            }
+                          }
+                        },
+                        {
+                          "id": "ZK34f",
+                          "type": "ref",
+                          "ref": "ds:PKmz9",
+                          "name": "List Item",
+                          "width": "fill_container",
+                          "padding": [
+                            0,
+                            0,
+                            0,
+                            8
+                          ],
+                          "descendants": {
+                            "ds:VXikS": {
+                              "content": "•"
+                            },
+                            "ds:d5FOiq": {
+                              "content": "レンダリング戦略の使い分け"
+                            }
+                          }
+                        },
+                        {
+                          "id": "VejMe",
+                          "type": "ref",
+                          "ref": "ds:PKmz9",
+                          "name": "List Item",
+                          "width": "fill_container",
+                          "padding": [
+                            0,
+                            0,
+                            0,
+                            32
+                          ],
+                          "descendants": {
+                            "ds:VXikS": {
+                              "content": "◦"
+                            },
+                            "ds:d5FOiq": {
+                              "content": "公開ページ（ドキュメント・利用規約など）はSSGで事前生成、認証ページはSSR、アプリページはサーバーコンポーネント + Suspenseストリーミングを採用しています。"
+                            }
+                          }
+                        },
+                        {
+                          "id": "T472Q",
+                          "type": "ref",
+                          "ref": "ds:PKmz9",
+                          "name": "List Item",
+                          "width": "fill_container",
+                          "padding": [
+                            0,
+                            0,
+                            0,
+                            32
+                          ],
+                          "descendants": {
+                            "ds:VXikS": {
+                              "content": "◦"
+                            },
+                            "ds:d5FOiq": {
+                              "content": "アプリページではページシェル（ヘッダー・タイトル・ボタン）を即時表示し、データ取得が必要な部分だけ非同期コンポーネントに分離してスケルトン表示するアーキテクチャです。"
+                            }
+                          }
+                        },
+                        {
+                          "id": "ocoA1",
+                          "type": "ref",
+                          "ref": "ds:PKmz9",
+                          "name": "List Item",
+                          "width": "fill_container",
+                          "padding": [
+                            0,
+                            0,
+                            0,
+                            8
+                          ],
+                          "descendants": {
+                            "ds:VXikS": {
+                              "content": "•"
+                            },
+                            "ds:d5FOiq": {
+                              "content": "i18n戦略（URLプレフィックスなし）"
+                            }
+                          }
+                        },
+                        {
+                          "id": "hhI6F",
+                          "type": "ref",
+                          "ref": "ds:PKmz9",
+                          "name": "List Item",
+                          "width": "fill_container",
+                          "padding": [
+                            0,
+                            0,
+                            0,
+                            32
+                          ],
+                          "descendants": {
+                            "ds:VXikS": {
+                              "content": "◦"
+                            },
+                            "ds:d5FOiq": {
+                              "content": "next-intlで日本語・英語に対応し、URLにロケールプレフィックスを含めない（localePrefix: \"never\"）設計にしています。日本語はSSGで事前生成、英語はSSRでオンデマンドレンダリングし、ロケール選択はクッキーとDBの profiles.locale で二重管理しています。"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "id": "tjLgf",
+                      "type": "ref",
+                      "ref": "ds:GJgMM",
+                      "name": "H3 ⚪︎ MCPサーバー（リモートMCP）",
+                      "width": "fill_container",
+                      "descendants": {
+                        "ds:LWyRT": {
+                          "content": "⚪︎ MCPサーバー（リモートMCP）"
+                        }
+                      }
+                    },
+                    {
+                      "id": "lEeYT",
+                      "type": "ref",
+                      "ref": "ds:O0JhwX",
+                      "name": "Paragraph",
+                      "width": "fill_container",
+                      "descendants": {
+                        "ds:bXG7z": {
+                          "content": "Claude CodeなどのMCPクライアントからFiviaのアートボードを参照できるリモートMCPサーバーです。Next.jsの /api/mcp エンドポイントとしてStreamable HTTP transportで提供しています。提供するツールは list_artboards と get_artboard の2つです。"
+                        }
+                      }
+                    },
+                    {
+                      "id": "Gulg0",
+                      "type": "ref",
+                      "ref": "ds:O0JhwX",
+                      "name": "Paragraph",
+                      "width": "fill_container",
+                      "descendants": {
+                        "ds:bXG7z": {
+                          "content": "技術スタック: Next.js Route Handler / TypeScript / @modelcontextprotocol/sdk / Streamable HTTP"
+                        }
+                      }
+                    },
+                    {
+                      "id": "tyn2s",
+                      "type": "ref",
+                      "ref": "ds:olGSz",
+                      "name": "Code",
+                      "width": "fill_container",
+                      "descendants": {
+                        "ds:gNNY6": {
+                          "content": "{\n  \"mcpServers\": {\n    \"fivia\": {\n      \"type\": \"http\",\n      \"url\": \"https://fivia.dev/api/mcp\"\n    }\n  }\n}"
+                        }
+                      }
+                    },
+                    {
+                      "id": "dpfcH",
+                      "type": "ref",
+                      "ref": "ds:O0JhwX",
+                      "name": "Paragraph",
+                      "width": "fill_container",
+                      "descendants": {
+                        "ds:bXG7z": {
+                          "content": "初回接続時にブラウザでFiviaへログインすると認証が完了し、以降はMCPクライアント側がリフレッシュトークンを使って再認証します。"
+                        }
+                      }
+                    },
+                    {
+                      "type": "frame",
+                      "id": "ioP0p",
+                      "name": "List",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "children": [
+                        {
+                          "id": "ogOMf",
+                          "type": "ref",
+                          "ref": "ds:PKmz9",
+                          "name": "List Item",
+                          "width": "fill_container",
+                          "padding": [
+                            0,
+                            0,
+                            0,
+                            8
+                          ],
+                          "descendants": {
+                            "ds:VXikS": {
+                              "content": "•"
+                            },
+                            "ds:d5FOiq": {
+                              "content": "base64配信"
+                            }
+                          }
+                        },
+                        {
+                          "id": "v8LVg",
+                          "type": "ref",
+                          "ref": "ds:PKmz9",
+                          "name": "List Item",
+                          "width": "fill_container",
+                          "padding": [
+                            0,
+                            0,
+                            0,
+                            32
+                          ],
+                          "descendants": {
+                            "ds:VXikS": {
+                              "content": "◦"
+                            },
+                            "ds:d5FOiq": {
+                              "content": "get_artboard では画像URLだけでなく、base64データも返します。"
+                            }
+                          }
+                        },
+                        {
+                          "id": "f8DVbv",
+                          "type": "ref",
+                          "ref": "ds:PKmz9",
+                          "name": "List Item",
+                          "width": "fill_container",
+                          "padding": [
+                            0,
+                            0,
+                            0,
+                            32
+                          ],
+                          "descendants": {
+                            "ds:VXikS": {
+                              "content": "◦"
+                            },
+                            "ds:d5FOiq": {
+                              "content": "AIサービスによっては画像入力にbase64が必須なケースがあるため、MCPサーバー側で画像を取得・変換してAIに渡せるよう設計しています。"
+                            }
+                          }
+                        },
+                        {
+                          "id": "cwxUk",
+                          "type": "ref",
+                          "ref": "ds:PKmz9",
+                          "name": "List Item",
+                          "width": "fill_container",
+                          "padding": [
+                            0,
+                            0,
+                            0,
+                            8
+                          ],
+                          "descendants": {
+                            "ds:VXikS": {
+                              "content": "•"
+                            },
+                            "ds:d5FOiq": {
+                              "content": "部分的失敗への対応"
+                            }
+                          }
+                        },
+                        {
+                          "id": "L6qMr",
+                          "type": "ref",
+                          "ref": "ds:PKmz9",
+                          "name": "List Item",
+                          "width": "fill_container",
+                          "padding": [
+                            0,
+                            0,
+                            0,
+                            32
+                          ],
+                          "descendants": {
+                            "ds:VXikS": {
+                              "content": "◦"
+                            },
+                            "ds:d5FOiq": {
+                              "content": "保存済み画像のURLが削除・移動・アクセス不能になっても、ツール全体を失敗にしません。"
+                            }
+                          }
+                        },
+                        {
+                          "id": "YsZPm",
+                          "type": "ref",
+                          "ref": "ds:PKmz9",
+                          "name": "List Item",
+                          "width": "fill_container",
+                          "padding": [
+                            0,
+                            0,
+                            0,
+                            32
+                          ],
+                          "descendants": {
+                            "ds:VXikS": {
+                              "content": "◦"
+                            },
+                            "ds:d5FOiq": {
+                              "content": "取得できた画像だけをコンテンツとして返し、取得できなかった画像はメタ情報内で status: \"failed\" として識別できるよう設計しています。"
+                            }
+                          }
+                        },
+                        {
+                          "id": "fdSF8",
+                          "type": "ref",
+                          "ref": "ds:PKmz9",
+                          "name": "List Item",
+                          "width": "fill_container",
+                          "padding": [
+                            0,
+                            0,
+                            0,
+                            8
+                          ],
+                          "descendants": {
+                            "ds:VXikS": {
+                              "content": "•"
+                            },
+                            "ds:d5FOiq": {
+                              "content": "説明文をAIコンテキストとして活用"
+                            }
+                          }
+                        },
+                        {
+                          "id": "EGrT6",
+                          "type": "ref",
+                          "ref": "ds:PKmz9",
+                          "name": "List Item",
+                          "width": "fill_container",
+                          "padding": [
+                            0,
+                            0,
+                            0,
+                            32
+                          ],
+                          "descendants": {
+                            "ds:VXikS": {
+                              "content": "◦"
+                            },
+                            "ds:d5FOiq": {
+                              "content": "get_artboard はアートボードの name と description も一緒に渡します。"
+                            }
+                          }
+                        },
+                        {
+                          "id": "Ptf6I",
+                          "type": "ref",
+                          "ref": "ds:PKmz9",
+                          "name": "List Item",
+                          "width": "fill_container",
+                          "padding": [
+                            0,
+                            0,
+                            0,
+                            32
+                          ],
+                          "descendants": {
+                            "ds:VXikS": {
+                              "content": "◦"
+                            },
+                            "ds:d5FOiq": {
+                              "content": "description にスタイル・ムード・質感・避けたい方向性を書いておくことで、AIが画像群の意図を読み取りやすくなる設計です。"
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "l5E93",
+          "type": "ref",
+          "ref": "ds:q77i4",
+          "name": "Footer",
+          "width": 1152
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "BCQVR",
+      "x": 1540,
+      "y": 0,
+      "name": "/product/:id — dark",
+      "theme": {
+        "ds:mode": "dark"
+      },
+      "clip": true,
+      "width": 1440,
+      "fill": {
+        "type": "shader",
+        "enabled": true,
+        "url": "../../../src/component/Atoms/GradientBackground/gradientBackground.glsl",
+        "uniforms": {
+          "u_top": "$ds:background-top",
+          "u_middle": "$ds:background-middle",
+          "u_bottom": "$ds:background-bottom",
+          "u_gridColor": "$ds:background-grid",
+          "u_gridOpacity": 0.1,
+          "u_noise": 30,
+          "u_waveSpeed": 0.5,
+          "u_waveAmplitude": 0.3,
+          "u_flagOpacity": 8,
+          "u_gridSize": 192
+        }
+      },
+      "layout": "vertical",
+      "alignItems": "center",
+      "children": [
+        {
+          "id": "r7s2G",
+          "type": "ref",
+          "ref": "ds:xdOlG",
+          "name": "Header",
+          "width": 1152
+        },
+        {
+          "type": "frame",
+          "id": "fbJSt",
+          "name": "Main",
+          "width": 1152,
+          "gap": 32,
+          "padding": [
+            64,
+            16
+          ],
+          "children": [
+            {
+              "id": "myFMD",
+              "type": "ref",
+              "ref": "ds:G7b2t",
+              "name": "Aside",
+              "descendants": {
+                "ds:apAsl": {
+                  "type": "frame",
+                  "id": "L5bShV",
+                  "name": "TOC List",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "children": [
+                    {
+                      "id": "KnrTl",
+                      "type": "ref",
+                      "ref": "ds:UykH9",
+                      "name": "TOC 作品概要",
+                      "width": "fill_container",
+                      "descendants": {
+                        "ds:dyFtp": {
+                          "content": "作品概要"
+                        }
+                      }
+                    },
+                    {
+                      "id": "rw2y4",
+                      "type": "ref",
+                      "ref": "ds:UykH9",
+                      "name": "TOC 補足情報",
+                      "width": "fill_container",
+                      "descendants": {
+                        "ds:dyFtp": {
+                          "content": "補足情報"
+                        }
+                      }
+                    },
+                    {
+                      "id": "n2RUY",
+                      "type": "ref",
+                      "ref": "ds:UykH9",
+                      "name": "TOC Fivia",
+                      "width": "fill_container",
+                      "descendants": {
+                        "ds:dyFtp": {
+                          "content": "Fivia"
+                        }
+                      }
+                    },
+                    {
+                      "id": "lTK5l",
+                      "type": "ref",
+                      "ref": "ds:UykH9",
+                      "name": "TOC 課題",
+                      "width": "fill_container",
+                      "descendants": {
+                        "ds:dyFtp": {
+                          "content": "課題"
+                        }
+                      }
+                    },
+                    {
+                      "id": "dugtu",
+                      "type": "ref",
+                      "ref": "ds:UykH9",
+                      "name": "TOC 使い方",
+                      "width": "fill_container",
+                      "descendants": {
+                        "ds:dyFtp": {
+                          "content": "使い方"
+                        }
+                      }
+                    },
+                    {
+                      "id": "GvGO3",
+                      "type": "ref",
+                      "ref": "ds:UykH9",
+                      "name": "TOC プロダクト構成",
+                      "width": "fill_container",
+                      "descendants": {
+                        "ds:dyFtp": {
+                          "content": "プロダクト構成"
+                        }
+                      }
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "type": "frame",
+              "id": "n7bcm",
+              "name": "Article",
+              "width": "fill_container",
+              "layout": "vertical",
+              "children": [
+                {
+                  "id": "AqJvq",
+                  "type": "ref",
+                  "ref": "ds:nqO7H",
+                  "name": "Title",
+                  "width": "fill_container",
+                  "descendants": {
+                    "ds:HbhKi": {
+                      "content": "Fivia"
+                    }
+                  }
+                },
+                {
+                  "type": "frame",
+                  "id": "lTwRD",
+                  "name": "Spacer",
+                  "width": 1,
+                  "height": 24
+                },
+                {
+                  "id": "iQ3k9",
+                  "type": "ref",
+                  "ref": "Q0bppu",
+                  "name": "Thumbnail",
+                  "descendants": {
+                    "nrAmy": {
+                      "fill": {
+                        "type": "image",
+                        "enabled": true,
+                        "url": "../../../src/contents/Product/fivia/img/image-ogp.png",
+                        "mode": "cover"
+                      }
+                    }
+                  }
+                },
+                {
+                  "type": "frame",
+                  "id": "Dpw0z",
+                  "name": "Spacer",
+                  "width": 1,
+                  "height": 40
+                },
+                {
+                  "type": "frame",
+                  "id": "aQuEV",
+                  "name": "Markdown Body",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 16,
+                  "children": [
+                    {
+                      "id": "kONzp",
+                      "type": "ref",
+                      "ref": "ds:sfUgQ",
+                      "name": "H2 作品概要",
+                      "width": "fill_container",
+                      "padding": 0,
+                      "descendants": {
+                        "ds:cBitj": {
+                          "content": "作品概要"
+                        }
+                      }
+                    },
+                    {
+                      "id": "eSrqQ",
+                      "type": "ref",
+                      "ref": "ds:O0JhwX",
+                      "name": "Paragraph",
+                      "width": "fill_container",
+                      "descendants": {
+                        "ds:bXG7z": {
+                          "content": "Fivia（フィビア） は、 「AIに渡すビジュアルコンテキストを管理する」 ツールです。"
+                        }
+                      }
+                    },
+                    {
+                      "id": "c9vXDD",
+                      "type": "ref",
+                      "ref": "ds:O0JhwX",
+                      "name": "Paragraph",
+                      "width": "fill_container",
+                      "descendants": {
+                        "ds:bXG7z": {
+                          "content": "AI画像生成やデザイン指示において、「このスタイルで」という感覚をテキストだけで伝えることには限界があります。Fiviaでは、Web上の画像をChrome拡張でアートボードに整理し、 MCP（Model Context Protocol）経由でAIにビジュアルコンテキストを渡す ことで、言語化しにくいスタイル・ムード・質感をAIに共有できます。"
+                        }
+                      }
+                    },
+                    {
+                      "id": "w5r0x",
+                      "type": "ref",
+                      "ref": "ds:O0JhwX",
+                      "name": "Paragraph",
+                      "width": "fill_container",
+                      "descendants": {
+                        "ds:bXG7z": {
+                          "content": "名前の由来は Figment（想像・イメージの断片） と via（経由して渡す） の造語で、ユーザーが集めたビジュアルの断片をAIに届けるというコンセプトを込めています。"
+                        }
+                      }
+                    },
+                    {
+                      "id": "T8PuN",
+                      "type": "ref",
+                      "ref": "ds:O0JhwX",
+                      "name": "Paragraph",
+                      "width": "fill_container",
+                      "descendants": {
+                        "ds:bXG7z": {
+                          "content": "また、個人で新しいプロダクトをゼロから作りたいというモチベーションと、AIを活用すれば一人でもフルスタックな開発ができるのではという仮説を試したかった。設計・実装・リリースのすべてをAIと協働しながら進め、Chrome拡張・Webサービス・MCPサーバーという3つのコンポーネントを一人で完成させることができた。"
+                        }
+                      }
+                    },
+                    {
+                      "id": "pDmd7",
+                      "type": "ref",
+                      "ref": "ds:GJgMM",
+                      "name": "H3 補足情報",
+                      "width": "fill_container",
+                      "descendants": {
+                        "ds:LWyRT": {
+                          "content": "補足情報"
+                        }
+                      }
+                    },
+                    {
+                      "type": "frame",
+                      "id": "IZF0N",
+                      "name": "List",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "children": [
+                        {
+                          "id": "ld9CH",
+                          "type": "ref",
+                          "ref": "ds:PKmz9",
+                          "name": "List Item",
+                          "width": "fill_container",
+                          "padding": [
+                            0,
+                            0,
+                            0,
+                            8
+                          ],
+                          "descendants": {
+                            "ds:VXikS": {
+                              "content": "•"
+                            },
+                            "ds:d5FOiq": {
+                              "content": "担当：個人開発（設計・実装・リリースまで一人）"
+                            }
+                          }
+                        },
+                        {
+                          "id": "WIDzp",
+                          "type": "ref",
+                          "ref": "ds:PKmz9",
+                          "name": "List Item",
+                          "width": "fill_container",
+                          "padding": [
+                            0,
+                            0,
+                            0,
+                            8
+                          ],
+                          "descendants": {
+                            "ds:VXikS": {
+                              "content": "•"
+                            },
+                            "ds:d5FOiq": {
+                              "content": "Web App：https://fivia.dev"
+                            }
+                          }
+                        },
+                        {
+                          "id": "uKDkR",
+                          "type": "ref",
+                          "ref": "ds:PKmz9",
+                          "name": "List Item",
+                          "width": "fill_container",
+                          "padding": [
+                            0,
+                            0,
+                            0,
+                            8
+                          ],
+                          "descendants": {
+                            "ds:VXikS": {
+                              "content": "•"
+                            },
+                            "ds:d5FOiq": {
+                              "content": "Chrome拡張：Chrome Web Store"
+                            }
+                          }
+                        },
+                        {
+                          "id": "VjNGt",
+                          "type": "ref",
+                          "ref": "ds:PKmz9",
+                          "name": "List Item",
+                          "width": "fill_container",
+                          "padding": [
+                            0,
+                            0,
+                            0,
+                            8
+                          ],
+                          "descendants": {
+                            "ds:VXikS": {
+                              "content": "•"
+                            },
+                            "ds:d5FOiq": {
+                              "content": "MCPサーバー：https://fivia.dev/api/mcp"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "id": "AC7OK",
+                      "type": "ref",
+                      "ref": "ds:sfUgQ",
+                      "name": "H2 Fivia",
+                      "width": "fill_container",
+                      "descendants": {
+                        "ds:cBitj": {
+                          "content": "Fivia"
+                        }
+                      }
+                    },
+                    {
+                      "id": "k0Y3pC",
+                      "type": "ref",
+                      "ref": "ds:ZdBkV",
+                      "name": "Image",
+                      "width": "fill_container",
+                      "height": 440,
+                      "fill": {
+                        "type": "image",
+                        "enabled": true,
+                        "url": "../../../src/contents/Product/fivia/img/screenshot-artboards.png",
+                        "mode": "cover"
+                      }
+                    },
+                    {
+                      "id": "B1o8BO",
+                      "type": "ref",
+                      "ref": "ds:GJgMM",
+                      "name": "H3 課題",
+                      "width": "fill_container",
+                      "descendants": {
+                        "ds:LWyRT": {
+                          "content": "課題"
+                        }
+                      }
+                    },
+                    {
+                      "id": "XxzVK",
+                      "type": "ref",
+                      "ref": "ds:O0JhwX",
+                      "name": "Paragraph",
+                      "width": "fill_container",
+                      "descendants": {
+                        "ds:bXG7z": {
+                          "content": "AIを使ったデザイン生成や画像生成において、「このスタイルで作って」という曖昧な指示をテキストのみで伝えることは難しく、意図が伝わらないまま試行錯誤に時間がかかるという課題があります。参考画像をAIに渡す方法はあるものの、その都度ファイルを用意してアップロードする手間が発生し、複数の画像を一括で整理・管理する仕組みがありません。"
+                        }
+                      }
+                    },
+                    {
+                      "id": "LBO1E",
+                      "type": "ref",
+                      "ref": "ds:O0JhwX",
+                      "name": "Paragraph",
+                      "width": "fill_container",
+                      "descendants": {
+                        "ds:bXG7z": {
+                          "content": "Fiviaはこの課題に対して、 「Web上の画像を集めてアートボードとして整理し、MCPで自動的にAIに渡す」 というアプローチで解決します。"
+                        }
+                      }
+                    },
+                    {
+                      "id": "fYZHP",
+                      "type": "ref",
+                      "ref": "ds:GJgMM",
+                      "name": "H3 使い方",
+                      "width": "fill_container",
+                      "descendants": {
+                        "ds:LWyRT": {
+                          "content": "使い方"
+                        }
+                      }
+                    },
+                    {
+                      "id": "D1BzUI",
+                      "type": "ref",
+                      "ref": "ds:GJgMM",
+                      "name": "H3 プロダクト構成",
+                      "width": "fill_container",
+                      "descendants": {
+                        "ds:LWyRT": {
+                          "content": "プロダクト構成"
+                        }
+                      }
+                    },
+                    {
+                      "id": "teuhy",
+                      "type": "ref",
+                      "ref": "ds:O0JhwX",
+                      "name": "Paragraph",
+                      "width": "fill_container",
+                      "descendants": {
+                        "ds:bXG7z": {
+                          "content": "Fiviaは以下の3つのコンポーネントで構成されています。"
+                        }
+                      }
+                    },
+                    {
+                      "id": "inXZT",
+                      "type": "ref",
+                      "ref": "ds:GJgMM",
+                      "name": "H3 ⚪︎ Chrome拡張",
+                      "width": "fill_container",
+                      "descendants": {
+                        "ds:LWyRT": {
+                          "content": "⚪︎ Chrome拡張"
+                        }
+                      }
+                    },
+                    {
+                      "id": "MM7Al",
+                      "type": "ref",
+                      "ref": "ds:ZdBkV",
+                      "name": "Image",
+                      "width": "fill_container",
+                      "height": 460,
+                      "fill": {
+                        "type": "image",
+                        "enabled": true,
+                        "url": "../../../src/contents/Product/fivia/img/image-extension.png",
+                        "mode": "cover"
+                      }
+                    },
+                    {
+                      "id": "HuYG4",
+                      "type": "ref",
+                      "ref": "ds:O0JhwX",
+                      "name": "Paragraph",
+                      "width": "fill_container",
+                      "descendants": {
+                        "ds:bXG7z": {
+                          "content": "https://chromewebstore.google.com/detail/fivia/fnjmhopagijlipindphkadhpagbddpmj"
+                        }
+                      }
+                    },
+                    {
+                      "id": "oxtou",
+                      "type": "ref",
+                      "ref": "ds:O0JhwX",
+                      "name": "Paragraph",
+                      "width": "fill_container",
+                      "descendants": {
+                        "ds:bXG7z": {
+                          "content": "Web上の画像を右クリックするだけでFiviaのアートボードに保存できます。ログイン状態に応じてコンテキストメニューが切り替わり、ログイン済みの場合はアートボードへの直接保存・新規アートボード作成・同期・ログアウトが行えます。"
+                        }
+                      }
+                    },
+                    {
+                      "id": "y0AGj",
+                      "type": "ref",
+                      "ref": "ds:O0JhwX",
+                      "name": "Paragraph",
+                      "width": "fill_container",
+                      "descendants": {
+                        "ds:bXG7z": {
+                          "content": "MV3 Service Workerの制約をふまえ、以下の設計上の判断を行いました。"
+                        }
+                      }
+                    },
+                    {
+                      "type": "frame",
+                      "id": "NYMYq",
+                      "name": "List",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "children": [
+                        {
+                          "id": "O99p5",
+                          "type": "ref",
+                          "ref": "ds:PKmz9",
+                          "name": "List Item",
+                          "width": "fill_container",
+                          "padding": [
+                            0,
+                            0,
+                            0,
+                            8
+                          ],
+                          "descendants": {
+                            "ds:VXikS": {
+                              "content": "•"
+                            },
+                            "ds:d5FOiq": {
+                              "content": "Supabase SDKを使わないAPI設計"
+                            }
+                          }
+                        },
+                        {
+                          "id": "fVrBW",
+                          "type": "ref",
+                          "ref": "ds:PKmz9",
+                          "name": "List Item",
+                          "width": "fill_container",
+                          "padding": [
+                            0,
+                            0,
+                            0,
+                            32
+                          ],
+                          "descendants": {
+                            "ds:VXikS": {
+                              "content": "◦"
+                            },
+                            "ds:d5FOiq": {
+                              "content": "MV3 Service WorkerではSupabase SDKが動作しないため、SupabaseへはWeb App API（/api/me/...）をfetchで呼び出す設計にし、プラン制限をサーバー側で確実に適用しています。"
+                            }
+                          }
+                        },
+                        {
+                          "id": "eB1e7",
+                          "type": "ref",
+                          "ref": "ds:PKmz9",
+                          "name": "List Item",
+                          "width": "fill_container",
+                          "padding": [
+                            0,
+                            0,
+                            0,
+                            8
+                          ],
+                          "descendants": {
+                            "ds:VXikS": {
+                              "content": "•"
+                            },
+                            "ds:d5FOiq": {
+                              "content": "認証・セッション管理"
+                            }
+                          }
+                        },
+                        {
+                          "id": "ZyHy6",
+                          "type": "ref",
+                          "ref": "ds:PKmz9",
+                          "name": "List Item",
+                          "width": "fill_container",
+                          "padding": [
+                            0,
+                            0,
+                            0,
+                            32
+                          ],
+                          "descendants": {
+                            "ds:VXikS": {
+                              "content": "◦"
+                            },
+                            "ds:d5FOiq": {
+                              "content": "chrome.identity.launchWebAuthFlow でGoogle OAuth + PKCEフローを起動し、セッション（access_token / refresh_token）を chrome.storage.local に保存します。"
+                            }
+                          }
+                        },
+                        {
+                          "id": "USiC0",
+                          "type": "ref",
+                          "ref": "ds:PKmz9",
+                          "name": "List Item",
+                          "width": "fill_container",
+                          "padding": [
+                            0,
+                            0,
+                            0,
+                            32
+                          ],
+                          "descendants": {
+                            "ds:VXikS": {
+                              "content": "◦"
+                            },
+                            "ds:d5FOiq": {
+                              "content": "有効期限切れ前（残り5分）に自動リフレッシュし、401受信時はセッションをクリアしてログイン前の状態に戻します。"
+                            }
+                          }
+                        },
+                        {
+                          "id": "e3qY8n",
+                          "type": "ref",
+                          "ref": "ds:PKmz9",
+                          "name": "List Item",
+                          "width": "fill_container",
+                          "padding": [
+                            0,
+                            0,
+                            0,
+                            8
+                          ],
+                          "descendants": {
+                            "ds:VXikS": {
+                              "content": "•"
+                            },
+                            "ds:d5FOiq": {
+                              "content": "アートボードキャッシュ"
+                            }
+                          }
+                        },
+                        {
+                          "id": "B1oiM",
+                          "type": "ref",
+                          "ref": "ds:PKmz9",
+                          "name": "List Item",
+                          "width": "fill_container",
+                          "padding": [
+                            0,
+                            0,
+                            0,
+                            32
+                          ],
+                          "descendants": {
+                            "ds:VXikS": {
+                              "content": "◦"
+                            },
+                            "ds:d5FOiq": {
+                              "content": "アートボード一覧を chrome.storage.local にキャッシュし、ログイン時・ポップアップ表示時・同期操作時に更新します。"
+                            }
+                          }
+                        },
+                        {
+                          "id": "QIY17",
+                          "type": "ref",
+                          "ref": "ds:PKmz9",
+                          "name": "List Item",
+                          "width": "fill_container",
+                          "padding": [
+                            0,
+                            0,
+                            0,
+                            8
+                          ],
+                          "descendants": {
+                            "ds:VXikS": {
+                              "content": "•"
+                            },
+                            "ds:d5FOiq": {
+                              "content": "フィードバックとi18n"
+                            }
+                          }
+                        },
+                        {
+                          "id": "SWdda",
+                          "type": "ref",
+                          "ref": "ds:PKmz9",
+                          "name": "List Item",
+                          "width": "fill_container",
+                          "padding": [
+                            0,
+                            0,
+                            0,
+                            32
+                          ],
+                          "descendants": {
+                            "ds:VXikS": {
+                              "content": "◦"
+                            },
+                            "ds:d5FOiq": {
+                              "content": "画像保存の結果をバッジ（✓ / ✗）で30秒表示し、日本語・英語のi18n対応も実装しています。"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "id": "A9UTX",
+                      "type": "ref",
+                      "ref": "ds:GJgMM",
+                      "name": "H3 ⚪︎ Web App",
+                      "width": "fill_container",
+                      "descendants": {
+                        "ds:LWyRT": {
+                          "content": "⚪︎ Web App"
+                        }
+                      }
+                    },
+                    {
+                      "id": "ltcZP",
+                      "type": "ref",
+                      "ref": "ds:O0JhwX",
+                      "name": "Paragraph",
+                      "width": "fill_container",
+                      "descendants": {
+                        "ds:bXG7z": {
+                          "content": "https://fivia.dev/"
+                        }
+                      }
+                    },
+                    {
+                      "id": "Q3JkX",
+                      "type": "ref",
+                      "ref": "ds:O0JhwX",
+                      "name": "Paragraph",
+                      "width": "fill_container",
+                      "descendants": {
+                        "ds:bXG7z": {
+                          "content": "アートボードの作成・管理・詳細閲覧を行うWebサービスです。Google OAuthによるログインに加え、Claude CodeなどのMCPクライアントがOAuth 2.0 + PKCEで接続できるリモートMCPエンドポイントを提供しています。日本語・英語のi18n対応も実装しています。"
+                        }
+                      }
+                    },
+                    {
+                      "type": "frame",
+                      "id": "dZc0E",
+                      "name": "List",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "children": [
+                        {
+                          "id": "Yajoe",
+                          "type": "ref",
+                          "ref": "ds:PKmz9",
+                          "name": "List Item",
+                          "width": "fill_container",
+                          "padding": [
+                            0,
+                            0,
+                            0,
+                            8
+                          ],
+                          "descendants": {
+                            "ds:VXikS": {
+                              "content": "•"
+                            },
+                            "ds:d5FOiq": {
+                              "content": "マルチクライアント認証"
+                            }
+                          }
+                        },
+                        {
+                          "id": "b1l9J",
+                          "type": "ref",
+                          "ref": "ds:PKmz9",
+                          "name": "List Item",
+                          "width": "fill_container",
+                          "padding": [
+                            0,
+                            0,
+                            0,
+                            32
+                          ],
+                          "descendants": {
+                            "ds:VXikS": {
+                              "content": "◦"
+                            },
+                            "ds:d5FOiq": {
+                              "content": "ブラウザはCookie（Supabase自動管理）、Chrome拡張はSupabase JWTのBearerトークン、MCPはPAT（Personal Access Token）と、クライアントごとに認証方式が異なります。getUserId() ヘルパーで3つを順に試し、最初に成功したものを採用する設計にしています。"
+                            }
+                          }
+                        },
+                        {
+                          "id": "E2DPwg",
+                          "type": "ref",
+                          "ref": "ds:PKmz9",
+                          "name": "List Item",
+                          "width": "fill_container",
+                          "padding": [
+                            0,
+                            0,
+                            0,
+                            8
+                          ],
+                          "descendants": {
+                            "ds:VXikS": {
+                              "content": "•"
+                            },
+                            "ds:d5FOiq": {
+                              "content": "OAuth 2.0 + PKCEによるMCP認証"
+                            }
+                          }
+                        },
+                        {
+                          "id": "niyyk",
+                          "type": "ref",
+                          "ref": "ds:PKmz9",
+                          "name": "List Item",
+                          "width": "fill_container",
+                          "padding": [
+                            0,
+                            0,
+                            0,
+                            32
+                          ],
+                          "descendants": {
+                            "ds:VXikS": {
+                              "content": "◦"
+                            },
+                            "ds:d5FOiq": {
+                              "content": "MCPクライアントがOAuth Discoveryで認可サーバー情報を取得し、ブラウザログイン後にSupabaseのaccess token / refresh tokenを受け取るため、ユーザーがトークンをコピーして設定する必要がありません。"
+                            }
+                          }
+                        },
+                        {
+                          "id": "g8oyN",
+                          "type": "ref",
+                          "ref": "ds:PKmz9",
+                          "name": "List Item",
+                          "width": "fill_container",
+                          "padding": [
+                            0,
+                            0,
+                            0,
+                            32
+                          ],
+                          "descendants": {
+                            "ds:VXikS": {
+                              "content": "◦"
+                            },
+                            "ds:d5FOiq": {
+                              "content": "認可コードやstateはAES-256-GCMで暗号化し、PKCEの code_verifier を検証してからトークンを発行する設計にしています。"
+                            }
+                          }
+                        },
+                        {
+                          "id": "RfEO8",
+                          "type": "ref",
+                          "ref": "ds:PKmz9",
+                          "name": "List Item",
+                          "width": "fill_container",
+                          "padding": [
+                            0,
+                            0,
+                            0,
+                            8
+                          ],
+                          "descendants": {
+                            "ds:VXikS": {
+                              "content": "•"
+                            },
+                            "ds:d5FOiq": {
+                              "content": "レンダリング戦略の使い分け"
+                            }
+                          }
+                        },
+                        {
+                          "id": "piKxQ",
+                          "type": "ref",
+                          "ref": "ds:PKmz9",
+                          "name": "List Item",
+                          "width": "fill_container",
+                          "padding": [
+                            0,
+                            0,
+                            0,
+                            32
+                          ],
+                          "descendants": {
+                            "ds:VXikS": {
+                              "content": "◦"
+                            },
+                            "ds:d5FOiq": {
+                              "content": "公開ページ（ドキュメント・利用規約など）はSSGで事前生成、認証ページはSSR、アプリページはサーバーコンポーネント + Suspenseストリーミングを採用しています。"
+                            }
+                          }
+                        },
+                        {
+                          "id": "yNP3L",
+                          "type": "ref",
+                          "ref": "ds:PKmz9",
+                          "name": "List Item",
+                          "width": "fill_container",
+                          "padding": [
+                            0,
+                            0,
+                            0,
+                            32
+                          ],
+                          "descendants": {
+                            "ds:VXikS": {
+                              "content": "◦"
+                            },
+                            "ds:d5FOiq": {
+                              "content": "アプリページではページシェル（ヘッダー・タイトル・ボタン）を即時表示し、データ取得が必要な部分だけ非同期コンポーネントに分離してスケルトン表示するアーキテクチャです。"
+                            }
+                          }
+                        },
+                        {
+                          "id": "iXSKg",
+                          "type": "ref",
+                          "ref": "ds:PKmz9",
+                          "name": "List Item",
+                          "width": "fill_container",
+                          "padding": [
+                            0,
+                            0,
+                            0,
+                            8
+                          ],
+                          "descendants": {
+                            "ds:VXikS": {
+                              "content": "•"
+                            },
+                            "ds:d5FOiq": {
+                              "content": "i18n戦略（URLプレフィックスなし）"
+                            }
+                          }
+                        },
+                        {
+                          "id": "ryvyf",
+                          "type": "ref",
+                          "ref": "ds:PKmz9",
+                          "name": "List Item",
+                          "width": "fill_container",
+                          "padding": [
+                            0,
+                            0,
+                            0,
+                            32
+                          ],
+                          "descendants": {
+                            "ds:VXikS": {
+                              "content": "◦"
+                            },
+                            "ds:d5FOiq": {
+                              "content": "next-intlで日本語・英語に対応し、URLにロケールプレフィックスを含めない（localePrefix: \"never\"）設計にしています。日本語はSSGで事前生成、英語はSSRでオンデマンドレンダリングし、ロケール選択はクッキーとDBの profiles.locale で二重管理しています。"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "id": "dz2D8",
+                      "type": "ref",
+                      "ref": "ds:GJgMM",
+                      "name": "H3 ⚪︎ MCPサーバー（リモートMCP）",
+                      "width": "fill_container",
+                      "descendants": {
+                        "ds:LWyRT": {
+                          "content": "⚪︎ MCPサーバー（リモートMCP）"
+                        }
+                      }
+                    },
+                    {
+                      "id": "mNsE0",
+                      "type": "ref",
+                      "ref": "ds:O0JhwX",
+                      "name": "Paragraph",
+                      "width": "fill_container",
+                      "descendants": {
+                        "ds:bXG7z": {
+                          "content": "Claude CodeなどのMCPクライアントからFiviaのアートボードを参照できるリモートMCPサーバーです。Next.jsの /api/mcp エンドポイントとしてStreamable HTTP transportで提供しています。提供するツールは list_artboards と get_artboard の2つです。"
+                        }
+                      }
+                    },
+                    {
+                      "id": "jYWIm",
+                      "type": "ref",
+                      "ref": "ds:O0JhwX",
+                      "name": "Paragraph",
+                      "width": "fill_container",
+                      "descendants": {
+                        "ds:bXG7z": {
+                          "content": "技術スタック: Next.js Route Handler / TypeScript / @modelcontextprotocol/sdk / Streamable HTTP"
+                        }
+                      }
+                    },
+                    {
+                      "id": "wCbFz",
+                      "type": "ref",
+                      "ref": "ds:olGSz",
+                      "name": "Code",
+                      "width": "fill_container",
+                      "descendants": {
+                        "ds:gNNY6": {
+                          "content": "{\n  \"mcpServers\": {\n    \"fivia\": {\n      \"type\": \"http\",\n      \"url\": \"https://fivia.dev/api/mcp\"\n    }\n  }\n}"
+                        }
+                      }
+                    },
+                    {
+                      "id": "r3A076",
+                      "type": "ref",
+                      "ref": "ds:O0JhwX",
+                      "name": "Paragraph",
+                      "width": "fill_container",
+                      "descendants": {
+                        "ds:bXG7z": {
+                          "content": "初回接続時にブラウザでFiviaへログインすると認証が完了し、以降はMCPクライアント側がリフレッシュトークンを使って再認証します。"
+                        }
+                      }
+                    },
+                    {
+                      "type": "frame",
+                      "id": "DRKKd",
+                      "name": "List",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "children": [
+                        {
+                          "id": "C96fu",
+                          "type": "ref",
+                          "ref": "ds:PKmz9",
+                          "name": "List Item",
+                          "width": "fill_container",
+                          "padding": [
+                            0,
+                            0,
+                            0,
+                            8
+                          ],
+                          "descendants": {
+                            "ds:VXikS": {
+                              "content": "•"
+                            },
+                            "ds:d5FOiq": {
+                              "content": "base64配信"
+                            }
+                          }
+                        },
+                        {
+                          "id": "f4Yxj",
+                          "type": "ref",
+                          "ref": "ds:PKmz9",
+                          "name": "List Item",
+                          "width": "fill_container",
+                          "padding": [
+                            0,
+                            0,
+                            0,
+                            32
+                          ],
+                          "descendants": {
+                            "ds:VXikS": {
+                              "content": "◦"
+                            },
+                            "ds:d5FOiq": {
+                              "content": "get_artboard では画像URLだけでなく、base64データも返します。"
+                            }
+                          }
+                        },
+                        {
+                          "id": "KF42g",
+                          "type": "ref",
+                          "ref": "ds:PKmz9",
+                          "name": "List Item",
+                          "width": "fill_container",
+                          "padding": [
+                            0,
+                            0,
+                            0,
+                            32
+                          ],
+                          "descendants": {
+                            "ds:VXikS": {
+                              "content": "◦"
+                            },
+                            "ds:d5FOiq": {
+                              "content": "AIサービスによっては画像入力にbase64が必須なケースがあるため、MCPサーバー側で画像を取得・変換してAIに渡せるよう設計しています。"
+                            }
+                          }
+                        },
+                        {
+                          "id": "mKLmx",
+                          "type": "ref",
+                          "ref": "ds:PKmz9",
+                          "name": "List Item",
+                          "width": "fill_container",
+                          "padding": [
+                            0,
+                            0,
+                            0,
+                            8
+                          ],
+                          "descendants": {
+                            "ds:VXikS": {
+                              "content": "•"
+                            },
+                            "ds:d5FOiq": {
+                              "content": "部分的失敗への対応"
+                            }
+                          }
+                        },
+                        {
+                          "id": "D2sB6G",
+                          "type": "ref",
+                          "ref": "ds:PKmz9",
+                          "name": "List Item",
+                          "width": "fill_container",
+                          "padding": [
+                            0,
+                            0,
+                            0,
+                            32
+                          ],
+                          "descendants": {
+                            "ds:VXikS": {
+                              "content": "◦"
+                            },
+                            "ds:d5FOiq": {
+                              "content": "保存済み画像のURLが削除・移動・アクセス不能になっても、ツール全体を失敗にしません。"
+                            }
+                          }
+                        },
+                        {
+                          "id": "AKqD6",
+                          "type": "ref",
+                          "ref": "ds:PKmz9",
+                          "name": "List Item",
+                          "width": "fill_container",
+                          "padding": [
+                            0,
+                            0,
+                            0,
+                            32
+                          ],
+                          "descendants": {
+                            "ds:VXikS": {
+                              "content": "◦"
+                            },
+                            "ds:d5FOiq": {
+                              "content": "取得できた画像だけをコンテンツとして返し、取得できなかった画像はメタ情報内で status: \"failed\" として識別できるよう設計しています。"
+                            }
+                          }
+                        },
+                        {
+                          "id": "C0ePDY",
+                          "type": "ref",
+                          "ref": "ds:PKmz9",
+                          "name": "List Item",
+                          "width": "fill_container",
+                          "padding": [
+                            0,
+                            0,
+                            0,
+                            8
+                          ],
+                          "descendants": {
+                            "ds:VXikS": {
+                              "content": "•"
+                            },
+                            "ds:d5FOiq": {
+                              "content": "説明文をAIコンテキストとして活用"
+                            }
+                          }
+                        },
+                        {
+                          "id": "v3PEZL",
+                          "type": "ref",
+                          "ref": "ds:PKmz9",
+                          "name": "List Item",
+                          "width": "fill_container",
+                          "padding": [
+                            0,
+                            0,
+                            0,
+                            32
+                          ],
+                          "descendants": {
+                            "ds:VXikS": {
+                              "content": "◦"
+                            },
+                            "ds:d5FOiq": {
+                              "content": "get_artboard はアートボードの name と description も一緒に渡します。"
+                            }
+                          }
+                        },
+                        {
+                          "id": "SuZgw",
+                          "type": "ref",
+                          "ref": "ds:PKmz9",
+                          "name": "List Item",
+                          "width": "fill_container",
+                          "padding": [
+                            0,
+                            0,
+                            0,
+                            32
+                          ],
+                          "descendants": {
+                            "ds:VXikS": {
+                              "content": "◦"
+                            },
+                            "ds:d5FOiq": {
+                              "content": "description にスタイル・ムード・質感・避けたい方向性を書いておくことで、AIが画像群の意図を読み取りやすくなる設計です。"
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "b3fmg",
+          "type": "ref",
+          "ref": "ds:q77i4",
+          "name": "Footer",
+          "width": 1152
+        }
+      ]
+    }
+  ],
+  "imports": {
+    "ds": "../../design-system.lib.pen"
+  },
+  "fileToken": "8725c9df-d365-4b60-a1e1-941e10bbcc43"
+}
