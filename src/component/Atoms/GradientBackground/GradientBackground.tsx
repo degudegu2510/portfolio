@@ -1,8 +1,9 @@
 import { useEffect, useRef } from "react"
-import * as THREE from "three"
+import fragmentShaderSource from "./gradientBackground.glsl?raw"
 
+// design/gradient-background.pen と同じシェーダーを WebGL で直接描画する
 const COLORS = {
-  dark: { top: "#787878", middle: "#3c3c3c", bottom: "#000000" },
+  dark: { top: "#4a4a4a", middle: "#202020", bottom: "#000000" },
   light: { top: "#ffffff", middle: "#f5f5f5", bottom: "#e8e8e8" },
 } as const
 
@@ -11,106 +12,20 @@ const NOISE_INTENSITY = 30
 const WAVE_SPEED = 0.5
 const WAVE_AMPLITUDE = 0.3
 const FLAG_OPACITY = 8
+// グリッドは CSS の .bg-grid で描画する（デバイスピクセルに合わせてくっきり描けるため）
+const GRID_OPACITY = 0
 
-const backgroundVertexShader = `
-  varying vec2 vUv;
+const vertexShaderSource = `
+  attribute vec2 a_position;
   void main() {
-    vUv = uv;
-    gl_Position = vec4(position.xy, 0.0, 1.0);
+    gl_Position = vec4(a_position, 0.0, 1.0);
   }
 `
 
-const backgroundFragmentShader = `
-  uniform vec3 uTopColor;
-  uniform vec3 uMiddleColor;
-  uniform vec3 uBottomColor;
-  uniform float uNoiseIntensity;
-  uniform float uTime;
-  varying vec2 vUv;
-
-  float random(vec2 st) {
-    return fract(sin(dot(st.xy, vec2(12.9898,78.233))) * 43758.5453123);
-  }
-
-  void main() {
-    vec3 color;
-    if (vUv.y > 0.5) {
-      float t = (vUv.y - 0.5) * 2.0;
-      color = mix(uMiddleColor, uTopColor, t);
-    } else {
-      float t = vUv.y * 2.0;
-      color = mix(uBottomColor, uMiddleColor, t);
-    }
-    float noise = (random(vUv * 1000.0 + uTime * 0.0001) - 0.5) * uNoiseIntensity / 255.0;
-    color += noise;
-    gl_FragColor = vec4(color, 1.0);
-  }
-`
-
-const flagVertexShader = `
-  uniform float uTime;
-  uniform float uWaveSpeed;
-  uniform float uWaveAmplitude;
-  varying vec2 vUv;
-  varying float vWave;
-
-  vec3 mod289(vec3 x) { return x - floor(x * (1.0 / 289.0)) * 289.0; }
-  vec2 mod289(vec2 x) { return x - floor(x * (1.0 / 289.0)) * 289.0; }
-  vec3 permute(vec3 x) { return mod289(((x*34.0)+1.0)*x); }
-
-  float snoise(vec2 v) {
-    const vec4 C = vec4(0.211324865405187, 0.366025403784439, -0.577350269189626, 0.024390243902439);
-    vec2 i  = floor(v + dot(v, C.yy));
-    vec2 x0 = v -   i + dot(i, C.xx);
-    vec2 i1 = (x0.x > x0.y) ? vec2(1.0, 0.0) : vec2(0.0, 1.0);
-    vec4 x12 = x0.xyxy + C.xxzz;
-    x12.xy -= i1;
-    i = mod289(i);
-    vec3 p = permute(permute(i.y + vec3(0.0, i1.y, 1.0)) + i.x + vec3(0.0, i1.x, 1.0));
-    vec3 m = max(0.5 - vec3(dot(x0,x0), dot(x12.xy,x12.xy), dot(x12.zw,x12.zw)), 0.0);
-    m = m*m;
-    m = m*m;
-    vec3 x = 2.0 * fract(p * C.www) - 1.0;
-    vec3 h = abs(x) - 0.5;
-    vec3 ox = floor(x + 0.5);
-    vec3 a0 = x - ox;
-    m *= 1.79284291400159 - 0.85373472095314 * (a0*a0 + h*h);
-    vec3 g;
-    g.x  = a0.x  * x0.x  + h.x  * x0.y;
-    g.yz = a0.yz * x12.xz + h.yz * x12.yw;
-    return 130.0 * dot(m, g);
-  }
-
-  void main() {
-    vUv = uv;
-    vec3 pos = position;
-    float wave1 = snoise(vec2(uv.x * 3.0 - uTime * uWaveSpeed, uv.y * 2.0)) * uWaveAmplitude;
-    float wave2 = snoise(vec2(uv.x * 5.0 - uTime * uWaveSpeed * 1.3, uv.y * 3.0 + uTime * 0.5)) * uWaveAmplitude * 0.5;
-    float wave3 = snoise(vec2(uv.x * 2.0 - uTime * uWaveSpeed * 0.8, uv.y * 4.0 - uTime * 0.3)) * uWaveAmplitude * 0.3;
-    float totalWave = wave1 + wave2 + wave3;
-    pos.z += totalWave * uv.x;
-    pos.y += sin(uv.x * 10.0 - uTime * uWaveSpeed * 2.0) * 0.02 * uv.x;
-    vWave = totalWave;
-    gl_Position = projectionMatrix * modelViewMatrix * vec4(pos, 1.0);
-  }
-`
-
-const flagFragmentShader = `
-  uniform float uOpacity;
-  uniform float uTime;
-  varying vec2 vUv;
-  varying float vWave;
-
-  void main() {
-    float brightness = 0.3 + vWave * 0.5;
-    float pattern = sin(vUv.x * 20.0 - uTime * 2.0) * 0.05 + 0.5;
-    vec3 color = vec3(brightness + pattern);
-    float alpha = uOpacity / 100.0;
-    alpha *= smoothstep(0.0, 0.1, vUv.x) * smoothstep(1.0, 0.9, vUv.x);
-    alpha *= smoothstep(0.0, 0.1, vUv.y) * smoothstep(1.0, 0.9, vUv.y);
-    gl_FragColor = vec4(color, alpha);
-  }
-`
+const hexToRgb = (hex: string): [number, number, number] => {
+  const n = parseInt(hex.slice(1), 16)
+  return [((n >> 16) & 255) / 255, ((n >> 8) & 255) / 255, (n & 255) / 255]
+}
 
 const getIsDark = () => {
   const colorScheme = document.documentElement.style.colorScheme
@@ -121,12 +36,25 @@ const getIsDark = () => {
 
 const getPixelRatio = () => Math.min(window.devicePixelRatio, MAX_PIXEL_RATIO)
 
+const createShader = (gl: WebGLRenderingContext, type: number, source: string) => {
+  const shader = gl.createShader(type)
+  if (!shader) return null
+  gl.shaderSource(shader, source)
+  gl.compileShader(shader)
+  if (!gl.getShaderParameter(shader, gl.COMPILE_STATUS)) {
+    console.error(gl.getShaderInfoLog(shader))
+    gl.deleteShader(shader)
+    return null
+  }
+  return shader
+}
+
 interface Props {
   isAnimating?: boolean
 }
 
 export const GradientBackground = ({ isAnimating = true }: Props) => {
-  const containerRef = useRef<HTMLDivElement>(null)
+  const canvasRef = useRef<HTMLCanvasElement>(null)
   const isAnimatingRef = useRef(isAnimating)
 
   useEffect(() => {
@@ -134,58 +62,71 @@ export const GradientBackground = ({ isAnimating = true }: Props) => {
   }, [isAnimating])
 
   useEffect(() => {
-    const container = containerRef.current
-    if (!container) return
+    const canvas = canvasRef.current
+    if (!canvas) return
 
-    const colors = getIsDark() ? COLORS.dark : COLORS.light
+    const gl = canvas.getContext("webgl", { antialias: false, alpha: false })
+    if (!gl) return
 
-    // Scene
-    const scene = new THREE.Scene()
-    const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000)
-    camera.position.z = 2
+    const vertexShader = createShader(gl, gl.VERTEX_SHADER, vertexShaderSource)
+    const fragmentShader = createShader(gl, gl.FRAGMENT_SHADER, fragmentShaderSource)
+    if (!vertexShader || !fragmentShader) return
 
-    const renderer = new THREE.WebGLRenderer({ antialias: true })
-    renderer.setSize(window.innerWidth, window.innerHeight)
-    renderer.setPixelRatio(getPixelRatio())
-    container.appendChild(renderer.domElement)
+    const program = gl.createProgram()
+    gl.attachShader(program, vertexShader)
+    gl.attachShader(program, fragmentShader)
+    gl.linkProgram(program)
+    if (!gl.getProgramParameter(program, gl.LINK_STATUS)) {
+      console.error(gl.getProgramInfoLog(program))
+      return
+    }
+    gl.useProgram(program)
 
-    // Background
-    const backgroundMaterial = new THREE.ShaderMaterial({
-      vertexShader: backgroundVertexShader,
-      fragmentShader: backgroundFragmentShader,
-      uniforms: {
-        uTopColor: { value: new THREE.Color(colors.top) },
-        uMiddleColor: { value: new THREE.Color(colors.middle) },
-        uBottomColor: { value: new THREE.Color(colors.bottom) },
-        uNoiseIntensity: { value: NOISE_INTENSITY },
-        uTime: { value: 0 },
-      },
-      depthTest: false,
-      depthWrite: false,
-    })
+    // 画面全体を覆う 1 枚の三角形
+    const buffer = gl.createBuffer()
+    gl.bindBuffer(gl.ARRAY_BUFFER, buffer)
+    gl.bufferData(gl.ARRAY_BUFFER, new Float32Array([-1, -1, 3, -1, -1, 3]), gl.STATIC_DRAW)
+    const positionLocation = gl.getAttribLocation(program, "a_position")
+    gl.enableVertexAttribArray(positionLocation)
+    gl.vertexAttribPointer(positionLocation, 2, gl.FLOAT, false, 0, 0)
 
-    const backgroundGeometry = new THREE.PlaneGeometry(2, 2)
-    const backgroundMesh = new THREE.Mesh(backgroundGeometry, backgroundMaterial)
-    backgroundMesh.position.z = -5
-    scene.add(backgroundMesh)
+    const uniform = (name: string) => gl.getUniformLocation(program, name)
+    const uResolution = uniform("u_resolution")
+    const uTime = uniform("u_time")
+    const uTop = uniform("u_top")
+    const uMiddle = uniform("u_middle")
+    const uBottom = uniform("u_bottom")
 
-    // Flag
-    const flagMaterial = new THREE.ShaderMaterial({
-      vertexShader: flagVertexShader,
-      fragmentShader: flagFragmentShader,
-      uniforms: {
-        uTime: { value: 0 },
-        uWaveSpeed: { value: WAVE_SPEED },
-        uWaveAmplitude: { value: WAVE_AMPLITUDE },
-        uOpacity: { value: FLAG_OPACITY },
-      },
-      transparent: true,
-      side: THREE.DoubleSide,
-    })
+    gl.uniform1f(uniform("u_noise"), NOISE_INTENSITY)
+    gl.uniform1f(uniform("u_waveSpeed"), WAVE_SPEED)
+    gl.uniform1f(uniform("u_waveAmplitude"), WAVE_AMPLITUDE)
+    gl.uniform1f(uniform("u_flagOpacity"), FLAG_OPACITY)
+    gl.uniform3f(uniform("u_gridColor"), 1, 1, 1)
+    gl.uniform1f(uniform("u_gridOpacity"), GRID_OPACITY)
+    gl.uniform1f(uniform("u_gridSize"), 192)
 
-    const flagGeometry = new THREE.PlaneGeometry(8, 5, 40, 30)
-    const flagMesh = new THREE.Mesh(flagGeometry, flagMaterial)
-    scene.add(flagMesh)
+    const updateColors = () => {
+      const c = getIsDark() ? COLORS.dark : COLORS.light
+      gl.uniform3fv(uTop, hexToRgb(c.top))
+      gl.uniform3fv(uMiddle, hexToRgb(c.middle))
+      gl.uniform3fv(uBottom, hexToRgb(c.bottom))
+    }
+
+    const resize = () => {
+      const ratio = getPixelRatio()
+      canvas.width = Math.floor(window.innerWidth * ratio)
+      canvas.height = Math.floor(window.innerHeight * ratio)
+      gl.viewport(0, 0, canvas.width, canvas.height)
+      gl.uniform2f(uResolution, canvas.width, canvas.height)
+    }
+
+    const render = (time: number) => {
+      gl.uniform1f(uTime, time)
+      gl.drawArrays(gl.TRIANGLES, 0, 3)
+    }
+
+    updateColors()
+    resize()
 
     // Animation
     let accumulatedTime = 0
@@ -203,14 +144,12 @@ export const GradientBackground = ({ isAnimating = true }: Props) => {
         }
         accumulatedTime += (now - lastTime) / 1000
         lastTime = now
-        backgroundMaterial.uniforms.uTime.value = accumulatedTime
-        flagMaterial.uniforms.uTime.value = accumulatedTime
-        renderer.render(scene, camera)
+        render(accumulatedTime)
       } else {
         wasAnimating = false
         lastTime = now
         if (needsRender) {
-          renderer.render(scene, camera)
+          render(accumulatedTime)
           needsRender = false
         }
       }
@@ -218,30 +157,24 @@ export const GradientBackground = ({ isAnimating = true }: Props) => {
     }
 
     // Initial render
-    renderer.render(scene, camera)
+    render(accumulatedTime)
     animate()
 
     // Resize
     const handleResize = () => {
-      camera.aspect = window.innerWidth / window.innerHeight
-      camera.updateProjectionMatrix()
-      renderer.setPixelRatio(getPixelRatio())
-      renderer.setSize(window.innerWidth, window.innerHeight)
+      resize()
       needsRender = true
     }
     window.addEventListener("resize", handleResize)
 
     // Theme change
-    const updateColors = () => {
-      const c = getIsDark() ? COLORS.dark : COLORS.light
-      backgroundMaterial.uniforms.uTopColor.value.set(c.top)
-      backgroundMaterial.uniforms.uMiddleColor.value.set(c.middle)
-      backgroundMaterial.uniforms.uBottomColor.value.set(c.bottom)
+    const handleThemeChange = () => {
+      updateColors()
       needsRender = true
     }
 
     // ModeSelector による colorScheme 変更を検知
-    const observer = new MutationObserver(() => updateColors())
+    const observer = new MutationObserver(handleThemeChange)
     observer.observe(document.documentElement, {
       attributes: true,
       attributeFilter: ["style"],
@@ -249,27 +182,23 @@ export const GradientBackground = ({ isAnimating = true }: Props) => {
 
     // auto モード時の OS テーマ変更を検知
     const mediaQuery = window.matchMedia("(prefers-color-scheme: dark)")
-    const handleMediaChange = () => updateColors()
-    mediaQuery.addEventListener("change", handleMediaChange)
+    mediaQuery.addEventListener("change", handleThemeChange)
 
     return () => {
       window.removeEventListener("resize", handleResize)
       observer.disconnect()
-      mediaQuery.removeEventListener("change", handleMediaChange)
+      mediaQuery.removeEventListener("change", handleThemeChange)
       cancelAnimationFrame(animationId)
-      backgroundGeometry.dispose()
-      backgroundMaterial.dispose()
-      flagGeometry.dispose()
-      flagMaterial.dispose()
-      renderer.dispose()
-      if (container.firstChild) {
-        container.removeChild(renderer.domElement)
-      }
+      gl.deleteBuffer(buffer)
+      gl.deleteProgram(program)
+      gl.deleteShader(vertexShader)
+      gl.deleteShader(fragmentShader)
     }
   }, [])
 
   return (
-    <div ref={containerRef} className="fixed inset-0" aria-hidden="true">
+    <div className="fixed inset-0" aria-hidden="true">
+      <canvas ref={canvasRef} className="block h-full w-full" />
       <div className="bg-grid absolute inset-0" />
     </div>
   )
