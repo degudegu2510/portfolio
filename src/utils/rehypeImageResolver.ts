@@ -1,9 +1,10 @@
 import { visit } from 'unist-util-visit';
 import type { Root } from 'hast';
+import type { ContentType } from './markdownFiles';
 
 
 const imageFiles: Record<string, string> = import.meta.glob(
-  '../contents/Product/**/*.{png,jpg,jpeg,gif,webp,svg}',
+  ['../contents/Product/**/*.{png,jpg,jpeg,gif,webp,svg}', '../contents/Project/**/*.{png,jpg,jpeg,gif,webp,svg}'],
   {
     eager: true,
     query: '?url',
@@ -11,7 +12,7 @@ const imageFiles: Record<string, string> = import.meta.glob(
   }
 ) as Record<string, string>;
 
-export function resolveImagePath(imagePath: string, slug: string): string {
+export function resolveImagePath(imagePath: string, slug: string, contentType: ContentType = 'Product'): string {
   if (!imagePath) {
     return imagePath;
   }
@@ -38,14 +39,14 @@ export function resolveImagePath(imagePath: string, slug: string): string {
   let absolutePath: string;
   if (imagePath.startsWith('./') || imagePath.startsWith('../')) {
     // 相対パスを絶対パスに変換（./を削除）
-    absolutePath = `/src/contents/Product/${slug}/${imagePath.replace(/^\.\//, '')}`;
+    absolutePath = `/src/contents/${contentType}/${slug}/${imagePath.replace(/^\.\//, '')}`;
   } else if (imagePath.startsWith('/')) {
     // 既に絶対パスの場合（/で始まるが/src/ではない、例: /public/...）
     // これはpublicディレクトリのアセットの可能性があるため、そのまま返す
     return imagePath;
   } else {
     // 相対パス（./なし）の場合
-    absolutePath = `/src/contents/Product/${slug}/${imagePath}`;
+    absolutePath = `/src/contents/${contentType}/${slug}/${imagePath}`;
   }
 
   // imageFilesから解決されたURLを取得
@@ -68,9 +69,10 @@ export function resolveImagePath(imagePath: string, slug: string): string {
  * 
  * 参考: https://ja.vite.dev/guide/assets
  * 
- * @param slug - プロダクトのスラッグ
+ * @param slug - コンテンツのスラッグ
+ * @param contentType - コンテンツの種類（Product / Project）
  */
-export function rehypeImageResolver(slug: string) {
+export function rehypeImageResolver(slug: string, contentType: ContentType = 'Product') {
   return () => {
     return (tree: Root) => {
       visit(tree, 'element', (node) => {
@@ -78,7 +80,7 @@ export function rehypeImageResolver(slug: string) {
           const src = node.properties.src as string;
           
           if (src && typeof src === 'string') {
-            const resolvedUrl = resolveImagePath(src, slug);
+            const resolvedUrl = resolveImagePath(src, slug, contentType);
             node.properties.src = resolvedUrl;
           }
         }

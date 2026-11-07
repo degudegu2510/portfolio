@@ -33,7 +33,7 @@ export const Default: Story = {
       title: "Qiita Advent Calendar 2025 プロジェクト",
       description: "新企画の立案、新機能/機能アップデートの企画/設計を担当した。",
       term: "2025年8月〜2026年1月",
-      url: "https://example.com/project",
+      slug: "project",
     },
   },
 };
@@ -45,7 +45,7 @@ export const ManyLabels: Story = {
       title: "Qiitaダークモード導入",
       description: "Qiitaにダークモードを導入するため、カラーパレットの修正、カラートークンの設計、開発を担当した。",
       term: "2023年2月〜2024年2月",
-      url: "https://example.com/project",
+      slug: "project",
     },
   },
 };

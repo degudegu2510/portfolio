@@ -1,15 +1,19 @@
-import { useParams } from "react-router"
 import { useToc } from "../../../hooks/useToc"
 import { TocList } from "../../Molecules/TocList/TocList"
 import { useId } from "react"
 import { MaterialSymbols } from "../../Atoms/MaterialSymbols/MaterialSymbols"
 import { LoadingSpinner } from "../../Atoms/LoadingSpinner/LoadingSpinner"
 import { ErrorMessage } from "../../Atoms/ErrorMessage/ErrorMessage"
+import { ContentType } from "../../../utils/markdownFiles"
 
-export const ProductAsideContent = () => {
+interface MarkdownAsideContentProps {
+  slug: string
+  contentType: ContentType
+}
+
+export const MarkdownAsideContent = ({ slug, contentType }: MarkdownAsideContentProps) => {
   const id = useId()
-  const { productId } = useParams()
-  const { toc, loading, error } = useToc(productId || '')
+  const { toc, loading, error } = useToc(slug, contentType)
 
   return (
     <aside className="sticky top-20 max-tablet:relative max-tablet:top-0">

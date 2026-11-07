@@ -10,16 +10,11 @@ import remarkRehype from 'remark-rehype';
 import { rehypeImageResolver, resolveImagePath } from '../utils/rehypeImageResolver';
 import { rehypeMermaid } from '../utils/rehypeMermaid';
 import { rehypeUrlCard } from '../utils/rehypeUrlCard';
-
-const productFiles = import.meta.glob('../contents/Product/**/*.md', {
-  eager: true,
-  query: '?raw',
-  import: 'default',
-}) as Record<string, string>;
+import { ContentType, getMarkdownFile } from '../utils/markdownFiles';
 
 export interface MarkdownHeader {
   title: string;
-  thumbnail: string;
+  thumbnail?: string;
   keywords: string;
   description: string;
 }
@@ -31,7 +26,7 @@ export interface UseMarkdownResult {
   error: string | null;
 }
 
-export const useMarkdown = (slug: string): UseMarkdownResult => {
+export const useMarkdown = (slug: string, contentType: ContentType = 'Product'): UseMarkdownResult => {
   const [header, setHeader] = useState<MarkdownHeader | null>(null);
   const [body, setBody] = useState<string | null>(null);
   const [loading, setLoading] = useState<boolean>(true);
@@ -43,8 +38,7 @@ export const useMarkdown = (slug: string): UseMarkdownResult => {
         setLoading(true);
         setError(null);
 
-        const filePath = `../contents/Product/${slug}/${slug}.md`;
-        const markdown = productFiles[filePath] as string;
+        const markdown = getMarkdownFile(contentType, slug);
 
         if (!markdown) {
           throw new Error(`Markdown file not found: ${slug}`);
@@ -52,10 +46,10 @@ export const useMarkdown = (slug: string): UseMarkdownResult => {
 
         // ヘッダー情報の取得
         const { data: frontmatter } = matter(markdown);
-        const thumbnailPath = frontmatter.thumbnail as string;
+        const thumbnailPath = frontmatter.thumbnail as string | undefined;
         setHeader({
           title: frontmatter.title as string,
-          thumbnail: resolveImagePath(thumbnailPath, slug),
+          thumbnail: thumbnailPath ? resolveImagePath(thumbnailPath, slug, contentType) : undefined,
           keywords: frontmatter.keywords,
           description: frontmatter.description,
         });
@@ -67,7 +61,7 @@ export const useMarkdown = (slug: string): UseMarkdownResult => {
           .use(remarkGfm)
           .use(remarkRehype, { allowDangerousHtml: true })
           .use(rehypeSlug, { prefix: '', uniqueSlugStartIndex: 1 })
-          .use(rehypeImageResolver(slug))
+          .use(rehypeImageResolver(slug, contentType))
           .use(rehypeMermaid)
           .use(rehypeUrlCard)
           .use(rehypeHighlight)
@@ -87,7 +81,7 @@ export const useMarkdown = (slug: string): UseMarkdownResult => {
     if (slug) {
       loadMarkdown();
     }
-  }, [slug]);
+  }, [slug, contentType]);
 
   return {
     header,

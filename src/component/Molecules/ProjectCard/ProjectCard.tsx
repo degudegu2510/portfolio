@@ -1,4 +1,6 @@
+import { Link } from "react-router"
 import { ProjectInterface } from "../../../contents/Project/Project"
+import { ProjectPagePath } from "../../../utils/Routes"
 
 interface ProjectCardProps {
   project: ProjectInterface
@@ -7,7 +9,7 @@ interface ProjectCardProps {
 export const ProjectCard = ({ project }: ProjectCardProps) => {
   return (
     <li className="rounded-lg bg-surface-alpha backdrop-blur-[2px] backdrop-filter border border-gray-variant">
-      <a href={project.url} className="p-4 group grid" target="_blank" rel="noreferrer">
+      <Link to={ProjectPagePath(project.slug)} className="p-4 group grid">
         <ul className="flex gap-2 flex-wrap">
           {project.labels.map(label => (
             <li
@@ -21,7 +23,7 @@ export const ProjectCard = ({ project }: ProjectCardProps) => {
         <h3 className="subhead-2 mt-2.5 group-hover:underline underline-offset-4">{project.title}</h3>
         <p className="mt-2">{project.description}</p>
         <p className="body-3 text-medium-emphasis mt-2">{project.term}</p>
-      </a>
+      </Link>
     </li>
   )
 }

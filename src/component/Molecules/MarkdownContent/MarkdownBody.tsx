@@ -1,8 +1,8 @@
 
 import { useEffect, useRef } from "react"
-import { useParams } from "react-router"
 import mermaid from "mermaid"
 import { useMarkdown } from "../../../hooks/useMarkdown"
+import { ContentType } from "../../../utils/markdownFiles"
 import { LoadingSpinner } from "../../Atoms/LoadingSpinner/LoadingSpinner"
 import { ErrorMessage } from "../../Atoms/ErrorMessage/ErrorMessage"
 
@@ -82,9 +82,13 @@ async function populateLinkCard(card: HTMLElement): Promise<void> {
   }
 }
 
-export const MarkdownBody = () => {
-  const { productId } = useParams()
-  const { body, loading, error } = useMarkdown(productId || '')
+interface MarkdownBodyProps {
+  slug: string
+  contentType: ContentType
+}
+
+export const MarkdownBody = ({ slug, contentType }: MarkdownBodyProps) => {
+  const { body, loading, error } = useMarkdown(slug, contentType)
   const articleRef = useRef<HTMLElement>(null)
 
   useEffect(() => {

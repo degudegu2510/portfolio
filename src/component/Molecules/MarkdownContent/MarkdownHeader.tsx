@@ -1,12 +1,16 @@
 
-import { useParams } from "react-router"
 import { useMarkdown } from "../../../hooks/useMarkdown"
+import { ContentType } from "../../../utils/markdownFiles"
 import { LoadingSpinner } from "../../Atoms/LoadingSpinner/LoadingSpinner"
 import { ErrorMessage } from "../../Atoms/ErrorMessage/ErrorMessage"
 
-export const MarkdownHeader = () => {
-  const { productId } = useParams()
-  const { header, loading, error } = useMarkdown(productId || '')
+interface MarkdownHeaderProps {
+  slug: string
+  contentType: ContentType
+}
+
+export const MarkdownHeader = ({ slug, contentType }: MarkdownHeaderProps) => {
+  const { header, loading, error } = useMarkdown(slug, contentType)
 
   if (loading) {
     return (
@@ -27,13 +31,15 @@ export const MarkdownHeader = () => {
   return (
     <header>
       <h1 className="heading-1">{header.title}</h1>
-      <img
-        src={header.thumbnail}
-        alt=""
-        width={832}
-        height={468}
-        className="w-full rounded-lg mt-6 aspect-[16/9] object-cover border border-divider box-sizing-border"
-      />
+      {header.thumbnail && (
+        <img
+          src={header.thumbnail}
+          alt=""
+          width={832}
+          height={468}
+          className="w-full rounded-lg mt-6 aspect-[16/9] object-cover border border-divider box-sizing-border"
+        />
+      )}
     </header>
   )
 }

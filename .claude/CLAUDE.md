@@ -50,6 +50,7 @@ src/component/
 ### コンテンツ (Markdown ベース)
 
 - プロダクトページ: `src/contents/Product/{slug}/{slug}.md`
+- プロジェクトページ: `src/contents/Project/{slug}/{slug}.md`（一覧のデータは `src/contents/Project/Project.ts`、`slug` で Markdown と対応）
 - `import.meta.glob` で静的インポート
 - remark/rehype パイプラインで処理（GFM、シンタックスハイライト、スラグ生成）
 - Front matter: `title`, `thumbnail`, `keywords`, `description`

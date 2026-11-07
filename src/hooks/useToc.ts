@@ -2,12 +2,7 @@ import { useState, useEffect } from 'react';
 import matter from 'gray-matter';
 import { remark } from 'remark';
 import remarkToc from 'remark-toc';
-
-const productFiles = import.meta.glob('../contents/Product/**/*.md', {
-  eager: true,
-  query: '?raw',
-  import: 'default',
-}) as Record<string, string>;
+import { ContentType, getMarkdownFile } from '../utils/markdownFiles';
 
 export interface TocItem {
   level: 1 | 2 | 3;
@@ -22,7 +17,7 @@ export interface UseTocResult {
   error: string | null;
 }
 
-export const useToc = (slug: string): UseTocResult => {
+export const useToc = (slug: string, contentType: ContentType = 'Product'): UseTocResult => {
   const [toc, setToc] = useState<TocItem[]>([]);
   const [loading, setLoading] = useState<boolean>(true);
   const [error, setError] = useState<string | null>(null);
@@ -33,8 +28,7 @@ export const useToc = (slug: string): UseTocResult => {
         setLoading(true);
         setError(null);
 
-        const filePath = `../contents/Product/${slug}/${slug}.md`;
-        const markdown = productFiles[filePath] as string;
+        const markdown = getMarkdownFile(contentType, slug);
 
         if (!markdown) {
           throw new Error(`Markdown file not found: ${slug}`);
@@ -105,7 +99,7 @@ export const useToc = (slug: string): UseTocResult => {
     if (slug) {
       generateToc();
     }
-  }, [slug]);
+  }, [slug, contentType]);
 
   return {
     toc,
